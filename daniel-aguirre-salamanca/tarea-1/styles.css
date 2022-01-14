@@ -1,0 +1,123 @@
+html, body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: ". magazine .";
+}
+.magazine{
+    display: flex;
+    flex-direction: column;
+    grid-area: magazine;
+    background-image: linear-gradient(to top right, #203a4e , #96afc2);;
+}
+.magazine__header{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 5%;
+}
+.magazine__header span:first-child{
+    color: grey;
+    font-size: 20px;
+    padding-left: 100px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+.magazine__header span:nth-child(2){
+    font-size: 70px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: bold;
+    color: #37beba;
+}
+.magazine__header span:last-child{
+    color: grey;
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+    padding-right: 110px;
+    letter-spacing: 4px;
+}
+
+.magazine__content{
+    height: 100%;
+    padding: 7% 7% 5% 7%;
+    background-image: url("business_man.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas:
+     ". . ideas"
+     ". . ideas"
+     ". . ideas"
+     "main main qr"
+    ;
+}
+.magazine__ideas{
+    grid-area: ideas;
+    display: flex;
+    flex-direction: column;
+}
+.magazine__idea{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    color: rgb(235, 235, 235);
+    font-size: 15px;
+
+}
+.idea__title{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: white;
+    font-weight: bold;
+}
+.line-breaker{
+    width: 40%;
+    background-color: #37beba;
+    height: 5px;
+    margin-left: auto;
+    margin-top: .25rem;
+    margin-bottom: .3rem;
+}
+
+.magazine__main-idea{
+    grid-area: main;
+    color: #37beba;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+}
+.magazine__main-idea--text{
+    font-size: 15px;
+    color: white;
+    font-weight: 400;
+}
+
+.qr{
+    color: white;
+    grid-area: qr;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    margin: .2rem;
+    width: 90%;
+    height: 50px;
+}
+
+
+
