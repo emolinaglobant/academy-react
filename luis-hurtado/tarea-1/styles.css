@@ -1,35 +1,44 @@
-.magazine-container {
-    width: 800px;
-    height: 900px;
-    background: url("./images/arya.jpg");
-    background-size: 850px;
-}
-.presentation {
-    color: white;
-    margin: 20px;
-}
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
 #title {
     font-size: 200px;
-    margin-top: 0;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    margin-top: 20px;
 }
 #subtitle {
-    font-size: 60px;
+    font-family: 'Abril Fatface';
+    font-size: 70px;
     font-weight: lighter;
     text-align: left;
     width: 90px;
 }
+.magazine-container {
+    align-items: center;
+    background: center/110% url("./images/arya.jpg") ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+}
+.presentation {
+    color: white;
+}
 .description {
     display: flex;
     justify-content: space-between;
-    color: rgb(241, 165, 0);
-    font-size: 25px;
-    font-weight: bold;
-    margin: 10px;
+    margin: 20px;
+    width: 80%;
 }
-
 .description p {
-    width: 100px;    
-
+    color: rgb(89 214 252);
+    font-family: 'Roboto', sans-serif;
+    font-size: 35px; 
+    font-weight: bold; 
+    width: 200px; 
+}
+.description p::first-line {
+    font-size: 70px;
 }
 
 
