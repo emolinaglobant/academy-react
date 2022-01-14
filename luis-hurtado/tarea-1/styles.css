@@ -1,0 +1,35 @@
+.magazine-container {
+    width: 800px;
+    height: 900px;
+    background: url("./images/arya.jpg");
+    background-size: 850px;
+}
+.presentation {
+    color: white;
+    margin: 20px;
+}
+#title {
+    font-size: 200px;
+    margin-top: 0;
+}
+#subtitle {
+    font-size: 60px;
+    font-weight: lighter;
+    text-align: left;
+    width: 90px;
+}
+.description {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(241, 165, 0);
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.description p {
+    width: 100px;    
+
+}
+
+
