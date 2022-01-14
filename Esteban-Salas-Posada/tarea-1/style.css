@@ -1,0 +1,54 @@
+html{
+    font-size: 62.5%;
+    background-color: #b1b1b1;
+}.img{
+    max-width: 100%;
+}
+.contenedor{
+    margin: 0 auto;
+    max-width: 90%;
+    width: 120rem;
+}
+.h1{
+    margin: 0 auto;
+    font-size: 22rem;
+    font-family: 'Arapey', serif;
+    text-transform: uppercase;
+    max-width: 100%;
+    max-height: 25%;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+.magazine{
+    margin: 0 auto;
+    height: 95vh;
+    width: 75vh;
+    background-color: #D11333;
+    position: relative;
+}
+.magazine--parrafo_principal{
+    position: absolute;
+    text-transform: uppercase;
+    bottom: 2rem;
+    left: 10rem;
+    font-size: 5rem;
+    font-weight: 700;
+}
+.magazine--parrafo_secundario{
+    position: absolute;
+    text-transform: uppercase;
+    bottom: 2rem;
+    left: 16rem;
+    font-size: 3rem;
+    font-weight: 400;
+}
+.magazine--parrafo_tercero{
+    position: absolute;
+    text-transform: uppercase;
+    bottom: 10rem;
+    left: 21rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
