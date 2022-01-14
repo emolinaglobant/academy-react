@@ -1,0 +1,226 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 20px 220px;
+}
+
+.backgraundImg{
+    position:relative;
+    height: 120vh;
+    width: 120%;
+    top: 4px;
+    right: 45px;
+}
+
+.magazineContainer{
+    background: rgb(2,0,36);
+    background: linear-gradient(184deg, rgba(2,0,36,1) 0%, rgba(18,55,50,1) 0%, rgba(0,212,255,1) 92%);
+}
+
+.containerHeader{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/* section left */
+
+.sectionBrandName{
+    position: absolute;
+    top: 0px;
+    margin-left: 80px;
+    text-transform: uppercase;
+}
+
+.sectionBrandName h2{
+    font-size: 8rem;
+    letter-spacing: 14px;
+    font-family: 'Playfair Display', serif;
+}
+
+.sectionBrandName p:nth-child(2){
+    position: absolute;
+    font-size: 1.5rem;
+    top: 80px;
+    left: 220px;
+    color: #ffffff;
+}
+
+.sectionBrandName p:nth-child(3){
+    font-size: 0.660rem;
+    color: #ffffff;
+}
+
+/* section rigth */
+
+.hexagon{
+    position: absolute;
+    top: 32px;
+    right: 295px;
+    width: 122px;
+    height: 140px;
+    transform: rotate(90deg);
+}
+
+.sectionSlogan{
+    position: absolute;
+    top: 40px;
+    right: 280px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.sectionSlogan h3{
+    font-size: 0.800rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sectionSlogan p:nth-child(2){
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.number{
+    font-size: 4rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.number span{
+    font-size: 1.6rem;
+}
+
+.textSlogan{
+    width: 150px;
+    font-size: 0.900rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* section information o articles */
+
+.containerArticles{
+    text-transform: uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.informationLeft {
+    position: absolute;
+    top: 180px;
+    padding: 40px;
+    text-align: center;
+}
+
+.informationLeft h3{
+    display: inline-block;
+    font-size: 0.600rem;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.informationLeft p{
+    width: 175px;
+    color: #ffffff;
+}
+
+.informationLeft article p:nth-child(2){
+    color: #000000;
+}
+
+hr {
+    margin-left: 50px;
+    height: 6px;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+}
+
+/* information two */
+
+.informationRight{
+    position: absolute;
+    top: 300px;
+    right: 230px;
+    padding: 20px;
+    text-align: right;
+    color: #ffffff;
+}
+
+.informationRight h3{
+    width: 120px;
+    font-size: 1.2rem;
+}
+
+.informationRight p{
+   width: 120px;
+}
+
+.informationRight hr {
+    position: relative;
+    top: -134px;
+    left: 87px;
+    height: 21vh;
+    width: 10%;
+    border: none;
+    background-color: rgb(0, 0, 0);
+}
+
+/* main title section */
+
+.mainTitleSection{
+    position: absolute;
+    top: 380px;
+    left: 400px;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    color: #f5f0f0;
+}
+
+.mainTitleSection h1{
+    text-align: center;
+    font-size: 4rem;
+    line-height : 84px;
+}
+
+.mainTitleSection h1 span{
+    font-size: 10rem;
+}
+
+.mainTitleSection p{
+    width: 300px;
+    font-size: 1.6rem;
+    margin-left: 80px;
+    text-align: center;
+}
+
+/* footer */
+
+footer{
+    color: #e5e2e2;
+    text-transform: uppercase;
+}
+
+.codeMagazine{
+    position: absolute;
+    bottom: -60px;
+    left: 200px;
+    font-size: 0.800rem;
+    transform: rotate(90deg);
+}
+
+.textFooter {
+    position: absolute;
+    bottom: -120px;
+    right: 240px;
+    font-size: 1.4rem;
+    text-align: right;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.textFooter span {
+    font-weight: normal;
+}
