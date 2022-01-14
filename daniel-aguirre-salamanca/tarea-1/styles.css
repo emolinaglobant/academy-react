@@ -1,25 +1,22 @@
 html, body {
-    background-color: white;
-    font-family: sans-serif;
     margin:0;
     padding:0;
+    font-family: sans-serif;
 }
 
 .container{
-    background-color: rgb(17,17,17);
+    width: 100%;
+    height: 100vh;
+    background-color: black;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: ". magazine .";
-    height: 100vh;
-    width: 100%;
 }
 .magazine{
-    background-image: linear-gradient(to right, rgb(66, 103, 130) , rgb(136, 173, 200));
-    color: white;
     display: flex;
     flex-direction: column;
     grid-area: magazine;
-    margin: 10px;
+    background-image: linear-gradient(to top right, #203a4e , #96afc2);;
 }
 .magazine__header{
     background-color: white;
@@ -27,105 +24,99 @@ html, body {
     flex-direction: column;
     padding: 2% 5%;
 }
-.magazine__header span{ 
-    color: rgb(76, 76, 76);
-    font-size: 1.5rem;
+.magazine__header span:first-child{
+    color: grey;
+    font-size: 20px;
+    padding-left: 100px;
     font-weight: bold;
     letter-spacing: 4px;
-    line-height: 90%;
-    margin: auto;
-    width: 80%; 
 }
-
 .magazine__header span:nth-child(2){
-    color: #37beba;
-    font-size: 5.5rem;
-    letter-spacing: 1px;
+    font-size: 70px;
+    letter-spacing: 2px;
     text-align: center;
+    font-weight: bold;
+    color: #37beba;
 }
-
 .magazine__header span:last-child{
+    color: grey;
     text-align: right;
+    font-weight: bold;
+    font-size: 20px;
+    padding-right: 110px;
+    letter-spacing: 4px;
 }
 
 .magazine__content{
-    background-image: url("assets/background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    grid-template-areas:
-     ". . ideas"
-    ". . ideas"
-    ". . ideas"
-    "main main qr" ;
-    grid-template-columns: repeat(3,1fr);
     height: 100%;
     padding: 7% 7% 5% 7%;
-                        
+    background-image: url("business_man.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas:
+     ". . ideas"
+     ". . ideas"
+     ". . ideas"
+     "main main qr"
+    ;
 }
-
 .magazine__ideas{
+    grid-area: ideas;
     display: flex;
     flex-direction: column;
-    grid-area: ideas;
-    justify-content: space-evenly;
 }
-
 .magazine__idea{
     display: flex;
     flex-direction: column;
-    font-size: .8rem;
     text-align: right;
+    color: rgb(235, 235, 235);
+    font-size: 15px;
 
 }
-
 .idea__title{
-    font-size: 1.4rem;
-    font-weight: 700;
-    letter-spacing: -1px;
-    line-height: .9;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: white;
+    font-weight: bold;
 }
-
 .line-breaker{
+    width: 40%;
     background-color: #37beba;
-    height: .3rem;
-    margin-bottom: .3rem;
+    height: 5px;
     margin-left: auto;
     margin-top: .25rem;
-    width: 40%;
+    margin-bottom: .3rem;
 }
 
-.magazine__main-title{
-    color: #37beba;
-    font-size: 3rem;
-    font-weight: 700;
+.magazine__main-idea{
     grid-area: main;
-    letter-spacing: -2px;
-    line-height: .9;
-}
+    color: #37beba;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 3px;
 
-.magazine__main-text{
+}
+.magazine__main-idea--text{
+    font-size: 15px;
     color: white;
-    font-size: 1rem;
     font-weight: 400;
-    letter-spacing: 0;
-    line-height: 1.2;
 }
 
 .qr{
-    align-items: center;
+    color: white;
+    grid-area: qr;
     display: flex;
     flex-direction: column;
-    font-weight: bold;
-    grid-area: qr;
-    justify-content: end;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
-
 img{
-    height: 5rem;
-    margin: .5rem;
+    margin: .2rem;
     width: 90%;
+    height: 50px;
 }
 
 
