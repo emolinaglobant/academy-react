@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@500&display=swap");
+
+/* Centrado */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.revista {
+  align-items: center;
+  background-image: url(/assets/img/shakira\ 2.jpg);
+  background-repeat: no-repeat;
+  background-size: 600px;
+  display: flex;
+  flex-direction: column;
+  height: 900px;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 600px;
+}
+/* firts part */
+
+h3 {
+  color: white;
+  font-size: 40px;
+  margin-top: -50px;
+  font-weight: 200;
+}
+.letter-1-2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.letter-1 h1 {
+  color: rgb(255, 77, 195);
+  font-size: 120px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* second part */
+
+.letter-2 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.letter-2 h1 {
+  font-size: 90px;
+  font-weight: 600;
+  letter-spacing: -9px;
+  margin-top: -40px;
+  word-spacing: 3px;
+}
+.letter-2 p {
+  font-size: 10px;
+  margin-top: -20px;
+}
+
+.text {
+  float: left;
+  margin-bottom: 20px;
+  margin-left: -70px;
+}
