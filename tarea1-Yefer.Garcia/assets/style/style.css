@@ -1,58 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@500&display=swap");
 
-/* Centrado */
 * {
-  margin: 0;
   box-sizing: border-box;
+  margin: 0;
 }
 body {
   display: flex;
   justify-content: center;
 }
-.revista {
-  margin-top: 50px;
-  width: 600px;
-  height: 900px;
-  background-image: url(/tarea1-Yefer.Garcia/assets/img/shakira\ 2.jpg);
-  background-repeat: no-repeat;
-  background-size: 600px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-}
+
 /* firts part */
 
+h3 {
+  color: white;
+  font-size: 40px;
+  font-weight: 200;
+  margin-top: -50px;
+}
 .letter-1-2 {
   display: flex;
   justify-content: flex-end;
 }
 
 .letter-1 h1 {
-  font-size: 120px;
   color: rgb(255, 77, 195);
+  font-size: 120px;
   font-family: "Roboto", sans-serif;
 }
 
-h3 {
-  color: white;
-  font-size: 40px;
-  margin-top: -50px;
-  font-weight: 200;
-}
 /* second part */
+
 .letter-2 {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .letter-2 h1 {
   font-size: 90px;
-  letter-spacing: -9px;
-  word-spacing: 3px;
-  margin-top: -40px;
   font-weight: 600;
+  letter-spacing: -9px;
+  margin-top: -40px;
+  word-spacing: 3px;
 }
 .letter-2 p {
   font-size: 10px;
@@ -60,7 +49,19 @@ h3 {
 }
 
 .text {
-  margin-bottom: 20px;
   float: left;
+  margin-bottom: 20px;
   margin-left: -70px;
+}
+.revista {
+  align-items: center;
+  background-image: url(/tarea1-Yefer.Garcia/assets/img/shakira\ 2.jpg);
+  background-repeat: no-repeat;
+  background-size: 600px;
+  display: flex;
+  flex-direction: column;
+  height: 900px;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 600px;
 }
