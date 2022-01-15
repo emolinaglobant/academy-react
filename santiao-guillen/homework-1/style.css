@@ -1,3 +1,8 @@
+/*  Santiago Guillen Ramirez
+    14/01/2022
+    Academy React - Globant
+*/
+
 *{
     margin: 0px;
     padding: 0px;
@@ -7,17 +12,17 @@ body{
     margin: 20px 220px;
 }
 
-.backgraundImg{
-    position:relative;
-    height: 120vh;
-    width: 120%;
-    top: 4px;
-    right: 45px;
-}
-
 .magazineContainer{
     background: rgb(2,0,36);
     background: linear-gradient(184deg, rgba(2,0,36,1) 0%, rgba(18,55,50,1) 0%, rgba(0,212,255,1) 92%);
+}
+
+.backgraundImg{
+    position:relative;
+    top: 4px;
+    right: 45px;
+    height: 120vh;
+    width: 120%;
 }
 
 .containerHeader{
@@ -131,7 +136,7 @@ body{
     color: #000000;
 }
 
-hr {
+.informationLeft hr {
     margin-left: 50px;
     height: 6px;
     width: 40%;
@@ -198,7 +203,7 @@ hr {
 
 /* footer */
 
-footer{
+#sectionFooter{
     color: #e5e2e2;
     text-transform: uppercase;
 }
@@ -223,4 +228,303 @@ footer{
 
 .textFooter span {
     font-weight: normal;
+}
+
+/* responsive desing screen max 1440x900*/
+
+@media only screen and (min-width: 1440px) {
+
+    .sectionBrandName h2{
+        font-size: 10rem;
+        letter-spacing: 18px;
+    }
+    
+    .sectionBrandName p:nth-child(2){
+        position: absolute;
+        font-size: 1.6rem;
+        top: 100px;
+        left: 280px;
+    }
+    
+    .sectionBrandName p:nth-child(3){
+        font-size: 0.900rem;
+    }
+
+    /* section rigth */
+
+    .hexagon{
+        position: absolute;
+        top: 40px;
+        right: 306px;
+        width: 160px;
+        height: 200px;
+    }
+
+    .sectionSlogan{
+        position: absolute;
+        top: 60px;
+    }
+
+    .sectionSlogan h3{
+        font-size: 1.8rem;
+    }
+
+    .sectionSlogan p:nth-child(2){
+        font-size: 2.6rem;
+    }
+
+    .number{
+        font-size: 6rem;
+    }
+
+    .number span{
+        font-size: 2rem;
+    }
+
+    .textSlogan{
+        width: 210px;
+        font-size: 1.5rem;
+    }
+
+    /* section information o articles */
+
+    .informationLeft {
+        position: absolute;
+        top: 240px;
+    }
+
+    .informationLeft h3{
+        font-size: 1.2rem;
+    }
+
+    .informationLeft p{
+        width: 300px;   
+        font-size: 1.6rem;
+    }
+
+    .informationLeft hr {
+        margin-left: 90px;
+    }
+
+    /* information two */
+
+    .informationRight{
+        position: absolute;
+        top: 500px;
+        right: 230px;
+    }
+
+    .informationRight h3{
+        width: 180px;
+        font-size: 1.5rem;
+    }
+
+    .informationRight p{
+    width: 200px;
+    font-size: 1.4rem;
+    }
+
+    .informationRight hr {
+        position: relative;
+        top: -156px;
+        left: 206px;
+        height: 17vh;
+        width: 12%;
+    }
+
+    /* main title section */
+
+    .mainTitleSection{
+        position: absolute;
+        top: 380px;
+        left: 400px;
+        text-transform: uppercase;
+        font-family: 'Playfair Display', serif;
+        color: #f5f0f0;
+    }
+
+    .mainTitleSection h1{
+        text-align: center;
+        font-size: 4rem;
+        line-height : 84px;
+    }
+
+    .mainTitleSection h1 span{
+        font-size: 10rem;
+    }
+
+    .mainTitleSection p{
+        width: 300px;
+        font-size: 1.6rem;
+        margin-left: 80px;
+        text-align: center;
+    }
+
+    .mainTitleSection{
+        position: absolute;
+        top: 620px;
+        left: 500px;
+    }
+}
+
+/* responsive desing for phone of screen 600px*/
+
+@media only screen and (max-width: 600px) {
+
+    body{
+        margin:10px 20px;
+    }
+
+    .backgraundImg{
+        position:relative;
+        top: 4px;
+        right: 0px;
+        height: 74vh;
+        width: 110%;
+    }
+
+    .sectionBrandName{
+        top: 20px;
+        margin-left: 20px;
+    }
+
+    .sectionBrandName h2{
+        font-size: 4rem;
+        letter-spacing: 18px;
+    }
+    
+    .sectionBrandName p:nth-child(2){
+        font-size: 0.800rem;
+        top: 40px;
+        left: 134px;
+    }
+    
+    .sectionBrandName p:nth-child(3){
+        font-size: 0.400rem;
+    }
+
+    /* section rigth */
+
+    .hexagon{
+        position: absolute;
+        top: 30px;
+        right: 40px;
+        width: 80px;
+        height: 100px;
+    }
+
+    .sectionSlogan{
+        position: absolute;
+        top: 42px;
+        right: 20px;
+    }
+
+    .sectionSlogan h3{
+        font-size: 0.600rem;
+    }
+
+    .sectionSlogan p:nth-child(2){
+        font-size: 1.2rem;
+    }
+
+    .number{
+        font-size:3rem;
+    }
+
+    .number span{
+        font-size: 1rem;
+    }
+
+    .textSlogan{
+        width: 120px;
+        font-size: 0.800rem;
+    }
+
+    /* section information o articles */
+
+    .informationLeft {
+        position: absolute;
+        top: 120px;
+        left: 0px;
+    }
+
+    .informationLeft h3{
+        font-size: 0.500rem;
+    }
+
+    .informationLeft p{
+        width: 100px;   
+        font-size: 0.600rem;
+    }
+
+    .informationLeft hr {
+        margin-left: 30px;
+    }
+
+    /* information two */
+
+    .informationRight{
+        position: absolute;
+        top: 280px;
+        right: 20px;
+    }
+
+    .informationRight h3{
+        width: 80px;
+        font-size: 0.800rem;
+    }
+
+    .informationRight p{
+    width: 100px;
+    font-size: 0.700rem;
+    }
+
+    .informationRight hr {
+        position: relative;
+        top: -84px;
+        left: 112px;
+        height: 10vh;
+        width: 8%;
+    }
+
+    /* main title section */
+
+    .mainTitleSection{
+        top: 400px;
+        left: 80px;
+    }
+    
+    .mainTitleSection h1{
+        text-align: center;
+        font-size: 2rem;
+        line-height : 44px;
+    }
+
+    .mainTitleSection h1 span{
+        font-size: 5rem;
+    }
+
+    .mainTitleSection p{
+        width: 200px;
+        font-size: 0.800rem;
+        margin-left: 16px;
+    }
+
+        /* footer */
+
+    .codeMagazine{
+        position: absolute;
+        bottom: 280px;
+        left: 0px;
+        font-size: 0.800rem;
+        transform: rotate(90deg);
+    }
+
+    .textFooter {
+        position: absolute;
+        bottom: 220px;
+        right: 36px;
+        font-size: 0.900rem;
+    }
+
 }
