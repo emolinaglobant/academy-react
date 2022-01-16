@@ -1,71 +1,113 @@
-
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --tittle_color: rgb(20, 20, 72);
+  --second_tittle--color: rgb(203, 4, 7);
+}
+body {
+  text-align: center;
+  color: #ffffff;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #d04a51
-        }
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-.container{
-            
-    padding: 20px;
-    width: 45%;
-    height: 85vh;
-    background-image: linear-gradient(to top, rgb(242, 197, 176), rgb(232, 208, 206));
+  padding: 40px 0;
+}
+.container_magazine {
+  width: 720px;
+  height: 1014px;
+  background: linear-gradient(rgb(214, 206, 221), rgb(201, 191, 209));
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: #ffffff solid 10px;
 }
 
-.Title{
-    font-size: 500%;
-    font-family: 'Nosifer', cursive;
-
+.title_magazine {
+  font-size: 220px;
+  letter-spacing: 15px;
+  color: var(--tittle_color);
+  font-family: "DM Serif Display", serif;
+}
+.container_first {
+  position: relative;
+  left: -230px;
+  font-family: "Oswald", sans-serif;
+}
+.first_txt {
+  color: var(--second_tittle--color);
+  font-size: 30px;
+}
+.first_txt--two {
+  color: black;
 }
 
-P{
-    font-size: 10px;
-    position: absolute;
-    top: 20%;
+.container_second {
+  position: relative;
+  left: -230px;
+  top: 60px;
 }
-
-.img{
-    position: 
-    relative;
-    bottom: 150px;
-    left:30%;
-    height: 80%;
-
+.second_txt {
+  color: var(--second_tittle--color);
+  font-size: 35px;
+  font-family: "Anton", sans-serif;
 }
-
-.name{
-    position: absolute;
-    top: 40%;
-    left: 35%;
-    font-size: 60px;
-    font-family: 'League Script', cursive;
-    color: rgb(237, 187, 184);
-    text-shadow:
-      0 0 7px #fff,
-      0 0 151px #f09;
-   
-
+.second_txt_two {
+  color: black;
+  font-family: "Oswald", sans-serif;
 }
-.cabello{
-    position: absolute;
-    top: 70%;
-    left: 30%;
-    color: rgb(252, 254, 253);
-    
+.container_third {
+  position: relative;
+  font-family: "Anton", sans-serif;
+  left: -160px;
+  top: 110px;
 }
-.etiqueta{
-    position: absolute;
-    height: 100%;
-    top: 300px;
-    left: 530px;
-
+.third_txt {
+  font-size: 90px;
+  letter-spacing: 5px;
+  letter-spacing: 6px;
 }
- 
+.third_txt--two {
+  font-size: 60px;
+  color: var(--second_tittle--color);
+}
+.third_txt--three {
+  font-family: "Oswald", sans-serif;
+}
+.fourth_container {
+  position: relative;
+  top: -150px;
+  right: -200px;
+}
+.fourth_txt {
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+}
+.fourth_txt--two {
+  font-size: 42px;
+  font-family: "Anton", sans-serif;
+  color: var(--second_tittle--color);
+}
+.container_barcode {
+  position: relative;
+  top: 30px;
+  right: -70px;
+}
+.fourth_txt--three {
+  font-family: "Oswald", sans-serif;
+}
+.container_barcode img {
+  width: 100px;
+}
+.img_principal {
+  height: 750px;
+  position: absolute;
+  top: 290px;
+  left: 750px;
+}
