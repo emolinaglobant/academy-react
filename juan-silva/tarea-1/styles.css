@@ -1,0 +1,151 @@
+html, body {
+
+    background-color: white;
+    font-family: Helvetica;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    background-color: rgb(17,17,17);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: ". magazine .";
+    height: 120vh;
+    width: 100%;
+}
+.magazine{
+    background-image: url("assets/wp1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    grid-area: magazine;
+    margin: 10px;
+}
+
+.magazine-header{
+    display: flex;
+    flex-direction: column;
+    grid-area: head;
+    justify-content: space-evenly;
+    row-gap: 1px;
+}
+
+.magazine-header img{
+    padding: .2rem;
+}
+
+.header-title{
+    font-size: 15px;
+    font-weight: 800;
+    color: rgb(7, 7, 7);
+    text-shadow: red 0.1em 0.1em 0.2em;
+    letter-spacing: 10px;
+    line-height: .9;
+    text-align: center;
+}
+.header-title span{
+    line-height: .1;
+    letter-spacing: 2px;
+
+}
+
+.magazine-content{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "head head head"
+     ". . col"
+    ". . col"
+    ". . col"
+    "code . ad" ;
+    
+    height: 100%;
+    padding: 5px 20px 5px 10px;
+                        
+}
+
+.magazine-column{
+    display: flex;
+    flex-direction: column;
+    grid-area: col;
+    justify-content: flex-start;
+}
+
+.magazine-group{
+    display: flex;
+    flex-direction: column;
+    align-content:flex-start;
+    font-size: 10px;
+    text-align: right;
+
+}
+
+.main-title{
+    color:white;
+    text-shadow: rgb(255, 238, 0) 0.1em 0.1em 0.2em;
+    font-size: 50px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    line-height: 1.2;
+}
+
+.subtitle{
+    color:#a96d14;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    line-height: 2;
+    text-align: right;
+}
+
+.subtitle span{
+    background-color: #ffffff8a;
+    box-shadow: 0 0 50px #ff0000c9;
+    border-radius: 8px;
+}
+
+.ad{
+    display: flex;
+    color:white;
+    font-size: 22px;
+    text-shadow: rgb(255, 30, 0) 0.1em 0.1em 0.2em;
+    flex-direction: column;
+    font-weight: bold;
+    grid-area: ad;
+    align-content: right;
+    justify-content: end;
+    text-align: right;
+    
+}
+
+.ad img{
+    position: relative;
+    right: -140px;
+    height: 60%;
+    margin: .5rem;
+    width: 48%;
+}
+
+.codebar{
+    display: flex;
+    color:white;
+    font-size: 8px;
+    flex-direction: column;
+    font-weight: bold;
+    grid-area: code;
+    align-content: center;
+    justify-content: end;
+    text-align: left;
+}
+.codebar img{
+    height: 40%;
+    margin: .5rem;
+    width: 76%;
+}
+
+
+
