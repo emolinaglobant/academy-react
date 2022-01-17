@@ -1,0 +1,530 @@
+/*  Santiago Guillen Ramirez
+    14/01/2022
+    Academy React - Globant
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 20px 220px;
+}
+
+.magazineContainer{
+    background: rgb(2,0,36);
+    background: linear-gradient(184deg, rgba(2,0,36,1) 0%, rgba(18,55,50,1) 0%, rgba(0,212,255,1) 92%);
+}
+
+.backgraundImg{
+    position:relative;
+    top: 4px;
+    right: 45px;
+    height: 120vh;
+    width: 120%;
+}
+
+.containerHeader{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+/* section left */
+
+.sectionBrandName{
+    position: absolute;
+    top: 0px;
+    margin-left: 80px;
+    text-transform: uppercase;
+}
+
+.sectionBrandName h2{
+    font-size: 8rem;
+    letter-spacing: 14px;
+    font-family: 'Playfair Display', serif;
+}
+
+.sectionBrandName p:nth-child(2){
+    position: absolute;
+    font-size: 1.5rem;
+    top: 80px;
+    left: 220px;
+    color: #ffffff;
+}
+
+.sectionBrandName p:nth-child(3){
+    font-size: 0.660rem;
+    color: #ffffff;
+}
+
+/* section rigth */
+
+.hexagon{
+    position: absolute;
+    top: 32px;
+    right: 295px;
+    width: 122px;
+    height: 140px;
+    transform: rotate(90deg);
+}
+
+.sectionSlogan{
+    position: absolute;
+    top: 40px;
+    right: 280px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    z-index: 1;
+}
+
+.sectionSlogan h3{
+    font-size: 0.800rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sectionSlogan p:nth-child(2){
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+.number{
+    font-size: 4rem;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.number span{
+    font-size: 1.6rem;
+}
+
+.textSlogan{
+    width: 150px;
+    font-size: 0.900rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* section information o articles */
+
+.containerArticles{
+    text-transform: uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.informationLeft {
+    position: absolute;
+    top: 180px;
+    padding: 40px;
+    text-align: center;
+}
+
+.informationLeft h3{
+    display: inline-block;
+    font-size: 0.600rem;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.informationLeft p{
+    width: 175px;
+    color: #ffffff;
+}
+
+.informationLeft article p:nth-child(2){
+    color: #000000;
+}
+
+.informationLeft hr {
+    margin-left: 50px;
+    height: 6px;
+    width: 40%;
+    background-color: rgb(255, 255, 255);
+}
+
+/* information two */
+
+.informationRight{
+    position: absolute;
+    top: 300px;
+    right: 230px;
+    padding: 20px;
+    text-align: right;
+    color: #ffffff;
+}
+
+.informationRight h3{
+    width: 120px;
+    font-size: 1.2rem;
+}
+
+.informationRight p{
+   width: 120px;
+}
+
+.informationRight hr {
+    position: relative;
+    top: -134px;
+    left: 87px;
+    height: 21vh;
+    width: 10%;
+    border: none;
+    background-color: rgb(0, 0, 0);
+}
+
+/* main title section */
+
+.mainTitleSection{
+    position: absolute;
+    top: 380px;
+    left: 400px;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    color: #f5f0f0;
+}
+
+.mainTitleSection h1{
+    text-align: center;
+    font-size: 4rem;
+    line-height : 84px;
+}
+
+.mainTitleSection h1 span{
+    font-size: 10rem;
+}
+
+.mainTitleSection p{
+    width: 300px;
+    font-size: 1.6rem;
+    margin-left: 80px;
+    text-align: center;
+}
+
+/* footer */
+
+#sectionFooter{
+    color: #e5e2e2;
+    text-transform: uppercase;
+}
+
+.codeMagazine{
+    position: absolute;
+    bottom: -60px;
+    left: 200px;
+    font-size: 0.800rem;
+    transform: rotate(90deg);
+}
+
+.textFooter {
+    position: absolute;
+    bottom: -120px;
+    right: 240px;
+    font-size: 1.4rem;
+    text-align: right;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.textFooter span {
+    font-weight: normal;
+}
+
+/* responsive desing screen max 1440x900*/
+
+@media only screen and (min-width: 1440px) {
+
+    .sectionBrandName h2{
+        font-size: 10rem;
+        letter-spacing: 18px;
+    }
+    
+    .sectionBrandName p:nth-child(2){
+        position: absolute;
+        font-size: 1.6rem;
+        top: 100px;
+        left: 280px;
+    }
+    
+    .sectionBrandName p:nth-child(3){
+        font-size: 0.900rem;
+    }
+
+    /* section rigth */
+
+    .hexagon{
+        position: absolute;
+        top: 40px;
+        right: 306px;
+        width: 160px;
+        height: 200px;
+    }
+
+    .sectionSlogan{
+        position: absolute;
+        top: 60px;
+    }
+
+    .sectionSlogan h3{
+        font-size: 1.8rem;
+    }
+
+    .sectionSlogan p:nth-child(2){
+        font-size: 2.6rem;
+    }
+
+    .number{
+        font-size: 6rem;
+    }
+
+    .number span{
+        font-size: 2rem;
+    }
+
+    .textSlogan{
+        width: 210px;
+        font-size: 1.5rem;
+    }
+
+    /* section information o articles */
+
+    .informationLeft {
+        position: absolute;
+        top: 240px;
+    }
+
+    .informationLeft h3{
+        font-size: 1.2rem;
+    }
+
+    .informationLeft p{
+        width: 300px;   
+        font-size: 1.6rem;
+    }
+
+    .informationLeft hr {
+        margin-left: 90px;
+    }
+
+    /* information two */
+
+    .informationRight{
+        position: absolute;
+        top: 500px;
+        right: 230px;
+    }
+
+    .informationRight h3{
+        width: 180px;
+        font-size: 1.5rem;
+    }
+
+    .informationRight p{
+    width: 200px;
+    font-size: 1.4rem;
+    }
+
+    .informationRight hr {
+        position: relative;
+        top: -156px;
+        left: 206px;
+        height: 17vh;
+        width: 12%;
+    }
+
+    /* main title section */
+
+    .mainTitleSection{
+        position: absolute;
+        top: 380px;
+        left: 400px;
+        text-transform: uppercase;
+        font-family: 'Playfair Display', serif;
+        color: #f5f0f0;
+    }
+
+    .mainTitleSection h1{
+        text-align: center;
+        font-size: 4rem;
+        line-height : 84px;
+    }
+
+    .mainTitleSection h1 span{
+        font-size: 10rem;
+    }
+
+    .mainTitleSection p{
+        width: 300px;
+        font-size: 1.6rem;
+        margin-left: 80px;
+        text-align: center;
+    }
+
+    .mainTitleSection{
+        position: absolute;
+        top: 620px;
+        left: 500px;
+    }
+}
+
+/* responsive desing for phone of screen 600px*/
+
+@media only screen and (max-width: 600px) {
+
+    body{
+        margin:10px 20px;
+    }
+
+    .backgraundImg{
+        position:relative;
+        top: 4px;
+        right: 0px;
+        height: 74vh;
+        width: 110%;
+    }
+
+    .sectionBrandName{
+        top: 20px;
+        margin-left: 20px;
+    }
+
+    .sectionBrandName h2{
+        font-size: 4rem;
+        letter-spacing: 18px;
+    }
+    
+    .sectionBrandName p:nth-child(2){
+        font-size: 0.800rem;
+        top: 40px;
+        left: 134px;
+    }
+    
+    .sectionBrandName p:nth-child(3){
+        font-size: 0.400rem;
+    }
+
+    /* section rigth */
+
+    .hexagon{
+        position: absolute;
+        top: 30px;
+        right: 40px;
+        width: 80px;
+        height: 100px;
+    }
+
+    .sectionSlogan{
+        position: absolute;
+        top: 42px;
+        right: 20px;
+    }
+
+    .sectionSlogan h3{
+        font-size: 0.600rem;
+    }
+
+    .sectionSlogan p:nth-child(2){
+        font-size: 1.2rem;
+    }
+
+    .number{
+        font-size:3rem;
+    }
+
+    .number span{
+        font-size: 1rem;
+    }
+
+    .textSlogan{
+        width: 120px;
+        font-size: 0.800rem;
+    }
+
+    /* section information o articles */
+
+    .informationLeft {
+        position: absolute;
+        top: 120px;
+        left: 0px;
+    }
+
+    .informationLeft h3{
+        font-size: 0.500rem;
+    }
+
+    .informationLeft p{
+        width: 100px;   
+        font-size: 0.600rem;
+    }
+
+    .informationLeft hr {
+        margin-left: 30px;
+    }
+
+    /* information two */
+
+    .informationRight{
+        position: absolute;
+        top: 280px;
+        right: 20px;
+    }
+
+    .informationRight h3{
+        width: 80px;
+        font-size: 0.800rem;
+    }
+
+    .informationRight p{
+    width: 100px;
+    font-size: 0.700rem;
+    }
+
+    .informationRight hr {
+        position: relative;
+        top: -84px;
+        left: 112px;
+        height: 10vh;
+        width: 8%;
+    }
+
+    /* main title section */
+
+    .mainTitleSection{
+        top: 400px;
+        left: 80px;
+    }
+    
+    .mainTitleSection h1{
+        text-align: center;
+        font-size: 2rem;
+        line-height : 44px;
+    }
+
+    .mainTitleSection h1 span{
+        font-size: 5rem;
+    }
+
+    .mainTitleSection p{
+        width: 200px;
+        font-size: 0.800rem;
+        margin-left: 16px;
+    }
+
+        /* footer */
+
+    .codeMagazine{
+        position: absolute;
+        bottom: 280px;
+        left: 0px;
+        font-size: 0.800rem;
+        transform: rotate(90deg);
+    }
+
+    .textFooter {
+        position: absolute;
+        bottom: 220px;
+        right: 36px;
+        font-size: 0.900rem;
+    }
+
+}
