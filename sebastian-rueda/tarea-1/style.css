@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=PT+Sans:wght@400;700&display=swap');
+
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cover
+{
+    border: 10px solid #ed1c24;
+    background-image: url(../tarea-1/photo.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 417px;
+    margin: auto;
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 100%;
+    padding: 15px;
+    padding-bottom: 0;
+}
+
+.title
+{
+    text-transform: uppercase;
+    font-family: 'Bodoni Moda', serif;
+    color: #ed1c24;
+    font-size: 5rem;
+    grid-column: span 4;
+    place-self: center;
+}
+
+.section1
+{
+    display: block;
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 8px;
+}
+
+.date
+{
+    font-weight: bold;
+}
+
+.section2
+{
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 8px;
+    grid-column: 4;
+    text-align: right;
+}
+
+.section3
+{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    grid-column: span 4;
+    align-self: flex-end;
+}
+
+.name
+{
+    font-size: 35px;
+}
+
+img
+{
+    width: 100px;
+}
+
+.barCode
+{
+    align-self: flex-end;
+    padding: 5px;
+    background-color: #fff;
+}
