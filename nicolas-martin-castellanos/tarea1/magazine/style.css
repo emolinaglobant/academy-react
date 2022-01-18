@@ -2,7 +2,18 @@
     padding: 0px;
     margin: 0px;
 }
-
+.grid-text{
+    display: grid;
+    text-align: center;
+    font-size: 30px;
+}
+.grid-text{
+    background: #ecf0f1;
+    gap: 1em;
+}
+.grid-text:hover{
+    border: 3px solid black;
+}
 .imagenes{
     width: 70%;
     margin: 0px auto;
@@ -121,4 +132,46 @@
 
 #titulo5:hover{
     color: white;
+}
+
+.caja{
+    border: 4px solid rgb(70, 69, 69);
+    background-color: white;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 202px;
+    text-align: center;
+    margin: -8px;
+}
+.flexbox{
+    border: black ;
+    background: white(138, 133, 133);
+    padding: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.flexbox:hover{
+    color: navy;
+}
+.c1{
+    background: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.c1:hover{
+    color: grey;
+}
+.c2{
+    background: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.c2:hover:hover{
+    color: grey;
+}
+.c3{
+    background: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.c3:hover{
+    color: grey;
 }
