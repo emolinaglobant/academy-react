@@ -27,17 +27,34 @@ body {
   background-repeat: no-repeat;
   border: #ffffff solid 10px;
 }
-
-.title_magazine {
-  font-size: 220px;
-  letter-spacing: 15px;
-  color: var(--tittle_color);
-  font-family: "DM Serif Display", serif;
-}
 .container_first {
   position: relative;
   left: -230px;
   font-family: "Oswald", sans-serif;
+}
+.container_second {
+  position: relative;
+  left: -230px;
+  top: 60px;
+}
+.container_third {
+  position: relative;
+  left: -160px;
+  top: 110px;
+  font-family: "Anton", sans-serif;
+}
+.container_barcode {
+  position: relative;
+  top: 30px;
+  right: -70px;
+}
+.container_barcode img {
+  width: 100px;
+}
+.fourth_container {
+  position: relative;
+  top: -150px;
+  right: -200px;
 }
 .first_txt {
   font-size: 30px;
@@ -47,10 +64,23 @@ body {
   color: black;
 }
 
-.container_second {
-  position: relative;
-  left: -230px;
-  top: 60px;
+.fourth_txt {
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+}
+.fourth_txt--two {
+  font-size: 42px;
+  font-family: "Anton", sans-serif;
+  color: var(--second_tittle--color);
+}
+.fourth_txt--three {
+  font-family: "Oswald", sans-serif;
+}
+.img_principal {
+  position: absolute;
+  top: 290px;
+  left: 750px;
+  height: 750px;
 }
 .second_txt {
   font-size: 35px;
@@ -61,13 +91,12 @@ body {
   color: black;
   font-family: "Oswald", sans-serif;
 }
-.container_third {
-  position: relative;
-  left: -160px;
-  top: 110px;
-  font-family: "Anton", sans-serif;
+.title_magazine {
+  font-size: 220px;
+  letter-spacing: 15px;
+  color: var(--tittle_color);
+  font-family: "DM Serif Display", serif;
 }
-
 .third_txt {
   font-size: 90px;
   letter-spacing: 5px;
@@ -79,35 +108,4 @@ body {
 }
 .third_txt--three {
   font-family: "Oswald", sans-serif;
-}
-.fourth_container {
-  position: relative;
-  top: -150px;
-  right: -200px;
-}
-.fourth_txt {
-  font-family: "Oswald", sans-serif;
-  font-size: 25px;
-}
-.fourth_txt--two {
-  font-size: 42px;
-  font-family: "Anton", sans-serif;
-  color: var(--second_tittle--color);
-}
-.container_barcode {
-  position: relative;
-  top: 30px;
-  right: -70px;
-}
-.fourth_txt--three {
-  font-family: "Oswald", sans-serif;
-}
-.container_barcode img {
-  width: 100px;
-}
-.img_principal {
-  position: absolute;
-  top: 290px;
-  left: 750px;
-  height: 750px;
 }
