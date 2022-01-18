@@ -11,7 +11,7 @@ body {
 }
 .revista {
   align-items: center;
-  background-image: url(/assets/img/shakira.jpg);
+  background-image: url(../img/shakira.jpg);
   background-repeat: no-repeat;
   background-size: 600px;
   display: flex;
@@ -26,42 +26,55 @@ body {
 h3 {
   color: white;
   font-size: 40px;
-  margin-top: -50px;
   font-weight: 200;
 }
 .letter-1-2 {
-  display: flex;
-  justify-content: flex-end;
+  left: 57%;
+  position: absolute;
+  top: 140px;
 }
 
 .letter-1 h1 {
   color: rgb(255, 77, 195);
   font-size: 120px;
   font-family: "Roboto", sans-serif;
+  
 }
+
 
 /* second part */
 
+.ideas{
+  position: absolute;
+  bottom: -25px;
+}
 .letter-2 {
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  
 }
-.letter-2 h1 {
+.letter-2 h2 {
   font-size: 90px;
   font-weight: 600;
   letter-spacing: -9px;
-  margin-top: -40px;
   word-spacing: 3px;
 }
 .letter-2 p {
   font-size: 10px;
-  margin-top: -20px;
+ 
+}
+.numero{
+  bottom: 100px;
+position: absolute;
+}
+.new{
+bottom: 38px;
+position: absolute;
 }
 
 .text {
-  float: left;
-  margin-bottom: 20px;
-  margin-left: -70px;
+  bottom: 185px;
+ position: absolute;
+
 }
