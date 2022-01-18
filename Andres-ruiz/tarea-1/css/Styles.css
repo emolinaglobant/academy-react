@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.portada{
+    margin-left:20em ;
+    background-color: rgba(255, 255, 255, 0.034);
+    width:80em;
+    height: 90em;
+    word-wrap: break-word;
+    white-space: normal;
+    border: solid 0.01em black;
+}
+.tittle{
+    font-weight:  bolder; 
+    background-color: rgb(255, 255, 255);
+    background-image: url(/Andres-ruiz/tarea-1/img/dark-1642355235187-9377.jpg);
+    background-size: cover;
+    color: rgba(54, 0, 0, 0.582);
+    background-position: center;
+    position: absolute;
+    font-size: 18em;
+    -webkit-background-clip: text;
+}
+.arcipresst{
+    margin-top:18em;
+    float: right;
+    height:auto;
+    position: relative;
+}
+#goblin{
+    margin-top:19em;
+    width:55em;
+    float: left;
+    position: absolute;
+
+}
+.tomo{
+
+    border: solid 0.3em black;
+    float:inline-end;
+    padding: 1em 1em 1em 1em;
+    background-color: red;
+    width: 8em;
+    height:8em;
+    transform: rotate(45deg);
+    margin-top: 50em;
+    margin-left: 65em;
+
+}
+.linea{
+
+    border: solid 0.3em white;
+    padding:3.7em;
+    position: absolute;
+}
+.enderesar{
+    margin-left: 0.5em;
+    margin-top: 0.2em;
+    position: absolute;
+    font-size: 5em;
+    color: white;
+    transform: rotate(-45deg);
+}
+.referencia{
+    position: absolute;
+    margin-left: 15em;
+    margin-top: -6em;
+}
+.obra{
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    font-family: 'Uncial Antiqua', cursive;
+    background-color:  rgba(0, 0, 0, 0.685);
+    border-radius: 100%;
+    position: absolute;
+    padding: 0 15em 0 15em;
+    margin-top: 5em;
+}
+.dead{
+    font-family: 'Uncial Antiqua', cursive;
+    text-transform:uppercase;
+    position: absolute;
+    color: rgb(139, 0, 0);
+    font-size: 2em;
+    float: right;
+    margin-top: 7em;
+    margin-left:10em;
+
+}
