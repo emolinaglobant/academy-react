@@ -1,0 +1,124 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.imagenes{
+    width: 70%;
+    margin: 0px auto;
+    height: 100vh;
+    position: relative;
+}
+
+.imagenes .fondo img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.imagenes .imgs img{
+    position: absolute;
+}
+
+.imagenes .imgs .carro{
+    width: 87%;
+    top: 20%;
+    left: 8%;
+}
+
+.imagenes .imgs .codigo{
+    width: 10%;
+    top: 89%;
+    right: 0%;
+}
+
+.imagenes .informacion{
+    position: absolute;
+    background-color: gray;
+    top: 90%;
+    width: 100%;
+    height: 8%;
+    text-align: center;
+}
+
+.imagenes .informacion h6{
+    line-height: 200%;
+    font-size: 115%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+}
+
+.imagenes .informacion:hover h6{
+    color: white;
+}
+
+#titulo1{
+    position: absolute;
+    left: 22%;
+    z-index: 999;
+    font-size: 970%;
+    color: red;
+}
+
+#titulo1:hover{
+    color: blue;
+}
+
+#titulo2{
+    position: absolute;
+    left: 35%;
+    top: 30%;
+    font-size: 510%;
+    font-family: sans-serif;
+    color: navy;
+    z-index: 999;
+}
+
+#titulo2:hover{
+    color: black;
+}
+
+#titulo3{
+    position: absolute;
+    width: 20%;
+    left: 16%;
+    top: 41%;
+    font-size: 85%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    z-index: 999;
+}
+
+#titulo3:hover{
+    color: white;
+}
+
+#titulo4{
+    position: absolute;
+    width: 20%;
+    left: 16%;
+    top: 52%;
+    font-size: 85%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    z-index: 999;
+}
+
+#titulo4:hover{
+    color: white;
+}
+
+#titulo5{
+    position: absolute;
+    width: 20%;
+    left: 16%;
+    top: 63%;
+    font-size: 85%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    z-index: 999;
+}
+
+#titulo5:hover{
+    color: white;
+}
