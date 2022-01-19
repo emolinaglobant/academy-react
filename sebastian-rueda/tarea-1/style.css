@@ -24,11 +24,10 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     height: 100%;
-    padding: 15px;
-    padding-bottom: 0;
+    padding: 0 15px;
 }
 
-.title
+.magazineLogo
 {
     text-transform: uppercase;
     font-family: 'Bodoni Moda', serif;
@@ -36,9 +35,10 @@
     font-size: 5rem;
     grid-column: span 4;
     place-self: center;
+    font-weight: normal;
 }
 
-.section1
+.dateAndIssue
 {
     display: block;
     color: #fff;
@@ -52,7 +52,7 @@
     font-weight: bold;
 }
 
-.section2
+.magazineWord
 {
     color: #fff;
     font-family: 'PT Sans', sans-serif;
@@ -62,7 +62,7 @@
     text-align: right;
 }
 
-.section3
+.coverTitle
 {
     font-family: 'Open Sans', sans-serif;
     color: #fff;
@@ -72,7 +72,7 @@
     align-self: flex-end;
 }
 
-.name
+.personName
 {
     font-size: 35px;
 }
