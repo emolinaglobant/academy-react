@@ -3,8 +3,8 @@
 
 .main-container {
     background-color: #ED1F27;
-    padding: 20px 41px 21px 41px;
     max-width: 960px;
+    padding: 20px 41px 21px 41px;
 }
 
 .top-info {
@@ -22,8 +22,8 @@
 
 .magazine-cover {
     border: solid 15px #FCFFFC;
-    max-width: 930px;
     max-height: 1176px;
+    max-width: 930px;
 }
 
 .title-container {
@@ -33,66 +33,66 @@
 }
 
 .magazine-title {
-    font-family: "Cinzel";
-    font-weight: 500;
     color: rgb(216, 226, 232, 0.70);
-    position: absolute;
+    font-family: "Cinzel";
     font-size: 256px;
+    font-weight: 500;
+    position: absolute;
     top: 10px;
 }
 
 .dialog-container {
-    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100%;
 }
 
 .ios-dialog {
-    position: absolute;
-    top: 576px;
-    width: 618px;
-    height: 216px;
     background-color: rgba(220, 220, 220, 0.9);
     border-radius: 25px;
     display: flex;
     flex-direction: column;
+    height: 216px;
+    position: absolute;
+    top: 576px;
+    width: 618px;
 }
 
 .ios-text {
     font-family: "Lato";
-    font-weight: 700;
     font-size: 32px;
+    font-weight: 700;
     text-align: center;
 }
 
 .text-container {
-    height: 70%;
+    border-bottom: 1px solid #C0BFC8;
     display: flex;
     flex-direction: column;
+    height: 70%;
     justify-content: center;
-    border-bottom: 1px solid #C0BFC8;
     width: 100%;
 }
 
 .btn-container {
     display: flex;
     flex-direction: row;
-    width: 100%;
     height: 30%;
+    width: 100%;
 }
 
 .divider {
-    width: 1px;
     background-color: #C0BFC8;
+    width: 1px;
 }
 
 .btn {
-    width: 50%;
+    align-items: center;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
+    width: 50%;
 }
 
 .cancel-btn {
@@ -104,8 +104,8 @@
 }
 
 .img-container {
-    max-width: 930px;
     max-height: 1176px;
+    max-width: 930px;
 }
 
 .background-img {
@@ -113,12 +113,12 @@
 }
 
 .articles-container {
+    bottom: 225px;
     display: flex;
     flex-direction: column;
-    position: relative;
-    max-width: 400px;
-    bottom: 225px;
     left: 20px;
+    max-width: 400px;
+    position: relative;
 }
 
 .article {
@@ -128,19 +128,19 @@
 }
 
 .name, .author {
-    font-family: "Lato";
     color: white;
+    font-family: "Lato";
 }
 
 .name {
+    font-size: 28px;
     font-weight: 700;
     max-width: 50%;
-    font-size: 28px;
 }
 
 .author {
-    font-weight: 200;
     font-size: 20px;
+    font-weight: 200;
 }
 
 .bottom-info {
@@ -152,8 +152,8 @@
 
 @media only screen and (max-width: 1000px) {
     .main-container {
-        padding: 10px 20.5px 10.5px 20.5px;
         max-width: 480px;
+        padding: 10px 20.5px 10.5px 20.5px;
     }
 
     .info {
@@ -162,16 +162,16 @@
 
     .magazine-cover {
         border: solid 7.5px #FCFFFC;
-        max-width: 465px;
         max-height: 588px;
+        max-width: 465px;
     }
 
     .magazine-title {
-        font-family: "Cinzel";
-        font-weight: 500;
         color: rgb(216, 226, 232, 0.70);
-        position: absolute;
+        font-family: "Cinzel";
         font-size: 128px;
+        font-weight: 500;
+        position: absolute;
         top: 14px;
     }
 
@@ -180,29 +180,29 @@
     }
 
     .ios-dialog {
-        top: 288px;
-        width: 309px;
-        height: 108px;
         background-color: rgba(220, 220, 220, 0.9);
         border-radius: 12.5px;
         display: flex;
         flex-direction: column;
+        height: 108px;
+        top: 288px;
+        width: 309px;
     }
 
     .img-container {
-        max-width: 465px;
         max-height: 588px;
+        max-width: 465px;
     }
 
     .articles-container {
-        max-width: 250px;
         bottom: 112px;
         left: 14px;
+        max-width: 250px;
     }
     
     .name {
-        max-width: 35%;
         font-size: 12px;
+        max-width: 35%;
     }
     
     .author {
