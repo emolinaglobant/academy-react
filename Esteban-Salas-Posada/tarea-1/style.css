@@ -1,54 +1,198 @@
 html{
     font-size: 62.5%;
     background-color: #b1b1b1;
-}.img{
+    margin: 0;
+    padding: 0;
+}
+img{
     max-width: 100%;
 }
-.contenedor{
-    margin: 0 auto;
-    max-width: 90%;
-    width: 120rem;
-}
-.h1{
-    margin: 0 auto;
-    font-size: 22rem;
-    font-family: 'Arapey', serif;
+h1{
     text-transform: uppercase;
-    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+p{
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-color: #BBDDF6;
+    background-image: url(../img/modelo1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 400pxpx;
+    width: 95%;
+    height: 42vh;
+    margin: auto auto;
+}
+
+.header{
+    max-width: 95%;
     max-height: 25%;
-}
-.flex{
-    display: flex;
-    flex-direction: column;
-}
-.magazine{
     margin: 0 auto;
-    height: 95vh;
-    width: 75vh;
-    background-color: #D11333;
-    position: relative;
 }
-.magazine--parrafo_principal{
-    position: absolute;
-    text-transform: uppercase;
-    bottom: 2rem;
-    left: 10rem;
-    font-size: 5rem;
-    font-weight: 700;
-}
-.magazine--parrafo_secundario{
-    position: absolute;
-    text-transform: uppercase;
-    bottom: 2rem;
-    left: 16rem;
+.header__title{
     font-size: 3rem;
-    font-weight: 400;
+    color: #7FB0D4;
+    text-shadow: 3px 1px #333;
+    text-align: center;
 }
-.magazine--parrafo_tercero{
-    position: absolute;
-    text-transform: uppercase;
-    bottom: 10rem;
-    left: 21rem;
-    font-size: 2rem;
-    font-weight: 400;
+.header__subtitle{
+    font-size: 1rem;
+    text-align: right;
+    text-shadow: 1px 1px #fff;
 }
+
+/* ----------- PARRAFOS  ---------- */
+.magazine__parrafo--primero{
+    font-size: 1rem;
+    text-shadow: 1px 1px #b1b1b1;
+    text-align: right;
+    margin: 50px 20px 0 0;
+}
+.magazine__parrafo--sgundo{
+    font-size: 1rem;
+    text-shadow: 1px 1px #b1b1b1;
+    text-align: left;
+    margin: 50px 0 0 20px;
+}
+.magazine__parrafo--tercero{
+    font-size: 1rem;
+    text-shadow: 1px 1px #b1b1b1;
+    text-align: right;
+    margin: 50px 20px 0 0;
+    font-weight: bold;
+}
+.magazine__parrafo--cuarto{
+    font-size: 1rem;
+    text-shadow: 1px 1px #b1b1b1;
+    text-align: left;
+    margin: 0px 0 0 20px;
+}
+
+/* --------- Footer -------------- */
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+}
+.footer__img{
+    max-width: 30%;
+    margin: 0 20px;
+}
+.footer__p{
+    width: 100%;
+    margin: 0px 20px 0 0;
+    font-size: 0.5rem;
+    text-align: center;
+    color: white;
+}
+
+/* 480px --------------------------- */
+@media (min-width: 468px){
+    .main{
+        background-color: #BBDDF6;
+        background-image: url(../img/modelo1.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 80%;
+        height: 85vh;
+        margin: 0 auto;
+    }
+    .header{
+        max-width: 95%;
+        max-height: 25%;
+        margin: 0 auto;
+    }
+    .header__title{
+        font-size: 6rem;
+        color: #7FB0D4;
+        text-shadow: 3px 1px #333;
+        text-align: center;
+    }
+    .header__subtitle{
+        font-size: 3rem;
+        text-align: right;
+    }
+    .magazine__parrafo--primero{
+        font-size: 2.7rem;
+        text-shadow: 2px 1px #b1b1b1;
+        text-align: right;
+        margin: 50px 20px 0 0;
+    }
+    .magazine__parrafo--sgundo{
+        font-size: 2.7rem;
+        text-shadow: 2px 1px #b1b1b1;
+        text-align: left;
+        margin: 50px 0 0 20px;
+    }
+    .magazine__parrafo--tercero{
+        font-size: 2.7rem;
+        text-align: right;
+        margin: 50px 20px 0 0;
+        font-weight: bold;
+        text-shadow: 2px 1px #b1b1b1;
+    }
+    .magazine__parrafo--cuarto{
+        font-size: 2.7rem;
+        text-shadow: 2px 1px #b1b1b1;
+        text-align: left;
+        margin: 0px 0 0 20px;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .footer__img{
+        max-width: 30%;
+        margin: 0 20px;
+    }
+    .footer__p{
+        width: 100%;
+        margin: 0px 20px 0 0;
+        font-size: 2rem;
+        text-align: center;
+        color: white;
+    }
+}
+
+/* 1200px ------------------------------------------- */
+@media (min-width: 1200px){
+    .main{
+        background-color: #BBDDF6;
+        background-image: url(../img/modelo1.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 1609px;
+        width: 60vw;
+        height: 95vh;
+        margin: 0 auto;
+    }
+}
+
+/* 1200px ------------------------------------------- */
+@media (min-width: 1200px){
+    .main{
+        background-color: #BBDDF6;
+        background-image: url(../img/modelo1.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        max-width: 760px;
+        max-height: 980px;
+        width: 60vw;
+        height: 95vh;
+        margin: 0 auto;
+    }
+}
+
+
