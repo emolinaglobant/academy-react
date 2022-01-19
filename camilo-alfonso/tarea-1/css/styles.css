@@ -9,7 +9,7 @@ body{
 }
 
 /*Section 1*/
-.main{
+main{
     background: #fff;
     border: 2px solid #181510;
     left: 50%;
@@ -21,14 +21,14 @@ body{
 }
 
 /*Section 2: Header */
-.main__header{
+.header{
     align-items: center;
     display: flex;
     justify-content: center;
     margin: 0 10px;
     padding: 10px 0;
 }
-.main__header--title{
+.header p{
     color: #be0211;
     font-size: 26px;
     font-family: 'Readex Pro', sans-serif;
@@ -36,13 +36,13 @@ body{
 }
 
 /*Section 3: Magazine Name Title & categories */
-.main__content{
+.article__content{
     background: #181510;
     color: #fff;
     margin: 0 10px;
     width: 624px;
 }
-.main__content--title{
+.article__header h1{
     font-size: 160px;
     font-weight: bold;
     font-family: 'Readex Pro', sans-serif;
@@ -50,7 +50,7 @@ body{
     line-height: 84%;
     text-align: center;
 }
-.main__content--categories{
+.article__categories{
     display: flex;
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 24px;
@@ -61,14 +61,14 @@ body{
 }
 
 /*Section 4: Main cover & Moon image */
-.main__cover{
+.main__section{
     align-items: center;
     display: flex;
     font-family: 'Anton', sans-serif;
     justify-content: center;
     padding: 20px 0;
 }
-.main__cover--title{
+.main__section--text{
     font-size:56px;
     line-height: 60px;
     letter-spacing: 2px;
@@ -84,8 +84,8 @@ span{
 .main__paragraph{
    align-self: start;
    display: grid;
-   grid-template-columns:90% 10%;
-   height: 60px;
+   grid-template-columns:89.3% 11%;
+   height: 65px;
 }
 .main__paragraph--text{
     font-family: 'Barlow Condensed', sans-serif;
@@ -94,11 +94,11 @@ span{
 .main__paragraph--img{
     height:38px;
     transform:rotate(90deg);
-    width: 94px; 
+    width: 96px; 
 }
 
 /*Section 5: Footer & Footer items*/
-.footer{
+footer{
     display: flex;
     justify-content: center;
     padding: 10px 0;
