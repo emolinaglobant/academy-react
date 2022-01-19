@@ -104,7 +104,7 @@ body{
     letter-spacing: 1px;
 }
 
-.container .magazine ul li div {
+.container .magazine ul .dote {
     width: 4px;
     height: 4px;
     background-color: #ffffff;
