@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{    
+    font-family: 'Hind Siliguri', sans-serif;
+    font-variant: small-caps;
+    text-align: center;
+    color: #ffffff;
+    background-image: url(assets/nirvana.jpg);
+}
+
+.container{
+    background-color: rgba(255, 255, 255, .75);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.container .magazine{
+    width: 720px;
+    height: 1014px;
+    position: relative;
+    background-image: url(assets/nirvana.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: #ffffff solid 10px;
+}
+
+.container .magazine .collector {
+    font-family: 'Bree Serif', serif;
+    font-size: 80px;
+    letter-spacing: 5px;
+    text-decoration: underline;
+    position: relative;
+    top: -30px;
+}
+
+.container .magazine img {
+    width: 655px;
+    position: relative;
+    top: -70px;
+}
+
+.container .magazine h1 {
+    font-size: 150px;
+    line-height: 85px;
+    margin-top: 350px;
+}
+
+.container .magazine .firstTxt{
+    font-size: 50px;
+    letter-spacing: 3px;
+    line-height: 50px;
+}
+
+.container .magazine .whiteBar{
+    width: 300px;
+    height: 10px;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+
+.container .magazine h3{
+    margin-top: 25px;
+    font-size: 38px;
+}
+
+.container .magazine h3::first-line{
+    line-height: 0px;
+}
+
+.container .magazine p {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 16px;
+    margin-top: 20px;
+}
+
+.container .magazine h4 {
+    font-size: 18px;
+    line-height: 0;
+    margin-top: 30px;
+}
+
+.container .magazine ul {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.container .magazine ul li {
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.container .magazine ul li div {
+    width: 4px;
+    height: 4px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    margin-top: 3px;
+}
+
+.container .magazine .info {
+    position: absolute;
+    top: 150px;
+    right: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-variant: normal;
+}
+
+.container .magazine .info h4 {
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0;
+}
+
+.container .magazine .info p {
+    font-size: 10px;
+    font-weight: 100;
+    letter-spacing: 0;
+    text-align: right;
+    margin-top: 7px;
+}
+
+.container a{
+    font-size: 18px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    color: #636363;
+}

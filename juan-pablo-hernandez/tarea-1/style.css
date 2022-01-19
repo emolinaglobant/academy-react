@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+}
+body {
+    background-color: #e4e0e0;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    overflow: hidden;
+}
+.magazine-container {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+    width: 100vw;
+}
+.magazine-cover {
+    aspect-ratio: 5 / 7;
+    background-image: url('src/magazine-bg.jpg');
+    background-size: cover;
+    border: 50px solid #ffce00;
+    box-shadow: 0 10px 15px #000000aa;
+    height: calc(80vh - 100px);
+    padding: 40px 20px;
+    width: auto;
+}
+.main-info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+.main-info h1 {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    text-align: center;
+}
+.main-info h2 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 2.5rem;
+    text-align: center;
+    text-decoration: underline;
+}
+.main-info p {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .magazine-cover {
+        border: 30px solid #ffce00;
+        height: auto;
+        padding: 40px 20px;
+        width: calc(80vw - 100px);
+    }
+    .main-info h1 {
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+    }
+    .main-info h2 {
+        font-size: 1rem;
+        line-height: 2.5rem;
+    }
+    .main-info p {
+        font-size: .6rem;
+        line-height: .6rem;
+    }
+}

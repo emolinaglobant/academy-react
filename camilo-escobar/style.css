@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  margin: 0;
+}
+main {
+  width: 800px;
+  max-width: 85%;
+  margin: 0 auto;
+  background-color: black;
+}
+header {
+  background-color: white;
+  color: black;
+}
+.Main-title {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 65px;
+}
+.Main-title span {
+  font-size: 10px;
+}
+article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 30% 70%;
+  height: 1000px;
+}
+.left-content {
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+#left-title {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  margin-left: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+#left-paragraph {
+  color: white;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 0px;
+}
+.right-paragraph {
+  color: white;
+  font-weight: bold;
+}
+.image {
+  background-color: darkred;
+  grid-column: 1/4;
+  grid-row: 2/3;
+  background-image: url("assets/foto-magazine.jpg.jpg");
+  background-size: cover;
+}
+img {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  width: 100%;
+  position: cover;
+}
+.right-content {
+  grid-column: 3/4;
+  grid-row: 1/4;
+}
+footer {
+  background-color: white;
+  text-align: right;
+  font-weight: bold;
+  font-size: 10px;
+}
