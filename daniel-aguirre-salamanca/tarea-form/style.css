@@ -1,0 +1,27 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+form{
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content:space-evenly;
+    margin: auto;
+    width: 50%;
+}
+h1{
+    margin: 0 auto;
+}
+img{
+    height: 200px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
