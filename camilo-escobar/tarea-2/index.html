@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form with WCAG</title>
+  </head>
+  <body>
+    <main>
+      <h1>Job Aplication</h1>
+      <form>
+        <fieldset>
+          <legend>Full name</legend>
+          <label for="in-name">First Name:</label>
+          <input id="in-name" type="text" name="name" required />
+          <label for="in-surname">Second Name:</label>
+          <input id="in-surname" type="text" name="surname" required />
+        </fieldset>
+        <fieldset>
+          <legend>Contact information</legend>
+          <label for="in-email">Email:</label>
+          <input id="in-email" type="email" name="email" required />
+          <label for="in-phone">Phone number:</label>
+          <input
+            id="in-phone"
+            type="tel"
+            name="phone"
+            pattern="[0-9]+"
+            required
+          />
+        </fieldset>
+        <fieldset>
+          <legend>Career/Studio</legend>
+          <label for="in-career">Choose your background technology:</label
+          ><br />
+          <select id="in-career" name="career">
+            <option>Agile Delivery</option>
+            <option>Artificial Intelligence</option>
+            <option>Cloud Ops</option>
+            <option>Data & Analytics</option>
+            <option>Gaming</option>
+            <option>Product</option>
+            <option>Quality Engineering</option>
+            <option>Scalable Platforms</option>
+            <option>UI Engineering</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Resume</legend>
+          <label for="in-file">Attach your CV:</label><br />
+          <input id="in-file" type="file" name="file" required />
+        </fieldset>
+        <input type="submit" />
+        <input type="reset" />
+      </form>
+    </main>
+  </body>
+</html>
