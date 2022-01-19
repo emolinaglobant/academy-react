@@ -11,51 +11,51 @@ p {
 }
 
 .header p {
+  color: #97999a;
   font-family: "Cairo", sans-serif;
-  text-transform: uppercase;
   font-size: 0.5rem;
   margin-bottom: 1rem;
-  color: #97999a;
+  text-transform: uppercase;
 }
 .main_title {
-  font-family: "Shadows Into Light", cursive;
   color: #d77939;
+  font-family: "Shadows Into Light", cursive;
   font-size: 6rem;
-  margin: 0px;
   height: 7rem;
+  margin: 0px;
 }
 
 .backtitle {
-  color: #d6d7db;
   background-color: #9c6e58;
+  color: #d6d7db;
   margin: 0;
 }
 .title2 {
   color: #9c6e58;
-  margin: 0;
   font-size: 4rem;
   font-weight: 100;
+  margin: 0;
 }
 .colordogs {
   color: #d17c3c;
 }
 .blackbold_font {
   color: black;
-  font-weight: 700;
   font-family: "Cairo", sans-serif;
+  font-weight: 700;
   margin: 0;
 }
 
 .graybold_font {
   color: #97999a;
-  font-weight: 700;
   font-family: "Cairo", sans-serif;
+  font-weight: 700;
   margin: 0;
 }
 .thin-font {
   color: #797b7a;
-  font-weight: 100;
   font-size: 1.3rem;
+  font-weight: 100;
 }
 
 .whitebold-font {
@@ -76,9 +76,9 @@ p {
 }
 
 .img_dog {
-  width: 4rem;
   border-radius: 50%;
   border: 1px solid;
+  width: 4rem;
 }
 .figure {
   margin: 0;
