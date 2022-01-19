@@ -25,7 +25,7 @@ p {
     ". deck ."
     "article . suporting-overlines"
     "lead-article-line . suporting-overlines" 
-    "website-link footer footer";
+    "footer footer footer";
     height: 100vh;
     width: 70vh;
     margin: auto;
@@ -48,7 +48,7 @@ p {
     padding-left: 190px;
 }
 
-.grid-suporting-overlines div p:nth-child(3), .grid-suporting-overlines div p:nth-child(4), .grid-suporting-overlines div p:nth-child(7) {
+.grid-suporting-overlines section p:nth-child(3), .grid-suporting-overlines section p:nth-child(4), .grid-suporting-overlines section p:nth-child(7) {
     color: #f79f79;
     font-family: 'DM Serif Display', serif;
 }
@@ -60,7 +60,7 @@ p {
     margin-left: 30px;
 }
 
-.grid-article div p:nth-child(2), .grid-article div p:nth-child(3)  {
+.grid-article section p:nth-child(2), .grid-article section p:nth-child(3)  {
     color: #f79f79;
     font-family: 'DM Serif Display', serif;
 }
@@ -71,7 +71,7 @@ p {
     margin-left: 30px
 }
 
-.grid-lead-article-line div p:first-child, .grid-lead-article-line div p:nth-child(2), .grid-lead-article-line div p:nth-child(3) {
+.grid-lead-article-line section p:first-child, .grid-lead-article-line section p:nth-child(2), .grid-lead-article-line section p:nth-child(3) {
     color: #f79f79;
     font-family: 'DM Serif Display', serif;
     font-size: 20px;
@@ -87,18 +87,22 @@ p {
     text-align: right;
 }
 
-.grid-website-link {
+/* .grid-website-link {
     grid-area: website-link;
     margin-left: 30px;
-}
+} */
 
 .grid-footer {
     color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
     grid-area: footer;
-    margin-left: 200px;
+    grid-column: 1/4;
+    padding: 30px;
 }
 
-.grid-footer div p:first-child {
+.grid-footer section p:first-child {
     color: #f79f79;
     font-family: 'DM Serif Display', serif;
 }
