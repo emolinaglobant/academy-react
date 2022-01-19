@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form a11y</title>
+</head>
+<body>
+  <section class="text-inputs-section">
+    <form>
+      <fieldset>
+        <label for="name">nombre</label>
+        <input id="name" type="text" name="txtname" aria-describedby="name-text" required>
+        
+        <label for="last-name" class="required-field">Apellido</label>
+        <input id="last-name" type="text" name="txtlastname" aria-describedby="lastname-text" required>
+        
+        <label for="city">Ciudad</label>
+        <input id="city" type="text" name="txtcity" aria-describedby="city-help-text" required>
+        
+        <label for="address">Dirección</label>
+        <textarea id="address" name="txtaddress"></textarea>
+        
+        <label for="phone">Teléfono</label>
+        <input id="phone" type="tel" name="txtphone" aria-describedby="phone-text" aria-invalid="false">
+
+        <div class="select">
+          <label for="section1" class="visuallyhidden">Ciudad</label>
+          <select id="section1" name="selciudad">
+            <option label="Elija ciudad" disabled selected>First select</option>
+            <option label="Bogotá">Bogotá</option>
+            <option label="Medellín">Medellín</option>
+            <option label="Cali">Cali</option>
+          </select>
+          <div class="select__arrow"></div>
+        </div>
+        
+      </fieldset>
+    </section>
+
+      
+ 
+
+      <section class="radio-buttons-section">
+        <h3>Queremos conocer sus preferencias</h3>
+        <fieldset>
+          <legend>Cuál es el mejor momento para trabajar?</legend>
+          <div class="radio row">
+            <input type="radio" name="day" id="morning" value="morning"/>
+            <label for="morning">Mañana</label>
+
+            <input type="radio" name="day" id="afternoon" value="afternoon"/>
+            <label for="afternoon">Tarde</label>
+            
+            <input type="radio" name="day" id="night" value="night"/>
+            <label for="night">Noche</label>
+          </div>
+        </fieldset>
+        <div class="break"></div>
+      </section>
+
+      <section class="checkboxes-section">
+        <h3>Queremos ofrecerte lo mejor</h3>
+        <fieldset>
+          <legend>Salario deseado</legend>
+          <div class="checkbox column">
+            <input id="unmillon" type="checkbox" name="salariodeseado" value="1000000"/>
+            <label for="unmillon">1 millón</label>
+
+            <input id="dosmillones" type="checkbox" name="salariodeseado" value="2000000"/>
+            <label for="dosmillones">dos millones</label>
+
+            <input id="tresmillones" type="checkbox" name="salariodeseado" value="3000000"/>
+            <label for="tresmillones">tres millones</label>
+
+            <input id="cienmillones" type="checkbox" name="salariodeseado" value="100000000"/>
+            <label for="cienmillones">cien millones</label>
+
+          </div>
+        </fieldset>
+        <div class="break"></div>
+      </section>
+
+
+
+      <input type="submit" value="Submit">
+    </form>
+ 
+</body>
+</html>
