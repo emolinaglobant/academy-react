@@ -1,0 +1,119 @@
+body {
+  background-attachment: scroll;
+  background-image: url(https://i.pinimg.com/564x/53/9c/87/539c87d7bf15e8b8d9c1d80bec19cbb2.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 64% 100%;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.164);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container-titles {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-top: 2%;
+}
+
+.titles {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.titles span {
+  font-size: 27px;
+}
+
+.titles-f {
+  font-size: 22px;
+}
+
+.titles-f span {
+  font-size: 13px;
+}
+
+.title-main {
+  color: white;
+  font-size: 100px;
+  padding: 30px;
+  text-align: center;
+}
+
+.title-article {
+  color: white;
+  font-size: 20px;
+  padding-left: 21%;
+  padding-top: 60vh;
+}
+
+.title-article span {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.warning-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20%;
+}
+
+.warning {
+  background: #ffce27;
+  border-radius: 55%;
+  color: white;
+  padding: 35px;
+  right: 320px;
+  text-align: center;
+}
+
+.warning p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+}
+
+.warning label {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 23px;
+  text-transform: uppercase;
+}
+
+.warning p::first-letter {
+  text-transform: uppercase;
+}
+
+.footer {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 60px 250px 10px 250px;
+  text-align: center;
+}
+
+.footer span {
+  color: #ffce27;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: lowercase;
+}
+
+.footer section::first-letter {
+  text-transform: uppercase;
+}
+
+.footer p::first-letter {
+  text-transform: uppercase;
+}
+
+.image img {
+  height: 80px;
+  width: 50px;
+}
+
