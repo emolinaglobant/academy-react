@@ -1,142 +1,142 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{    
-    font-family: 'Hind Siliguri', sans-serif;
-    font-variant: small-caps;
-    text-align: center;
-    color: #ffffff;
-    background-image: url(assets/nirvana.jpg);
+body {
+  background-image: url(assets/nirvana.jpg);
+  color: #ffffff;
+  font-family: "Hind Siliguri", sans-serif;
+  font-variant: small-caps;
+  text-align: center;
 }
 
-.container{
-    background-color: rgba(255, 255, 255, .75);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 40px 0;
+.container {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 0;
+  width: 100%;
 }
 
-.container .magazine{
-    width: 720px;
-    height: 1014px;
-    position: relative;
-    background-image: url(assets/nirvana.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    border: #ffffff solid 10px;
+.container .magazine {
+  background-image: url(assets/nirvana.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: #ffffff solid 10px;
+  height: 1014px;
+  position: relative;
+  width: 720px;
 }
 
 .container .magazine .collector {
-    font-family: 'Bree Serif', serif;
-    font-size: 80px;
-    letter-spacing: 5px;
-    text-decoration: underline;
-    position: relative;
-    top: -30px;
+  font-family: "Bree Serif", serif;
+  font-size: 80px;
+  letter-spacing: 5px;
+  position: relative;
+  text-decoration: underline;
+  top: -30px;
 }
 
 .container .magazine img {
-    width: 655px;
-    position: relative;
-    top: -70px;
+  position: relative;
+  top: -70px;
+  width: 655px;
 }
 
 .container .magazine h1 {
-    font-size: 150px;
-    line-height: 85px;
-    margin-top: 350px;
+  font-size: 150px;
+  line-height: 85px;
+  margin-top: 350px;
 }
 
-.container .magazine .firstTxt{
-    font-size: 50px;
-    letter-spacing: 3px;
-    line-height: 50px;
+.container .magazine .firstTxt {
+  font-size: 50px;
+  letter-spacing: 3px;
+  line-height: 50px;
 }
 
-.container .magazine .whiteBar{
-    width: 300px;
-    height: 10px;
-    background-color: #ffffff;
-    margin: 0 auto;
+.container .magazine .whiteBar {
+  background-color: #ffffff;
+  height: 10px;
+  margin: 0 auto;
+  width: 300px;
 }
 
-.container .magazine h3{
-    margin-top: 25px;
-    font-size: 38px;
+.container .magazine h3 {
+  font-size: 38px;
+  margin-top: 25px;
 }
 
-.container .magazine h3::first-line{
-    line-height: 0px;
+.container .magazine h3::first-line {
+  line-height: 0px;
 }
 
 .container .magazine p {
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    line-height: 16px;
-    margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 16px;
+  margin-top: 20px;
 }
 
 .container .magazine h4 {
-    font-size: 18px;
-    line-height: 0;
-    margin-top: 30px;
+  font-size: 18px;
+  line-height: 0;
+  margin-top: 30px;
 }
 
 .container .magazine ul {
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0 auto;
+  width: 95%;
 }
 
 .container .magazine ul li {
-    font-size: 18px;
-    font-weight: 600;
-    letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
-.container .magazine ul li div {
-    width: 4px;
-    height: 4px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    margin-top: 3px;
+.container .magazine ul .dote {
+  background-color: #ffffff;
+  border-radius: 5px;
+  height: 4px;
+  margin-top: 3px;
+  width: 4px;
 }
 
 .container .magazine .info {
-    position: absolute;
-    top: 150px;
-    right: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-variant: normal;
+  font-family: "Roboto", sans-serif;
+  font-variant: normal;
+  position: absolute;
+  right: 30px;
+  top: 150px;
 }
 
 .container .magazine .info h4 {
-    font-size: 15px;
-    font-weight: 300;
-    letter-spacing: 0;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0;
 }
 
 .container .magazine .info p {
-    font-size: 10px;
-    font-weight: 100;
-    letter-spacing: 0;
-    text-align: right;
-    margin-top: 7px;
+  font-size: 10px;
+  font-weight: 100;
+  letter-spacing: 0;
+  margin-top: 7px;
+  text-align: right;
 }
 
-.container a{
-    font-size: 18px;
-    text-decoration: none;
-    margin-bottom: 20px;
-    color: #636363;
+.container a {
+  color: #636363;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-decoration: none;
 }
