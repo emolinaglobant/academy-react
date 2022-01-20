@@ -1,0 +1,56 @@
+body{
+    background-image: url("./img/back_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+}
+
+/*Section 1: General */
+main{
+    color: #fff;
+    margin: 0 auto;
+    max-width: 420px;
+}
+main h1{
+    margin: 30px 0;
+    text-align: center;
+}
+fieldset{
+    padding: 0 20px;
+}
+
+/*Section 2: Form */
+
+form{
+    background-image: url("./img/brackets-bg.jpg");
+    border-radius: 5px;
+    padding: 20px;
+}
+.form__information  input,
+.form__server select{
+    border-radius: 4px;
+    border-style: none;
+    height: 32px;
+    margin: 10px 0;
+    width: 100%;
+}
+.form__champions,
+.form__server {
+    margin: 20px 0;
+}
+.form__buttons{
+    display: flex;
+    justify-content: space-around; 
+}
+.form__buttons input{
+    margin-top: 20px;
+    width: 40%;
+    height: 32px;
+    border-radius: 4px;
+    border-style: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}

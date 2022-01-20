@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Survey form">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Form</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>SURVEY FORM</h1>
+        </header>
+        <form action="">
+            <section class="form__information">
+               <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name"> Name: </label><br>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="nickname"> Nickname: </label><br>
+                    <input type="text" id="nickname" name="nickname"><br>
+                    <label for="email">Email: </label><br>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="birthday">Birthday:</label><br>
+                    <input type="date" id="birthday" name="birthday"><br>
+               </fieldset>
+            </section>
+            <section class="form__server">
+                <fieldset>
+                    <legend>What server do you play on?</legend>
+                    <select name="servers" id="servers">
+                        <option value="no">------</option>
+                        <option value="br">Brazil</option>
+                        <option value="eune">Europe Nordic & East</option>
+                        <option value="euw">Europe West</option>
+                        <option value="lan">Latin America North</option>
+                        <option value="las">Latin America South</option>
+                        <option value="na">North America</option>
+                        <option value="ru">Russia</option>
+                    </select>
+                </fieldset>
+            </section>
+            <section class="form__role">
+                <fieldset>
+                    <legend>What is your main role:</legend>
+                    <input type="radio" name="role" id="topRole">
+                    <label for="topRole">Top</label><br>
+                    <input type="radio" name="role" id="jungleRole">
+                    <label for="jungleRole">Jungle</label><br>
+                    <input type="radio" name="role" id="midRole">
+                    <label for="midRole">Midline</label><br>
+                    <input type="radio" name="role" id="adcRole">
+                    <label for="adcRole">Adc</label><br>
+                    <input type="radio" name="role" id="suppRole">
+                    <label for="suppRole">Support</label><br>
+                </fieldset>
+            </section>
+            <section class="form__champions">
+                <fieldset>
+                    <legend>Select two champions you like: </legend>
+                    <input type="checkbox" name="champion1" id="champion1">
+                    <label for="champion1">Lux</label>
+                    <input type="checkbox" name="champion2" id="champion2">
+                    <label for="champion2">Yasuo</label>
+                    <input type="checkbox" name="champion3" id="champion3">
+                    <label for="champion3">Ezreal</label>
+                    <input type="checkbox" name="champion4" id="champion4">
+                    <label for="champion4">Miss Fortune</label>
+                    <input type="checkbox" name="champion5" id="champion5">
+                    <label for="champion5">Jhin</label>
+                    <input type="checkbox" name="champion6" id="champion6">
+                    <label for="champion6">Master Yi</label>
+                    <input type="checkbox" name="champion7" id="champion7">
+                    <label for="champion7">Thresh</label>
+                    <input type="checkbox" name="champion8" id="champion8">
+                    <label for="champion8">Lee sin</label>
+                    <input type="checkbox" name="champion9" id="champion9">
+                    <label for="champion9">Pantheon</label>
+                    <input type="checkbox" name="champion10" id="champion10">
+                    <label for="champion10">Alistar</label>
+                    <input type="checkbox" name="champion11" id="champion11">
+                    <label for="champion11">Viktor</label>
+                </fieldset>
+            </section>
+            <section class="form__buttons">
+                <input type="submit" value="Submit">
+                <input type="reset">
+            </section>
+        </form>
+    </main>
+</body>
+</html>
