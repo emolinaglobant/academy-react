@@ -9,8 +9,8 @@ html, body {
 .container{
     background-color: rgb(17,17,17);
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas: ". magazine .";
+    grid-template-columns: 1fr 2fr 1fr;
     height: 120vh;
     width: 100%;
 }
@@ -38,17 +38,17 @@ html, body {
 }
 
 .header-title{
+    color: rgb(7, 7, 7);
     font-size: 15px;
     font-weight: 800;
-    color: rgb(7, 7, 7);
-    text-shadow: red 0.1em 0.1em 0.2em;
     letter-spacing: 10px;
     line-height: .9;
     text-align: center;
+    text-shadow: red 0.1em 0.1em 0.2em;
 }
 .header-title span{
-    line-height: .1;
     letter-spacing: 2px;
+    line-height: .1;
 
 }
 
@@ -77,9 +77,9 @@ html, body {
 }
 
 .magazine-group{
+    align-content:flex-start;
     display: flex;
     flex-direction: column;
-    align-content:flex-start;
     font-size: 10px;
     text-align: right;
 
@@ -87,11 +87,11 @@ html, body {
 
 .main-title{
     color:white;
-    text-shadow: rgb(255, 238, 0) 0.1em 0.1em 0.2em;
     font-size: 50px;
     font-weight: 900;
     letter-spacing: -1px;
     line-height: 1.2;
+    text-shadow: rgb(255, 238, 0) 0.1em 0.1em 0.2em;
 }
 
 .subtitle{
@@ -105,40 +105,40 @@ html, body {
 
 .subtitle span{
     background-color: #ffffff8a;
-    box-shadow: 0 0 50px #ff0000c9;
     border-radius: 8px;
+    box-shadow: 0 0 50px #ff0000c9;
 }
 
 .ad{
-    display: flex;
+    align-content: right;
     color:white;
-    font-size: 22px;
-    text-shadow: rgb(255, 30, 0) 0.1em 0.1em 0.2em;
+    display: flex;
     flex-direction: column;
+    font-size: 22px;
     font-weight: bold;
     grid-area: ad;
-    align-content: right;
     justify-content: end;
     text-align: right;
+    text-shadow: rgb(255, 30, 0) 0.1em 0.1em 0.2em;
     
 }
 
 .ad img{
-    position: relative;
-    right: -140px;
     height: 60%;
     margin: .5rem;
+    position: relative;
+    right: -140px;
     width: 48%;
 }
 
 .codebar{
-    display: flex;
+    align-content: center;
     color:white;
-    font-size: 8px;
+    display: flex;
     flex-direction: column;
+    font-size: 8px;
     font-weight: bold;
     grid-area: code;
-    align-content: center;
     justify-content: end;
     text-align: left;
 }
