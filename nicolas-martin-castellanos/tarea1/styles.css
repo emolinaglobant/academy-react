@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    padding: 9px;
+    margin: 0px;
+}
+body{
+    background: url(magazine/imagenes/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.titulo{
+    color: red;
+    margin-top: -60px;
+    text-align: center;
+    font-size: 97px;
+    margin-bottom: -44px;
+}
+.titulo:hover{
+    color: black;
+}
+.grid{
+    color: black;
+    display: grid;
+    grid-gap: 38px;
+    margin: auto;
+    width: 98%;
+}
+.texto1{
+    font-size: 38px;
+    width: 45%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    text-align: left;
+    color: #C0392B;
+}
+.texto1:hover{
+    color: black;
+}
+.texto2{
+    font-size: 38px;
+    width: 45%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    text-align: left;
+    color: #C0392B;
+}
+.texto2:hover{
+    color: black;
+}
+.texto3{
+    font-size: 38px;
+    width: 45%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    text-align: left;
+    color: #C0392B;
+}
+.texto3:hover{
+    color: black;
+}
+.texto4{
+    font-size: 38px;
+    width: 45%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    text-align: left;
+    color: #C0392B;
+}
+.texto4:hover{
+    color: black;
+}
+.texto5{
+    font-size: 38px;
+    width: 45%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    text-align: left;
+    color: #C0392B;
+}
+.texto5:hover{
+    color: black;
+}
+.texto6 {
+    font-size: 61px;
+    width: 38%;
+    color: #16A085;
+    position: absolute;
+    top: 40%;
+    right: 0%;
+}
+.texto7 {
+    font-size: 127px;
+    width: 48%;
+    color: #16A085;
+    position: absolute;
+    top: 25%;
+    right: 0%;
+}
+.texto7:hover{
+    color: black;
+}
+.carro {   
+    position: absolute;
+    top: 36%;
+    right: 10%;
+}
+.codigo-de-barras{   
+    position: absolute;
+    top: 83%;
+    right: 1%;
+}
+    
+    
