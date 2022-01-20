@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea 2 - Form semantico</title>
+</head>
+<body>
+    <article id="container">
+        <header>
+            <h1>Reservación de juegos</h1>
+            <p>Para reservar un juego rellene la siguiente Información. Las opciones marcadas con "*" son obligatorias.</p>
+        </header>
+        <form action="" method="post">
+            <fieldset class="container__fieldset-info-personal">
+                <legend>Informacion personal</legend>
+                <label for="nombre">Nombre: <b>*</b> </label> <input type="text" name="nombre" placeholder="Escriba su nombre" required>
+                <label for="apellido">Apellido: <b>*</b> </label><input type="text" name="apellido" placeholder="Escriba su apellido" required>
+                <br>
+                <label for="documento">Tipo de documento: <b>*</b> </label><select name="documento" id="documento" required>
+                    <option value="0">Seleccionar..</option>
+                    <option value="cc">Cedula de ciudadania</option>
+                    <option value="ti">Tarjeta de identidad</option>
+                    <option value="ce">Cedula extranjera</option>
+                </select>
+                <label for="numero-documento">Numero de documento: <b>*</b> </label><input type="number" name="tipo-documento" placeholder="Escriba su numero de documento" required>
+                <br>
+                <label for="email">Email: <b>*</b> </label><input type="email" name="email" placeholder="Escriba su email" required>
+                <label for="direccion">Direccion: <b>*</b> </label><input type="text" name="direccion" placeholder="Escriba la direccion de entraga" required>
+                <label for="telefono">Telefono: </label><input type="tel" name="telefono" placeholder="Escriba su telefono de contacto">
+            </fieldset>
+            <fieldset class="container__fieldset-info-pedido">
+                <legend>Informacion del pedido</legend>
+                <fieldset class="fieldset-info-pedido__fieldset-juegos-disponibles">
+                    <legend>Juegos disponibles</legend>
+                    <input type="checkbox"><label for="halo">Halo Infinite</label>
+                    <input type="checkbox"><label for="b4b">Back 4 Blood</label>
+                    <input type="checkbox"><label for="fc6">Far Cry 6</label>
+                    <input type="checkbox"><label for="rev">Resident Evil Village</label>
+                    <input type="checkbox"><label for="itt">It Takes Two</label>
+                    <input type="checkbox"><label for="cyberpunk">Cyberpunk 2077</label>
+                    <input type="checkbox"><label for="spiderman">Marvel's Spider-Man</label>
+                    <input type="checkbox"><label for="forza5">Forza Horizon 5</label>
+                    <input type="checkbox"><label for="dbh">Detroit Become Human</label>
+                    <input type="checkbox"><label for="gta5">Grand Theft Auto V</label>
+                </fieldset>
+                <section class="fieldset-info-pedido__section-right">
+                    <label for="inicio">Fecha de entrega: <b>*</b> </label><input type="date" name="fecha-inicio" required>
+                </section>
+                <section class="fieldset-info-pedido__section-left">
+                    <label for="retorno">Fecha de retorno: <b>*</b> </label><input type="date" name="fecha-retorno" required>
+                </section>
+                <label for="notas">Notas y peticiones adicionales: </label><Textarea name="notas"></Textarea>
+            </fieldset>
+            <section class="form__section-buttons">
+                <input type="submit" value="Enviar">
+                <input type="button" value="Reestablecer">
+            </section>
+        </form>
+    </article>
+</body>
+</html>
