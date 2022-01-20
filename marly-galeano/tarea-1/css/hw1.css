@@ -40,8 +40,13 @@ section {
     align-items: center;
     justify-content: center;
     font-size: 5rem;
+    font-family: open sans-serif;
 }
 
+.text-right{
+    font-family: Impact;
+    font-weight: lighter;
+}
 .text-italic {
     font-style: italic;
 }
