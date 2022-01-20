@@ -1,0 +1,162 @@
+<form action="#">
+
+
+    
+    <header>
+         <h1>Pet adoption form</form></h1>
+    </header>
+
+    <Main">
+        <p>
+            In this form you will fill the information needed to complete the adoption process of a domestic animal. The data you will need is:
+        
+            <ol>
+            <li>Personal information</li>
+            <li>Household information</li>
+            <li>A personal reference and their information</li>
+            </ol>
+        </p>
+
+        <fieldset id="1">
+            <legend>Personal information</legend>
+
+                <label for="date">Date </label>
+
+                <input type="date" id=Date name="Date">
+                 
+
+                <section>
+            
+                    <label for="adopter's name">Name of the adopter:</label>
+                    <input type="text" id="adopter's name" name="name" required>
+                    &nbsp;
+
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" name="birthday"
+                    required>
+                    &nbsp;
+
+                    <label for="Identification number">Identification number</label>
+                    <input type="text" id="Identification number" name="Identification number"
+                    required>
+                    &nbsp;
+
+                    <p>Contact information</p>
+
+                    <label for="Contact number">Contact number</label>
+                    <input type="tel" id="Contact" name="Contact">
+                    &nbsp;
+                    &nbsp;
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"
+                    required>
+
+                </section>  
+
+                <section>
+                
+                    <p>Income information</p>
+
+                    <label for="Income">Total Income</label>
+                    <input type="text" id="Income" name="Income">
+
+                    <label for="Income available">Income available for the pet's needs</label>
+                    <input type="text" id="Income available" name="Income available">
+                </section>
+
+                <p>Pet records</p>
+
+                <label for="Previous pets">Have you had pets before? If yes, how many?</label>
+                    <select id="Previous pets">
+                        <optgroup id="Previous pets">
+                            <option value="No">No</option>
+                            <option value="Yes, 1">Yes, 1</option>  
+                            <option value="Yes, 2 or more">Yes, 2 or more</option>
+                        </optgroup>
+                    </select>
+                
+        </fieldset>
+        
+        <fieldset>
+            <legend>Household information</legend>
+
+                <label for="Household_members">How many household members are going to be living with the pet? Including the adopter</label>
+                    <input type="number" id="Household_number" name="Household_members"
+                    min="1" max="30">
+                <label for="Household_number">1 - 30</label>
+
+                <p>Do all the members agree to the adoption?</p>
+
+                    <input type="checkbox" id="Members_agreement_y" name="Members_agreement_y">
+                    <label for="Members_agreement_y">Yes</label>
+
+                    <input type="checkbox" id="Members_agreement_n" name="Members_agreement_n">
+                    <label for="Members_agreement_n">No</label>
+
+                    <label for="Not_agreed">If not, explain</label>
+                    <input type="text" id="Not_agreed" name="Not_agreed">
+                
+                <p> What is the household members age range?</p>
+                    <label for="Members_age_min">Youngest member</label>
+                    <input type="range" value="1" id="Members_age_min" name="Members_age_min" oninput="this.nextElementSibling.value=this.value"
+                    min="0" max="100">
+                    <output>1</output>
+                   
+
+                    <label for="Members_age_max">Eldest member</label>
+                    <input type="range" value="100" id="Members_age_max" name="Members_age_max" oninput="this.nextElementSibling.value = this.value""
+                    min="0" max="100">
+                    <output>100</output>
+                
+                <p>Does any of the members suffer from allergies?</p>
+
+                    <input type="checkbox" id="allergies_n" name="allergies_n">
+                    <label for="allergies_n">No</label>
+
+                    <input type="checkbox" id="allergies_Y" name="allergies_Y">
+                    <label for="allergies_Y">Yes</label>
+
+                    <label for="allergies_explain">If yes, explain</label>
+                    <input type="text" id="allergies_explain" name="allergies_explain">                    
+           
+        </fieldset>
+
+        <fieldset>
+            <legend>Personal reference information</legend>
+
+            <p>Name and birthday</p>
+
+                <label for="Reference_name">Name</label> 
+                <input type="text" id="Reference_name" name="Reference_name">
+
+                <label for="Reference_last_name">Last name</label>
+                <input type="text" id="Reference_last_name" name="Reference_last_name">
+
+                <label for="Reference_birthday">Birthday</label>
+                <input type="date" id="Reference_birthday" name="Reference_birthday">
+            
+            <p>Identification</p>
+                <label for="Refrence_Identification_number">Identification number</label>
+                <input type="text" id="Refrence_Identification_number" name="Refrence_Identification_number">
+
+            <p>Contact information</p>
+
+            <label for="Reference_contact_number">Telephone</label>
+            <input type="tel" id="Reference_contact_number" name="Reference_contact_number">
+
+            <label for="Reference_contact_email">Email</label>
+            <input type="email" id="Reference_contact_email" name="Reference_contact_email">
+             
+        
+        </fieldset>
+
+        &nbsp;
+
+        <footer>
+            <button>Submit</button>
+        </footer>
+
+        
+    </Main>
+   
+</form>
