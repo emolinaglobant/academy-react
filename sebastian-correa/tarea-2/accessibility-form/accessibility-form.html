@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A11Y Form</title>
+</head>
+<body>
+    <h3>Keep getting the latest news by subscribing</h3>
+
+    <form action="">
+        <p>Please complete this form. Required fields are followed by <abbr title="required">*</abbr></p>
+
+        <fieldset>
+            <legend>Personal information</legend>
+
+            <label for="name">Your name <strong><abbr title="required">*</abbr></strong></label>
+            <input type="text" name="name" id="name" required>
+            
+            <label for="last-name">Your last name <strong><abbr title="required">*</abbr></strong></label>
+            <input type="text" name="last-name" id="last-name" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact information</legend>
+
+            <label for="email">Your email <strong><abbr title="required">*</abbr></strong></label>
+            <input type="email" name="email" id="email" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>News preferences</legend>
+
+            <label for="interests">Which topics are you interested in?</label>
+            <input type="checkbox" name="interests" id="interests-ec">Economy
+            <input type="checkbox" name="interests" id="interests-pc">Politics
+            <input type="checkbox" name="interests" id="interests-sc">Science
+            <input type="checkbox" name="interests" id="interests-te">Tech
+            <input type="checkbox" name="interests" id="interests-wd">World
+        </fieldset>
+        
+        <fieldset>
+            <legend>Subscription type</legend>
+
+            <label for="sub-type">Select your subscription type <strong><abbr title="required">*</abbr></strong></label>
+            <input type="radio" name="sub-type" id="sub-type" required>Daily
+            <input type="radio" name="sub-type" id="sub-type-2">Weekly
+            <input type="radio" name="sub-type" id="sub-type-3">Monthly
+        </fieldset>
+
+        <fieldset>
+            <legend>Agreements</legend>
+
+            <label for="agreement">Have you read our terms and conditions? <strong><abbr title="required">*</abbr></strong></label>
+            <input type="checkbox" name="agreement" id="agreement" required>I have read and agree with the magazine's terms and conditions
+
+            <label for="policy">Have you read our data privacy policy? <strong><abbr title="required">*</abbr></strong></label>
+            <input type="checkbox" name="policy" id="policy" required>Yes, I have read and understand the policy
+        </fieldset>
+
+        <button type="submit">Subscribe</button>
+    </form>
+</body>
+</html>
