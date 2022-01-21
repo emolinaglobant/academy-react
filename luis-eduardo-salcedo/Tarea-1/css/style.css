@@ -13,7 +13,7 @@
     --aquamarine:#3ec4a3;
 }
 
-.grid-container{
+#grid-container{
     background-image: url(../img/karol-g.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -89,11 +89,11 @@ img{
     place-self: end center;
 }
 
-.grid-container__grid-item div{
+.grid-container__grid-item article{
     text-align: center;
 }
 
-.grid-container__grid-item div div{
+.grid-container__grid-item article section{
     width:200px;
 }
 
