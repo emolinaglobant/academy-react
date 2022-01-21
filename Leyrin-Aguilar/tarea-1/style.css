@@ -39,14 +39,14 @@ body {
 }
 .container_third {
   font-family: "Anton", sans-serif;
-  left: -160px;
+  left: -140px;
   position: relative;
-  top: 110px;
+  top: 100px;
 }
 .container_barcode {
   position: relative;
   right: -70px;
-  top: 30px;
+  top: 60px;
 }
 .container_barcode img {
   width: 100px;
@@ -54,7 +54,7 @@ body {
 .fourth_container {
   position: relative;
   right: -200px;
-  top: -150px;
+  top: -200px;
 }
 .first_txt {
   color: var(--second_tittle--color);
