@@ -1,0 +1,12 @@
+body{
+  background-color: blanchedalmond;  
+}
+.main_style{
+    text-align: center;
+}
+.form_style{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    
+}
