@@ -108,4 +108,5 @@ body {
 }
 .third_txt--three {
   font-family: "Oswald", sans-serif;
+  align-self: start;
 }

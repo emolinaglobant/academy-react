@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Homework 3</title>
+  </head>
+  <body>
+    <aside class="container_form">
+      <header class="container_header">
+        <figure>
+          <img class="image_header" src="assets/img/img.png" alt="Image" />
+        </figure>
+        <h1>PHOTOGRAPHY</h1>
+        <h3>CONTRACT FORM</h3>
+        <p>
+          The word Photography literally means 'drawing with light', which
+          derives from the Greek photo, meaning light and graph, meaning to
+          draw. Photography is the process of recording an image a photograph on
+          lightsensitive film or, in the case of digital photography, via a
+          digital electronic or magnetic memory.
+        </p>
+      </header>
+
+      <form class="section_form">
+        <section>
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="textfield"
+            id="name"
+            placeholder="Name"
+            required
+          />
+          <label for="last_name">Last Name</label>
+          <input
+            type="text"
+            name="textfield"
+            id="last_name"
+            placeholder="Last Name"
+            required
+          />
+        </section>
+        <section>
+          <label for="emailAddress">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="emailAddress"
+            placeholder="sophie@example.com"
+            required
+          />
+          <label for="phone_number">Phone</label>
+          <input
+            type="number"
+            name="phone"
+            id="phone_number"
+            max="9"
+            required
+          />
+        </section>
+        <section>
+          <label for="event_date">Event Date*</label>
+          <input
+            type="date"
+            name=""
+            id="event_date"
+            placeholder="Month"
+            required
+          />
+        </section>
+        <section>
+          <label for="main_ideas">Main Ideas</label>
+          <textarea
+            name="ideas"
+            id="main_ideas"
+            cols="50"
+            rows="10"
+            placeholder="write your main ideas"
+          ></textarea>
+        </section>
+
+        <fieldset>
+          <legend>Payment Method</legend>
+          <input
+            id="online_credit"
+            type="checkbox"
+            name="payment"
+            value="online_credit"
+          />
+          <label for="online_credit">Online Credit Card</label>
+          <input
+            id="check_card"
+            type="checkbox"
+            name="payment"
+            value="check_card"
+          />
+          <label for="check_card">Check</label>
+        </fieldset>
+        <section class="container_button">
+          <input class="button_send" type="submit" value="Send Request" />
+        </section>
+      </form>
+    </aside>
+  </body>
+</html>
