@@ -72,25 +72,29 @@ header img
     color: #fff;
     font-family: 'Open Sans', sans-serif;
     grid-column: span 4;
-    font-size: 12px;
     text-transform: uppercase;
 }
 
-.personName
+h1
 {
     font-size: 35px;
+}
+
+h2
+{
+    font-size: 13px;
 }
 
 .barCode
 {
     align-self: flex-end;
-    background-color: #fff;
-    bottom: 7px;
-    padding: 6px;
+    bottom: 4px;
     position: absolute;
 }
 
 .barCode img
 {
+    background-color: #fff;
+    padding: 6px;
     width: 100px;
 }
