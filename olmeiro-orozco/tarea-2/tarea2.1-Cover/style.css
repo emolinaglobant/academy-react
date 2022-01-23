@@ -5,8 +5,9 @@
 }
 
 :root {
-  --backg: #514d4d;
+  --backg: #110502;
   --titleColor: #fedc09;
+  --whiteLetter: #fff;
 }
 
 /* Desktop Styles New */
@@ -15,13 +16,13 @@
     background-color: var(--backg);
   }
 
-  main {
+  article {
     background-color: var(--backg);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
-    width: 960px;
+    width: 850px;
   }
 
   header {
@@ -46,13 +47,13 @@
   }
 
   .date-web :first-child {
-    color: #fff;
+    color: var(--whiteLetter);
     font-size: 17px;
     text-transform: uppercase;
   }
 
   .date-web :last-child {
-    color: #fff;
+    color: var(--whiteLetter);
     font-size: 16px;
     margin-right: 30px;
     text-transform: lowercase;
@@ -71,9 +72,15 @@
     text-align: center;
   }
 
+  .coverphoto ul li {
+    list-style-type: none;
+    color: var(--whiteLetter);
+    margin: 5px;
+  }
+
   .coverphoto__photo-text {
     font-size: 39px;
-    color: #fff;
+    color: var(--whiteLetter);
     left: 400px;
     position: absolute;
     text-transform: capitalize;
@@ -84,56 +91,46 @@
     color: var(--titleColor);
   }
 
-  .centrado {
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    top: 50%;
-  }
-
   img {
     display: block;
-  }
-
-  figcaption {
-    background-color: var(--backg);
-    color: #fff;
-    font: italic smaller sans-serif;
-    padding: 3px;
-    text-align: center;
   }
 
   .coverphoto__section {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     margin-left: 40px;
   }
 
-  .coverphoto__section section h2 {
-    color: #fff;
+  .coverphoto__section ul li {
+    margin-top: 20px
+  }
+
+  .coverphoto__section ul li h2 {
+    color: var(--whiteLetter);
     font-size: 32px;
     text-transform: uppercase;
   }
 
-  .coverphoto__section section p {
-    color: #fff;
-    font-size: 17px;
-    text-transform: lowercase;
-  }
-
-  .coverphoto__section section:nth-child(2) h2 {
+  .coverphoto__section ul li:nth-child(2) h2 {
     color: var(--titleColor);
     font-size: 32px;
     text-transform: uppercase;
   }
 
+  .coverphoto__section ul li p {
+    color: var(--whiteLetter);
+    font-size: 18px;
+    text-transform:lowercase;
+  }
+ 
+  .coverphoto__section ul li p::first-letter {
+    text-transform:capitalize;
+  }
+
   footer {
-    margin-top: 20px;
+    color: var(--whiteLetter);
+    margin-top: 30px;
     text-align: center;
     width: 100%;
   }
@@ -145,7 +142,7 @@
     background-color: var(--backg);
   }
 
-  main {
+  article {
     background-color: var(--backg);
     display: flex;
     flex-wrap: wrap;
@@ -176,13 +173,13 @@
   }
 
   .date-web :first-child {
-    color: #fff;
+    color: var(--whiteLetter);
     font-size: 17px;
     text-transform: uppercase;
   }
 
   .date-web :last-child {
-    color: #fff;
+    color: var(--whiteLetter);
     font-size: 16px;
     margin-right: 30px;
     text-transform: lowercase;
@@ -203,7 +200,7 @@
   }
 
   .coverphoto__photo-text {
-    color: #fff;
+    color: var(--whiteLetter);
     font-size: 39px;
     left: 640px;
     position: absolute;
@@ -215,24 +212,9 @@
     color: var(--titleColor);
   }
 
-  .centrado {
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-
   img {
     display: block;
     width: 100%;
-  }
-
-  figcaption {
-    background-color: var(--backg);
-    color: #fff;
-    font: italic smaller sans-serif;
-    padding: 3px;
-    text-align: center;
   }
 
   .coverphoto__section {
@@ -243,32 +225,37 @@
     margin-left: 40px;
   }
 
-  .coverphoto__section section {
-    margin-top: 15px;
-    width: 100%;
+  .coverphoto__section ul li {
+    list-style-type: none;
     text-align: center;
+    margin-top: 10px;
   }
 
-  .coverphoto__section section h2 {
-    color: #fff;
+  .coverphoto__section ul li h2 {
+    color: var(--whiteLetter);
     font-size: 32px;
     text-transform: uppercase;
   }
 
-  .coverphoto__section section p {
-    color: #fff;
-    font-size: 17px;
-    text-transform: lowercase;
-  }
-
-  .coverphoto__section section:nth-child(2) h2 {
+  .coverphoto__section ul li:nth-child(2) h2 {
     color: var(--titleColor);
     font-size: 32px;
     text-transform: uppercase;
   }
 
+  .coverphoto__section ul li p {
+    color: var(--whiteLetter);
+    font-size: 18px;
+    text-transform: lowercase;
+  }
+
+  .coverphoto__section ul li p::first-letter {
+    text-transform:capitalize;
+  }
+
   footer {
-    margin-top: 20px;
+    color: var(--whiteLetter);
+    margin-top: 15px;
     text-align: center;
     width: 100%;
   }
@@ -280,7 +267,7 @@
     background-color: var(--backg);
   }
 
-  main {
+  article {
     background-color: var(--backg);
     display: flex;
     flex-wrap: wrap;
@@ -311,13 +298,13 @@
   }
 
   .date-web :first-child {
-    color: #fff;
+    color: var(--whiteLetter);
     font-size: 17px;
     text-transform: uppercase;
   }
 
   .date-web :last-child {
-    color: #fff;
+    color: var(--whiteLetter);
     font-size: 16px;
     margin-right: 30px;
     text-transform: lowercase;
@@ -338,7 +325,7 @@
   }
 
   .coverphoto__photo-text {
-    color: #fff;
+    color: var(--whiteLetter);
     font-size: 39px;
     left: 640px;
     position: absolute;
@@ -350,24 +337,9 @@
     color: var(--titleColor);
   }
 
-  .centrado {
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-
   img {
     display: block;
     width: 100%;
-  }
-
-  figcaption {
-    background-color: var(--backg);
-    color: #fff;
-    font: italic smaller sans-serif;
-    padding: 3px;
-    text-align: center;
   }
 
   .coverphoto__section {
@@ -378,32 +350,37 @@
     margin-left: 40px;
   }
 
-  .coverphoto__section section {
-    margin-top: 15px;
+  .coverphoto__section ul li {
+    list-style-type: none;
     text-align: center;
-    width: 100%;
+    margin-top: 10px;
   }
 
-  .coverphoto__section section h2 {
-    color: #fff;
+  .coverphoto__section ul li h2 {
+    color: var(--whiteLetter);
     font-size: 32px;
     text-transform: uppercase;
   }
 
-  .coverphoto__section section p {
-    color: #fff;
-    font-size: 17px;
-    text-transform: lowercase;
-  }
-
-  .coverphoto__section section:nth-child(2) h2 {
+  .coverphoto__section ul li:nth-child(2) h2 {
     color: var(--titleColor);
     font-size: 32px;
     text-transform: uppercase;
   }
 
+  .coverphoto__section ul li p {
+    color: var(--whiteLetter);
+    font-size: 18px;
+    text-transform: lowercase;
+  }
+
+  .coverphoto__section ul li p::first-letter {
+    text-transform:capitalize;
+  }
+
   footer {
-    margin-top: 20px;
+    color: var(--whiteLetter);
+    margin-top: 15px;
     text-align: center;
     width: 100%;
   }
