@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-main: rgb(242, 252, 218);
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.navbar,
+.footer {
+  align-items: center;
+  background-color: red;
+  color: white;
+  display: flex;
+  font-weight: bolder;
+  height: 50px;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.footer {
+  font-size: 20px;
+}
+.main {
+  display: flex;
+  height: calc(100vh - 100px);
+  justify-content: center;
+  padding: 20px;
+}
+
+.form-container {
+  flex-grow: 4;
+  padding: 30px;
+}
+
+.form-container form {
+  background-color: var(--color-main);
+  height: 100%;
+  padding: 20px;
+}
+
+.inner-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs-section div,
+.inputs-section-2 div {
+  margin: 10px 20px;
+}
+
+.inputs-section div input,
+.inputs-section div select {
+  height: 20px;
+  width: 100%;
+}
+
+.main-form {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form-group {
+  align-items: center;
+  display: flex;
+}
+
+#required-message {
+  color: rgb(80, 12, 12);
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(255, 1, 1, 0.5);
+}
+.button {
+  align-self: center;
+  background-color: rgba(128, 128, 128, 0.5);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  height: 50px;
+  margin: 30px;
+  width: 200px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
