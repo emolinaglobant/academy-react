@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin: 20px 100px;
+}
+
+form {
+    color: aliceblue;
+    background-color: #04274e;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    padding: 40px;
+}
+
+.titleForm {
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.containerLeft input {
+    border: none;
+    background-color: rgb(255, 255, 255);
+    height: 30px;
+    margin: 14px 0px;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.containerLeft label {
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.boxPersonalData {
+    display: grid;
+    grid-template-columns: 1fr 1fr 5fr;
+    gap: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.boxPersonalData input {
+    text-align: center;
+}
+
+.boxPersonalData .selectFile {
+    background: transparent;
+    width: 100%;
+}
+
+/* section of right */
+
+.containerRight {
+    padding: 80px 0px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.containerRight label {
+    font-size: 1.2rem;
+}
+
+.containerRight input {
+    margin: 10px;
+}
+
+.containerRight .btnSubmit {
+    color: aliceblue;
+    border: none;
+    background-color: rgb(5, 207, 39);
+    border-radius: 20px;
+    box-shadow: 0 8px rgba(117, 116, 116, 0.555);
+    font-size: 1.2rem;
+    margin-top: 60px;
+    padding: 10px 100px;
+    text-transform: uppercase;
+}
+
+.containerRight .btnSubmit:hover {
+    cursor: pointer;
+}
+
+.containerRight .btnSubmit:active {
+    box-shadow: 0 5px rgb(110, 110, 110);
+    transform: translateY(4px);
+}
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        padding: 10px;
+        margin: 20px 0px;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 30px;
+    }
+    
+    .titleForm {
+        font-size: 1rem;
+    }
+
+    .containerLeft label {
+        font-size: 0.900rem;
+    }
+    
+    .boxPersonalData {
+        display: grid;
+        grid-template-columns: 1fr 1fr 4fr;
+        gap: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    /* section of right */
+    
+    .containerRight {
+        padding: 0px;
+    }
+    
+    .containerRight label {
+        font-size: 1rem;
+    }
+    
+    .containerRight input {
+        margin: 4px;
+    }
+}
