@@ -15,7 +15,7 @@
             <form>
                 <fieldset>
                     <legend>Datos Personales</legend>
-                    <label for="">Tipo de documento:</label>
+                    <label for="tipo_documento">Tipo de documento:</label>
                     <select name="Tipo de Documento" id="tipo_documento" required>
                         <option value="">CEDULA DE CIUDADANIA</option>
                         <option value="">CEDULA DE EXTRANJERIA</option>
@@ -24,22 +24,22 @@
                         <option value="">REGISTRO CIVIL</option>
                         <option value="">TARJETA DE IDENTIDAD</option>
                     </select>
-                    <label for="">Número de documento: </label>
+                    <label for="dni">Número de documento: </label>
                     <input type="number" id="dni" placeholder="Número de documento" required>
                     <br>
-                    <label for="">Nombre: </label>
+                    <label for="nombre">Nombre: </label>
                     <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
-                    <label for="">Apellido: </label>
+                    <label for="apellido">Apellido: </label>
                     <input type="text" id="apellido" placeholder="Ingrese su Apellido" required>
                     <br>
-                    <label for="">Nivel de Escolaridad: </label>
+                    <label>Nivel de Escolaridad: </label>
                     <input type="checkbox">Primaria
                     <input type="checkbox">Secundaria
                     <input type="checkbox">Tecnologica
                     <input type="checkbox">Universitaria
                     <input type="checkbox">Sin escolaridad
                     <br>
-                    <label for="">Genero: </label>
+                    <label>Genero: </label>
                     <input type="radio" id="genero">Masculino
                     <input type="radio" id="genero">Femenino
                     <input type="radio" id="genero">Otro
@@ -47,24 +47,24 @@
                 </fieldset>
                 <fieldset>
                     <legend>Datos de Conexión</legend>
-                    <label for="">Usuario: </label>
+                    <label for="usuario">Usuario: </label>
                     <input type="text" id="usuario" placeholder="Ingrese su Usuario" required>
-                    <label for="">Contraseña: </label>
+                    <label for="contraseña">Contraseña: </label>
                     <input type="password" id="contraseña" placeholder="Ingrese su Contraseña" required>
                     <br>
-                    <label for="">Email: </label>
+                    <label for="email">Email: </label>
                     <input type="email" id="email" placeholder="Ingrese su Email" required>
-                    <label for="">Fecha de Nacimiento: </label>
+                    <label>Fecha de Nacimiento: </label>
                     <input type="date" required>
                     <br>
-                    <label for="">Elegir una foto: </label>
+                    <label>Elegir una foto: </label>
                     <input type="file">
                     <br>
                     <input type="checkbox">
-                    <label for="">Deseo recibir novedades por email. </label>
+                    <label>Deseo recibir novedades por email. </label>
                     <br>
                     <input type="checkbox" required>
-                    <label for="">Acepto Terminos y condiciones.</label>
+                    <label>Acepto Terminos y condiciones.</label>
                     <br>
                 </fieldset>
                 <input type="submit" value="Enviar">
