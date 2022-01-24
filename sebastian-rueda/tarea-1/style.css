@@ -12,7 +12,7 @@
 {
     background-image: url(../tarea-1/photo.jpg);
     background-size: cover;
-    border: 10px solid #ed1c24;
+    border: 12px solid #ed1c24;
     height: 100vh;
     margin: auto;
     width: 440px;
@@ -36,15 +36,6 @@ header
 header img
 {
     width: 250px;
-}
-
-.magazineLogo
-{
-    color: #ed1c24;
-    font-family: 'Bodoni Moda', serif;
-    font-size: 5rem;
-    font-weight: normal;
-    text-transform: uppercase;
 }
 
 .dateAndIssue
