@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=PT+Sans:wght@400;700&display=swap');
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.cover
+{
+    background-image: url(../tarea-1/photo.jpg);
+    background-size: cover;
+    border: 12px solid #ed1c24;
+    height: 100vh;
+    margin: auto;
+    width: 440px;
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 100%;
+    padding: 0 15px;
+}
+
+header
+{
+    grid-column: span 4;
+    place-self: center;
+}
+
+header img
+{
+    width: 250px;
+}
+
+.dateAndIssue
+{
+    color: #fff;
+    display: block;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 8px;
+    text-transform: uppercase;
+}
+
+.magazineWord
+{
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 8px;
+    grid-column: 4;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.coverTitle
+{
+    align-self: flex-end;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    grid-column: span 4;
+    text-transform: uppercase;
+}
+
+h1
+{
+    font-size: 35px;
+}
+
+h2
+{
+    font-size: 13px;
+}
+
+.barCode
+{
+    bottom: 4px;
+    position: absolute;
+}
+
+.barCode img
+{
+    background-color: #fff;
+    padding: 6px;
+    width: 100px;
+}
