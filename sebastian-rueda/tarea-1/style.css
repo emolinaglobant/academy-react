@@ -78,7 +78,6 @@ h2
 
 .barCode
 {
-    align-self: flex-end;
     bottom: 4px;
     position: absolute;
 }
