@@ -20,25 +20,25 @@ form {
 }
 
 .containerLeft input {
-    width: 100%;
+    border: none;
+    background-color: rgb(255, 255, 255);
     height: 30px;
     margin: 14px 0px;
     padding-left: 10px;
-    border: none;
-    background-color: rgb(255, 255, 255);
+    width: 100%;
 }
 
 .containerLeft label {
-    text-transform: capitalize;
     font-size: 1.2rem;
+    text-transform: capitalize;
 }
 
 .boxPersonalData {
     display: grid;
     grid-template-columns: 1fr 1fr 5fr;
     gap: 40px;
-    width: 100%;
     text-align: center;
+    width: 100%;
 }
 
 .boxPersonalData input {
@@ -46,8 +46,8 @@ form {
 }
 
 .boxPersonalData .selectFile {
-    width: 100%;
     background: transparent;
+    width: 100%;
 }
 
 /* section of right */
@@ -112,8 +112,8 @@ form {
         display: grid;
         grid-template-columns: 1fr 1fr 4fr;
         gap: 20px;
-        width: 100%;
         text-align: center;
+        width: 100%;
     }
     
     /* section of right */

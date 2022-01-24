@@ -18,12 +18,12 @@ body {
 }
 
 .backgraundImg {
-    position: relative;
-    top: 0px;
-    right: 150px;
-    height: 120vh;
-    width: 120%;
     background-image: url(./images/elonmosk.png);
+    height: 120vh;
+    position: relative;
+    right: 150px;
+    top: 0px;
+    width: 120%;
 }
 
 .containerHeader {
@@ -34,49 +34,49 @@ body {
 /* section left */
 
 .sectionBrandName {
+    margin-left: 80px;
     position: absolute;
     top: 0px;
-    margin-left: 80px;
     text-transform: uppercase;
 }
 
 .sectionBrandName h2 {
     font-size: 8rem;
-    letter-spacing: 14px;
     font-family: 'Playfair Display', serif;
+    letter-spacing: 14px;
 }
 
 .sectionBrandName p:nth-child(2) {
-    position: absolute;
-    font-size: 1.5rem;
-    top: 80px;
-    left: 220px;
     color: #ffffff;
+    font-size: 1.5rem;
+    left: 220px;
+    position: absolute;
+    top: 80px;
 }
 
 .sectionBrandName p:nth-child(3) {
-    font-size: 0.660rem;
     color: #ffffff;
+    font-size: 0.660rem;
 }
 
 /* section rigth */
 
 .hexagon {
-    position: absolute;
-    top: 32px;
-    right: 295px;
-    width: 122px;
     height: 140px;
+    position: absolute;
+    right: 295px;
+    top: 32px;
     transform: rotate(90deg);
+    width: 122px;
 }
 
 .sectionSlogan {
+    color: #ffffff;
     position: absolute;
-    top: 40px;
     right: 280px;
+    top: 40px;
     text-align: center;
     text-transform: uppercase;
-    color: #ffffff;
     z-index: 1;
 }
 
@@ -102,35 +102,35 @@ body {
 }
 
 .textSlogan {
-    width: 150px;
     font-size: 0.900rem;
     font-family: Arial, Helvetica, sans-serif;
+    width: 150px;
 }
 
 /* section information o articles */
 
 .containerArticles {
-    text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
 }
 
 .informationLeft {
+    padding: 40px;
     position: absolute;
     top: 180px;
-    padding: 40px;
     text-align: center;
 }
 
 .informationLeft h3 {
+    background-color: #000000;
+    color: #ffffff;
     display: inline-block;
     font-size: 0.600rem;
-    color: #ffffff;
-    background-color: #000000;
 }
 
 .informationLeft p {
-    width: 175px;
     color: #ffffff;
+    width: 175px;
 }
 
 .informationLeft p:nth-child(3) {
@@ -138,26 +138,26 @@ body {
 }
 
 .informationLeft hr {
-    margin-left: 50px;
-    height: 6px;
-    width: 40%;
     background-color: rgb(255, 255, 255);
+    height: 6px;
+    margin-left: 50px;
+    width: 40%;
 }
 
 /* information two */
 
 .informationRight {
-    position: absolute;
-    top: 300px;
-    right: 230px;
-    padding: 20px;
-    text-align: right;
     color: #ffffff;
+    padding: 20px;
+    position: absolute;
+    right: 230px;
+    top: 300px;
+    text-align: right;
 }
 
 .informationRight h3 {
-    width: 120px;
     font-size: 1.2rem;
+    width: 120px;
 }
 
 .informationRight p {
@@ -165,30 +165,30 @@ body {
 }
 
 .informationRight hr {
+    background-color: rgb(0, 0, 0);
+    border: none;
+    height: 21vh;
+    left: 138px;
     position: relative;
     top: -134px;
-    left: 138px;
-    height: 21vh;
     width: 10%;
-    border: none;
-    background-color: rgb(0, 0, 0);
 }
 
 /* main title section */
 
 .mainTitleSection {
+    color: #f5f0f0;
+    font-family: 'Playfair Display', serif;
+    left: 400px;
     position: absolute;
     top: 380px;
-    left: 400px;
     text-transform: uppercase;
-    font-family: 'Playfair Display', serif;
-    color: #f5f0f0;
 }
 
 .mainTitleSection h1 {
-    text-align: center;
     font-size: 4rem;
     line-height: 84px;
+    text-align: center;
 }
 
 .mainTitleSection h1 span {
@@ -196,10 +196,10 @@ body {
 }
 
 .mainTitleSection p {
-    width: 300px;
     font-size: 1.6rem;
     margin-left: 80px;
     text-align: center;
+    width: 300px;
 }
 
 /* footer */
@@ -210,21 +210,21 @@ body {
 }
 
 .codeMagazine {
-    position: absolute;
     bottom: -60px;
-    left: 200px;
     font-size: 0.800rem;
+    left: 200px;
+    position: absolute;
     transform: rotate(90deg);
 }
 
 .textFooter {
-    position: absolute;
     bottom: -120px;
-    right: 240px;
     font-size: 1.4rem;
-    text-align: right;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    right: 240px;
+    text-align: right;
 }
 
 .textFooter span {
@@ -236,14 +236,14 @@ body {
 @media only screen and (min-width: 1440px) {
 
     .backgraundImg {
-        top: 0px;
-        right: 190px;
-        height: 120vh;
-        width: 119%;
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-size: cover;
         background-image: url(./images/elonmosk.png);
+        height: 120vh;
+        top: 0px;
+        right: 190px;
+        width: 119%;
     }
 
     .sectionBrandName h2 {
@@ -252,10 +252,10 @@ body {
     }
 
     .sectionBrandName p:nth-child(2) {
-        position: absolute;
         font-size: 1.6rem;
-        top: 100px;
         left: 280px;
+        position: absolute;
+        top: 100px;
     }
 
     .sectionBrandName p:nth-child(3) {
@@ -265,11 +265,11 @@ body {
     /* section rigth */
 
     .hexagon {
-        position: absolute;
-        top: 40px;
-        right: 306px;
-        width: 160px;
         height: 200px;
+        position: absolute;
+        right: 306px;
+        top: 40px;
+        width: 160px;
     }
 
     .sectionSlogan {
@@ -294,8 +294,8 @@ body {
     }
 
     .textSlogan {
-        width: 210px;
         font-size: 1.5rem;
+        width: 210px;
     }
 
     /* section information o articles */
@@ -310,8 +310,8 @@ body {
     }
 
     .informationLeft p {
-        width: 300px;
         font-size: 1.6rem;
+        width: 300px;
     }
 
     .informationLeft hr {
@@ -322,43 +322,43 @@ body {
 
     .informationRight {
         position: absolute;
-        top: 500px;
         right: 230px;
+        top: 500px;
     }
 
     .informationRight h3 {
-        width: 180px;
         font-size: 1.5rem;
+        width: 180px;
     }
 
     .informationRight p {
-        width: 200px;
         font-size: 1.4rem;
+        width: 200px;
     }
 
     .informationRight hr {
+        height: 17vh;
+        left: 206px;
         position: relative;
         top: -156px;
-        left: 206px;
-        height: 17vh;
         width: 12%;
     }
 
     /* main title section */
 
     .mainTitleSection {
+        color: #f5f0f0;
+        font-family: 'Playfair Display', serif;
+        left: 400px;
         position: absolute;
         top: 380px;
-        left: 400px;
         text-transform: uppercase;
-        font-family: 'Playfair Display', serif;
-        color: #f5f0f0;
     }
 
     .mainTitleSection h1 {
-        text-align: center;
         font-size: 4rem;
         line-height: 84px;
+        text-align: center;
     }
 
     .mainTitleSection h1 span {
@@ -366,16 +366,16 @@ body {
     }
 
     .mainTitleSection p {
-        width: 300px;
         font-size: 1.6rem;
         margin-left: 80px;
         text-align: center;
+        width: 300px;
     }
 
     .mainTitleSection {
+        left: 500px;
         position: absolute;
         top: 620px;
-        left: 500px;
     }
 }
 
@@ -388,15 +388,15 @@ body {
     }
 
     .backgraundImg {
-        position: relative;
-        top: 0px;
-        right: 0px;
-        height: 80vh;
-        width: 100%;
         background-size: cover;
         background-repeat:no-repeat;
         background-position: center center;
         background-image: url(./images/elonmosk.png);
+        height: 80vh;
+        position: relative;
+        right: 0px;
+        top: 0px;
+        width: 100%;
     }
 
     .backgraundImg img{
@@ -404,8 +404,8 @@ body {
       }
 
     .sectionBrandName {
-        top: 20px;
         margin-left: 20px;
+        top: 20px;
     }
 
     .sectionBrandName h2 {
@@ -415,8 +415,8 @@ body {
 
     .sectionBrandName p:nth-child(2) {
         font-size: 0.800rem;
-        top: 40px;
         left: 134px;
+        top: 40px;
     }
 
     .sectionBrandName p:nth-child(3) {
@@ -426,17 +426,17 @@ body {
     /* section rigth */
 
     .hexagon {
-        position: absolute;
-        top: 30px;
-        right: 40px;
-        width: 80px;
         height: 100px;
+        position: absolute;
+        right: 40px;
+        top: 30px;
+        width: 80px;
     }
 
     .sectionSlogan {
         position: absolute;
-        top: 42px;
         right: 20px;
+        top: 42px;
     }
 
     .sectionSlogan h3 {
@@ -456,16 +456,16 @@ body {
     }
 
     .textSlogan {
-        width: 120px;
         font-size: 0.800rem;
+        width: 120px;
     }
 
     /* section information o articles */
 
     .informationLeft {
+        left: 0px;
         position: absolute;
         top: 120px;
-        left: 0px;
     }
 
     .informationLeft h3 {
@@ -473,8 +473,8 @@ body {
     }
 
     .informationLeft p {
-        width: 100px;
         font-size: 0.600rem;
+        width: 100px;
     }
 
     .informationLeft hr {
@@ -485,39 +485,39 @@ body {
 
     .informationRight {
         position: absolute;
-        top: 280px;
         right: 20px;
+        top: 280px;
     }
 
     .informationRight h3 {
-        width: 80px;
         font-size: 0.800rem;
+        width: 80px;
     }
 
     .informationRight p {
-        width: 100px;
         font-size: 0.700rem;
+        width: 100px;
     }
 
     .informationRight hr {
+        height: 10vh;
+        left: 112px;
         position: relative;
         top: -84px;
-        left: 112px;
-        height: 10vh;
         width: 8%;
     }
 
     /* main title section */
 
     .mainTitleSection {
-        top: 400px;
         left: 80px;
+        top: 400px;
     }
 
     .mainTitleSection h1 {
-        text-align: center;
         font-size: 2rem;
         line-height: 44px;
+        text-align: center;
     }
 
     .mainTitleSection h1 span {
@@ -525,26 +525,26 @@ body {
     }
 
     .mainTitleSection p {
-        width: 200px;
         font-size: 0.800rem;
         margin-left: 16px;
+        width: 200px;
     }
 
     /* footer */
 
     .codeMagazine {
-        position: absolute;
         bottom: 280px;
-        left: 0px;
         font-size: 0.800rem;
+        left: 0px;
+        position: absolute;
         transform: rotate(90deg);
     }
 
     .textFooter {
-        position: absolute;
         bottom: 220px;
-        right: 36px;
         font-size: 0.900rem;
+        position: absolute;
+        right: 36px;
     }
 
 }
