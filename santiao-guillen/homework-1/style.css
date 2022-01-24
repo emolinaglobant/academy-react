@@ -25,6 +25,11 @@ body {
     top: 0px;
     width: 120%;
     background-image: url(./images/elonmosk.png);
+    height: 120vh;
+    position: relative;
+    right: 150px;
+    top: 0px;
+    width: 120%;
 }
 
 .containerHeader {
