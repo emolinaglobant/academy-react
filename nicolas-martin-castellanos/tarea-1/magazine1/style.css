@@ -24,7 +24,6 @@ body{
     background-color: black;
     border: 2px solid white;
     box-shadow: 0px 0px 8px white inset;
-
 }
 .jordan img{
     width: 100%;
@@ -35,10 +34,10 @@ h1, h2, h3, h4, h5, h6, p{
 }
 h1{
     color: red;
-    z-index: -1;
+    z-index: 2;
     font-family: 'Antonio', sans-serif;
     font-size: 170px;
-    left: 21px;
+    left: 694px;
     letter-spacing: 6px;
     transform: scaleY(1.5);
     top: 1%;
@@ -92,13 +91,6 @@ h1{
     left: 360px;
     top: 92%;
 }
-.inf h4{
-    color: white;
-    font-family: 'Antonio', sans-serif;
-    font-size: 9px;
-    left: 467px;
-    top: 26%;
-}
 .inf1 h4{
     color: white;
     font-family: 'Antonio', sans-serif;
@@ -128,23 +120,11 @@ h1{
     left: 477px;
     top: 32%;
 }
-.line1{
-    color: red;
-    width: 40px;
-    background-color: red;
-    position: absolute;
-    top: 824px;
-    left: 73%;
-    height: 1%;
-    font-size: 1px;
-}
-.line2{
-    color: red;
-    width: 40px;
-    background-color: red;
-    position: absolute;
-    top: 872px;
-    left: 73%;
-    height: 1%;
-    font-size: 1px;
+h4{
+    color: white;
+    font-family: 'Antonio', sans-serif;
+    font-size: 9px;
+    left: 1142px;
+    top: 26%;
+    z-index: 2;
 }
