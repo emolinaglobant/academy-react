@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Test de personalidad</h1>
+        <form>
+            <label for="nombre">Nombre completo: <input type="text" name="nombre" placeholder="ej: Pepito Perez" required></label>
+            <label for="animo">Selecciona tu estado de ánimo hoy:
+                <select name="animo" id="animo" required>
+                    <option value="" disabled selected>-</option>
+                    <optgroup label="Triste">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </optgroup>
+                    <optgroup label="Serio">
+                        <option value="3">3</option>
+                    </optgroup>
+                    <optgroup label="Feliz">
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </optgroup>
+                </select>
+            </label>
+            <fieldset>
+                <legend>Selecciona tu género</legend>
+                <label for="masculino"><input type="radio" name="genero" value="masculino" id="masculino">Masculino</label><br>
+                <label for="femenino"><input type="radio" name="genero" value="femenino" id="femenino">Femenino</label>
+            </fieldset>
+            <label for="color">Selecciona tu color favorito: <input type="color" name="color" id="color"> </label>
+            <fieldset>
+                <legend>Con base en la siguiente imagen, selecciona cuales son similares</legend>
+                <figure>
+                    <img src="Rorschach.jpg" alt="Imagen de test de Rorschach">
+                </figure>
+                <label for="conejo"><input type="checkbox" name="rorschach" id="conejo" value="conejo">Conejo</label><br>
+                <label for="murcielago"><input type="checkbox" name="rorschach" id="murcielago" value="murcielago">Murcielago</label><br>
+                <label for="perro"><input type="checkbox" name="rorschach" id="perro" value="perro">Perro</label><br>
+                <label for="vampiro"><input type="checkbox" name="rorschach" id="vampiro" value="vampiro">Vampiro</label>
+            </fieldset>
+            <input type="submit" value="Enviar">
+    </main>
+</div>
+</body>
+</html>

@@ -27,24 +27,28 @@ html, body {
     flex-direction: column;
     padding: 2% 5%;
 }
-.magazine__header span{ 
+
+.magazine__header > * {
+    line-height: 90%;
+    margin: 0 auto;
+    width: 80%; 
+}
+
+.magazine__header >h2{ 
     color: rgb(76, 76, 76);
     font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 4px;
-    line-height: 90%;
-    margin: auto;
-    width: 80%; 
 }
 
-.magazine__header span:nth-child(2){
+.magazine__header >h1{
     color: #37beba;
     font-size: 5.5rem;
     letter-spacing: 1px;
     text-align: center;
 }
 
-.magazine__header span:last-child{
+.magazine__header > h2:last-child{
     text-align: right;
 }
 
@@ -69,6 +73,8 @@ html, body {
     flex-direction: column;
     grid-area: ideas;
     justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
 }
 
 .magazine__idea{
@@ -79,54 +85,71 @@ html, body {
 
 }
 
-.idea__title{
+.magazine__idea > hr{
+    background-color: #37beba;
+    border: none;
+    height: .3rem;
+    margin: .25rem 0 .3rem auto;
+    width: 40%;
+}
+
+.magazine__idea > h3{
     font-size: 1.4rem;
     font-weight: 700;
     letter-spacing: -1px;
     line-height: .9;
+    margin: 0;
+    padding:0;
+}
+.magazine__idea > p{
+    margin: 0;
+    padding: 0;
 }
 
-.line-breaker{
-    background-color: #37beba;
-    height: .3rem;
-    margin-bottom: .3rem;
-    margin-left: auto;
-    margin-top: .25rem;
-    width: 40%;
+.magazine__main{
+    grid-area: main;
 }
-
-.magazine__main-title{
+.magazine__main > h2{
     color: #37beba;
     font-size: 3rem;
     font-weight: 700;
-    grid-area: main;
-    letter-spacing: -2px;
     line-height: .9;
+    letter-spacing: -2px;
+    margin: 0;
+    padding: 0;
 }
 
-.magazine__main-text{
-    color: white;
-    font-size: 1rem;
-    font-weight: 400;
-    letter-spacing: 0;
-    line-height: 1.2;
+.magazine__main > p{
+    margin: 0;
+    padding: 0;
 }
 
-.qr{
+.magazine__content > figure{
     align-items: center;
     display: flex;
     flex-direction: column;
     font-weight: bold;
     grid-area: qr;
     justify-content: end;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
-
-img{
+.magazine__content img{
     height: 5rem;
     margin: .5rem;
     width: 90%;
 }
 
-
+@media screen and (max-width: 600px){
+    .container{
+        grid-template-areas: "magazine magazine magazine";
+    }
+    .magazine__header > h1{
+        font-size: 3.5rem;
+    }
+    .magazine__main > h2 {
+        font-size: 2.5rem;
+    }
+}
 
