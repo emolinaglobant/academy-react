@@ -1,0 +1,27 @@
+html{
+    background-color: aliceblue;
+}
+label{
+    font-size: 1.2rem;
+}
+div:last-child{
+    margin-bottom: 20px;
+}
+.form{
+    background-color: cornsilk;
+    margin: 0 auto;
+    max-width: 900px;
+}
+.form__personaldata{
+    text-align: center;
+}
+.form__legend{
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.box{
+    border: 1px solid black;
+    padding: 0 0 20px 0;
+    margin: 0 auto;
+}

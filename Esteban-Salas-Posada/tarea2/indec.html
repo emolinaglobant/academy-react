@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="" class="form">
+
+        <fieldset class="form__personaldata">
+            <legend class="form__legend">Personal information</legend>
+                <div>
+                    <label for="name">* Type your name: </label>
+                    <input type="text" name="name" id="name" tap="1" placeholder="Your name here" required>
+                </div>
+                <br>
+                <div>
+                    <label for="lastname">* Type your last name: </label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Your last name here" required>
+                </div>
+                <br>
+                <div>
+                    <label for="lastname">* Type your email: </label>
+                    <input type="email" name="lastname" id="lastname" placeholder="Your last email here" required>
+                </div>
+                <br>
+                <div>
+                    <label for="number">* Type your number phone: </label>
+                    <input type="number" name="number" id="number" min="0" placeholder="Your number phone here" required>
+                </div>
+                <br>
+                <div>
+                    <label for="gender">Please tell us your gender: </label>
+                    <select name="gender" id="gender">
+                        <option selected disabled> --- Select One ---</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <br>
+                <div class="box">
+                    <h3>Select a sport</h3>
+                    <input type="radio" id="kraken" name="monster">
+                    <label for="kraken">Soccer</label><br/>
+
+                    <input type="radio" id="sasquatch" name="monster">
+                    <label for="sasquatch">Basketball</label><br/>
+
+                    <input type="radio" id="mothman" name="monster">
+                    <label for="mothman">baseball</label>
+                </div>
+        </fieldset>
+
+    </form>
+</body>
+</html>
