@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Form</title>
+  </head>
+  <body>
+    <article class="container">
+      <form>
+        <section>
+            <label class="title-search">Complete the form</label><br />
+        </section>
+
+        <section class="name">
+          <label for="fname">Name:</label>
+          <input id="fname" type="text" name="name" required="" />
+        </section>
+
+        <section>
+          <label for="sname">Last name:</label>
+          <input id="sname" type="text" name="surname" required="" />
+        </section>
+
+        <section>
+          <label for="xage">Age:</label>
+          <input id="xage" type="number" name="age" min="0" max="50" />
+        </section>
+
+        <section>
+          <label for="xbirth">Date of birthday:</label>
+          <input id="xbirth" type="date" name="datebirth" />
+        </section>
+
+        <section>
+          <label for="xcolor">Favorite color:</label>
+          <input class="cursor" id="xcolor" type="color" name="fvcolor" />
+        </section>
+
+        <section>
+          <label for="xsport">Do you practice sports?</label>
+        </section>
+
+        <section id="yes-not">
+          <section>
+            <input id="sport-yes" type="radio" name="sport" value="Yes" />
+            <label for="sport-yes">Yes</label>
+          </section>
+
+          <section>
+            <input id="sport-not" type="radio" name="sport" value="Not" />
+            <label for="sport-not">Not</label>
+          </section>
+        </section>
+
+        <section>
+          <label for="xemail">Email:</label>
+          <input id="xemail" type="email" name="email" required="" />
+        </section>
+
+        <section>
+          <label for="xphone">Phone:</label>
+          <input id="xphone" type="number" name="phone" />
+        </section>
+
+        <section>
+          <label for="xaddress">Home address:</label>
+          <input id="xaddress" type="text" name="address" />
+        </section>
+
+        <section>
+          <label for="xpassword">Password:</label>
+          <input id="xpassword" type="password" name="password" required="" />
+        </section>
+
+        <section>
+          <label for="xfile">Examine document:</label>
+          <input id="xfile" type="file" name="sumbitfile" />
+        </section>
+
+        <section class="container-submit">
+          <section class="submit">
+            <input type="submit" value="Send" />
+          </section>
+        </section>
+      </form>
+    </article>
+  </body>
+</html>
