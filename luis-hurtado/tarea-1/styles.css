@@ -38,9 +38,6 @@
     grid-area: 5 / 1 / 6 / 4;
     justify-content: space-around;
 }
-.description p:nth-child(2n) {
-    text-align: right;
-}
 .quotes {    
     background-color: rgba(0, 0, 0, 0.322);
     border-radius: 10px;
