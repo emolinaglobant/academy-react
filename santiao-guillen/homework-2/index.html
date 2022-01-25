@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Homework Form</title>
+</head>
+
+<body>
+    <header class="titleForm">
+        <h1>form semantic</h1>
+    </header>
+
+    <form role="form" aria-label="add information about yourself">
+        <article class="containerLeft">
+            <label for="name">name</label>
+            <input id="name" name="name" type="text" placeholder="Enter your name" required>
+
+            <label for="email" >email</label>
+            <input id="email" name="email" type="email" placeholder="Enter your email" required>
+
+            <label for="phone">phone</label>
+            <input id="phone" name="phone" type="tel">
+
+            <section class="boxPersonalData">
+                <label for="age">age
+                    <input id="age" name="age" type="number" placeholder="0">
+                </label>
+                <label for="dateBirth">date of birth
+                    <input id="dateBirth" name="dateBirth" type="date">
+                </label>
+                <label>add your ID file
+                    <input class="selectFile" type="file">
+                </label>
+            </section>
+        </article>
+
+        <article class="containerRight">
+            <label>
+                <span>¿agree to receive emails with more information?</span>
+            </label>
+                <section>
+                    <input type="checkbox">Yes
+                    <input type="checkbox">No
+                </section>
+            <input class="btnSubmit" type="submit" value="send">
+        </article>
+    </form>
+</body>
+
+</html>

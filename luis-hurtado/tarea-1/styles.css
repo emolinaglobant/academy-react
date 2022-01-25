@@ -38,6 +38,12 @@
     grid-area: 5 / 1 / 6 / 4;
     justify-content: space-around;
 }
+<<<<<<< HEAD
+=======
+.description p:nth-child(2n) {
+    text-align: right;
+}
+>>>>>>> c8546d3b36ba2ed5d1fc65b873c6cdf47622d1bb
 .quotes {    
     background-color: rgba(0, 0, 0, 0.322);
     border-radius: 10px;
@@ -48,4 +54,8 @@
     grid-area: 2 / 3 / 4 / 4;
     justify-content: space-around;
     text-align: right;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c8546d3b36ba2ed5d1fc65b873c6cdf47622d1bb

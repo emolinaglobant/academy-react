@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,200&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    font-family: 'DM Serif Display', serif;
+}
+
+p {
+    color: #fff;
+    font-family: 'Karla', sans-serif;
+}
+
+.grid-container {
+    background-image: url(img/woman.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 280px 285px 1fr 1fr;
+    grid-template-areas: 
+    "tittle tittle tittle"
+    ". deck ."
+    "article . suporting-overlines"
+    "lead-article-line . suporting-overlines" 
+    "website-link footer footer";
+    height: 100vh;
+    width: 70vh;
+    margin: auto;
+}
+
+.grid-tittle {
+    color: #f79f79;
+    font-size: 100px;
+    grid-area: tittle;
+    place-self: flex-start center;    
+}
+
+.grid-deck {
+    align-self: flex-start;
+    color: #fff;
+    display: inline-grid;
+    font-size: 7px;
+    grid-area: deck;
+    grid-column: 2/4;
+    padding-left: 190px;
+}
+
+.grid-suporting-overlines div p:nth-child(3), .grid-suporting-overlines div p:nth-child(4), .grid-suporting-overlines div p:nth-child(7) {
+    color: #f79f79;
+    font-family: 'DM Serif Display', serif;
+}
+
+.grid-article {
+    color: #fff;
+    grid-area: article;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.grid-article div p:nth-child(2), .grid-article div p:nth-child(3)  {
+    color: #f79f79;
+    font-family: 'DM Serif Display', serif;
+}
+
+.grid-lead-article-line {
+    color: #fff;
+    grid-area: lead-article-line;
+    margin-left: 30px
+}
+
+.grid-lead-article-line div p:first-child, .grid-lead-article-line div p:nth-child(2), .grid-lead-article-line div p:nth-child(3) {
+    color: #f79f79;
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    
+}
+    
+.grid-suporting-overlines {
+    color: #fff;
+    grid-area: suporting-overlines;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-right: 30px;
+    text-align: right;
+}
+
+.grid-website-link {
+    grid-area: website-link;
+    margin-left: 30px;
+}
+
+.grid-footer {
+    color: #fff;
+    grid-area: footer;
+    margin-left: 200px;
+}
+
+.grid-footer div p:first-child {
+    color: #f79f79;
+    font-family: 'DM Serif Display', serif;
+}

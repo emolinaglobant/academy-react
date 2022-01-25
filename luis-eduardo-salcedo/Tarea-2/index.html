@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <Header>
+            <h1>Formulario</h1>
+        </Header>
+        <form id="formulario">
+            <article class="formulario__article-info-personal">
+                <fieldset class="article-info-personal__fieldset">
+                    <legend><b>Datos personales</b></legend>
+                    <label for="nombre">Nombre</label><input type="text" class="fieldset__nombre" name="nombre" required><abbr title="required">*</abbr>
+                    <label for="apellido">Apellidos</label><input type="text" class="fieldset__apellido" name="apellido" required><abbr title="required">*</abbr>
+                    <h4>Tipo de documento</h4>
+                    <input type="radio" class="fieldset__radio-documento" name="documento" required><label for="cc">Cédula de ciudadanía</label>
+                    <input type="radio" class="fieldset__radio-documento" name="documento" required> <label for="ti"> Tarjeta de identidad</label>
+                    <input type="radio" class="fieldset__radio-documento" name="documento" required><label name="cédula" for="ce">cédula de extranjería</label>
+                    <h4>Numero de documento:</h4>
+                    <input type="text" class="numero-documento" name="numero-documento" required><abbr title="required">*</abbr>
+                    <h4>Genero</h4>
+                        <input type="radio" class="fieldset__genero" name="genero" required><label for="masculino"> Masculino</label>
+                        <input type="radio" class="fieldset__genero" name="genero" required><label for="femenino">Femenino</label>
+                        <input type="radio" class="fieldset__genero" name="genero" required><label for="femenino">Otro</label>
+                    <h4>Fecha de nacimiento</h4>
+                    <input type="date" class="fieldset__date" title="date" required>
+                </fieldset>
+            </article>
+            <section class="formulario__section-contacto-personal">
+                <fieldset class="section-contacto-personal__fieldset">
+                    <legend><b>Datos de Contacto</b></legend>
+                    <label for="mail">Correo electrónico:</label><input type="email" class="fieldset__mail" name="mail" required><abbr title="required">*</abbr>
+                    <label for="tel">Telefono:</label><input type="tel" class="fieldset__tel" name="tel" required><abbr title="required">*</abbr>
+                    <label for="adress">direccion:</label><input type="adress" class="fieldset__adress" name="adress" required><abbr title="required">*</abbr>
+                </fieldset>
+            </section>
+            <section class="formulario__section">
+                <fieldset class="section___fieldset-contacto-language">
+                    <legend><b>Datos de tecnologias</b></legend>
+                    <h4>WebUI developer </h4>
+                    <input type="checkbox" class="fieldset-contacto-language__checkbox-web" name="language" required>HMTL <label for="html"></label>
+                    <input type="checkbox" class="fieldset-contacto-language__checkbox-web" name="language"> <label for="css"> CSS</label>
+                    <input type="checkbox" class="fieldset-contacto-language__checkbox-web" name="language">  <label for="js"> JavaScript</label>
+                    <input type="checkbox" class="fieldset-contacto-language__checkbox-web" name="language"><label for="react"> React</label>
+                    <input type="checkbox" class="fieldset-contacto-language__checkbox-web" name="language"><label for="angular">Angular</label>
+                    <input type="checkbox" class="fieldset-contacto-language__checkbox-web" name="language"> <label for="vue">Vue.js</label>
+                </fieldset>
+            </section>
+            <input type="submit" value="Enviar">
+        </form>
+    <main>
+</body>
+</html>
