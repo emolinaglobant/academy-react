@@ -1,3 +1,10 @@
+body {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    padding: 10px 0px;
+  }
+
 .container {
     align-items: stretch;
     background-color: #b8bcc2fd;
@@ -14,7 +21,6 @@
   .container section {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     padding: 5px 80px;
   }
   
@@ -35,28 +41,30 @@
   #yes-not {
     display: flex;
     flex-direction: row;
+    padding: 0;
   }
   
-  .submit {
+  .container-submit {
+    align-items: center;
     display: flex;
-    justify-content: center;
     margin-top: 10px;
+  }
+
+  .submit {
+    height: 20px;
+    width: 80px;
   }
 
   .submit input{
     cursor: pointer;
     font-size: 15px;
+    padding: 0;
   }
   .cursor {
     cursor: pointer;
   }
   
-  body {
-    display: flex;
-    font-family: Arial, Helvetica, sans-serif;
-    justify-content: center;
-    padding: 10px 0px;
-  }
+  
   
   ::placeholder {
     text-align: center;

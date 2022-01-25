@@ -7,7 +7,7 @@
     <title>Form</title>
   </head>
   <body>
-    <main class="container">
+    <article class="container">
       <form>
         <section>
             <label class="title-search">Complete the form</label><br />
@@ -42,7 +42,7 @@
           <label for="xsport">Do you practice sports?</label>
         </section>
 
-        <article id="yes-not">
+        <section id="yes-not">
           <section>
             <input id="sport-yes" type="radio" name="sport" value="Yes" />
             <label for="sport-yes">Yes</label>
@@ -52,7 +52,7 @@
             <input id="sport-not" type="radio" name="sport" value="Not" />
             <label for="sport-not">Not</label>
           </section>
-        </article>
+        </section>
 
         <section>
           <label for="xemail">Email:</label>
@@ -79,10 +79,12 @@
           <input id="xfile" type="file" name="sumbitfile" />
         </section>
 
-        <article class="submit">
-          <input type="submit" value="Send" />
-        </article>
+        <section class="container-submit">
+          <section class="submit">
+            <input type="submit" value="Send" />
+          </section>
+        </section>
       </form>
-    </main>
+    </article>
   </body>
 </html>
