@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@700&family=Roboto+Condensed:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(./imagenes/fondo.png);
+    background-repeat: space;
+    background-position-y: bottom;
+}
+.box{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .4);
+    justify-content: center;
+    align-items: center;
+}
+.jordan{
+    position: relative;
+    z-index: 1;
+    width: 30%;
+    height: auto;
+    border: 2px solid white;
+    background-color: black;
+    box-shadow: 0 0 8px white inset;
+}
+.jordan img{
+    width: 100%;
+}
+h1,h2,h3,h4,h5,h6,p{
+    position: absolute;
+    color: white;
+}
+h1{
+    font-family: 'Antonio', sans-serif;
+    font-size: 170px;
+    z-index: 2;
+    top: 1%;
+    left: 694px;
+    transform: scaleY(1.5);
+    letter-spacing: 6px;
+    color: red;
+}
+.text h2{
+    font-family: 'Antonio', sans-serif;
+    font-size: 27px;
+    top: 37%;
+    left: 107px;
+    color: red;
+}
+.text2 h2{
+    font-family: 'Antonio', sans-serif;
+    font-size: 57px;
+    top: 39%;
+    left: 35px;
+    color: white;
+}
+.text3 h2{
+    font-family: 'Antonio', sans-serif;
+    font-size: 27px;
+    top: 46%;
+    left: 107px;
+    color: red;
+}
+.text4 h2{
+    font-family: 'Antonio', sans-serif;
+    font-size: 57px;
+    top: 48%;
+    left: 44px;
+    color: white;
+}
+.subtitle h3{
+    font-family: 'Antonio', sans-serif;
+    font-size: 24px;
+    top: 82%;
+    left: 361px;
+    color: white;
+}
+.subtitle2 h3{
+    font-family: 'Antonio', sans-serif;
+    font-size: 24px;
+    top: 87%;
+    left: 367px;
+    color: white;
+}
+.subtitle3 h3{
+    font-family: 'Antonio', sans-serif;
+    font-size: 24px;
+    top: 92%;
+    left: 360px;
+    color: white;
+}
+.inf1 h4{
+    font-family: 'Antonio', sans-serif;
+    font-size: 20px;
+    top: 9%;
+    left: -16px;
+    transform: rotate(-90deg);
+    color: white;
+}
+.codigo img{
+    position: absolute;
+    z-index: 1;
+    top: 89%;
+    left: 691px;
+    width: 7%;
+}
+.circulo h4{
+    font-family: 'Antonio', sans-serif;
+    font-size: 9px;
+    line-height: 57px;
+    position: absolute;
+    top: 32%;
+    left: 477px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    background-color: red;
+}
+h4{
+    font-family: 'Antonio', sans-serif;
+    font-size: 9px;
+    z-index: 2;
+    top: 26%;
+    left: 1142px;
+    color: white;
+}
