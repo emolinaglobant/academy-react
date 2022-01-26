@@ -50,13 +50,13 @@ body {
   flex-direction: column;
 }
 
-.inputs-section div,
-.inputs-section-2 div {
+.inputs-section section,
+.inputs-section-2 section {
   margin: 10px 20px;
 }
 
-.inputs-section div input,
-.inputs-section div select {
+.inputs-section section input,
+.inputs-section section select {
   height: 20px;
   width: 100%;
 }
