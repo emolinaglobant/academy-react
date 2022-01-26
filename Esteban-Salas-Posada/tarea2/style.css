@@ -4,8 +4,14 @@ html{
 label{
     font-size: 1.2rem;
 }
-div:last-child{
+section:last-child{
     margin-bottom: 20px;
+}
+section{
+    margin-bottom: 15px;
+}
+input[type="radio"]{
+    margin-bottom: 15px;
 }
 .form{
     background-color: cornsilk;
