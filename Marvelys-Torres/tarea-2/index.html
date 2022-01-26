@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Form-ARIA</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <h1>Booking App</h1>
+    </header>
+    <main class="main">
+      <article class="form-container" aria-details="form-container">
+        <form>
+          <section class="inner-container" aria-details="inner-container">
+            <section class="main-form" aria-details="main-form-container">
+              <section class="inputs-section" aria-details="inputs-information">
+                <section class="form-group" aria-details="input-name">
+                  <label for="nombre">Nombre: </label>
+                  <input
+                    type="text"
+                    id="nombre"
+                    aria-describedby="required-message"
+                    required
+                  />
+                  <section
+                    id="required-message"
+                    aria-details="required-message"
+                  >
+                    *Este campo es obligatorio
+                  </section>
+                </section>
+                <section class="form-group" aria-details="input-cellphone">
+                  <label for="telefono">Teléfono: </label>
+                  <input
+                    type="text"
+                    id="telefono"
+                    aria-describedby="required-message"
+                    required
+                  />
+                  <section
+                    id="required-message"
+                    aria-details="required-message"
+                  >
+                    *Este campo es obligatorio
+                  </section>
+                </section>
+                <section class="form-group" aria-details="input-email">
+                  <label for="email">Email: </label>
+                  <input type="email" id="email" />
+                </section>
+                <section class="form-group" aria-details="pickup-date">
+                  <label for="fecha">Fecha de recojo: </label>
+                  <input type="datetime-local" id="fecha" />
+                </section>
+                <section class="form-group" aria-details="pickup-district">
+                  <label for="recojo">Indicar distrito de recojo:</label>
+                  <select id="recojo">
+                    <option selected aria-details="choose-one">
+                      Elige uno
+                    </option>
+                    <option aria-details="san-borja-district">San Borja</option>
+                    <option aria-details="villa-el-salvador-district">
+                      Villa El Salvador
+                    </option>
+                    <option aria-details="santiago-de-surco-district">
+                      Santiago de Surco
+                    </option>
+                  </select>
+                </section>
+                <section class="form-group" aria-details="pickup-address">
+                  <label for="address">Indicar dirección de recojo: </label>
+                  <input
+                    type="text"
+                    id="address"
+                    aria-describedby="required-message"
+                    required
+                  />
+                  <section
+                    id="required-message"
+                    aria-details="required-message"
+                  >
+                    *Este campo es obligatorio
+                  </section>
+                </section>
+              </section>
+              <section
+                class="inputs-section-2"
+                aria-details="inputs-information"
+              >
+                <section role="option" aria-details="kind-of-car">
+                  <p>Indicar Tipo de Movilidad</p>
+                  <section>
+                    <input type="radio" name="auto" id="auto" />
+                    <label for="auto">Auto</label>
+                  </section>
+                  <section>
+                    <input type="radio" name="camioneta" id="camioneta" />
+                    <label for="camioneta">Camioneta</label>
+                  </section>
+                  <section>
+                    <input type="radio" name="van" id="van" />
+                    <label for="van">Van</label>
+                  </section>
+                </section>
+                <section role="option" aria-details="additional-features">
+                  <p>Extras</p>
+                  <section>
+                    <input type="checkbox" id="airbag" />
+                    <label for="airbag">Air bags Posteriores</label>
+                  </section>
+                  <section>
+                    <input type="checkbox" id="sunroof" />
+                    <label for="sunroof">Panoramic Sunroof</label>
+                  </section>
+                  <section>
+                    <input type="checkbox" id="traccion" />
+                    <label for="traccion">Doble Tracción</label>
+                  </section>
+                </section>
+              </section>
+            </section>
+            <button type="submit" class="button">Submit booking</button>
+          </section>
+        </form>
+      </article>
+    </main>
+
+    <footer class="footer">Copyright 2021</footer>
+  </body>
+</html>
