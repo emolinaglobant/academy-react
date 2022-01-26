@@ -14,14 +14,15 @@ body, html {
 }
 
 .flex-container>h1.header{
-    font-size: 9em;
     color: #755a38;
+    font-size: 9em;
     font-weight: inherit;
-    margin: 0px 0px 0px 0px;
     height: 200px;
+    margin: 0px 0px 0px 0px;
+    
 }
 
-.flex-container>h1.text-1{
+.flex-container>h2.text-1{
     font-size: 0.9em;
     color: #fefefe;
     margin-top: 248px;
@@ -31,7 +32,7 @@ body, html {
 
 }
 
-.flex-container>h1.text-2{
+.flex-container>h2.text-2{
     font-style: italic;
     font-weight: 100;
     color: #fefefe;
@@ -40,7 +41,7 @@ body, html {
     margin-top: 0px;
 }
 
-.flex-container>h1.text-3{
+.flex-container>h2.text-3{
     font-size: 5.5em;
     color: #fefefe;
     margin-top: 0px;
@@ -48,7 +49,7 @@ body, html {
     margin-block: -39px;
 }
 
-.flex-container>h1.Paragraph{
+.flex-container>h3.Paragraph{
     color: #fefefe;
     font-weight: 100;
     font-size: 1em;
@@ -57,7 +58,7 @@ body, html {
     
 }
 
-.flex-container>h1.Paragraph-2{
+.flex-container>h3.Paragraph-2{
     color: #fefefe;
     font-weight: 100;
     font-size: 1em;
@@ -74,8 +75,8 @@ body, html {
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 657;
-    width: 505;   
+    height: 657px;
+    width: 505px;   
 }
 
 
