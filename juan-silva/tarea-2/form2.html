@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Payment Form</title> 
+    </head>
+    <header>
+        <h1>Pay with Credit Card</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Your Payment Information</legend>
+                <label for="name">First Name:  </label>
+                <input type="text" name="name" id="name" required>
+                <label for="last-name">Last Name:  </label>
+                <input type="text" name="last-name" id="last-name" required>
+                <br><br>
+                <label for="card-number">Card Number:  </label>
+                <input type="text" name="card-number" id="card-number" maxlength="16"  size="18" required>
+                <label for="card-number">CVV/CVC  </label>
+                <input type="password" name="cvv" id="cvv" maxlength="4" size="5"  required>
+                <label for="card-number">Expiration Date:  </label>
+                <select name='month' id='month'>
+                    <option value=''>Month</option>
+                    <option value='01'>January</option>
+                    <option value='02'>February</option>
+                    <option value='03'>March</option>
+                    <option value='04'>April</option>
+                    <option value='05'>May</option>
+                    <option value='06'>June</option>
+                    <option value='07'>July</option>
+                    <option value='08'>August</option>
+                    <option value='09'>September</option>
+                    <option value='10'>October</option>
+                    <option value='11'>November</option>
+                    <option value='12'>December</option>
+                </select> 
+                <select name='year' id='year'>
+                    <option value=''>Year</option>
+                    <option value='22'>2022</option>
+                    <option value='23'>2023</option>
+                    <option value='24'>2024</option>
+                    <option value='25'>2025</option>
+                    <option value='26'>2026</option>
+                </select>
+                <br><br>
+                <label for="email">Email:  </label>
+                <input type="email" name="email" id="email" required>
+            </fieldset>
+            <fieldset>
+                <legend>Yout Billing Information</legend>
+                <label for="address">Address:  </label>
+                <input type="text" name="address" id="address" required>
+                <label for="city">City:  </label>
+                <input type="text" name="city" id="city" size="15" required>
+                <label for="country">Country:  </label>
+                <input type="text" name="country" id="country" size="12" required>
+                <label for="zip">Postal Code:  </label>
+                <input type="text" name="zip" id="zip" size="8" required>
+            </fieldset>
+            <br>
+            <input type="submit" value="Pay" />
+        </form>
+    </main>
+</html>
