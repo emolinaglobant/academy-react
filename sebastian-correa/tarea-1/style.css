@@ -1,6 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:200,400,700);
 @import url(https://fonts.googleapis.com/css?family=Cinzel:400,500);
 
+p, figure, h1 {
+    margin: 0px;
+}
+
 .main-container {
     background-color: #ED1F27;
     max-width: 960px;
@@ -11,7 +15,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
 }
 
 .info {
@@ -147,7 +151,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-top: 1px;
+    margin-top: 2px;
 }
 
 @media only screen and (max-width: 1000px) {
