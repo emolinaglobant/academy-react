@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <header>
+        <h1>Registro de Empleados</h1>
+    </header>
+    <main>
+        <article>
+            <form>
+                <fieldset>
+                    <legend>Datos Personales</legend>
+                    <label for="tipo_documento">Tipo de documento:</label>
+                    <select name="Tipo de Documento" id="tipo_documento" required>
+                        <option value="">CEDULA DE CIUDADANIA</option>
+                        <option value="">CEDULA DE EXTRANJERIA</option>
+                        <option value="">CEDULA DE EXTRANJERIA COLOMBIANA</option>
+                        <option value="">PASAPORTE</option>
+                        <option value="">REGISTRO CIVIL</option>
+                        <option value="">TARJETA DE IDENTIDAD</option>
+                    </select>
+                    <label for="dni">Número de documento: </label>
+                    <input type="number" id="dni" placeholder="Número de documento" required>
+                    <br>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" id="apellido" placeholder="Ingrese su Apellido" required>
+                    <br>
+                    <label>Nivel de Escolaridad: </label>
+                    <input type="checkbox">Primaria
+                    <input type="checkbox">Secundaria
+                    <input type="checkbox">Tecnologica
+                    <input type="checkbox">Universitaria
+                    <input type="checkbox">Sin escolaridad
+                    <br>
+                    <label>Genero: </label>
+                    <input type="radio" id="genero">Masculino
+                    <input type="radio" id="genero">Femenino
+                    <input type="radio" id="genero">Otro
+                    <input type="radio" id="genero">Prefiero no decirlo
+                </fieldset>
+                <fieldset>
+                    <legend>Datos de Conexión</legend>
+                    <label for="usuario">Usuario: </label>
+                    <input type="text" id="usuario" placeholder="Ingrese su Usuario" required>
+                    <label for="contraseña">Contraseña: </label>
+                    <input type="password" id="contraseña" placeholder="Ingrese su Contraseña" required>
+                    <br>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" placeholder="Ingrese su Email" required>
+                    <label>Fecha de Nacimiento: </label>
+                    <input type="date" required>
+                    <br>
+                    <label>Elegir una foto: </label>
+                    <input type="file">
+                    <br>
+                    <input type="checkbox">
+                    <label>Deseo recibir novedades por email. </label>
+                    <br>
+                    <input type="checkbox" required>
+                    <label>Acepto Terminos y condiciones.</label>
+                    <br>
+                </fieldset>
+                <input type="submit" value="Enviar">
+            </form>
+        </article>
+    </main>
+    <footer>
+        <address>
+            GitHub: @juanpablo-lopez01 
+        </address>
+    </footer>
+</body>
+</html>
