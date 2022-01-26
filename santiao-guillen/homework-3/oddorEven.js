@@ -1,14 +1,8 @@
 // Odd or Even
 
 function oddOrEven(array) {
-    let result;
-    
-    if (array == 0) array.push(0);
-    let totalsum = array.reduce((sum, total) => sum + total);
-
-    (totalsum % 2 == 0) ? result = "even": result = "odd";
-
-    return result;
+    let totalsum = array.reduce((sum, total) => sum + total,0);
+    console.log((totalsum % 2 == 0) ? "even" : "odd");
 }
 
 // Edge tests
