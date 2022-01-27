@@ -15,22 +15,20 @@
 
 function oddOrEven(array) {
   let suma = 0;
-  // console.log(array);
-  if (array.length === 1 && array[0] === 0) {
-    return "even";
+  let result;
+  if (array.length === 0 || (array.length === 1 && array[0] === 0)) {
+    result =  "even";
   } else if (array.length === 0 && array[0] === 1) {
-    return "odd";
-  } else if (array.length === 0) {
-    return "even";
+    result = "odd";
   } else {
     suma = array.reduce((acc, n) => acc + n);
-    // console.log("suma: ", suma);
     if (suma % 2 === 0) {
-      return "even";
+      result = "even";
     } else {
-      return "odd";
+      result = "odd";
     }
   }
+  return result;
 }
 
 console.log(oddOrEven([0])); //even

@@ -12,24 +12,26 @@ function mineColor(file, rank) {
   let oddRanks = [1, 3, 5, 7];
   let evenFiles = ["b", "d", "f", "h"];
   let evenRanks = [2, 4, 6, 8];
+  let result;
 
   if (oddFiles.includes(file)) {
     //esimpar
     if (oddRanks.includes(rank)) {
       //es impar
-      return "black";
+     result = "black";
     } else {
       //es par
-      return "white";
+     result = "white";
     }
   } else {
     //espar
     if (oddRanks.includes(rank)) {
-      return "white";
+     result = "white";
     } else {
-      return "black";
+     result = "black";
     }
   }
+  return result
 }
 
 console.log(mineColor("a", 8));
