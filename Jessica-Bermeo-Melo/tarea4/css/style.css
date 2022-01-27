@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-image: url("../img/mathematics-background2.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.caculator {
+    display: grid;
+    grid-template-columns: repeat(4,75px);
+}

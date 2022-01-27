@@ -65,7 +65,7 @@ li {
 
 .small-letter{
     font-size:10px;
-    text-align:right;
+    text-align:left;
 }
 
 .item--area1 { grid-area: area1; }
