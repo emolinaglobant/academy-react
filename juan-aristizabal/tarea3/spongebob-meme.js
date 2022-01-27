@@ -1,13 +1,10 @@
-function spongeMeme(sentence) {
-  let palabra = sentence.split("");
-  let nuevaPalabra = "";
+const spongeMeme = (sentence) => 
 
-  for (let i = 0; i < palabra.length; i++) {
-    if (i % 2 !== 0) {
-      nuevaPalabra += palabra[i].toLowerCase();
-    } else {
-      nuevaPalabra += palabra[i].toUpperCase();
-    }
-  }
-  return nuevaPalabra;
-}
+//con Split separamos las letras y le hacemos un map. 
+sentence.split('').map((letra, i, array) =>
+    //si i modulo de 2 es true, minuscula sino mayuscula
+    i % 2 ? letra.toLowerCase() : letra.toUpperCase()
+              
+  ).join('')
+
+
