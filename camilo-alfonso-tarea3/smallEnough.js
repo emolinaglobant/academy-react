@@ -3,7 +3,7 @@ If they are, return true. Else, return false.
 
 You can assume all values in the array are numbers. */
 
-function smallEnough(a, limit) {
+/* function smallEnough(a, limit) {
   let check = a.find((element) => element > limit)
 
   if (check > 0) {
@@ -11,4 +11,10 @@ function smallEnough(a, limit) {
   } else {
     return true;
   }
+} */
+
+/* find a way to make this a one-line solution also use more than one return expression is a bad practice */
+
+function smallEnough(a, limit){
+  return a.find((element) => element > limit) ? false : true 
 }
