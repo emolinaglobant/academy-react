@@ -1,0 +1,109 @@
+html, body {
+    background-color: rgb(194, 194, 194);
+    font-family: Arial;
+    margin:40px 40px;
+    padding:0;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.calculator{
+    background-color: black;
+    border-radius: 35px;
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    "clear clear clear operator"
+    "numbers numbers numbers operator"
+    "numbers numbers numbers operator"
+    "numbers numbers numbers operator"
+    ". extra extra operator";
+    height: 500px;
+    width: 250px;
+    padding:10px 10px;
+}
+header{
+    display:flex;
+    grid-area:header;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin:30px 20px 20px;
+}
+span{
+    color: white;
+    font-size: 60px;
+    width: 208px;
+    overflow: hidden;
+    text-overflow: "";
+}
+.clear{
+    display: flex;
+    grid-area: clear;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.clear button{
+    color:black;
+    background-color: rgb(190, 190, 190);
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.numbers{
+    display: flex;
+    grid-area: numbers;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.number{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.number button{
+    color:white;
+    background-color: rgb(95, 95, 95);
+    font-size: 20px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.extra{
+    display: flex;
+    grid-area: extra;
+    align-items: center;
+    justify-content: space-around;
+}
+.extra button{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    color:white;
+    background-color: rgb(95, 95, 95);
+}
+.operator{
+    display: flex;
+    grid-area: operator;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.operator button{
+    color:white;
+    background-color: rgb(255, 166, 0);
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+}

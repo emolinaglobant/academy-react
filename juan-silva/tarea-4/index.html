@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="calculator.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <main>
+        <article class="calculator">
+            <header>
+                <span id="result">0</span>
+            </header>
+            <section class="clear">
+                <button onclick="allClear()">AC</button>
+            </section>
+            <section class="numbers">
+                <section class="number">
+                    <button onclick="add('1')">1</button>
+                    <button onclick="add('4')">4</button>
+                    <button onclick="add('7')">7</button>   
+                </section>
+                <section class="number">
+                    <button onclick="add('2')">2</button>
+                    <button onclick="add('5')">5</button>
+                    <button onclick="add('8')">8</button>
+                </section>
+                <section class="number">
+                    <button onclick="add('3')">3</button>
+                    <button onclick="add('6')">6</button>
+                    <button onclick="add('9')">9</button>
+                </section>
+            </section>
+            <section class="operator">
+                <button onclick="add('/')">÷</button>
+                <button onclick="add('*')">x</button>
+                <button onclick="add('-')">-</button>
+                <button onclick="add('+')">+</button>
+                <button onclick="calculate()">=</button>
+            </section>
+            <section class="extra">
+                <button onclick="add('0')">0</button>
+                <button onclick="add('.')">.</button>
+            </section>
+        </article>
+    </main>
+</body>
+</html>
