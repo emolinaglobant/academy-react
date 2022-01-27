@@ -1,7 +1,8 @@
 function oddOrEven(array) {
    let sum = 0;
-   array.forEach((element) => {
+   array.forEach((element, index) => {
      sum += element;
    });
-   sum === 0 || sum%2==0 ? 'even' : 'odd';
+   return sum === 0 || sum%2==0 ? 'even': 'odd'
+ 
  }
