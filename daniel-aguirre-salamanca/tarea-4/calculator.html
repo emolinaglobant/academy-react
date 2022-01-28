@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open Sansaa:400,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css"
+      integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <main>
+      <article class="calculator">
+        <section class="calculator__result">
+          <span id="result">0</span>
+          <hr />
+        </section>
+        <section class="calculator__content">
+          <button class="disabled">MC</button
+          ><button class="disabled">MR</button>
+          <button class="disabled">M-</button
+          ><button class="disabled">M+</button>
+          <button class="operator" onclick=" main('r')">
+            <i class="fas fa-square-root-alt"></i>
+          </button>
+          <button class="disabled">MU</button>
+          <button class="disabled">+/-</button>
+          <button class="number" onclick="main(this.textContent)">7</button>
+          <button class="number" onclick="main(this.textContent)">8</button>
+          <button class="number" onclick="main(this.textContent)">9</button>
+          <button class="operator" id="/" onclick="main(this.id)">
+            <i class="fas fa-divide"></i>
+          </button>
+          <button class="disabled"><i class="fas fa-percentage"></i></button>
+          <button class="delete" onclick="erase()">
+            <i class="fas fa-long-arrow-alt-left"></i>
+          </button>
+          <button class="number" onclick="main(this.textContent)">4</button>
+          <button class="number" onclick="main(this.textContent)">5</button>
+          <button class="number" onclick="main(this.textContent)">6</button>
+          <button class="operator" id="x" onclick="main(this.id)">
+            <i class="fas fa-times"></i>
+          </button>
+          <button class="operator" id="-" onclick="main(this.id)">
+            <i class="fas fa-minus"></i>
+          </button>
+          <button class="delete" onclick="reset()">AC</button
+          ><button class="number" onclick="main(this.textContent)">1</button>
+          <button class="number" onclick="main(this.textContent)">2</button>
+          <button class="number" onclick="main(this.textContent)">3</button>
+          <button class="operator larger1" id="+" onclick="main(this.id)">
+            <i class="fas fa-plus"></i>
+          </button>
+          <button class="larger2 equal" id="=" onclick="main(this.id)">
+            <i class="fas fa-equals"></i>
+          </button>
+          <button class="delete">C</button
+          ><button class="number" onclick="main(this.textContent)">0</button>
+          <button class="number">00</button>
+          <button class="number" onclick="main('.')">.</button>
+        </section>
+      </article>
+    </main>
+    <script src="calculator.js"></script>
+    <script src="helpers.js"></script>
+    <script>
+      let [string, stringHTML, result, resultDOM] = ["", "", undefined, document.getElementById("result")];
+      function main(text) {
+        if ((string.length == 0) & isNaN(text)) {
+          [string, stringHTML] = isContinuous(result);
+        }
+        [string, stringHTML] = addText(string, stringHTML, text);
+        if (text == "=") {
+          result = calculate(string);
+          resultDOM.innerHTML = formatNumber(result);
+          [string, stringHTML] = ["", ""];
+        } else {
+          resultDOM.innerHTML = stringHTML;
+        }
+      }
+    </script>
+  </body>
+</html>
