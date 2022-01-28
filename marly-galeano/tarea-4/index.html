@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/calculatorDesign.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <header>
+                <h1>CALCULATOR</h1>
+            </header>
+
+            <article id="mainArticle">
+
+                <input type='text' id='result' class='screen'>
+                <article>
+                    <input type='button' value='C' class="clear" onclick="clearScreen()"></input>
+                    <input type="button" value="&larr;" class="operator" onClick="del()"></input>
+                    <input type="button" value="%" class="operator" OnClick="percentage()"></input>
+                    <input type="button" value="&divide" class="operator" onClick="display('/')"></input>
+                    <input type="button" value="7" class="button" onClick="display('7')"></input>
+                    <input type="button" value="8" class="button" onClick="display('8')"></input>
+                    <input type="button" value="9" class="button" onClick="display('9')"></input>
+                    <input type="button" value="&times" class="operator" onClick="display('*')"></input>
+                    <input type="button" value="4" class="button" onClick="display('4')"></input>
+                    <input type="button" value="5" class="button" onClick="display('5')"></input>
+                    <input type="button" value="6" class="button" onClick="display('6')"></input>
+                    <input type="button" value="-" class="operator" onClick="display('-')"></input>
+                    <input type="button" value="1" class="button" onClick="display('1')"></input>
+                    <input type="button" value="2" class="button" onClick="display('2')"></input>
+                    <input type="button" value="3" class="button" onClick="display('3')"></input>
+                    <input type="button" value="+" class="operator" onClick="display('+')"></input>
+                    <input type="button" value="0" class="button cero" onClick="display('0')"></input>
+                    <input type="button" value="." class="button" onClick="display('.')"></input>
+                    <input type="button" value="=" class="buttonEqual" onClick="solve()"></input>
+                </article>
+
+            </article>
+
+        </section>
+    </main>
+
+    <script src="js/calculator.js"></script>
+</body>
+
+</html>

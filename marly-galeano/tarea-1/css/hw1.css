@@ -1,0 +1,75 @@
+body {
+  background: url("../images/rihanna.jpg") center no-repeat;
+  background-size: cover;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+  text-transform: uppercase;
+  font-family: garamond;
+  letter-spacing: 2.5rem;
+  font-size: 24vw;
+}
+h2,
+h3,
+h1,
+h4 {
+  margin: 0px;
+  font-weight: 100;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 1.8rem;
+}
+section {
+  margin-top: 26rem;
+  padding: 0px 15px 15px 15px;
+  display: flex;
+}
+.left {
+  width: calc(100% / 3);
+}
+.right {
+  width: calc(100% * 2 / 3);
+}
+.right > div:last-child {
+  height: calc(100% - 92px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 6rem;
+  font-family: open sans-serif;
+}
+
+.text-right {
+  font-family: Impact;
+  font-weight: lighter;
+}
+.text-italic {
+  font-style: italic;
+}
+.text-bold {
+  font-weight: bold;
+}
+.space {
+  margin-top: 15px;
+}
+.text-red {
+  color: red;
+}
+.text-blue,
+h1 {
+  color: blue;
+}
+.text-right {
+  text-align: right;
+}
+.text-center,
+h1 {
+  text-align: center;
+}
