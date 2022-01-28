@@ -60,7 +60,7 @@ main {
 .calculator__content {
   display: grid;
   gap: 0.5rem;
-  grid-template-areas: ". . . . . ." ". . . . . ." ". . . . . ." ". . . . larger1 larger2" ". . . . larger1 larger2";
+  grid-template-areas: ". . . . . ." ". . . . . ." ". . . . . ." "larger3 . . . larger1 larger2" "larger3 . . . larger1 larger2";
   grid-template-columns: repeat(6, 1fr);
   height: 85%;
 }
@@ -107,4 +107,7 @@ button.equal {
 
 .larger2 {
   grid-area: larger2;
+}
+.larger3{
+    grid-area: larger3;
 }

@@ -1,3 +1,17 @@
+let [string, stringHTML, result, resultDOM] = ["", "", undefined, document.getElementById("result")];
+      function main(text) {
+        if ((string.length == 0) & isNaN(text)) {
+          [string, stringHTML] = isContinuous(result);
+        }
+        [string, stringHTML] = addText(string, stringHTML, text);
+        if (text == "=") {
+          result = calculate(string);
+          resultDOM.innerHTML = formatNumber(result);
+          [string, stringHTML] = ["", ""];
+        } else {
+          resultDOM.innerHTML = stringHTML;
+        }
+      }
 function addText(string, stringHTML, text){
     return text == "x" || text =="/" || text=="r" ? [string + text, stringHTML + convertHTML(text)]: [string+text, stringHTML+text];
 }

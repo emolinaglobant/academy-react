@@ -54,7 +54,7 @@
           <button class="operator" id="-" onclick="main(this.id)">
             <i class="fas fa-minus"></i>
           </button>
-          <button class="delete" onclick="reset()">AC</button
+          <button class="larger3 delete" onclick="reset()">AC</button
           ><button class="number" onclick="main(this.textContent)">1</button>
           <button class="number" onclick="main(this.textContent)">2</button>
           <button class="number" onclick="main(this.textContent)">3</button>
@@ -64,30 +64,14 @@
           <button class="larger2 equal" id="=" onclick="main(this.id)">
             <i class="fas fa-equals"></i>
           </button>
-          <button class="delete">C</button
-          ><button class="number" onclick="main(this.textContent)">0</button>
-          <button class="number">00</button>
+          <button class="number" onclick="main(this.textContent)">0</button>
+          <button class="number" onclick="main(this.textContent)">00</button>
           <button class="number" onclick="main('.')">.</button>
         </section>
       </article>
     </main>
     <script src="calculator.js"></script>
     <script src="helpers.js"></script>
-    <script>
-      let [string, stringHTML, result, resultDOM] = ["", "", undefined, document.getElementById("result")];
-      function main(text) {
-        if ((string.length == 0) & isNaN(text)) {
-          [string, stringHTML] = isContinuous(result);
-        }
-        [string, stringHTML] = addText(string, stringHTML, text);
-        if (text == "=") {
-          result = calculate(string);
-          resultDOM.innerHTML = formatNumber(result);
-          [string, stringHTML] = ["", ""];
-        } else {
-          resultDOM.innerHTML = stringHTML;
-        }
-      }
-    </script>
+
   </body>
 </html>
