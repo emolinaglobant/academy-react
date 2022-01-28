@@ -1,3 +1,5 @@
+import { isNumber } from "./helpers.js";
+
 class Calculator {
   constructor(number = 0) {
     this.result = number;
@@ -32,22 +34,18 @@ class Calculator {
   }
 }
 
-function calculate(string) {
-  let [operator, number] = [false, ""];
+function calculate(string, number = "", lastOperator = false) {
   const calculator = new Calculator();
   for (const element of string) {
-    if (isNaN(element) & (element != ".")) {
-      if (operator) {
-        number = parseFloat(number);
-        calculator.apply(operator, number);
-        [number, operator] = ["", element];
-        if (operator == "=") {
-          return calculator.result;
-        }
-      } else {
-        number = parseFloat(number);
-        calculator.add(number); // add the first number in the calculator
-        [number, operator] = ["", element];
+    if (!isNumber(element)) {
+      if (lastOperator) {
+        calculator.apply(lastOperator, parseFloat(number));
+        [number, lastOperator] = ["", element];
+        if (element == "="){return calculator.result};
+      } 
+      else {
+        calculator.add(parseFloat(number)); // add the first number in the calculator
+        [number, lastOperator] = ["", element];
       }
     } else {
       number += element;

@@ -29,4 +29,7 @@ function isContinuous(result) {
   return typeof result !== undefined ? [result, result] : ["0", "0"];
 }
 
-export {addText, convertHTML, formatNumber, isContinuous}
+function isNumber(element){
+  return isNaN(element) & (element != ".") ? false: true
+}
+export {addText, convertHTML, formatNumber, isContinuous, isNumber}

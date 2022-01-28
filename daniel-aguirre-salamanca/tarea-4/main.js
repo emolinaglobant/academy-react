@@ -4,13 +4,14 @@ const globalVariables = {string: "", stringHTML: "", result: undefined, resultDO
 
 const handlers = new Handlers(globalVariables);
 
-const buttonsCalculate = document.querySelectorAll(".number, .operator");
-Object.values(buttonsCalculate).map(button=>button.addEventListener("click",
-()=>button.className.split(" ")[0] == "operator" ? handlers.buttonCalculateHandler(button.id) : handlers.buttonCalculateHandler(button.textContent)
-));
+const buttonsNumbers = document.querySelectorAll(".number");
+Object.values(buttonsNumbers).map( button => button.onclick = () => handlers.calculate(button.textContent));
+
+const buttonsOperators = document.querySelectorAll(".operator");
+Object.values(buttonsOperators).map( button => button.onclick = () => handlers.calculate(button.id));
 
 const buttonReset = document.querySelector(".reset");
-buttonReset.addEventListener("click", () => handlers.buttonResetHandler());
+buttonReset.onclick = () => handlers.reset();
 
 const buttonErase = document.querySelector(".erase");
-buttonErase.addEventListener("click", () => handlers.buttonEraseHandler());
+buttonErase.onclick= () => handlers.erase();

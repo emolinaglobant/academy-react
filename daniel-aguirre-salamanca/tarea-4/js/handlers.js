@@ -1,18 +1,18 @@
 import * as helpers from './helpers.js';
-import calculate from './calculator.js';
+import getResult from './calculator.js';
 
 class Handlers{
   constructor(props){
     Object.assign(this, props);
   }
   
-  buttonCalculateHandler(text) {
+  calculate(text) {
     if ((this.string.length == 0) & isNaN(text)) {
       [this.string, this.stringHTML] = helpers.isContinuous(this.result);
     }
     [this.string, this.stringHTML] = helpers.addText(this.string, this.stringHTML, text);
     if (text == "=") {
-      this.result = calculate(this.string);
+      this.result = getResult(this.string);
       this.resultDOM.innerHTML = helpers.formatNumber(this.result);
       [this.string, this.stringHTML] = ["", ""];
     } else {
@@ -20,13 +20,13 @@ class Handlers{
     }
   }
 
-  buttonResetHandler(){
+  reset(){
     [this.string, this.stringHTML] = ["", ""];
     this.resultDOM.innerHTML = "0";
     this.result = 0
   }
   
-  buttonEraseHandler(){
+  erase(){
     [this.string, this.stringHTML] = [this.string.slice(0, -1), this.stringHTML.slice(0, -1)];
     this.resultDOM.innerHTML = this.stringHTML;
   }
