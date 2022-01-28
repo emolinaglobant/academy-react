@@ -1,11 +1,7 @@
-function smallEnough(a, limit){
+function smallEnough(a, limit) {
     let bool;
-        for(let i = 0; i < a.length; i++){
-            if(a[i] <= limit){
-                bool = true;
-            }else{
-                bool = false;
-            }
-        }
+    a.forEach(array => {
+        (array <= limit) ? bool = true : bool = false;
+    });
     return bool;
 }

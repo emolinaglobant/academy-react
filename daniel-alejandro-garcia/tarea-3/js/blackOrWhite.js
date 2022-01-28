@@ -1,20 +1,17 @@
 function mineColor(file, rank) {
     let result;
-    if(file =="a"|| file =="c"|| file == "e"|| file == "g") {
-        if(rank % 2 == 1) {
-            result = 'black';
-            return result;
-        } else {
-            result = 'white'
-            return result;
-        }
-    } else {
-        if(rank % 2 == 0) {
-            result = 'black'
-            return result;
-        } else {
-            result = 'white';
-            return result;
-        }
+    switch(file) {
+        case 'a':
+        case 'c':
+        case 'e':
+        case 'g':
+        rank % 2 == 0 ? result = 'white' : result = 'black';
+        return result;
+        case 'b':
+        case 'd':
+        case 'f':
+        case 'h':
+        rank % 2 == 0 ? result = 'black' : result = 'white';
+        return result;
     }
 }
