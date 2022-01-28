@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tarea 04 | Calculadora</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <article class="calculatorV1">
+      <form name="calculator">
+        <input type="text" id="numA" autocomplete="off"/>
+        <input type="text" id="numB" autocomplete="off"/>
+        <section class="operationButtonsV1">
+          <button id="add">+</button>
+          <button id="sub">-</button>
+          <button id="mul">x</button>
+          <button id="div">/</button>
+        </section>
+        <input type="reset" id="reset" />
+      </form>
+      <section class="result">
+        <p id="result">Result</p>
+      </section>
+    </article>
+    <article class="calculatorV2">
+      <section class="operationButtonsV2">
+        <button id="addv2" value="+">+</button>
+        <button id="subv2" value="-">-</button>
+        <button id="mulv2" value="x">x</button>
+        <button id="divv2" value="/">/</button>
+      </section>
+      <section class="numbers">
+        <button id="num9" value="9">9</button>
+        <button id="num8" value="8">8</button>
+        <button id="num7" value="7">7</button>
+        <button id="num6" value="6">6</button>
+        <button id="num5" value="5">5</button>
+        <button id="num4" value="4">4</button>
+        <button id="num3" value="3">3</button>
+        <button id="num2" value="2">2</button>
+        <button id="num1" value="1">1</button>
+        <button id="clear">&lt=</button>
+        <button id="num0" value="0">0</button>
+        <button id="iqual">=</button>
+      </section>
+      <section  class="result">
+        <p id="resultv2">Result</p>
+      </section>
+    </article>
+  </body>
+  <script src="./calculator.js"></script>
+</html>
