@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+
+        <form id="formulario">
+            <section>
+                <fieldset>
+                    <Header>
+                        <h1>Formulario</h1>
+                    </Header>
+                    <fieldset>
+                        <legend>
+                            <b>Datos personales</b>
+                        </legend>
+                        <article>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre" required>
+                            <abbr title="required">*</abbr>
+                            <label for="apellido">Apellidos</label>
+                            <input type="text" name="apellido" required>
+                            <abbr title="required">*</abbr>
+                        </article>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>
+                            <b>Tipo de documento</b>
+                        </legend>
+                        <article>
+                            <input type="radio" name="documento" required>
+                            <label for="cc">Cédula de ciudadanía</label>
+                            <input type="radio" name="documento" required>
+                            <label for="ti">Tarjeta de identidad</label>
+                            <input type="radio" name="documento" required>
+                            <label name="cédula" for="ce">cédula de extranjería</label>
+                        </article>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>
+                            <b>Tipo de documento</b>
+                        </legend>
+                        <article>
+                            <h4>Numero de documento:</h4>
+                            <input type="text" name="numero-documento" required>
+                            <abbr title="required">*</abbr>
+                            <h4>Genero</h4>
+                            <input type="radio" name="genero" required>
+                            <label for="masculino"> Masculino</label>
+                            <input type="radio" name="genero" required>
+                            <label for="femenino">Femenino</label>
+                            <input type="radio" name="genero" required>
+                            <label for="femenino">Otro</label>
+                            <h4>Fecha de nacimiento</h4>
+                            <input type="date" title="date" required>
+                        </article>
+                    </fieldset>
+                </fieldset>
+            </section>
+            <section>
+                <fieldset>
+                    <legend><b>Datos de Contacto</b></legend>
+                    <label for="mail">Correo electrónico:</label>
+                    <input type="email" name="mail" required>
+                    <abbr title="required">*</abbr>
+                    <label for="tel">Telefono:</label>
+                    <input type="tel" name="tel" required>
+                    <abbr title="required">*</abbr>
+                    <label for="adress">direccion:</label>
+                    <input type="adress" name="adress" required>
+                    <abbr title="required">*</abbr>
+                </fieldset>
+            </section>
+            <section>
+                <fieldset>
+                    <legend><b>Datos de tecnologias</b></legend>
+                    <h4>WebUI developer </h4>
+                    <input type="checkbox" name="language" required>HMTL <label for="html"></label>
+                    <input type="checkbox" name="language"> <label for="css"> CSS</label>
+                    <input type="checkbox" name="language"> <label for="js"> JavaScript</label>
+                    <input type="checkbox" name="language"><label for="react"> React</label>
+                    <input type="checkbox" name="language"><label for="angular">Angular</label>
+                    <input type="checkbox" name="language"> <label for="vue">Vue.js</label>
+                </fieldset>
+            </section>
+            <input type="submit" value="Enviar">
+        </form>
+        <main>
+</body>
+
+</html>
