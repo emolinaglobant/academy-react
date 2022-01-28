@@ -1,21 +1,28 @@
 body {
-  background: url("../images/rihanna.jpg") center no-repeat;
   background-size: cover;
+  background: url("../images/rihanna.jpg") center top no-repeat;
   color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Tahoma, sans-serif;
+  height: 100vh;
 }
+main,
+#coverMagazine {
+  height: 100%;
+}
+
 h1 {
-  text-transform: uppercase;
   font-family: garamond;
+  font-size: 22vw;
   letter-spacing: 2.5rem;
-  font-size: 24vw;
+  text-transform: uppercase;
 }
+h1,
 h2,
 h3,
-h1,
-h4 {
-  margin: 0px;
+h4,
+p {
   font-weight: 100;
+  margin: 0px;
 }
 h2 {
   font-size: 3rem;
@@ -23,32 +30,48 @@ h2 {
 h3 {
   font-size: 2.5rem;
 }
-h4 {
+h4,
+p {
   font-size: 1.8rem;
 }
-section {
-  margin-top: 26rem;
-  padding: 0px 15px 15px 15px;
+#coverMagazine {
   display: flex;
+  flex-wrap: wrap;
+}
+#coverMagazine:first-child {
+  justify-content: center;
+  width: 100%;
 }
 .left {
-  width: calc(100% / 3);
+  align-self: end;
+  padding-bottom: 2%;
+  padding-left: 1%;
+  width: 26%;
 }
 .right {
-  width: calc(100% * 2 / 3);
-}
-.right > div:last-child {
-  height: calc(100% - 92px);
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 6rem;
-  font-family: open sans-serif;
+  flex-direction: column;
+  margin-top: 10%;
+  padding-right: 1%;
+  width: 72%;
 }
-
 .text-right {
+  align-self: end;
   font-family: Impact;
   font-weight: lighter;
+}
+.text-center {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+}
+.right > aside:last-child {
+  font-family: open sans-serif;
+}
+.right > aside:last-child p {
+  font-size: 6rem;
 }
 .text-italic {
   font-style: italic;
@@ -65,11 +88,4 @@ section {
 .text-blue,
 h1 {
   color: blue;
-}
-.text-right {
-  text-align: right;
-}
-.text-center,
-h1 {
-  text-align: center;
 }
