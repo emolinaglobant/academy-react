@@ -1,0 +1,84 @@
+@font-face{
+    font-family:'vogue';
+    src: url(../font/Vogue.ttf);
+}
+
+body, html {
+    height: 100%;
+    background-color: black;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-container>h1.header{
+    color: #755a38;
+    font-size: 9em;
+    font-weight: inherit;
+    height: 200px;
+    margin: 0px 0px 0px 0px;
+    
+}
+
+.flex-container>h2.text-1{
+    font-size: 0.9em;
+    color: #fefefe;
+    margin-top: 248px;
+    margin-left: 314px;
+    font-weight: 100;
+    margin-bottom: 0px;
+
+}
+
+.flex-container>h2.text-2{
+    font-style: italic;
+    font-weight: 100;
+    color: #fefefe;
+    margin-bottom: 0px;
+    margin-left: 367px;
+    margin-top: 0px;
+}
+
+.flex-container>h2.text-3{
+    font-size: 5.5em;
+    color: #fefefe;
+    margin-top: 0px;
+    margin-left: 150px;
+    margin-block: -39px;
+}
+
+.flex-container>h3.Paragraph{
+    color: #fefefe;
+    font-weight: 100;
+    font-size: 1em;
+    margin-top: 21px;
+    margin-left: 197px;
+    
+}
+
+.flex-container>h3.Paragraph-2{
+    color: #fefefe;
+    font-weight: 100;
+    font-size: 1em;
+    margin-bottom: -33px;
+    margin-left: 200px;
+    margin-top: -10px;
+}
+
+
+
+.bg { 
+ 
+    background-image: url(../Img/img_background.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 657px;
+    width: 505px;   
+}
+
+
+
+
