@@ -1,62 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Marly's Form</title>
 </head>
+
 <body>
-    <main> 
+    <main>
         <header>
             <h1>Marly's Form</h1>
         </header>
-    <section>
-        <header>
-            <h2>Personal Information</h2>
-        </header>
-        <form>
-            <div>
+        <section>
+            <header>
+                <h2>Personal Information</h2>
+            </header>
+            <form>
+
                 <label for="first-name" class="required-field">First Name</label>
                 <input id="first-name" type="text" name="textfield" aria-describedby="required-message" required>
-            </div>
-            <div>
+
                 <label for="last-name" class="required-field">Last Name</label>
                 <input id="last-name" type="text" name="textfield" aria-describedby="required-message" required>
-            </div>
-            <div>
+
                 <label for="idNum">Identification Number</label>
                 <input id="idNum" type="number" name="idNum">
-            </div>            
-            <fieldset>
-                <legend>City of residence?</legend>
-                <div class="radio row">
-                  <input type="radio" name="bogota" id="bogota" value="bogota"/>
-                  <label for="bogota">Bogotá</label>
-                  <input type="radio" name="cali" id="cali" value="cali"/>
-                  <label for="night">Cali</label>
-                  <input type="radio" name="medellin" id="medellin" value="medellin"/>
-                  <label for="medellin">Medellin</label>
-                </div>
-            </fieldset>
 
-            <label for="birthday">Birthday:</label>
-            <input type="date" id="birthday" name="birthday">
+                <fieldset>
+                    <legend>City of residence?</legend>
 
-            <fieldset>
-                <legend>Is your city of residence your city of birth?</legend>
-                <div class="checkbox column">
-                  <input id="yes" type="checkbox" name="answer" value="yes"/>
-                  <label for="yes">Yes</label>
-                  <input id="no" type="checkbox" name="answer" value="no"/>
-                  <label for="no">No</label>
-                </div>
-            </fieldset>
-              
-            <label for="email">Enter your globant email:</label>
-            <input type="email" id="email" pattern=".+@globant\.com" required value="glober@gloabnt.com">
-            
-        </form>
-    </section>
+                    <input type="radio" name="bogota" id="bogota" value="bogota" />
+                    <label for="bogota">Bogotá</label>
+                    <input type="radio" name="cali" id="cali" value="cali" />
+                    <label for="night">Cali</label>
+                    <input type="radio" name="medellin" id="medellin" value="medellin" />
+                    <label for="medellin">Medellin</label>
+
+                </fieldset>
+
+                <label for="birthday">Birthday:</label>
+                <input type="date" id="birthday" name="birthday">
+
+                <fieldset>
+                    <legend>Is your city of residence your city of birth?</legend>
+
+                    <input id="yes" type="checkbox" name="answer" value="yes" />
+                    <label for="yes">Yes</label>
+                    <input id="no" type="checkbox" name="answer" value="no" />
+                    <label for="no">No</label>
+
+                </fieldset>
+
+                <label for="email">Enter your globant email:</label>
+                <input type="email" id="email" pattern=".+@globant\.com" required value="glober@globant.com">
+
+            </form>
+        </section>
 
     </main>
 </body>
+
 </html>
