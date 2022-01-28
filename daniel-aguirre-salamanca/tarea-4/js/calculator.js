@@ -33,24 +33,26 @@ class Calculator {
 }
 
 function calculate(string) {
-    let [operator, number] = [false, ""];
-    const calculator = new Calculator();
-    for (element of string) {
-      if (isNaN(element) & (element != ".")) {
-        if (operator) {
-          number = parseFloat(number);
-          calculator.apply(operator, number);
-          [number, operator] = ["", element];
-          if (operator == "=") {
-            return calculator.result;
-          }
-        } else {
-          number = parseFloat(number);
-          calculator.add(number); // add the first number in the calculator
-          [number, operator] = ["", element];
+  let [operator, number] = [false, ""];
+  const calculator = new Calculator();
+  for (const element of string) {
+    if (isNaN(element) & (element != ".")) {
+      if (operator) {
+        number = parseFloat(number);
+        calculator.apply(operator, number);
+        [number, operator] = ["", element];
+        if (operator == "=") {
+          return calculator.result;
         }
       } else {
-        number += element;
+        number = parseFloat(number);
+        calculator.add(number); // add the first number in the calculator
+        [number, operator] = ["", element];
       }
+    } else {
+      number += element;
     }
   }
+}
+
+export default calculate;

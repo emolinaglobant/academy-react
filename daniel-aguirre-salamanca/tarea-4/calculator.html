@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Open Sansaa:400,700"
+      href="https://fonts.googleapis.com/css?family=Open Sans"
       rel="stylesheet"
     />
     <link
@@ -30,48 +30,46 @@
           ><button class="disabled">MR</button>
           <button class="disabled">M-</button
           ><button class="disabled">M+</button>
-          <button class="operator" onclick=" main('r')">
+          <button class="operator" id="r">
             <i class="fas fa-square-root-alt"></i>
           </button>
           <button class="disabled">MU</button>
           <button class="disabled">+/-</button>
-          <button class="number" onclick="main(this.textContent)">7</button>
-          <button class="number" onclick="main(this.textContent)">8</button>
-          <button class="number" onclick="main(this.textContent)">9</button>
-          <button class="operator" id="/" onclick="main(this.id)">
+          <button class="number">7</button>
+          <button class="number">8</button>
+          <button class="number">9</button>
+          <button class="operator" id="/">
             <i class="fas fa-divide"></i>
           </button>
           <button class="disabled"><i class="fas fa-percentage"></i></button>
-          <button class="delete" onclick="erase()">
+          <button class="erase delete">
             <i class="fas fa-long-arrow-alt-left"></i>
           </button>
-          <button class="number" onclick="main(this.textContent)">4</button>
-          <button class="number" onclick="main(this.textContent)">5</button>
-          <button class="number" onclick="main(this.textContent)">6</button>
-          <button class="operator" id="x" onclick="main(this.id)">
+          <button class="number">4</button>
+          <button class="number">5</button>
+          <button class="number">6</button>
+          <button class="operator" id="x">
             <i class="fas fa-times"></i>
           </button>
-          <button class="operator" id="-" onclick="main(this.id)">
+          <button class="operator" id="-">
             <i class="fas fa-minus"></i>
           </button>
-          <button class="larger3 delete" onclick="reset()">AC</button
-          ><button class="number" onclick="main(this.textContent)">1</button>
-          <button class="number" onclick="main(this.textContent)">2</button>
-          <button class="number" onclick="main(this.textContent)">3</button>
-          <button class="operator larger1" id="+" onclick="main(this.id)">
+          <button class="reset larger3 delete">AC</button
+          ><button class="number">1</button>
+          <button class="number">2</button>
+          <button class="number">3</button>
+          <button class="operator larger1" id="+">
             <i class="fas fa-plus"></i>
           </button>
-          <button class="larger2 equal" id="=" onclick="main(this.id)">
+          <button class="operator larger2 equal" id="=">
             <i class="fas fa-equals"></i>
           </button>
-          <button class="number" onclick="main(this.textContent)">0</button>
-          <button class="number" onclick="main(this.textContent)">00</button>
-          <button class="number" onclick="main('.')">.</button>
+          <button class="number">0</button>
+          <button class="number">00</button>
+          <button class="number">.</button>
         </section>
       </article>
     </main>
-    <script src="calculator.js"></script>
-    <script src="helpers.js"></script>
-
+    <script type="module" src="main.js"></script>
   </body>
 </html>
