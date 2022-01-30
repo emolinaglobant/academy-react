@@ -3,11 +3,10 @@ function oddOrEven(array) {
    var longitud=array.length
    var suma=0
    var str
-    // verificamos si el arreglo está vacio
+
     if(longitud!=0){
         for(var i=0;i<longitud;i++){
            suma+=array[i]
-
         }
 
     }else{
@@ -19,7 +18,7 @@ function oddOrEven(array) {
     }else{
        str= "odd"
     }
-    //analizamos la suma
+
     return  str
   }
 
