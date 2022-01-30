@@ -5,126 +5,127 @@
 }
 body{
     background-image: url(./imagenes/fondo.png);
-    background-repeat: space;
-    background-position-y: bottom;
+    background-position-y: center;
+    background-repeat: unset;
+    background-position-x: right;
 }
 .box{
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, .4);
-    justify-content: center;
     align-items: center;
+    background-color: rgba(0, 0, 0, .4);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
 }
 .jordan{
-    position: relative;
-    z-index: 1;
-    width: 30%;
-    height: auto;
-    border: 2px solid white;
     background-color: black;
+    border: 2px solid white;
     box-shadow: 0 0 8px white inset;
+    height: auto;
+    position: relative;
+    width: 30%;
+    z-index: 1;
 }
 .jordan img{
     width: 100%;
 }
 h1,h2,h3,h4,h5,h6,p{
-    position: absolute;
     color: white;
+    position: absolute;
 }
 h1{
-    font-family: 'Antonio', sans-serif;
-    font-size: 170px;
-    z-index: 2;
-    top: 1%;
-    left: 694px;
-    transform: scaleY(1.5);
-    letter-spacing: 6px;
     color: red;
+    font-family: 'Antonio', sans-serif;
+    font-size: 699%;
+    left: 36%;
+    letter-spacing: 6px;
+    top: 5%;
+    transform: scaleY(1.5);
+    z-index: 2;
 }
 .text h2{
-    font-family: 'Antonio', sans-serif;
-    font-size: 27px;
-    top: 37%;
-    left: 107px;
     color: red;
+    font-family: 'Antonio', sans-serif;
+    font-size: 179%;
+    left: 19%;
+    top: 36%;
 }
 .text2 h2{
-    font-family: 'Antonio', sans-serif;
-    font-size: 57px;
-    top: 39%;
-    left: 35px;
     color: white;
+    font-family: 'Antonio', sans-serif;
+    font-size: 265%;
+    left: 7%;
+    top: 40%;
 }
 .text3 h2{
-    font-family: 'Antonio', sans-serif;
-    font-size: 27px;
-    top: 46%;
-    left: 107px;
     color: red;
+    font-family: 'Antonio', sans-serif;
+    font-size: 180%;
+    left: 19%;
+    top: 47%;
 }
 .text4 h2{
-    font-family: 'Antonio', sans-serif;
-    font-size: 57px;
-    top: 48%;
-    left: 44px;
     color: white;
+    font-family: 'Antonio', sans-serif;
+    font-size: 265%;
+    left: 8%;
+    top: 51%;
 }
 .subtitle h3{
-    font-family: 'Antonio', sans-serif;
-    font-size: 24px;
-    top: 82%;
-    left: 361px;
     color: white;
+    font-family: 'Antonio', sans-serif;
+    font-size: 105%;
+    left: 63%;
+    top: 82%;
 }
 .subtitle2 h3{
-    font-family: 'Antonio', sans-serif;
-    font-size: 24px;
-    top: 87%;
-    left: 367px;
     color: white;
+    font-family: 'Antonio', sans-serif;
+    font-size: 102%;
+    left: 65%;
+    top: 87%;
 }
 .subtitle3 h3{
-    font-family: 'Antonio', sans-serif;
-    font-size: 24px;
-    top: 92%;
-    left: 360px;
     color: white;
+    font-family: 'Antonio', sans-serif;
+    font-size: 96%;
+    left: 65%;
+    top: 92%;
 }
 .inf1 h4{
-    font-family: 'Antonio', sans-serif;
-    font-size: 20px;
-    top: 9%;
-    left: -16px;
-    transform: rotate(-90deg);
     color: white;
+    font-family: 'Antonio', sans-serif;
+    font-size: 96%;
+    left: -5%;
+    top: 9%;
+    transform: rotate(-90deg);
 }
 .codigo img{
+    left: 36%;
     position: absolute;
-    z-index: 1;
-    top: 89%;
-    left: 691px;
+    top: 87%;
     width: 7%;
+    z-index: 1;
 }
 .circulo h4{
-    font-family: 'Antonio', sans-serif;
-    font-size: 9px;
-    line-height: 57px;
-    position: absolute;
-    top: 32%;
-    left: 477px;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    color: white;
-    border-radius: 50%;
     background-color: red;
+    border-radius: 50%;
+    color: white;
+    font-family: 'Antonio', sans-serif;
+    font-size: 105%;
+    height: 6%;
+    left: 82%;
+    line-height: 213%;
+    position: absolute;
+    text-align: center;
+    top: 32%;
+    width: 10%;
 }
 h4{
-    font-family: 'Antonio', sans-serif;
-    font-size: 9px;
-    z-index: 2;
-    top: 26%;
-    left: 1142px;
     color: white;
+    font-family: 'Antonio', sans-serif;
+    font-size: 63%;
+    left: 58%;
+    top: 28%;
+    z-index: 2;
 }
