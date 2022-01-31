@@ -1,4 +1,1 @@
-function oddOrEven(array) {
-    let accumulator = array.reduce((accum, current) => accum + current, 0);
-    return accumulator % 2 === 0 ? "even" : "odd";
-  }
+const oddOrEven = arr => arr.reduce((a, b) => a + b, 0) % 2 === 0 ? 'even' : 'odd';
