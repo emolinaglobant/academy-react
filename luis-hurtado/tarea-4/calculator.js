@@ -2,7 +2,6 @@ let output = document.getElementById('output');
 
 let buttons = Array.from(document.getElementsByClassName('number-btn'));
 
-
 buttons.map ( button => {
     button.addEventListener('click', (e =>{
         switch(e.target.innerText){
@@ -13,7 +12,7 @@ buttons.map ( button => {
                 try{
                     output.innerText = eval(output.innerText)
                 } catch {
-                    output.innerText = 'Syntax Error'
+                    output.innerText = 'Syntax Error!'
                 }
                 break;
             default:
