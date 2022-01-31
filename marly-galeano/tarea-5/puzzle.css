@@ -1,0 +1,43 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+  color: #888f4f;
+  padding-bottom: 2vh;
+}
+section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+article {
+  background-color: #8f5956;
+  border-radius: 8px;
+  border: 3px solid #8f5956;
+  display: flex;
+  flex-wrap: wrap;
+  height: 350px;
+  justify-content: space-between;
+  width: 350px;
+}
+input {
+  border-radius: 8px;
+  border: 1px solid #8f5956;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  width: 23%;
+}
+.even {
+  background-color: #d3db8e;
+  color: #8f5956;
+}
+.odd {
+  background-color: #db7f79;
+  color: #d3db8e;
+}
+.empty {
+  background-color: #8f5956;
+  color: #8f5956;
+}

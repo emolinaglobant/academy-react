@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Slide Puzzle</title>
+    <link rel="stylesheet" href="puzzle.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <header>
+                <h1>Try This!</h1>
+            </header>
+
+            <article id="puzzleCtr">
+
+                <input type='text' value='2' class="even" data-position="0 0" onclick="neighbor(this)" readonly></input>
+                <input type="text" value="3" class="odd" data-position="1 0" onclick="neighbor(this)" readonly></input>
+                <input type="text" value="10" class="even" data-position="2 0" onclick="neighbor(this)"
+                    readonly></input>
+                <input type="text" value="11" class="odd" data-position="3 0" onclick="neighbor(this)" readonly></input>
+                <input type="text" value="14" class="even" data-position="0 1" onclick="neighbor(this)"
+                    readonly></input>
+                <input type="text" value="1" class="odd" data-position="1 1" onclick="neighbor(this)" readonly></input>
+                <input type="text" value="13" class="odd" data-position="2 1" onclick="neighbor(this)" readonly></input>
+                <input type="text" value="15" class="odd" data-position="3 1" onclick="neighbor(this)" readonly></input>
+                <input type="text" value="5" class="odd" data-position="0 2" onclick="neighbor(this)" readonly></input>
+                <input type="text" value="4" class="even" data-position="1 2" onclick="neighbor(this)" readonly></input>
+                <input type="text" value="8" class="even" data-position="2 2" onclick="neighbor(this)" readonly></input>
+                <input type="text" value="7" class="odd" data-position="3 2" onclick="neighbor(this)" readonly></input>
+                <input type="text" value="6" class="even" data-position="0 3" onclick="neighbor(this)" readonly></input>
+                <input type="text" value="12" class="even" data-position="1 3" onclick="neighbor(this)"
+                    readonly></input>
+                <input type="text" value="9" class="odd" data-position="2 3" onclick="neighbor(this)" readonly></input>
+                <input type="text" value="0" class="empty" id="empty" data-position="3 3" onclick="neighbor(this)"
+                    readonly></input>
+
+            </article>
+
+        </section>
+    </main>
+
+    <script src="puzzle.js"></script>
+</body>
+
+</html>
