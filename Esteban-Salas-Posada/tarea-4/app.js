@@ -1,4 +1,3 @@
-let operatorA, operatorB, operation
 // Números
 const zero = document.querySelector('#zero')
 const one = document.querySelector('#one')
@@ -53,70 +52,29 @@ nine.addEventListener('click', function(event){
     addBoard(nine)
 });
 plus.addEventListener('click', function(){
-    operatorA = board.textContent
-    operation = '+'
-    board.textContent = ''
+    board.textContent += '+'
 });
 minus.addEventListener('click', function(){
-    operatorA = board.textContent
-    operation = '-'
-    board.textContent = ''
+    board.textContent += '-'
 });
 div.addEventListener('click', function(){
-    operatorA = board.textContent
-    operation = '/'
-    board.textContent = ''
+    board.textContent += '/'
 });
 multiply.addEventListener('click', function(){
-    operatorA = board.textContent
-    operation = '*'
-    board.textContent = ''
+    board.textContent += '*'
 });
 equal.addEventListener('click', function (){
-    operatorB = board.textContent
-    resolve()
+    result = eval(board.textContent) 
+    board.textContent = result
 });
 erase.addEventListener('click', function(){
     result = 0
     board.textContent = ''
 });
 changeSign.addEventListener('click', function () {
-    operatorA = board.textContent
-    operation = '+/-'
-    board.textContent = ''
-    resolve()
+    result = eval(board.textContent) 
+    board.textContent = -result
 });
 function addBoard(element){
-    board.textContent = board.textContent + element.textContent
-}
-function reset() {
-    board.textContent = ''
-    operatorB = 0
-    operatorA = 0
-    operation = ''
-}
-function resolve() {
-    var result
-    switch (operation) {
-        case '+':
-            result = parseFloat(operatorA) + parseFloat(operatorB)
-            break;
-        case '-':
-            result = parseFloat(operatorA) - parseFloat(operatorB)
-            break;
-        case '/':
-            result = parseFloat(operatorA) / parseFloat(operatorB)
-            break;
-        case '*':
-            result = parseFloat(operatorA) * parseFloat(operatorB)
-            break;
-        case '+/-':
-            result = -operatorA
-            break;
-        default:
-            break;
-    }
-    console.log(board.textContent.length)
-    reset()
-    board.textContent = result
+    board.textContent += element.textContent
 }
