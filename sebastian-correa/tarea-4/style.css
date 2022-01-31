@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+}
+
+body {
+  align-items: center;
+  background-image: url("./assets/bg.PNG");
+  background-repeat: repeat;
+  display: flex;
+  flex-direction: row;
+  font-family: "Helvetica Neue", sans-serif;
+  justify-content: center;
+}
+
+button {
+  border: 0;
+}
+
+main {
+  background-color: white;
+  border-radius: 40px;
+  border: 2px solid #c0c0c0;
+  height: 568px;
+  margin-top: 75px;
+  padding: 80px 15px;
+  width: 320px;
+}
+
+.calculator {
+  background: black;
+  height: 568px;
+  padding-left: 1px;
+  width: 320px;
+}
+
+.buttons-container button {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  cursor: pointer;
+  font-size: 32px;
+  height: 76px;
+  line-height: 76px;
+  text-align: center;
+}
+
+.display {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  height: 188px;
+  justify-content: flex-end;
+}
+
+.result-value {
+  color: white;
+  font-size: 54px;
+  margin-right: 10px;
+  text-align: right;
+}
+
+.buttons-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.basic,
+.number {
+  color: black;
+}
+
+.basic {
+  background-color: #b1b1b1;
+}
+
+.number {
+  background-color: #ccc;
+}
+
+.operator {
+  background-color: #ff9500;
+  color: white;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+@media only screen and (max-height: 690px) {
+  main {
+    margin-top: 5px;
+  }
+}
