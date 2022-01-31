@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    color:rgb(167, 167, 167);
+}
+body{
+    background-color: rgb(35, 35, 54);
+    display: flex;
+    justify-content: center;
+}
+.formulario{
+    margin-top: 3em ;
+    width: 25em;
+    background-color: rgba(61, 68, 80, 0.473);
+    border: solid black 0.1em;
+}
+input{
+    display: block;
+    background-color: rgb(35, 35, 54);
+    margin-left: 2em;
+}
+label{
+   margin-left: 2.5em;
+}
+input:focus {
+    outline: 2px solid royalblue;
+    box-shadow: 1px 1px 8px 1px royalblue;
+  }
+  #color{
+      width: 10em;
+  }
+.tc{
+    margin-top: 1em;
+}
+.boton{
+    float: left;
+    border-radius: 20px;
+    padding: 0.3em;
+    background-color: rgb(25, 125, 255);
+    color: #ffff;
+    margin-bottom: 1em;
+}
+.boton:hover {
+    outline: 2px solid royalblue;
+    box-shadow: 1px 1px 8px 1px royalblue;
+  }
