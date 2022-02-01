@@ -1,0 +1,75 @@
+.container{
+    background-image: url(../recursos/cp6.jpg);
+    /* background-color: rgb(143, 136, 136); */
+    margin: 70px;
+    color: #fff;
+    width:"100";
+    height:"100";
+    /* -webkit-text-stroke: 0.5px rgb(247, 7, 7); */
+    /* background-repeat: no-repeat;  */
+    /* background-position: center; */;
+}
+.container1{
+    background-color: aqua;
+    padding: 60px
+}
+.text-index{
+    text-align: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: 30px;
+    text-align: left;
+}
+
+/* TEXTOS */
+
+.titulo-amarillo{
+    color: yellow;
+}
+
+.titulo-azul{
+    color: blue;
+}
+
+.titulo-rojo{
+    color: red;
+}
+
+h1{
+    font-family: 'Permanent Marker', cursive;
+    margin-top: 20px;
+    padding-top: 50px;
+    font-size: 50px;
+    
+}
+h2{
+    font-size: 35px;
+    font-family: 'Permanent Marker', cursive;
+}
+p{
+    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.comprar{
+    text-decoration: none;
+    color: #ffff; 
+}
+/* TERMINAN LOS TEXTOS */
+
+.img-partner{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 400px;
+   border-color: brown;
+   height: 100px;
+}
+.foot{
+    font-family: 'Gloria Hallelujah', cursive;
+    padding-left: 230px;
+    padding-bottom: 40px;
+}
