@@ -1,13 +1,21 @@
 import { Calculator } from "./calculator.js";
 
 export class Results {
+  calculator;
+  currentValue;
+  oldValue;
+  showCurrentValue;
+  showOldValue;
+  signs;
+  typeOperation;
+
   constructor(showOldValue, showCurrentValue) {
-    this.showOldValue = showOldValue;
-    this.showCurrentValue = showCurrentValue;
     this.calculator = new Calculator();
-    this.typeOperation = undefined;
     this.currentValue = "";
     this.oldValue = "";
+    this.showCurrentValue = showCurrentValue;
+    this.showOldValue = showOldValue;
+    this.typeOperation = undefined;
 
     this.signs = {
       add: "+",
@@ -19,27 +27,14 @@ export class Results {
   }
 
   addNumber(number) {
-    // console.log(number);
-    // console.log(this.currentValue);
     if (number === "." && this.currentValue.includes(".")) return;
     this.currentValue = this.currentValue.toString() + number.toString();
-    this.showValues();
-  }
-
-  calculateType(type) {
-    // console.log(type);
-    this.typeOperation !== "equal" && this.calculate();
-    this.typeOperation = type;
-    this.oldValue = this.currentValue || this.oldValue;
-    this.currentValue = "";
     this.showValues();
   }
 
   calculate() {
     const oldValue = parseFloat(this.oldValue);
     const currentValue = parseFloat(this.currentValue);
-    // console.log(oldValue);
-    // console.log(currentValue);
     if (isNaN(currentValue) || isNaN(oldValue)) return;
     this.currentValue = this.calculator[this.typeOperation](
       oldValue,
@@ -47,15 +42,18 @@ export class Results {
     );
   }
 
-  showValues() {
-    this.showCurrentValue.textContent = this.currentValue;
-    this.showOldValue.textContent = `${this.oldValue} ${
-      this.signs[this.typeOperation] || ""
-    }`;
-
-    // console.log("show currentValue", this.currentValue);
-    // console.log("show oldValue", this.oldValue);
+  calculateType(type) {
+    this.typeOperation !== "equal" && this.calculate();
+    this.typeOperation = type;
+    this.oldValue = this.currentValue || this.oldValue;
+    this.currentValue = "";
+    this.showValues();
   }
+
+  clear = () => {
+    this.currentValue = this.currentValue.toString().slice(0, -1);
+    this.showValues();
+  };
 
   clearAll = () => {
     this.currentValue = "";
@@ -64,9 +62,10 @@ export class Results {
     this.showValues();
   };
 
-  clear = () => {
-    this.currentValue = this.currentValue.toString().slice(0, -1);
-    this.showValues();
-    // console.log(currentValue);
-  };
+  showValues() {
+    this.showCurrentValue.textContent = this.currentValue;
+    this.showOldValue.textContent = `${this.oldValue} ${
+      this.signs[this.typeOperation] || ""
+    }`;
+  }
 }
