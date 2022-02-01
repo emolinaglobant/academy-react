@@ -1,49 +1,57 @@
-function neighbor(d) {
-  var posititon1 = d.getAttribute("data-position");
-  var zero = document.getElementById("empty");
-  var position2 = zero.getAttribute("data-position");
+function neighborhoodCheck(tile) {
+  var tilePosition = getPosition(tile);
+  var emptySpace = getEmptySpaceById();
+  var emptySpacePosition = getPosition(emptySpace);
 
-  let d1 = parseInt(posititon1.substring(0, 1));
-  let d2 = parseInt(posititon1.substring(2, 3));
-
-  let z1 = parseInt(position2.substring(0, 1));
-  let z2 = parseInt(position2.substring(2, 3));
-
-  if (d1 == z1 || d2 == z2) {
+  if (
+    tilePosition[0] == emptySpacePosition[0] ||
+    tilePosition[1] == emptySpacePosition[1]
+  ) {
     //same column or row
 
-    if (z1 == d1 + 1 || d1 == z1 + 1 || z2 == d2 + 1 || d2 == z2 + 1) { // consecutive rows or columns
-      slide(d); 
+    if (
+      emptySpacePosition[0] == tilePosition[0] + 1 ||
+      tilePosition[0] == emptySpacePosition[0] + 1 ||
+      emptySpacePosition[1] == tilePosition[1] + 1 ||
+      tilePosition[1] == emptySpacePosition[1] + 1
+    ) {
+      // consecutive rows or columns
+      slide(tile, emptySpace);
     }
   }
 }
 
-function slide(d) {
-  var zero = document.getElementById("empty");
+function getPosition(element) {
+  var position = element.getAttribute("data-position");
+  position = [...position];
+  return [parseInt(position[0]), parseInt(position[1])];
+}
 
-  //console.log(d.getAttribute("data-position"));
-  //console.log(zero.getAttribute("data-position"));
+const getEmptySpaceById = () => document.getElementById("emptySpace");
 
-  var value1 = d.value;
-  var value2 = zero.value;
-  d.value = value2;
-  zero.value = value1;
+function slide(tile, emptySpace) {
+  exchangeValue(tile, emptySpace);
+  exchangeClass(tile, emptySpace);
+  exchangeId(tile, emptySpace);
+}
 
-  //console.log(d.value);
-  //console.log(zero.value);
+function exchangeValue(elementOne, elementTwo) {
+  var value1 = getElementValue(elementOne);
+  var value2 = getElementValue(elementTwo);
+  elementOne.value = value2;
+  elementTwo.value = value1;
+}
+const getElementValue = (element) => element.value;
 
-  var class1 = d.classList[0];
-  var class2 = zero.classList[0];
+function exchangeClass(elementOne, elementTwo) {
+  var class1 = getElementClass(elementOne);
+  var class2 = getElementClass(elementTwo);
+  elementOne.className = class2;
+  elementTwo.className = class1;
+}
+const getElementClass = (element) => element.classList[0];
 
-  d.className = class2;
-  zero.className = class1;
-
-  //console.log(d.classList);
-  //console.log(zero.classList);
-
-  d.id = zero.id;
-  zero.removeAttribute("id");
-
-  //console.log(d.id);
-  //console.log(zero.id);
+function exchangeId(tile, emptySpace) {
+  tile.id = emptySpace.id;
+  emptySpace.removeAttribute("id");
 }

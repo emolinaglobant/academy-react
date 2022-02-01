@@ -1,15 +1,3 @@
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-h1 {
-  color: #888f4f;
-  padding-bottom: 2vh;
-}
-section {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
 article {
   background-color: #8f5956;
   border-radius: 8px;
@@ -20,6 +8,13 @@ article {
   justify-content: space-between;
   width: 350px;
 }
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+  color: #888f4f;
+  padding-bottom: 2vh;
+}
 input {
   border-radius: 8px;
   border: 1px solid #8f5956;
@@ -29,6 +24,15 @@ input {
   text-align: center;
   width: 23%;
 }
+section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.emptySpace {
+  background-color: #8f5956;
+  color: #8f5956;
+}
 .even {
   background-color: #d3db8e;
   color: #8f5956;
@@ -36,8 +40,4 @@ input {
 .odd {
   background-color: #db7f79;
   color: #d3db8e;
-}
-.empty {
-  background-color: #8f5956;
-  color: #8f5956;
 }
