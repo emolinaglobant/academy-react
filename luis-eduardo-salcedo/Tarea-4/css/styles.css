@@ -1,9 +1,11 @@
 * {
     box-sizing: border-box;
 }
+
 :root{
     --colorBotones: #1f1f1f;
 }
+
 body{
     align-items: center;
     background-color: #596460;
@@ -12,18 +14,6 @@ body{
     justify-content: center;
 }
 
-.container__calculadora{
-    background: #080808;
-    border-radius:8px;
-    max-width:350px;
-    padding:8px;
-}
-.calculadora__section-botones{
-    display:grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(4,1fr);
-    padding: 10px;
-}
 #section-botones__input-numeros{
     background: black;
     border-radius: 20px;
@@ -34,9 +24,21 @@ body{
     padding: 10px;
     text-align: right;
     width: 100%;
-    
 }
 
+.container__calculadora{
+    background: #080808;
+    border-radius:8px;
+    max-width:350px;
+    padding:8px;
+}
+
+.calculadora__section-botones{
+    display:grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+    padding: 10px;
+}
 
 .igual, .section-botones__delete, .section-botones__operaciones, .section-botones__numeros, .section-botones__limpiar, .section-botones__change-sign{
     background-color:var(--colorBotones);
@@ -45,6 +47,7 @@ body{
     font-size:30px;
     height: 65px;
 }
+
 .boton-limpiar{
     color: #ff7c66;
 }
@@ -52,14 +55,15 @@ body{
 .section-botones__botones:hover{
     background: #444345;
 }
+
 .color{
     color: #78a140;
 }
 
 .igual{
     background-color: #477417;
-
 }
+
 .igual:hover{
     background:#3f7100;
 }
