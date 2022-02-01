@@ -1,3 +1,34 @@
+function exchangeClass(elementOne, elementTwo) {
+  var class1 = getElementClass(elementOne);
+  var class2 = getElementClass(elementTwo);
+  elementOne.className = class2;
+  elementTwo.className = class1;
+}
+
+function exchangeId(tile, emptySpace) {
+  tile.id = emptySpace.id;
+  emptySpace.removeAttribute("id");
+}
+
+function exchangeValue(elementOne, elementTwo) {
+  var value1 = getElementValue(elementOne);
+  var value2 = getElementValue(elementTwo);
+  elementOne.value = value2;
+  elementTwo.value = value1;
+}
+
+const getElementClass = (element) => element.classList[0];
+
+const getElementValue = (element) => element.value;
+
+const getEmptySpaceById = () => document.getElementById("emptySpace");
+
+function getPosition(element) {
+  var position = element.getAttribute("data-position");
+  position = [...position];
+  return [parseInt(position[0]), parseInt(position[1])];
+}
+
 function neighborhoodCheck(tile) {
   var tilePosition = getPosition(tile);
   var emptySpace = getEmptySpaceById();
@@ -21,37 +52,8 @@ function neighborhoodCheck(tile) {
   }
 }
 
-function getPosition(element) {
-  var position = element.getAttribute("data-position");
-  position = [...position];
-  return [parseInt(position[0]), parseInt(position[1])];
-}
-
-const getEmptySpaceById = () => document.getElementById("emptySpace");
-
 function slide(tile, emptySpace) {
   exchangeValue(tile, emptySpace);
   exchangeClass(tile, emptySpace);
   exchangeId(tile, emptySpace);
-}
-
-function exchangeValue(elementOne, elementTwo) {
-  var value1 = getElementValue(elementOne);
-  var value2 = getElementValue(elementTwo);
-  elementOne.value = value2;
-  elementTwo.value = value1;
-}
-const getElementValue = (element) => element.value;
-
-function exchangeClass(elementOne, elementTwo) {
-  var class1 = getElementClass(elementOne);
-  var class2 = getElementClass(elementTwo);
-  elementOne.className = class2;
-  elementTwo.className = class1;
-}
-const getElementClass = (element) => element.classList[0];
-
-function exchangeId(tile, emptySpace) {
-  tile.id = emptySpace.id;
-  emptySpace.removeAttribute("id");
 }

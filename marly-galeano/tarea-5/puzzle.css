@@ -21,6 +21,8 @@ input {
   cursor: pointer;
   font-size: 25px;
   font-weight: bold;
+  height: 23%;
+  padding: 1px 1px;
   text-align: center;
   width: 23%;
 }
