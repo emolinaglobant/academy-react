@@ -1,93 +1,71 @@
+const buttonNumberClick = document.getElementsByName('number');
+const buttonSymbol = document.getElementsByName('operation');
+const changeSignNumber = document.getElementsByName('change-sign')[0];
+const equal = document.getElementsByName('equal')[0];
+const deleteInput = document.getElementsByName('delete')[0];
+const deleteOneNumber = document.getElementsByName('delete-1')[0];
+let operationResult = document.getElementById('section-botones__input-numeros');
+let currentValue = '';
+let previousValue = '';
+let operation;
 
-let valorActual = 0; 
-let operacion = "0"; 
-
-let valorAnterior = null;
-
-const calculadoraScreen = document.querySelector(".section-botones__input-numeros");
-
-document.querySelector('.calculadora__section-botones').addEventListener("click",function(event){
-    buttonClick(event.target.innerHTML);
+buttonNumberClick.forEach((button) => {
+    button.addEventListener('click', () => {
+            currentValue = currentValue.toString() + button.innerHTML.toString();
+            updateInput();
+    });
 });
 
-function buttonClick(value){
-    if(isNaN(parseInt(value))){
-        symbolos(value);
-    }else{
-        manejoDeNumeros(value);
-    }
-    cargarPantalla();
-}
-function cargarPantalla(){
-    calculadoraScreen.value = operacion;
+buttonSymbol.forEach((button) => {
+    button.addEventListener('click', () => {
+        operationsManagement(button.innerHTML);
+    });
+});
+
+changeSignNumber.addEventListener('click', () => {
+    currentValue *= -1;
+    updateInput();
+});
+
+deleteInput.addEventListener('click', () => {
+    currentValue = '';
+    previousValue = '';
+    operation = undefined;
+    updateInput();
+});
+
+deleteOneNumber.addEventListener('click', ()=> {
+    currentValue = currentValue.substring(0, currentValue.length-1);
+    updateInput();
+});
+
+equal.addEventListener('click', () => {
+    calculate();
+    updateInput();
+});
+
+function calculate() {
+    let result;
+    let concatResult = `${previousValue.toString()} ${operation.toString()} ${currentValue.toString()}` ;
+    result = eval(concatResult);
+    updateInput();
+    currentValue = result;
+    operation = undefined;
+    previousValue = '';
 }
 
-function symbolos(value){
-    switch (value){
-        case "C":
-            operacion = "0";
-            valorActual = 0;
-            valorAnterior = null;
-            break;
-        case "=":
-            if(valorAnterior === null){ 
-                return;
-            }
-            operadores(parseInt(operacion));
-            operacion = "" + valorActual;
-            valorAnterior = null;
-            valorActual = 0;
-            break;
-        case "←":
-            if(operacion.length === 1){ 
-                operacion = "0";
-            }
-            else{
-                operacion = operacion.substring(0,operacion.length-1);  
-            }
-            break;
-        default:
-            manejoDeOperaciones(value);
-            break;
+function operationsManagement(button) {
+    operation = button.toString();
+    if(currentValue === '') return;
+    if(previousValue !== '') {
+        calculate();
     }
+    operation = button.toString();
+    previousValue =currentValue;
+    currentValue = '';
 }
 
-function manejoDeNumeros(value){
-    if(operacion === "0"){
-        operacion = value;
-    }else{
-        operacion += value;
-    }
+function updateInput() {
+    operationResult.value = currentValue;
 }
 
-function manejoDeOperaciones(value){
-    const operacionInterna = parseInt(operacion);
-    
-    if (valorActual === 0){
-        valorActual = operacionInterna;
-    }else{
-        operadores(operacionInterna);
-    }
-    valorAnterior = value;
-    operacion = "0";
-}
-
-function operadores(operacionInterna){
-    switch(valorAnterior){
-        case "+":
-            valorActual += operacionInterna;
-        break;
-        case "-":
-            valorActual -= operacionInterna;
-        break;
-        case "x":
-            valorActual *= operacionInterna;
-        break;
-        case "÷":
-            valorActual /= operacionInterna;
-        break;
-        case "^":
-            valorActual **= operacionInterna;
-        break;
-    }
-}

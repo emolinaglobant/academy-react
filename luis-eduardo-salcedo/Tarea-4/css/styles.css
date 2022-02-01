@@ -24,7 +24,7 @@ body{
     grid-template-columns: repeat(4,1fr);
     padding: 10px;
 }
-.section-botones__input-numeros{
+#section-botones__input-numeros{
     background: black;
     border-radius: 20px;
     color: white;
@@ -37,7 +37,8 @@ body{
     
 }
 
-.section-botones__botones{
+
+.igual, .section-botones__delete, .section-botones__operaciones, .section-botones__numeros, .section-botones__limpiar, .section-botones__change-sign{
     background-color:var(--colorBotones);
     border-radius: 50%;
     color: #fff;
@@ -57,7 +58,7 @@ body{
 
 .igual{
     background-color: #477417;
-    color: #fff;
+
 }
 .igual:hover{
     background:#3f7100;
