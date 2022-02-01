@@ -1,13 +1,13 @@
-let opera;
-let operb;
+let operatorA;
+let operatorb;
 let operation;
-let res;
+let answer;
 
 let result = document.getElementById("result");
 const sum = document.getElementById("sum");
 const resta = document.getElementById("resta");
-const mul = document.getElementById("mul");
-const divi = document.getElementById("divi");
+const multiplication = document.getElementById("multiplication");
+const division = document.getElementById("division");
 
 const equal = document.getElementById("equal");
 const dot = document.getElementById("dot");
@@ -25,127 +25,81 @@ const eight = document.getElementById("eight");
 const nine = document.getElementById("nine");
 
 function cleanDisplay() {
-  if (res) {
-    res = undefined;
+  if (answer) {
+    answer = undefined;
     result.textContent = "";
   }
+}
+
+function writeValue(value) {
+  return (result.textContent = result.textContent + value.toString());
 }
 
 dot.onclick = function () {
   cleanDisplay();
   if (result.textContent.includes(".")) return;
-  result.textContent = result.textContent + ".";
-};
-zero.onclick = function () {
-  cleanDisplay();
-  if (result.textContent.length > 10) return;
-  result.textContent = result.textContent + "0";
-};
-one.onclick = function () {
-  cleanDisplay();
-  if (result.textContent.length > 10) return;
-  result.textContent = result.textContent + "1";
-};
-two.onclick = function () {
-  cleanDisplay();
-  if (result.textContent.length > 10) return;
-  result.textContent = result.textContent + "2";
-};
-three.onclick = function () {
-  cleanDisplay();
-  if (result.textContent.length > 10) return;
-  result.textContent = result.textContent + "3";
-};
-four.onclick = function () {
-  cleanDisplay();
-  if (result.textContent.length > 10) return;
-  result.textContent = result.textContent + "4";
-};
-five.onclick = function () {
-  cleanDisplay();
-  if (result.textContent.length > 10) return;
-  result.textContent = result.textContent + "5";
-};
-six.onclick = function () {
-  cleanDisplay();
-  if (result.textContent.length > 10) return;
-  result.textContent = result.textContent + "6";
-};
-seven.onclick = function () {
-  cleanDisplay();
-  if (result.textContent.length > 10) return;
-  result.textContent = result.textContent + "7";
-};
-eight.onclick = function () {
-  cleanDisplay();
-  if (result.textContent.length > 10) return;
-  result.textContent = result.textContent + "8";
-};
-nine.onclick = function () {
-  cleanDisplay();
-  if (result.textContent.length > 10) return;
-  result.textContent = result.textContent + "9";
+  writeValue(".");
 };
 
-reset.onclick = function () {
-  resetear();
-};
+function performNumber(value) {
+  cleanDisplay();
+  if (result.textContent.length > 10) return;
+  writeValue(value);
+}
 
-sum.onclick = function () {
-  opera = result.textContent;
-  operation = "+";
-  clear();
-};
-
-resta.onclick = function () {
-  opera = result.textContent;
-  operation = "-";
-  clear();
-};
-
-mul.onclick = function () {
-  opera = result.textContent;
-  operation = "*";
-  clear();
-};
-
-divi.onclick = function () {
-  opera = result.textContent;
-  operation = "/";
-  clear();
-};
-
-equal.onclick = function () {
-  operb = result.textContent;
-  solve();
-};
+const buttons = [zero, one, two, three, four, five, six, seven, eight, nine];
+buttons.forEach((button, i) =>
+  button.addEventListener("click", () => performNumber(i))
+);
 
 function clear() {
   result.textContent = "";
 }
 
+function operat(val) {
+  operatorA = result.textContent;
+  operation = val;
+  clear();
+}
+
+const operationButtons = [sum, resta, multiplication, division];
+const operations = ["+", "-", "*", "/"];
+operationButtons.forEach((button, i) =>
+  button.addEventListener("click", () => {
+    operat(operations[i]);
+  })
+);
+
 function resetear() {
   result.textContent = "";
-  opera = 0;
-  operb = 0;
+  operatorA = 0;
+  operatorb = 0;
   operation = "";
 }
+
+reset.onclick = function () {
+  resetear();
+};
 
 function solve() {
   switch (operation) {
     case "+":
-      res = parseFloat(opera) + parseFloat(operb);
+      answer = parseFloat(operatorA) + parseFloat(operatorb);
       break;
     case "-":
-      res = parseFloat(opera) - parseFloat(operb);
+      answer = parseFloat(operatorA) - parseFloat(operatorb);
       break;
     case "*":
-      res = parseFloat(opera) * parseFloat(operb);
+      answer = parseFloat(operatorA) * parseFloat(operatorb);
       break;
     case "/":
-      res = parseFloat(opera) / parseFloat(operb);
+      answer = parseFloat(operatorA) / parseFloat(operatorb);
       break;
   }
   resetear();
-  result.textContent = res;
+  result.textContent = answer;
 }
+equal.onclick = function () {
+  operatorb = result.textContent;
+  solve();
+};
