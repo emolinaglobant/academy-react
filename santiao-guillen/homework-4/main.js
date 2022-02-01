@@ -19,7 +19,7 @@ btnNumeros.forEach((btn) => {
 
 // get the number and concatenate each value
 const concatValues = number => {
-    value = value.toString() + number.toString();
+    value = value + number;
     update();
 }
 
@@ -34,19 +34,17 @@ btnsOperations.forEach((btnOperation) => {
 // select the type operation
 
 const selectOperation = op => {
-    (operation !== " ") ? operation = op: null;
+    (operation !== " ") ? operation = op.toString() : null;
     if (value === "") return;
-    (newValue !== "") && calculate();
 
-    operation = op.toString();
     newValue = value;
     value = "";
 }
 
 const calculate = () => {
     let result;
-    let valueOne = parseInt(value);
-    let valueTwo = parseInt(newValue);
+    let valueOne = Number(value);
+    let valueTwo = Number(newValue);
 
     if (isNaN(valueOne) || isNaN(valueTwo)) return;
 
@@ -82,9 +80,11 @@ const calculate = () => {
         value = point.join(".");
     }
 
-    separator(result);
-    operation = undefined;
+    value = result;
     newValue = "";
+    operation = undefined;
+    separator(result);
+    
 }
 
 // btn equal
