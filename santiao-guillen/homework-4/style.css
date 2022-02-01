@@ -1,0 +1,145 @@
+body {
+    display: grid;
+    justify-content: center;
+    background-color: #26547c;
+    margin: 16px;
+}
+
+.containeCal {
+    background-color: #ffffff55;
+    box-shadow: 2px 2px 20px #000000d2;
+    border-radius: 10px;
+    padding: 20px 50px;
+    animation: show 1.6s ease-in-out;
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+        transform: translateX(-1000px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.title h1 {
+    color: #ffffff;
+    font-size: 3rem;
+    margin: 10px 40px;
+    text-transform: capitalize;
+}
+
+.inputValues input {
+    background-color: #ffffffd0;
+    border-radius: 6px;
+    border: 3px solid #000000;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    padding: 20px 2px;
+    text-align: center;
+    width: 100%;
+}
+
+.alert {
+    color: #ffffff;
+    font-size: 1.1rem;
+    left: 506px;
+    position: absolute;
+    top: 126px;
+}
+
+/* buttons delete and turn on/off the calculator  */
+
+.boxBtnsPrincipal {
+    display: grid;
+    grid-template-columns: 139px 60px 0px;
+    gap: 17px;
+    padding-bottom: 10px;
+}
+
+.btn {
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 6px rgb(26, 25, 25);
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn:active {
+    box-shadow: 0 4px rgb(0, 0, 0);
+    transform: translateY(2px);
+}
+
+.btnDeleteAll {
+    color: #ffffff;
+    border-radius: 7px;
+    background-color: #ef476f;
+    height: 70px;
+    width: 152px;
+}
+
+/* section where stay buttons math */
+
+.boxBtnsMath {
+    column-gap: 28px;
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    row-gap: 10px;
+}
+
+.btnPrincipals,
+.numbers,
+.operations {
+    border-radius: 7px;
+    font-size: 1.2rem;
+    height: 70px;
+    width: 74px;
+}
+
+.numbers {
+    background-color: #ffd166;
+    color: #000000;
+}
+
+.operations {
+    background-color: #0000009a;
+    color: #ffffff;
+}
+
+.btnEqual {
+    color: #ffffff;
+    border-radius: 7px;
+    background-color: #0ed84a;
+    font-size: 1.4rem;
+    width: 150px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 40px;
+        padding: 40px;
+    }
+
+    .alert {
+        left: 70px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    body {
+        margin: 100px;
+    }
+
+    .alert {
+        left: 584px;
+        top: 220px;
+    }
+
+}
