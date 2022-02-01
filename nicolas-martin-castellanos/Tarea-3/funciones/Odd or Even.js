@@ -1,25 +1,6 @@
-
-function oddOrEven(array) {
-   var longitud=array.length
-   var suma=0
-   var str
-
-    if(longitud!=0){
-        for(var i=0;i<longitud;i++){
-           suma+=array[i]
-        }
-
-    }else{
-        console.log(suma=0)
-    }
-
-    if (suma% 2 === 0 ){
-       str=  "even"
-    }else{
-       str= "odd"
-    }
-
-    return  str
-  }
-
-  console.log(oddOrEven([0]));
+function oddOrEven(arrayOddOrEven) {
+   let suma=0
+   if (arrayOddOrEven.length === 0){arrayOddOrEven.push(0);}else{
+      return suma = arrayOddOrEven.reduce((valor, index) => valor + index)% 2 === 0 ? "even" : "odd";
+   } 
+ }
