@@ -1,0 +1,113 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='800' preserveAspectRatio='none' viewBox='0 0 1440 800'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1041%26quot%3b)' fill='none'%3e%3crect width='1440' height='800' x='0' y='0' fill='rgba(20%2c 20%2c 20%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c632.993C116.563%2c635.523%2c196.504%2c521.163%2c297.532%2c462.968C405.043%2c401.039%2c553.099%2c388.607%2c612.941%2c279.921C673.068%2c170.719%2c628.338%2c35.125%2c599.934%2c-86.257C573.542%2c-199.04%2c521.846%2c-299.689%2c455.149%2c-394.389C381.942%2c-498.332%2c320.384%2c-645.006%2c194.398%2c-662.058C65.36%2c-679.523%2c-26.79%2c-540.192%2c-139.432%2c-474.863C-222.16%2c-426.883%2c-308.481%2c-392.824%2c-379.76%2c-329.064C-459.798%2c-257.469%2c-560.508%2c-189.067%2c-577.477%2c-83.029C-594.475%2c23.195%2c-517.649%2c118.405%2c-466.511%2c213.048C-418.631%2c301.662%2c-364.205%2c382.844%2c-289.346%2c450.231C-202.808%2c528.131%2c-116.409%2c630.467%2c0%2c632.993' fill='%23101010'%3e%3c/path%3e%3cpath d='M1440 1332.703C1541.548 1327.054 1647.5720000000001 1309.633 1725.591 1244.388 1800.16 1182.028 1809.476 1075.568 1852.003 988.156 1895.874 897.982 1972.211 822.439 1979.533 722.427 1987.67 611.283 1974.454 483.823 1894.616 406.073 1815.234 328.767 1688.471 333.151 1577.685 331.088 1487.737 329.413 1409.712 379.312 1321.1970000000001 395.393 1218.427 414.063 1093.079 362.001 1016.5029999999999 433.038 940.856 503.213 951.29 628.06 959.5129999999999 730.9159999999999 966.634 819.982 1032.655 888.515 1059.726 973.665 1091.933 1074.97 1055.938 1204.364 1133.231 1277.341 1210.346 1350.15 1334.108 1338.594 1440 1332.703' fill='%23181818'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1041'%3e%3crect width='1440' height='800' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.disabled {
+  cursor: default;
+}
+
+.calculator {
+  background-color: rgb(12, 12, 12);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 40px 5px rgb(138, 66, 255);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  grid-area: calculator;
+  height: 70%;
+  margin: auto;
+  min-width: 20rem;
+  padding: 1rem 1.2rem;
+  width: 35%;
+}
+
+.calculator__result {
+  background-color: white;
+  border-radius: 0.5rem;
+  border: 3px solid gray;
+  display: flex;
+  flex-direction: column;
+  height: 15%;
+  justify-content: flex-end;
+  padding: 1rem;
+  text-align: right;
+}
+
+.calculator__result > span {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 0.7;
+}
+
+.calculator__result > hr {
+  background-color: gray;
+  border: none;
+  height: 0.1rem;
+  width: 100%;
+}
+
+.calculator__content {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-areas: ". . . . . ." ". . . . . ." ". . . . . ." "larger3 . . . larger1 larger2" "larger3 . . . larger1 larger2";
+  grid-template-columns: repeat(6, 1fr);
+  height: 85%;
+}
+.calculator__content > button {
+  align-items: center;
+  background-color: rgb(173, 173, 173);
+  border-radius: 0.15rem;
+  border: 1px solid rgb(133, 133, 133);
+  color: white;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: center;
+  user-select: none;
+}
+.calculator__content > button:hover:not(.disabled) {
+  cursor: pointer;
+  filter: brightness(92%);
+}
+
+button.number {
+  background-color: rgb(226, 226, 226);
+  border-color: rgb(199, 199, 199);
+  color: rgb(141, 107, 196);
+}
+
+button.operator {
+  background-color: gray;
+  border-color: rgb(94, 94, 94);
+}
+
+button.delete {
+  background-color: rgb(218, 50, 50);
+  border-color: rgb(133, 27, 27);
+}
+
+button.equal {
+  background-color: rgb(122, 78, 194);
+  border-color: rgb(78, 49, 124);
+}
+
+.larger1 {
+  grid-area: larger1;
+}
+
+.larger2 {
+  grid-area: larger2;
+}
+.larger3{
+    grid-area: larger3;
+}
