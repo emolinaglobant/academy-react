@@ -27,7 +27,7 @@ function multiplication(a, b) {
 }
 function division(a, b) {
   const fistNum = parseInt(a, 10);
-  const secondNum = parseInt(b, 10);
+  const secondNum = parseInt(b, 10);                    
   resulNum = fistNum / secondNum;
   return resulNum;
 }
@@ -59,7 +59,6 @@ reset.addEventListener("click", () => {
   resultP.innerHTML = "Result";
 });
 
-
 //------------  Calculadora V2
 const num0 = document.getElementById("num0");
 const num1 = document.getElementById("num1");
@@ -85,6 +84,26 @@ let operator;
 let numD;
 let result;
 
+const iqualOperation = () => {
+  if (operator !== undefined && numD !== undefined) {
+    if (operator === "+") {
+      result = addition(numC, numD);
+    } else if (operator === "-") {
+      result = subtraction(numC, numD);
+    } else if (operator === "x") {
+      result = multiplication(numC, numD);
+    } else {
+      let noInfinity = division(numC, numD) === Infinity ? 0 : division(numC, numD)
+      result = noInfinity;
+    }
+    resultPV2.innerHTML = result;
+  } else {
+    resultPV2.innerHTML = "Result";
+  }
+  numC = numD === undefined ? undefined : result;
+  operator = undefined;
+  numD = undefined;
+};
 
 numbers.map((i) => {
   i.addEventListener("click", (e) => {
@@ -93,7 +112,7 @@ numbers.map((i) => {
       if (numC === undefined) {
         numC = i.value;
       } else {
-        numC += i.value;
+        result === undefined ? numC += i.value : numC = i.value;
       }
       resultPV2.innerHTML = numC;
     } else {
@@ -110,29 +129,27 @@ numbers.map((i) => {
 operators.map((i) => {
   i.addEventListener("click", (e) => {
     e.preventDefault();
-    operator = i.value;
+    if (operator === undefined && numC !== undefined) {
+      operator = i.value;
+      resultPV2.innerHTML = `${numC} ${operator}`;
+    } else if (
+      operator !== undefined &&
+      numC !== undefined &&
+      numD === undefined
+    ) {
+      operator = i.value;
+      resultPV2.innerHTML = `${numC} ${operator}`;
+    } else if (numC !== undefined) {
+      iqualOperation();
+      operator = i.value;
+      resultPV2.innerHTML = `${numC} ${operator}`;
+    }
   });
 });
 
 iqual.addEventListener("click", (e) => {
   e.preventDefault();
-  if (operator !== undefined && numD !== undefined) {
-    if (operator === "+") {
-      result = addition(numC, numD);
-    } else if (operator === "-") {
-      result = subtraction(numC, numD);
-    } else if (operator === "x") {
-      result = multiplication(numC, numD);
-    } else {
-      result = division(numC, numD);
-    }
-    resultPV2.innerHTML = result;
-  } else {
-    resultPV2.innerHTML = "Result";  
-  }
-  numC = undefined;
-  operator = undefined;
-  numD = undefined;
+  iqualOperation();
 });
 
 clear.addEventListener("click", (e) => {
