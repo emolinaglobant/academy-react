@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="main-title">Mi calculadora</h1>
+    </header>
+    <article>
+      <section class="content-body">
+        <form class="content-calculator">
+          <section class="screen">
+            <input type="text" placeholder="0" disabled id="screen-result" />
+          </section>
+          <section class="keypad">
+            <input
+              type="button"
+              value="7"
+              class="btn-cal"
+              onclick="getData(this)"
+            />
+
+            <input
+              type="button"
+              value="8"
+              class="btn-cal"
+              onclick="getData(this)"
+            />
+
+            <input
+              type="button"
+              value="9"
+              class="btn-cal btn-cal-radius"
+              onclick="getData(this)"
+            />
+
+            <input
+              type="button"
+              value="+"
+              class="btn-cal"
+              onclick="getData(this)"
+            />
+
+            <input
+              type="button"
+              value="4"
+              class="btn-cal"
+              onclick="getData(this)"
+            />
+
+            <input
+              type="button"
+              value="5"
+              class="btn-cal"
+              onclick="getData(this)"
+            />
+
+            <input
+              type="button"
+              value="6"
+              class="btn-cal"
+              onclick="getData(this)"
+            />
+
+            <input
+              type="button"
+              value="-"
+              class="btn-cal"
+              onclick="getData(this)"
+            />
+
+            <input
+              type="button"
+              value="1"
+              class="btn-cal"
+              onclick="getData(this)"
+            />
+
+            <input
+              type="button"
+              value="2"
+              class="btn-cal"
+              onclick="getData(this)"
+            />
+
+            <input
+              type="button"
+              value="3"
+              class="btn-cal"
+              onclick="getData(this)"
+            />
+
+            <input
+              type="button"
+              value="*"
+              class="btn-cal"
+              onclick="getData(this)"
+            />
+
+            <input
+              type="button"
+              value="/"
+              class="btn-cal"
+              onclick="getData(this)"
+            />
+            <input
+              type="button"
+              value="0"
+              class="btn-cal"
+              onclick="getData(this)"
+            />
+
+            <input
+              type="button"
+              value="C"
+              class="btn-cal delete"
+              onclick="clean()"
+            />
+
+            <input
+              type="button"
+              value="="
+              class="btn-cal equal"
+              onclick="calculate()"
+            />
+          </section>
+        </form>
+      </section>
+    </article>
+    <script src="calculator.js"></script>
+  </body>
+</html>
