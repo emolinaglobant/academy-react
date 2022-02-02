@@ -5,13 +5,13 @@ const globalVariables = {string: "", stringHTML: "", result: undefined, resultDO
 const handlers = new Handlers(globalVariables);
 
 const buttonsNumbers = document.querySelectorAll(".number");
-Object.values(buttonsNumbers).map( button => button.onclick = () => handlers.calculate(button.textContent));
+Object.values(buttonsNumbers).map( button => button.onclick = () => handlers.buttonCalculate(button.textContent));
 
 const buttonsOperators = document.querySelectorAll(".operator");
-Object.values(buttonsOperators).map( button => button.onclick = () => handlers.calculate(button.id));
+Object.values(buttonsOperators).map( button => button.onclick = () => handlers.buttonCalculate(button.id));
 
 const buttonReset = document.querySelector(".reset");
-buttonReset.onclick = () => handlers.reset();
+buttonReset.onclick = () => handlers.buttonReset();
 
 const buttonErase = document.querySelector(".erase");
-buttonErase.onclick= () => handlers.erase();
+buttonErase.onclick= () => handlers.buttonErase();
