@@ -1,4 +1,3 @@
-// Números
 const zero = document.querySelector('#zero')
 const one = document.querySelector('#one')
 const two = document.querySelector('#two')
@@ -9,7 +8,7 @@ const six = document.querySelector('#six')
 const seven = document.querySelector('#seven')
 const eight = document.querySelector('#eight')
 const nine = document.querySelector('#nine')
-// Operaciones
+
 const erase = document.querySelector('#erase')
 const percentage = document.querySelector('#percentage')
 const dot = document.querySelector('#dot')
@@ -19,50 +18,30 @@ const multiply = document.querySelector('#multiply')
 const div = document.querySelector('#div')
 const equal = document.querySelector('#equal')
 const changeSign = document.querySelector('#changeSign')
-// Tablero
+
 const board = document.querySelector('#board')
-zero.addEventListener('click', function(event){
-    addBoard(zero)
-});
-one.addEventListener('click', function(event){
-    addBoard(one)
-});
-two.addEventListener('click', function(event){
-    addBoard(two)
-});
-three.addEventListener('click', function(event){
-    addBoard(three)
-});
-four.addEventListener('click', function(event){
-    addBoard(four)
-});
-five.addEventListener('click', function(event){
-    addBoard(five)
-});
-six.addEventListener('click', function(event){
-    addBoard(six)
-});
-seven.addEventListener('click', function(event){
-    addBoard(seven)
-});
-eight.addEventListener('click', function(event){
-    addBoard(eight)
-});
-nine.addEventListener('click', function(event){
-    addBoard(nine)
-});
-plus.addEventListener('click', function(){
-    board.textContent += '+'
-});
-minus.addEventListener('click', function(){
-    board.textContent += '-'
-});
-div.addEventListener('click', function(){
-    board.textContent += '/'
-});
-multiply.addEventListener('click', function(){
-    board.textContent += '*'
-});
+
+event(zero, '0')
+event(one, '1')
+event(two, '2')
+event(three, '3')
+event(four, '4')
+event(five, '5')
+event(six, '6')
+event(seven, '7')
+event(eight, '8')
+event(nine, '9')
+event(plus, '+')
+event(minus, '-')
+event(div, '/')
+event(multiply, '*')
+
+function event(buttonPressed, operator){
+    buttonPressed.addEventListener('click', function(){
+        board.textContent += operator
+    });
+}
+
 equal.addEventListener('click', function (){
     result = eval(board.textContent) 
     board.textContent = result
@@ -75,6 +54,3 @@ changeSign.addEventListener('click', function () {
     result = eval(board.textContent) 
     board.textContent = -result
 });
-function addBoard(element){
-    board.textContent += element.textContent
-}
