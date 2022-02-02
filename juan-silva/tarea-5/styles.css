@@ -1,0 +1,64 @@
+html, body {
+    background-color: #2F4858;
+    font-family: Arial;
+    margin:40px 40px;
+    padding:0;
+}
+.keys{
+    align-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 120px;
+    justify-content: center;
+    padding-top: 50px;
+    width: 120px;
+}
+.keys button{
+    background-color: #f4faff;
+    border-radius: 10px;
+    font-size:30px;
+    height: 40px;
+    width: 40px;
+}
+main{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.numbers{
+    display: flex;
+    flex-direction: row;
+    grid-area: numbers;
+    justify-content: space-around;
+}
+.number{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.number span{
+    background-color: #8789c0;
+    border-radius: 10px;
+    font-size:75px;
+    height: 90px;
+    text-align: center;
+    width: 90px;
+}
+.puzzle{
+    background-color: #f4faff;
+    border-radius: 35px;
+    color:black;
+    display: grid;
+    height: 400px;
+    grid-template-areas:
+    "numbers numbers numbers numbers"
+    "numbers numbers numbers numbers"
+    "numbers numbers numbers numbers"
+    "numbers numbers numbers numbers";
+    padding:10px 10px;
+    width: 400px;
+}
+
+
