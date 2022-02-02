@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+</head>
+<main>
+    <body>  
+        <form action="">
+            <h1>Registro de Clientes</h1> 
+            <section>
+                <label><strong>Nombres:</strong></label>
+                <input type="text" name="nombres" placeholder="Nombres" required>
+            </section>
+            <section>
+                <label><strong>Apellidos</strong></label>
+                <input type="text" name="apellidos" placeholder="Apellidos" required>
+            </section>
+            <section>
+                <label><strong>Telefono:</strong></label>
+                <input type="text" name="telefono" placeholder="telefono" required>
+            </section>
+            <section>
+                <select name="Tipo de Documento" required>
+                    <option value="">Seleccionar</option>
+                    <option value="CC">Cedula</option>
+                    <option value="TI">Tarjeta de Identidad</option>
+                    <option value="CE">Cedula de Extranjeria</option>
+                </select>
+            </section>
+            <section>
+                <label><input type="checkbox"/>Femenino</label>
+                <label><input type="checkbox"/>Masculino</label>
+                <label><input type="checkbox"/>Otro</label>
+            </section>
+            <section>
+                <label for="formFileSm" required>Sube una foto</label>
+                <input type="file"/>
+            </section>
+            <section>
+                <label>SI</label>
+                <input type="radio"/>
+            </section>
+            <section>
+                <label>NO</label>
+                <input type="radio"/>
+            </section>
+            <section>
+                <button type="reset">Cancelar</button>
+                <button type="button">Enviar</button>
+            </section>
+        </form>
+    </body>
+</main>
+</html>

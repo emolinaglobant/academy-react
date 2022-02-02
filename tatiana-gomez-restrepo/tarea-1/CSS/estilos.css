@@ -1,0 +1,90 @@
+.background {
+    background-color: #dd9d39;
+    margin: 25px;
+    padding: 20px;
+    box-sizing: content-box;
+    width: 100vh;
+  }
+  
+  .titulosuperior {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0;
+    font-weight: 5000;
+    font-size: 15px;
+    justify-content: left;
+    align-items: start;
+  }
+  
+  .blanco {
+    color: #ffffff;
+  }
+  
+  .titulo {
+    width: 100%;
+  }
+  
+  .imgloki{
+    width: 100%;
+    margin: -215px -1em;
+    position: static;
+  }
+  
+  .fecha{
+    margin: -306px -1em;
+  }
+  
+  .titulosone{
+    margin: -387px 34em;
+    text-align: center;
+  }
+  
+  .plus{
+    color: black;
+    font-family: 'Lateef', cursive;
+    text-align: center;
+    font-size: 35px; 
+    line-height: 0.5;
+  }
+  
+  .White{
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1;
+  }
+  
+  .black{
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1;
+  }
+  
+  .titulostwo{
+    margin: 379px 0em;
+  
+  }
+  
+  .blackbiggerbold{
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    line-height: 1;
+  }
+  
+  .writebigger{
+    color: white;
+    font-family: 'Lateef', cursive;
+    font-size: 40px;
+    line-height: 0.8;
+  }
+  
+  .blackbigger{
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    line-height: 1;
+  }
