@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Slide Puzzle</title>
+    <link rel="stylesheet" href="puzzle.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <header>
+                <h1>Try This!</h1>
+            </header>
+
+            <article id="puzzleContainer">
+
+                <input type='text' value='2' class="even" data-position="00" onclick="neighborhoodCheck(this)"
+                    readonly></input>
+                <input type="text" value="3" class="odd" data-position="10" onclick="neighborhoodCheck(this)"
+                    readonly></input>
+                <input type="text" value="10" class="even" data-position="20" onclick="neighborhoodCheck(this)"
+                    readonly></input>
+                <input type="text" value="11" class="odd" data-position="30" onclick="neighborhoodCheck(this)"
+                    readonly></input>
+                <input type="text" value="14" class="even" data-position="01" onclick="neighborhoodCheck(this)"
+                    readonly></input>
+                <input type="text" value="1" class="odd" data-position="11" onclick="neighborhoodCheck(this)"
+                    readonly></input>
+                <input type="text" value="13" class="odd" data-position="21" onclick="neighborhoodCheck(this)"
+                    readonly></input>
+                <input type="text" value="15" class="odd" data-position="31" onclick="neighborhoodCheck(this)"
+                    readonly></input>
+                <input type="text" value="5" class="odd" data-position="02" onclick="neighborhoodCheck(this)"
+                    readonly></input>
+                <input type="text" value="4" class="even" data-position="12" onclick="neighborhoodCheck(this)"
+                    readonly></input>
+                <input type="text" value="8" class="even" data-position="22" onclick="neighborhoodCheck(this)"
+                    readonly></input>
+                <input type="text" value="7" class="odd" data-position="32" onclick="neighborhoodCheck(this)"
+                    readonly></input>
+                <input type="text" value="6" class="even" data-position="03" onclick="neighborhoodCheck(this)"
+                    readonly></input>
+                <input type="text" value="12" class="even" data-position="13" onclick="neighborhoodCheck(this)"
+                    readonly></input>
+                <input type="text" value="9" class="odd" data-position="23" onclick="neighborhoodCheck(this)"
+                    readonly></input>
+                <input type="text" value="0" class="emptySpace" id="emptySpace" data-position="33"
+                    onclick="neighborhoodCheck(this)" readonly></input>
+
+            </article>
+
+        </section>
+    </main>
+
+    <script src="puzzle.js"></script>
+</body>
+
+</html>
