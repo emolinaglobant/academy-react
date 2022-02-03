@@ -6,7 +6,27 @@ function oddOrEven(array) {
       sumNumbers = sumNumbers + item;
     });
 
-    let numbers = sumNumbers % 2 === 0 ? 'even' : 'odd'
-    
-    return numbers
+    return (
+        sumNumbers % 2 === 0 ? 'even' : 'odd'
+    )
 }
+
+function oddOrEven(array) {
+  array.forEach((item) => {
+    resultNumber = (item % 2 === 0) ? 'even' : 'odd'
+  })
+  return resultNumber
+}
+
+// function oddOrEven(array) {
+//   let resultNumber = array.forEach((item) => {
+//     (item % 2 === 0) ? 'even' : 'odd'
+//   })
+//   return resultNumber
+// }
+
+// function oddOrEven(array) {
+  
+  
+//   return resultNumber
+// }
