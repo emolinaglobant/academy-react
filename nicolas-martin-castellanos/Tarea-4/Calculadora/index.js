@@ -1,113 +1,75 @@
-var operadora;
-var operadorb;
-var operacion;
-
-function inicial (){
-    var resultado = document.getElementById("resultado");    
-    var clear = document.getElementById("clear");    
-    var borrar = document.getElementById("borrar");    
-    var dividir = document.getElementById("dividir");    
-    var multiplicar = document.getElementById("multiplicar");    
-    var sumar = document.getElementById("sumar");    
-    var restar = document.getElementById("restar");    
-    var igual = document.getElementById("igual");
-    
-    var cero = document.getElementById("cero");    
-    var uno = document.getElementById("uno");    
-    var dos = document.getElementById("dos");    
-    var tres = document.getElementById("tres");    
-    var cuatro = document.getElementById("cuatro");    
-    var cinco = document.getElementById("cinco");    
-    var seis = document.getElementById("seis");    
-    var siete = document.getElementById("siete");    
-    var ocho = document.getElementById("ocho");
-    var nueve = document.getElementById("nueve");
-    var punto = document.getElementById("punto");
-
-    cero.onclick=function(e){
-        resultado.textContent=resultado.textContent+"0";
-    }
-    uno.onclick=function(e){
-        resultado.textContent=resultado.textContent+"1";
-    }
-    dos.onclick=function(e){
-        resultado.textContent=resultado.textContent+"2";
-    }
-    tres.onclick=function(e){
-        resultado.textContent=resultado.textContent+"3";
-    }
-    cuatro.onclick=function(e){
-        resultado.textContent=resultado.textContent+"4";
-    }
-    cinco.onclick=function(e){
-        resultado.textContent=resultado.textContent+"5";
-    }
-    seis.onclick=function(e){
-        resultado.textContent=resultado.textContent+"6";
-    }
-    siete.onclick=function(e){
-        resultado.textContent=resultado.textContent+"7";
-    }
-    ocho.onclick=function(e){
-        resultado.textContent=resultado.textContent+"8";
-    }
-    nueve.onclick=function(e){
-        resultado.textContent=resultado.textContent+"9";
-    }
-    clear.onclick=function(e){
-        resultado.textContent=resultado.textContent+"CE";
-        resetear();
-    }
-    sumar.onclick=function(e){
-        operadora=resultado.textContent
-        operacion="+"
-        limpiar();
-    }
-    restar.onclick=function(e){
-        operadora=resultado.textContent
-        operacion="-"
-        limpiar();
-    }
-    multiplicar.onclick=function(e){
-        operadora=resultado.textContent
-        operacion="x"
-        limpiar();
-    }
-    dividir.onclick=function(e){
-        operadora=resultado.textContent
-        operacion="÷"
-        limpiar();
-    }
-    igual.onclick=function(e){
-        operadorb=resultado.textContent
-        resolver();
-    }
-    function limpiar(){
-        resultado.textContent="";
-    }
-    function resetear(){
-        resultado.textContent="";
-        operadora=0;
-        operadorb=0;
-        operacion='';
-    }
-    function resolver (){
-        var res=0;
-        switch(operacion){
-            case "+":
-                res=parseFloat(operadora)+ parseFloat(operadorb)
-                break;
-            case "-":
-                    res=parseFloat(operadora)- parseFloat(operadorb)
-                    break;
-            case "x":
-                res=parseFloat(operadora)* parseFloat(operadorb)
-                break;
-            case "÷":
-                    res=parseFloat(operadora)/ parseFloat(operadorb)
-                    break;             
+class Mostrar{
+    constructor(vAnterior,vActual){
+        this.vActual=vActual
+        this.Actual=''
+        this.vAnterior=vAnterior
+        this.Anterior=''
+        this.calcular= new Calcular()
+        this.TipoOperador=undefined  
+        this.simbolos={
+            sumar:'+',
+            restar:'-',
+            dividir:'÷',
+            multiplicar:'x'
         }
-        resetear();
-        resultado.textContent=res
+    }
+    borrarTodo(){
+        this.Actual=""
+        this.Anterior=""
+        this.TipoOperador=undefined
+        this.Imprimir()
+    }
+    borrar(){
+        this.Actual=this.Actual.toString().slice(0,-1)
+        this.Imprimir()
+    }
+    Operar(Tipo){
+        this.TipoOperador!== 'igual' && this.Calculo()
+        this.TipoOperador=Tipo
+        this.Anterior=this.Actual|| this.Anterior
+        this.Actual=''
+        this.Imprimir()
+
+    }
+    AddNumero(numero){
+        if(numero==='.'&& this.Actual.includes('.')) return
+        this.Actual=this.Actual.toString()+numero.toString()
+        this.Imprimir()
+    }
+    Imprimir(){
+        this.vActual.textContent=this.Actual
+        this.vAnterior.textContent=`${this.Anterior} ${this.simbolos[this.TipoOperador]||''}`
+    }
+    Calculo(){
+        const Actual=parseFloat(this.Actual)
+        const Anterior=parseFloat(this.Anterior)
+
+        if(isNaN(Actual)||isNaN(Anterior))return
+        this.Actual=this.calcular[this.TipoOperador](Anterior,Actual)
     }
 }
+class Calcular{
+    sumar(n1,n2){
+        return n1+n2
+    }
+    restar(n1,n2){
+        return n1-n2
+    }
+    dividir(n1,n2){
+        return n1/n2
+    }
+    multiplicar(n1,n2){
+        return n1*n2
+    }
+}
+const vAnterior=document.getElementById('anterior')
+const vActual=document.getElementById('actual')
+const Numeros_Button=document.querySelectorAll('.numeros-boton')
+const Opreacion=document.querySelectorAll('.operacion')
+const mostrar=new Mostrar(vAnterior,vActual);
+Numeros_Button.forEach(boton=>{
+    boton.addEventListener('click',()=>mostrar.AddNumero(boton.innerHTML))
+})
+Opreacion.forEach(boton=>{
+    boton.addEventListener('click',()=>mostrar.Operar(boton.value))
+})
