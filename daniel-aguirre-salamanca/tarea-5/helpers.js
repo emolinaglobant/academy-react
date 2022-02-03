@@ -10,7 +10,7 @@ function changeClass(button) {
 }
 
 function generateRandomness() {
-    let array = Array.from({length: 15}, (_, i) => i + 1)
+    let array = Array.from({length: 15}, (_, value) => value + 1)
     return array.sort(() => Math.random() - 0.5);
 }
 
