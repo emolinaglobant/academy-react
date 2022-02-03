@@ -1,14 +1,14 @@
 const puzzleNumbers =  document.querySelectorAll('button');
 const overlayMessage = document.getElementById('winner-message');
 let correctMatrix = [['1', '2', '3', '4'], ['5', '6', '7', '8'], ['9', '10', '11', '12'], ['13', '14', '15', 'empty']];
-let matrix = [[], [], [], []]; 
+let HTMLMatrix = [[], [], [], []]; 
 let x = 0;
 let y = 0;
 
 // Set index attributes to HTML and fill matrix with data number attributes
 const fillMatrix = (data) => {
   data.setAttribute('data-index', `[${x}][${y}]`);
-  matrix[x][y] = data.dataset.number;
+  HTMLMatrix[x][y] = data.dataset.number;
 
   y += 1;
 
@@ -26,12 +26,12 @@ const identifyEmpty = (puzzleNumber) => {
 
   const emptyIdentifier = new EmptySpaceIdentifier();
 
-  emptyIdentifier.right(puzzleNumber, matrix, xIndex, yIndex);
-  emptyIdentifier.left(puzzleNumber, matrix, xIndex, yIndex);
-  emptyIdentifier.top(puzzleNumber, matrix, xIndex, yIndex);
-  emptyIdentifier.bottom(puzzleNumber, matrix, xIndex, yIndex);
+  emptyIdentifier.right(puzzleNumber, HTMLMatrix, xIndex, yIndex);
+  emptyIdentifier.left(puzzleNumber, HTMLMatrix, xIndex, yIndex);
+  emptyIdentifier.top(puzzleNumber, HTMLMatrix, xIndex, yIndex);
+  emptyIdentifier.bottom(puzzleNumber, HTMLMatrix, xIndex, yIndex);
 
-  (JSON.stringify(matrix) === JSON.stringify(correctMatrix)) ? overlayMessage.classList.remove('hidden') : null;
+  (JSON.stringify(HTMLMatrix) === JSON.stringify(correctMatrix)) ? overlayMessage.classList.remove('hidden') : null;
   
 }
 
