@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="form-control">
+        <form action="" class="form-group">
+            <legend>Contact us</legend>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" required>
+            <label for="lname">Last name:</label>
+            <input type="text" id="fname" name="fname">
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" name="phone" required>
+            <label for="contry">Choose a contry:</label>
+            <select id="contry" name="contry">
+                <option value="colombia" selected>Colombia</option>
+                <option value="argentina">Argentina</option>
+                <option value="mexico">Mexico</option>
+                <option value="guatemala">Guatemala</option>
+            </select>
+            <label for="description">Add a description:</label>
+            <textarea name="description" id="description"rows="3" cols="30"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+</body>
+</html>

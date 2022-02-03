@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --text-color: #f0eee6;
+    --text-font-family:'Open Sans', sans-serif;;
+    --text-font-size: 16px;
+    --title-color: #e32233;
+    --title-font-family:'Be Vietnam Pro', sans-serif;
+}
+
+.form-control {
+    background-image: url("../img/form-img.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-group {
+    background-color: #f0eee680;
+    border-radius: 5px;
+    padding: 12px 50px;
+    margin: 8px 0;
+    width: 50%;
+    text-align: center;
+}
+
+input, select, textarea{
+    border: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    width: 100%;
+    background-color:#f8f8f8cc;
+}
+legend {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+button {
+    border: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center;
+    padding: 12px 45px;
+    margin: 8px 0;
+}
+
+button:hover {
+    background-color: #ecbc62;
+    color: #f8f8f8cc;
+}
