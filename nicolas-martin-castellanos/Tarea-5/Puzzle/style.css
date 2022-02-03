@@ -1,0 +1,32 @@
+body{
+    background:url("imagenes/fondo.jpeg");
+    align-items: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.grid{
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: 145px 145px 145px 145px;
+    grid-template-rows: 145px 145px 145px 145px;
+}
+.game{
+    background: black;
+    border-radius: 15px;
+    padding: 20px;
+}
+.grid button{
+    border: 5px solid black;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: bold;
+}
+.footer button{
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 22px;
+    height: 40px;
+    margin-top: 10px;
+    width: 170px;
+}

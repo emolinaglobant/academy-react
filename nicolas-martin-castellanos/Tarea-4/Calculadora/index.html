@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="box">
+        <div class="calculadora">
+            <div class="pantalla">
+                <div class="mostrar"  >
+                   <div id="anterior"></div>
+                   <div id="actual"></div>
+                </div>
+            </div>
+            <button class="clear" onclick="mostrar.borrarTodo()">CE</button>
+            <button class="borrar" onclick="mostrar.borrar()"><</button>
+            <button class="operacion" value="dividir">÷</button>
+            <button class="operacion" value="multiplicar">x</button>
+
+            <button class="numeros-boton">7</button>
+            <button class="numeros-boton">8</button>
+            <button class="numeros-boton">9</button>
+            <button class="operacion" value="sumar">+</button>
+
+            <button class="numeros-boton">4</button>
+            <button class="numeros-boton">5</button>
+            <button class="numeros-boton">6</button>
+            <button class="operacion" value="restar">-</button>
+
+            <button class="numeros-boton">1</button>
+            <button class="numeros-boton">2</button>
+            <button class="numeros-boton">3</button>
+            <button class="igual1 - operacion" value="igual">=</button>
+
+            <button class="cero1 - numeros">0</button>
+            <button class="numeros-boton">.</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
