@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sliding Puzzle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <article class="puzzle">
+            <section class="target-container">
+                <figure>
+                    <img src="./assets/logo.png" alt="" class="logo">
+                </figure>
+                <figure>
+                    <img src="./assets/Original.jpg" alt="" class="target">
+                </figure>
+            </section>
+            <section class="tiles-container">
+                <img data-position="00" data-value="1" onclick="swap(this)">
+                <img data-position="01" data-value="2" onclick="swap(this)">
+                <img data-position="02" data-value="3" onclick="swap(this)">
+                <img data-position="03" data-value="0" onclick="swap(this)">
+                <img data-position="10" data-value="4" onclick="swap(this)">
+                <img data-position="11" data-value="5" onclick="swap(this)">
+                <img data-position="12" data-value="6" onclick="swap(this)">
+                <img data-position="13" data-value="7" onclick="swap(this)">
+                <img data-position="20" data-value="8" onclick="swap(this)">
+                <img data-position="21" data-value="9" onclick="swap(this)">
+                <img data-position="22" data-value="10" onclick="swap(this)">
+                <img data-position="23" data-value="11" onclick="swap(this)">
+                <img data-position="30" data-value="12" onclick="swap(this)">
+                <img data-position="31" data-value="13" onclick="swap(this)">
+                <img data-position="32" data-value="14" onclick="swap(this)">
+                <img data-position="33" data-value="15" onclick="swap(this)">
+            </section>
+        </article>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
