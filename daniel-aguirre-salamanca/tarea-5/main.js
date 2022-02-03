@@ -1,7 +1,7 @@
 import { changeClass, generateRandomness, isInterchangeable } from "./helpers.js";
 
 const buttons = Object.values(document.querySelectorAll(".puzzle > button"));
-const newPuzzleButton = document.querySelector("#newPuzzle");
+const newPuzzleButton = document.querySelector("#new-puzzle__button");
 
 buttons.map(button => {
     button.onclick = () => {move(button)};
