@@ -58,7 +58,7 @@ main {
     transition: transform .2s;
 }
 
-.newPuzzle:hover{
+.new-puzzle__button:hover{
     filter: brightness(1.2);
     transform: scale(1.1);
 }
