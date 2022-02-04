@@ -16,11 +16,12 @@ function findMoves(){
 function findZeroPos(){
     let matrix = getMatrix();
     let positionZero=[];
-    for(var i=0; i<matrix.length; i++) {
-        for(var j=0; j<matrix[i].length; j++) {
-            matrix[i][j]==="" ? positionZero=[i,j]:null;
-        }
-    }
+    matrix.forEach((array,idx)=>{
+        array.forEach((subarray,subidx)=>{
+            subarray==""?positionZero=[idx,subidx]:null;
+        })
+        
+    });
     return positionZero;
 }
 function getMatrix(){
@@ -43,32 +44,28 @@ function moveNumber(direction){
             matrixPuzzle[posZero[0]][posZero[1]]=matrixPuzzle[right[0]][right[1]];
             matrixPuzzle[right[0]][right[1]]="";
         }
-        else{
-        console.log("You can't move it");}
+        
     }
     else if(direction=="up"){
         if(down){
             matrixPuzzle[posZero[0]][posZero[1]]=matrixPuzzle[down[0]][down[1]]; 
             matrixPuzzle[down[0]][down[1]]=""; 
         }
-        else{
-        console.log("You can't move it");}
+        
     }
     else if(direction=="right"){
         if(left){
             matrixPuzzle[posZero[0]][posZero[1]]=matrixPuzzle[left[0]][left[1]];
             matrixPuzzle[left[0]][left[1]]="";   
         }
-        else{
-        console.log("You can't move it");}
+        
     }
     else if(direction=="down"){
         if(up){
             matrixPuzzle[posZero[0]][posZero[1]]=matrixPuzzle[up[0]][up[1]];
             matrixPuzzle[up[0]][up[1]]="";  
         }
-        else{
-        console.log("You can't move it");}
+        
     }
     showMatrix();
 }
