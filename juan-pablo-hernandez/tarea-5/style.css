@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+}
+
+.slide-puzzle {
+  align-items: center;
+  background-color: wheat;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+#puzzle-container {
+  background-image: url("wood.jpg");
+  border-radius: 25px;
+  box-shadow: 2px 2px 5px #000000;
+  display: grid;
+  grid-template-columns: 70px 70px 70px 70px;
+  grid-template-rows: 70px 70px 70px 70px;
+  padding: 50px;
+}
+
+#puzzle-container button {
+  align-items: center;
+  background-color: rgb(224, 221, 204);
+  border-radius: 5px;
+  border: none;
+  box-shadow: -5px -5px 10px -3px #00000040;
+  color: rgb(37, 26, 26);
+  display: flex;
+  font-size: 28px;
+  font-weight: bolder;
+  justify-content: center;
+}
+
+#puzzle-container button[data-number="empty"] {
+  background-color: transparent;
+}
+
+#winner-message {
+  align-items: center;
+  background-color: #000000aa;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+}
+
+#winner-message h1 {
+  color: #fff;
+  font-size: 140px;
+}
+
+#winner-message.hidden {
+  display: none;
+}
