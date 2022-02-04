@@ -25,13 +25,13 @@ body {
 
 .tile {
   border: 1px solid white;
+  color: white;
   cursor: pointer;
   font-size: 30px;
   height: 100px;
   position: absolute;
   transition: top 0.2s linear, left 0.2s linear;
   width: 100px;
-  color: white;
 }
 
 .tile:last-of-type {

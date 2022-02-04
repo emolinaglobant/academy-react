@@ -9,30 +9,6 @@ const gameState = [
   [gameTiles[8], gameTiles[9], gameTiles[10], gameTiles[11]],
   [gameTiles[12], gameTiles[13], gameTiles[14], gameTiles[15]],
 ];
-//updates the board and tiles
-function render(gameBoard, gameState) {
-  gameState.forEach((row, rowIndex) => {
-    row.forEach((column, columnIndex) => {
-      column.style.top = `${rowIndex * 100}px`;
-      column.style.left = `${columnIndex * 100}px`;
-
-      gameBoard.appendChild(column);
-    });
-  });
-}
-
-function moveElement(element1, element2) {
-  const tempTop = element1.style.top;
-  const tempLeft = element1.style.left;
-
-  element1.style.top = element2.style.top;
-  element1.style.left = element2.style.left;
-
-  element2.style.top = tempTop;
-  element2.style.left = tempLeft;
-}
-
-render(gameBoard, gameState);
 
 gameBoard.addEventListener("click", (event) => {
   //knows the target we are clicking
@@ -73,3 +49,28 @@ gameBoard.addEventListener("click", (event) => {
     gameState[emptyX][emptyY] = temp;
   }
 });
+
+
+function moveElement(element1, element2) {
+  const tempTop = element1.style.top;
+  const tempLeft = element1.style.left;
+
+  element1.style.top = element2.style.top;
+  element1.style.left = element2.style.left;
+
+  element2.style.top = tempTop;
+  element2.style.left = tempLeft;
+}
+
+//updates the board and tiles
+function render(gameBoard, gameState) {
+  gameState.forEach((row, rowIndex) => {
+    row.forEach((column, columnIndex) => {
+      column.style.top = `${rowIndex * 100}px`;
+      column.style.left = `${columnIndex * 100}px`;
+
+      gameBoard.appendChild(column);
+    });
+  });
+}
+render(gameBoard, gameState);
