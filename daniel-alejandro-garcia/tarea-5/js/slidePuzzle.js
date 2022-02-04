@@ -7,7 +7,7 @@ let shuffled = false;
 newGame();
 
 function newGame() {
-    loadTiles(matrizSize);
+    loadTiles();
 }
 
 function loadTiles() {
@@ -30,9 +30,9 @@ function loadTiles() {
 function shuffle() {
     let minShuffles = 100;
     let totalShuffles = minShuffles + Math.floor(Math.random() * 200);
-    for (let i = minShuffles; i <= totalShuffles; i++) {
-        setTimeout(timer(),i * 10);
-        if (i >= totalShuffles - 1) {
+    for (let id = minShuffles; id <= totalShuffles; id++) {
+        setTimeout(timer(),id * 10);
+        if (id >= totalShuffles - 1) {
             shuffled = true;
         }
     }
