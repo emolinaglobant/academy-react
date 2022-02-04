@@ -7,9 +7,7 @@ class Fly {
   }
   
   class Walk {
-    constructor(isWalking){
-      this.isWalking=isWalking;
-    }
+    
     move(unit) {
       unit+=1;
       return unit;
@@ -19,20 +17,11 @@ class Fly {
   class Viking {
     constructor(position,moveBehavior) {
       this.position=position||0;
-      this.moveBehavior=moveBehavior||new Walk(true);
+      this.moveBehavior=moveBehavior||new Walk();
     }
     
     move() {
-      if(this.moveBehavior.isWalking==true ){
-        
+      
         this.position = this.moveBehavior.move(this.position);  
-      }
-        
-        
-      
-      else{
-        this.position = this.moveBehavior.move(this.position);
-      }
-      
     }
   }
