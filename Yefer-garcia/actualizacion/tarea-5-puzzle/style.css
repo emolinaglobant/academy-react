@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap");
+
+html {
+  height: 100%;
+}
+
+body {
+  align-items: center;
+  background: linear-gradient(rgb(222, 50, 38), rgb(103, 186, 235));
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.game {
+  background-color: #000000;
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  left: 50%;
+  position: absolute;
+  padding: 15px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.grid {
+  border: 1px solid #550000;
+  display: grid;
+  grid-template-columns: 80px 80px 80px 80px;
+  grid-template-rows: 80px 80px 80px 80px;
+}
+
+.grid button {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  cursor: pointer;
+  color: #ff5100;
+  font-size: 24px;
+  font-weight: bold;
+  outline: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.footer button {
+  border: none;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  background-color: #d4ee9f;
+  color: #003333;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px;
+  outline: none;
+  width: 80px;
+}
+
+.footer button:hover {
+  background-color: #003333;
+  color: #d4ee9f;
+}
+
+.footer span {
+  color: #d4ee9f;
+  font-size: 20px;
+  font-weight: bold;
+  flex: 1;
+  margin: auto 0;
+  text-align: center;
+}
