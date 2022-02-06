@@ -1,3 +1,46 @@
+function moveFrame(row, column) {
+  let frame_position = `frame${row}${column}`;
+  let frame = document.getElementById(frame_position).className;
+  if (frame != "white_frame") {
+    //Revisando si el cuadro blanco está arriba
+    if (row > 1) {
+      let frame2_position = `frame${row - 1}${column}`;
+      let frame2 = document.getElementById(frame2_position).className;
+      if (frame2 == "white_frame") {
+        swapFrames(frame_position, frame2_position);
+        return;
+      }
+    }
+    //Revisando si el cuadro blanco está abajo
+    if (row < 4) {
+      let frame2_position = `frame${row + 1}${column}`;
+      let frame2 = document.getElementById(frame2_position).className;
+      if (frame2 == "white_frame") {
+        swapFrames(frame_position, frame2_position);
+        return;
+      }
+    }
+    //Revisando si el cuadro blanco está a la derecha
+    if (column < 4) {
+      let frame2_position = `frame${row}${column + 1}`;
+      let frame2 = document.getElementById(frame2_position).className;
+      if (frame2 == "white_frame") {
+        swapFrames(frame_position, frame2_position);
+        return;
+      }
+    }
+    //Revisando si el cuadro blanco está a la izquierda
+    if (column > 1) {
+      let frame2_position = `frame${row}${column - 1}`;
+      let frame2 = document.getElementById(frame2_position).className;
+      if (frame2 == "white_frame") {
+        swapFrames(frame_position, frame2_position);
+        return;
+      }
+    }
+  }
+}
+
 //Función que realiza una función aletoria de cambio para cada uno de los cuadros del juego
 function randomFrames() {
   for (let row = 1; row <= 4; row++) {
@@ -44,47 +87,4 @@ function swapFrames(frame1, frame2) {
   box2.className = tempClassName;
   box2.textContent = tempTextContent;
   box2.name = tempName;
-}
-
-function moveFrame(row, column) {
-  let frame_position = `frame${row}${column}`;
-  let frame = document.getElementById(frame_position).className;
-  if (frame != "white_frame") {
-    //Revisando si el cuadro blanco está arriba
-    if (row > 1) {
-      let frame2_position = `frame${row - 1}${column}`;
-      let frame2 = document.getElementById(frame2_position).className;
-      if (frame2 == "white_frame") {
-        swapFrames(frame_position, frame2_position);
-        return;
-      }
-    }
-    //Revisando si el cuadro blanco está abajo
-    if (row < 4) {
-      let frame2_position = `frame${row + 1}${column}`;
-      let frame2 = document.getElementById(frame2_position).className;
-      if (frame2 == "white_frame") {
-        swapFrames(frame_position, frame2_position);
-        return;
-      }
-    }
-    //Revisando si el cuadro blanco está a la derecha
-    if (column < 4) {
-      let frame2_position = `frame${row}${column + 1}`;
-      let frame2 = document.getElementById(frame2_position).className;
-      if (frame2 == "white_frame") {
-        swapFrames(frame_position, frame2_position);
-        return;
-      }
-    }
-    //Revisando si el cuadro blanco está a la izquierda
-    if (column > 1) {
-      let frame2_position = `frame${row}${column - 1}`;
-      let frame2 = document.getElementById(frame2_position).className;
-      if (frame2 == "white_frame") {
-        swapFrames(frame_position, frame2_position);
-        return;
-      }
-    }
-  }
 }
