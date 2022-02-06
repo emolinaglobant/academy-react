@@ -1,25 +1,22 @@
-function solve(s){
-    let cantidad=[0, 0, 0, 0];
-    let minus=0, mayus=0, num=0, esp=0;
-      s="Codewars@codewars123.com"
-        for (let i=0; i <= s.length; i++){
-            if (i === i.toUpperCase()){
-                mayus= mayus + 1
-                cantidad=[1] = mayus; 
-            }else if(i === i.toLogerCase()){
-                minus = minus +1
-                cantidad=[2] = minus;
-            }else if(i = i.match(/1/2/3/4/5/6/7/8/9) ){
-                num = num + 1
-                cantidad=[3] = num;
-            }else{
-                esp = esp + 1
-                cantidad=[0] = esp;
-            }   
-        }
-       
-        console.log(cantidad)
-   }
+function duplicateSandwich(arr) {
+  let list = typeof arr === "string"
+    ? arr.slice().split("")
+    : arr.slice();
+  
+  let seen = new Map();
+  
+  for (const [curr_i, item] of list.entries()) {
+    let prev_i = seen.get(item);
+    
+    if (typeof prev_i !== "undefined") {
+      return typeof arr === "string"
+        ? list.slice(prev_i + 1, curr_i).join("")
+        : list.slice(prev_i + 1, curr_i);
+    } else {
+      seen.set(item, curr_i);  
+    }
+  }
+}
 
 describe("Basic tests", function(){
     Test.assertDeepEquals(solve("Codewars@codewars123.com"),[1,18,3,2]);
