@@ -1,4 +1,4 @@
-import { getRamdomPositions } from "./main.js";
+import { getRamdomPositions } from "./index.js";
 
 export default class State {
   constructor(grid, move, time, status) {

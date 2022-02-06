@@ -1,6 +1,6 @@
 import TilePuzzle from "./tilePuzzle.js";
 import State from "./state.js";
-import { alternateTilePuzzle, isSolved } from "./main.js";
+import { alternateTilePuzzle, isSolved } from "./index.js";
 import { generatedArray } from "./utils.js";
 
 const roundIndex2 = generatedArray(4);
