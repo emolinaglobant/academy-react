@@ -1,0 +1,137 @@
+h1 {
+  font-size: 28px;
+}
+
+footer {
+  margin-top: 12px;
+}
+
+.body-general {
+  background-color: #a4a4a4;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 370px;
+}
+
+.row-puzzle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.frame,
+.white_frame {
+  background-color: #9e0f0f;
+  background-image: linear-gradient(
+    bottom,
+    rgb(158, 15, 15) 0%,
+    rgb(158, 15, 15) 100%
+  );
+  background-image: -o-linear-gradient(
+    bottom,
+    rgb(158, 15, 15) 0%,
+    rgb(158, 15, 15) 100%
+  );
+  background-image: -moz-linear-gradient(
+    bottom,
+    rgb(158, 15, 15) 0%,
+    rgb(158, 15, 15) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    bottom,
+    rgb(158, 15, 15) 0%,
+    rgb(158, 15, 15) 100%
+  );
+  background-image: -ms-linear-gradient(
+    bottom,
+    rgb(158, 15, 15) 0%,
+    rgb(158, 15, 15) 100%
+  );
+  border-radius: 5px;
+  border: 1px solid #750a0a;
+  box-shadow: 0px 6px 0px #9e0f0f, 0px 3px 15px rgba(0, 0, 0, 0.4);
+  color: #ebe40b;
+  cursor: pointer;
+  display: table-cell;
+  display: inline-block;
+  font-size: 32px;
+  font-weight: bold;
+  height: 90px;
+  line-height: 90px;
+  -moz-border-radius: 5px;
+  -moz-box-shadow: 0px 6px 0px #9e0f0f, 0px 3px 15px rgba(0, 0, 0, 0.4);
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 90px;
+  -webkit-border-radius: 5px;
+  -webkit-box-shadow: 0px 6px 0px #9e0f0f, 0px 3px 15px rgba(0, 0, 0, 0.4);
+}
+
+.white_frame {
+  background: white;
+  border: 1px solid rgb(238, 232, 232);
+  box-shadow: 0px 6px 0px white, 0px 3px 15px rgba(0, 0, 0, 0.4);
+  color: black;
+  cursor: default;
+  font-size: 16px;
+  -moz-box-shadow: 0px 6px 0px white, 0px 3px 15px rgba(0, 0, 0, 0.4);
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 6px 0px white, 0px 3px 15px rgba(0, 0, 0, 0.4);
+}
+
+.white_frame:focus,
+frame:focus {
+  outline: none;
+}
+
+.button-MixUp {
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+
+.puzzle {
+  background-image: linear-gradient(
+    bottom,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 100%
+  );
+  background-image: -o-linear-gradient(
+    bottom,
+    rgb(1258, 15, 15) 0%,
+    rgb(255, 255, 255) 100%
+  );
+  background-image: -moz-linear-gradient(
+    bottom,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    bottom,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 100%
+  );
+  background-image: -ms-linear-gradient(
+    bottom,
+    rgb(255, 255, 255) 0%,
+    rgb(255, 255, 255) 100%
+  );
+  background-color: white;
+  border: 1px solid rgb(238, 232, 232);
+  border-radius: 5px;
+  box-shadow: 0px 6px 0px white, 0px 3px 15px rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  font-weight: bold;
+  padding: 17px;
+  -moz-border-radius: 5px;
+  -moz-box-shadow: 0px 6px 0px white, 0px 3px 15px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+  -webkit-border-radius: 5px;
+  -webkit-box-shadow: 0px 6px 0px white, 0px 3px 15px rgba(0, 0, 0, 0.4);
+}
