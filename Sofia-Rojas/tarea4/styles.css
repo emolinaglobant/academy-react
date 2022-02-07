@@ -1,0 +1,30 @@
+html,body{
+    background-color:black;
+    max-width: max-content;
+    
+}
+
+.number{
+    color: white;
+    background-color: black;
+    margin: 3.5px;
+    width: 30px;
+
+}
+
+.operator{
+    width: 40px;
+    background-color:  #f9d6d5;
+    
+    
+
+}
+.numberhidden{
+   visibility: hidden;
+
+}
+
+.screen{
+    width: 200px;
+    background-color: #fdf1f1;
+}
