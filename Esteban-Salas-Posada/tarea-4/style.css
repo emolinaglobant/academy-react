@@ -1,0 +1,35 @@
+html{
+    background-color: #F3A076;
+}
+h1{
+    text-align: center;
+}
+.calculator{
+    border: solid 2px black;
+    width: 400px;
+    height: 500px;
+    color: white;
+    border-radius: 20px;
+    background-color: rgba(53, 52, 73, 0.419);
+    margin: 0 auto;
+}
+#board{
+    background-color: rgb(230, 230, 230);
+    color: black;
+    font-size: 25px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: end;
+    height: 83px;
+}
+.calculator td button{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: #5f6267;
+    color: white;
+    font-size: 20px;
+}
+tr td:last-child button{
+    background-color: #fb9f0c;
+}
