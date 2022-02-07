@@ -6,6 +6,19 @@ export const alternateSlidingPuzzle = (grid, item1, item2) => {
               grid[item2.y][item2.x] = temp;
 };
 
+export const getRamdomPositions = () => {
+  let grid = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 0],];
+  let emptyButton = new SlidingPuzzle(3, 3);
+  for (let i = 0; i < 1000; i++) {
+    const randomItems = emptyButton.getRamdomSlidingItems();
+    alternateSlidingPuzzle(grid, emptyButton, randomItems);
+    emptyButton = randomItems;
+  }
+  
+  if (isSolved(grid)) return getRamdomPositions();
+  return grid;
+};
+
 export const isSolved = (grid) => {
   return (
     grid[0][0] === 1 &&
@@ -25,17 +38,4 @@ export const isSolved = (grid) => {
     grid[3][2] === 15 &&
     grid[3][3] === 0
   );
-};
-
-export const getRamdomPositions = () => {
-  let grid = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 0],];
-  let emptyButton = new SlidingPuzzle(3, 3);
-  for (let i = 0; i < 1000; i++) {
-    const randomItems = emptyButton.getRamdomSlidingItems();
-    alternateSlidingPuzzle(grid, emptyButton, randomItems);
-    emptyButton = randomItems;
-  }
-  
-  if (isSolved(grid)) return getRamdomPositions();
-  return grid;
 };

@@ -8,15 +8,15 @@ export default class State {
     this.status = status;
     }
 
-    static ready() {
-    return new State(
-        [[0, 0, 0, 0],[0, 0, 0, 0],[0, 0, 0, 0],[0, 0, 0, 0],],0,0,"ready"
-    );
-    }
-
     static start() {
     return new State(getRamdomPositions(), 0, 0, "is playing");
     }
+
+    static ready() {
+        return new State(
+            [[0, 0, 0, 0],[0, 0, 0, 0],[0, 0, 0, 0],[0, 0, 0, 0],],0,0,"ready"
+        );
+        }
 }
 
 

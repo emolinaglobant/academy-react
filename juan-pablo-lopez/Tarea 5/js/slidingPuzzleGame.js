@@ -11,19 +11,6 @@ export default class SlidingPuzzleGame {
     this.handleClickButton = this.handleClickButton.bind(this);
   }
 
-  static ready() {
-    return new SlidingPuzzleGame(State.ready());
-  }
-
-  tick() {
-    this.setState({ time: this.state.time + 1 });
-  }
-
-  setState(newState) {
-    this.state = { ...this.state, ...newState };
-    this.stats();
-  }
-
   handleClickButton(item) {
     return function () {
       const allSlidingItems = item.getAllSlidingItems();
@@ -48,6 +35,15 @@ export default class SlidingPuzzleGame {
         }
       }
     }.bind(this);
+  }
+
+  static ready() {
+    return new SlidingPuzzleGame(State.ready());
+  }
+
+  setState(newState) {
+    this.state = { ...this.state, ...newState };
+    this.stats();
   }
 
   stats() {
@@ -82,6 +78,10 @@ export default class SlidingPuzzleGame {
     } else {
       ("");
     }
+  }
+
+  tick() {
+    this.setState({ time: this.state.time + 1 });
   }
 }
 const GAME = SlidingPuzzleGame.ready();
