@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Einstein</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="./img/vector-calculator-icon-design.jpg" />
+  </head>
+  <body>
+    <h1 class="presentacion">Calculadora EINSTEIN</h1>
+    <hr />
+    <div class="container-all">
+      <div class="pantalla">
+        <div class="resultado">0</div>
+      </div>
+
+      <div class="container-calculator">
+        <div class="operadores">
+          <button class="teclas-fila">+</button>
+          <button class="teclas-fila">-</button>
+          <button class="teclas-fila">x</button>
+          <button class="teclas-fila">÷</button>
+        </div>
+        <div class="container-columns">
+          <div class="column">
+            <button class="tecla">7</button>
+            <button class="tecla">4</button>
+            <button class="tecla">1</button>
+            <button class="tecla">0</button>
+          </div>
+          <div class="column">
+            <button class="tecla">8</button>
+            <button class="tecla">5</button>
+            <button class="tecla">2</button>
+            <button class="tecla">.</button>
+          </div>
+          <div class="column">
+            <button class="tecla">9</button>
+            <button class="tecla">6</button>
+            <button class="tecla">3</button>
+            <button class="tecla-d" id="delete">C</button>
+          </div>
+          <div class="column column-end">
+            <button class="tecla-d" id="igual">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+    <div class="lds-circle loader" id="loader">
+      <div></div>
+      <h1>Loading...</h1>
+    </div>
+  </body>
+</html>
