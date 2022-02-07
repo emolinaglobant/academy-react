@@ -6,5 +6,5 @@ function spongeMeme(ejer) {
     .map((letter, i) => (i % 2 ? letter.toLowerCase() : letter.toUpperCase()))
     .join("");
 }
+spongeMeme("TareaGlobant")
 
-console.log(spongeMeme("TareaGlobant"));
