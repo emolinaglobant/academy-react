@@ -32,7 +32,7 @@ export default class SlidingPuzzle {
         this.getSliderTopPosition(),
       ].filter((item) => item !== null);
     }
-  
+    
     getRamdomSlidingItems() {
       const allSlidingItems = this.getAllSlidingItems();
       return allSlidingItems[Math.floor(Math.random() * allSlidingItems.length)];
