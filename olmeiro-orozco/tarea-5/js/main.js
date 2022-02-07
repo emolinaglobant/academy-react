@@ -1,9 +1,9 @@
-import { Juego } from "./juego.js";
+import { Game } from "./game.js";
 
-const JUEGO = () => {
-  Juego.iniciar();
+const GAME = () => {
+  Game.init();
 };
 
-const iniciarJuego = document.getElementById("iniciarJuego");
+const startGame = document.getElementById("startGame");
 
-iniciarJuego.addEventListener("click", JUEGO);
+startGame.addEventListener("click", GAME);

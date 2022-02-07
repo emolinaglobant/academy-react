@@ -39,7 +39,7 @@ header>button:hover {
   color: #FFD1AA;
 }
 
-.grilla {
+.gridGame {
   background-color: var(--backMain);
   border-radius:  5px;
   border: 5px solid red;
@@ -51,7 +51,7 @@ header>button:hover {
   padding: 15px;
 }
 
-.grilla button {
+.gridGame button {
   background-color: var(--btnPuzzle);
   border-radius: 10px;
   cursor: pointer;

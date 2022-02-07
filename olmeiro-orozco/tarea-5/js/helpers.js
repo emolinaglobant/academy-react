@@ -1,13 +1,13 @@
-import { Caja } from "./caja.js";
+import { Box } from "./box.js";
 
-const cambiarCajas = (grid, caja1, caja2) => {
-  const temporal = grid[caja1.fila][caja1.columna];
+const swapBoxes = (grid, box1, box2) => {
+  const temporal = grid[box1.row][box1.column];
 
-  grid[caja1.fila][caja1.columna] = grid[caja2.fila][caja2.columna];
-  grid[caja2.fila][caja2.columna] = temporal;
+  grid[box1.row][box1.column] = grid[box2.row][box2.column];
+  grid[box2.row][box2.column] = temporal;
 };
 
-const getGridAleatorio = () => {
+const getGridRandom = () => {
   let grid = [
     [1, 2, 3, 4],
     [5, 6, 7, 8],
@@ -15,19 +15,20 @@ const getGridAleatorio = () => {
     [13, 14, 15, 0],
   ];
 
-  let cajaBlanca = new Caja(3, 3);
+  let whiteBox = new Box(3, 3);
 
-  for (let i = 0; i < 1000; i++) {
-    const siguienteCajaAleatoria = cajaBlanca.getCajaAleatoriaAlLado();
-    cambiarCajas(grid, cajaBlanca, siguienteCajaAleatoria);
-    cajaBlanca = siguienteCajaAleatoria;
-  }
+  const arr = new Array(1000);
+  const filledArray = [...arr].map(() => {
+    const nextRandomBox = whiteBox.getRandomNextBox();
+    swapBoxes(grid, whiteBox, nextRandomBox);
+    whiteBox = nextRandomBox;
+  });
 
-  if (puzzleResuelto(grid)) return getGridAleatorio();
+  if (puzzleReady(grid)) return getGridRandom();
   return grid;
 };
 
-const puzzleResuelto = (grid) => {
+const puzzleReady = (grid) => {
   return (
     grid[0][0] === 1 &&
     grid[0][1] === 2 &&
@@ -48,4 +49,4 @@ const puzzleResuelto = (grid) => {
   );
 };
 
-export { puzzleResuelto, getGridAleatorio, cambiarCajas };
+export { puzzleReady, getGridRandom, swapBoxes };
