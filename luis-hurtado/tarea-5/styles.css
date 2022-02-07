@@ -1,0 +1,32 @@
+body{
+    background: radial-gradient(circle, rgba(151,255,0,1) 11%, rgba(7,133,36,1) 98%);
+}
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    text-align: center;
+}
+.board{
+    display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;    
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+.board div{
+    background-color: rgb(20, 138, 192);
+    box-shadow: 1px 4px 4px 4px black;
+    color: #F7EF8A;
+    font-size: 100px;
+    height: 130px; 
+    margin: 10px;
+    text-align: center;
+    width: 130px;
+}
