@@ -1,0 +1,34 @@
+.calculadora {
+    background-color: rgba(0, 0, 0, 0.737);
+    border-radius: 25px;
+    display: block;
+    height: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    width: 350px;
+  }
+  
+  .calculadora td button {
+    border-radius: 35px;
+    display: block;
+    font-size: 28px;
+    height: 70px;
+    width: 70px;
+  }
+  
+  #resultado {
+    background-color: white;
+    border-radius: 25px;
+    display: block;
+    font-size: 40px;
+    height: 86px;
+    line-height: 100px;
+    margin-bottom: 50px;
+    text-align: right;
+    width: 300px;
+  }
+  
+  .operador {
+    background-color: orange;
+  }
+  
