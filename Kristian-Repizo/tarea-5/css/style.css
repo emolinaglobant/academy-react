@@ -1,0 +1,40 @@
+body{
+    align-items: center;
+    background-color: rgba(24, 20, 20, 0.918);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+#container-puzzle{
+    align-items: center;
+    background-color: #501a1a;
+    height: 400px;
+    justify-items: center;
+    position: relative;
+    width: 400px;
+}
+
+h1{
+    color: white;
+}
+
+.numbers{
+    align-items: center;
+    border: 2px solid white;
+    color: white;
+    display: flex;
+    font-size: 40px;
+    height: 98px;
+    justify-content: center;
+    position: absolute;
+    transition: top 0.3s linear, left 0.3s linear;
+    width: 98px;
+}
+
+.numbers:last-of-type{
+    background: none;
+    border: none;
+}
