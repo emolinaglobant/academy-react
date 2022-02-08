@@ -1,0 +1,64 @@
+*{
+    font-family: 'Supermercado One', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    align-items: center;
+    background-color: #fdc9b9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 75px;
+}
+
+header h1 {
+    color: #B97A95;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-decoration: line-through;
+}
+
+.puzzleContainer {
+    border-radius: 30px;
+    border: solid 10px #B97A95;
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 400px;
+}
+
+.puzzleContainer button {
+    width: 100px;
+    height: 100px;
+    background-color: #F2E1C1;
+    border: solid 0.3px #B97A95;
+    font-size: 20px;
+    color: #B97A95;
+}
+
+.puzzleContainer button:nth-child(1){
+    border-radius: 15px 0 0 0;
+}
+
+.puzzleContainer button:nth-child(4){
+    border-radius: 0 15px 0 0;
+}
+
+.puzzleContainer button:nth-child(13){
+    border-radius: 0 0 0 15px;
+}
+
+.puzzleContainer button:nth-child(16){
+    border-radius: 0 0 15px 0;
+}
+
+.puzzleContainer .even {
+    background-color: #f8dba4;
+}
+
+.puzzleContainer .bottonZero {
+    background-color: #716F81;
+    color: #F2E1C1;
+}
