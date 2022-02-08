@@ -1,0 +1,35 @@
+body {
+  background-color: black;
+}
+
+.slidingPuzzle {
+  background-color: #e3b362;
+  border: 20px solid white;
+  display: table-cell;
+  height: 273px;
+  max-width: max-content;
+  padding: 50px;
+  width: 273px;
+}
+
+h1 {
+  color: bisque;
+  margin-left: 25px;
+  width: 273px;
+}
+
+h2 {
+  color: bisque;
+  margin-left: 25px;
+  width: 400px;
+}
+
+.tile {
+  border-style: revert;
+  font-family: Verdana;
+  font-size: 30px;
+  font-weight: italic;
+  height: 60px;
+  margin-bottom: 7px;
+  width: 60px;
+}
