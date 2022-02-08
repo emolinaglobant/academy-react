@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <article class="container-body">
+        <section class="container-calculator">
+
+            <section class="total">
+                <input type="text" placeholder="0" id="total-result">
+            </section>
+            <section class="btn-calc">
+                <input type="button" value="7" onclick="getData(this)">
+            </section>
+            <section class="btn-calc">
+                <input type="button" value="8" onclick="getData(this)">
+            </section>
+            <section class="btn-calc">
+                <input type="button" value="9" onclick="getData(this)">
+            </section>
+            <section class="btn-calc">
+                <input type="button" value="+" onclick="getData(this)">
+            </section>
+            <section class="btn-calc">
+                <input type="button" value="4" onclick="getData(this)">
+            </section>
+            <section class="btn-calc">
+                <input type="button" value="5" onclick="getData(this)">
+            </section>
+            <section class="btn-calc">
+                <input type="button" value="6" onclick="getData(this)">
+            </section>
+            <section class="btn-calc">
+                <input type="button" value="-" onclick="getData(this)">
+            </section>
+            <section class="btn-calc">
+                <input type="button" value="1" onclick="getData(this)">
+            </section>
+            <section class="btn-calc">
+                <input type="button" value="2" onclick="getData(this)">
+            </section>
+            <section class="btn-calc">
+                <input type="button" value="3" onclick="getData(this)">
+            </section>
+            <section class="btn-calc">
+                <input type="button" value="*" onclick="getData(this)">
+            </section>
+            <section class="btn-calc">
+                <input type="button" value="0" onclick="getData(this)">
+            </section>
+            <section class="btn-calc">
+                <input type="button" value="/" onclick="getData(this)">
+            </section>
+            <section class="btn-calc btn-clean">
+                <input type="button" value="C" class="clean" onclick="clean()">
+            </section>
+            <section class="btn-calc btn-equal">
+                <input type="button" value="=" class="equal" onclick="calculate()">
+            </section>
+
+        </section>
+    </article>
+    <script src="js/calculator.js"></script>
+</body>
+</html>
