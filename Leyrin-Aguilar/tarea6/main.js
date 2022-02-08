@@ -1,4 +1,3 @@
-
 class Fly {
   move(unit) {
     unit.position += 10;
@@ -7,7 +6,7 @@ class Fly {
 
 class Walk {
   move(unit) {
-    unit.position =  += 1;
+    unit.position += 1;
   }
 }
 
