@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+}
+button{
+    cursor: pointer;
+    margin: 0.05em;
+    padding: 0;
+    font-size: 1.5em;
+    background-color: #555150;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#puzzel{
+    display: grid;
+    grid-template-columns: repeat(4,75px);
+    grid-template-rows: repeat(4, 75px) ;
+    background-color: #7ec537;
+    padding: 0.15em;
+}
