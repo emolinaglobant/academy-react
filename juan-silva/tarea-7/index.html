@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="login.js"></script>
+</head>
+<body>
+    <main>
+        <article class="loginbox">
+            <head>
+                <h1>Login</h1>
+            </head>
+            <form class="loginform" name="mainForm" >
+                <label for ="username">
+                    <input id="username" placeholder="Username" aria-required="true" maxlength="75" type="text" size="30">
+                </label>
+                <label for ="password">
+                    <input id="password" placeholder="Password" aria-required="true" maxlength="75" type="password" size="30">
+                </label>
+                <input id ="submit"type="submit" value="Log in" onclick="validateForm()"></input>
+            </form>
+            <section class="option">
+                <hr>
+                <span> OR </span>
+                <hr>
+            </section>
+            <section class="facebooklog">
+                <button onclick="location.href='http://www.facebook.com'" type="button">
+                    Log in with Facebook
+                </button>
+            </section>
+            <section>
+                <span>Forgot password?</span>
+            </section>
+        </article>
+        <footer class="loginfooter">
+            <small>Don't have an account?</small>
+            <button type="button">
+                Sign up
+            </button>
+
+        </footer>
+    </main>
+    
+</body>
+</html>
