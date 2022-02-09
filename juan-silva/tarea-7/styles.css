@@ -1,0 +1,80 @@
+* {
+    color: rgb(0, 0, 0);
+    font-family: "Arial", Arial, monospace;
+  }
+
+  main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.facebooklog button{
+    font-weight: bold;
+    border: none;
+    background-color: ghostwhite;
+    color:#3b5998;
+}
+.loginbox{
+    background-color: ghostwhite;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: center;
+    height: 350px;
+    width: 250px;
+    padding:10px 10px;
+}
+.loginform{
+    display: flex;
+    flex-direction: column;
+    line-height: 3.5; 
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+#submit{
+    border-radius: 2px;
+    color:white;
+    background-color: rgba(129, 203, 247, 0.808);
+    border:none;
+    height: 30px;
+}
+.option{
+    display: flex;
+    align-items: center;
+    font-size:x-small;
+    padding-bottom: 20px;;
+}
+hr{
+    width:100px;
+    color: gray;
+}
+span{
+    color: silver;
+    font-size: x-small;
+
+}
+.loginfooter{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: ghostwhite;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px;
+    font-style: bold;
+    height: 50px;
+    width: 272px;
+}
+
+.loginfooter button{
+    background-color: ghostwhite;
+    border: none;
+    color:rgba(129, 203, 247, 0.808);
+}
+

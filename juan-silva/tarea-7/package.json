@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "juan",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  },
+  "name": "tarea-7",
+  "main": "login.js",
+  "description": ""
+}
