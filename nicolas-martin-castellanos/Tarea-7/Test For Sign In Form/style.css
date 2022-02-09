@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(Imagenes/fondo.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    background-image: url(imagenes/colores.jpg);
+    background-position: center;
+    background-size: cover;
+    border: solid black 1px;
+    height: 684px;
+    margin-left: 410px;
+    margin-top: 1px;
+    width: 461px;
+}
+.container form{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 232px;
+    margin-top: 55px;
+    width: 0px;
+}
+#username{
+    border-radius: 20px;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 50px;
+    padding: 15px;
+    width: 316px;
+}
+#password{
+    border-radius: 20px;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 15px;
+    width: 316px;
+}
+#SIGNIN{
+    background-color: rgb(3, 4, 5);
+    border-radius: 15px;
+    color: white;
+    font-size: 34px;
+    margin-top: 20px;
+    padding: 19px;
+}
