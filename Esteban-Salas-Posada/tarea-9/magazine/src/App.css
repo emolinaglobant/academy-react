@@ -1,0 +1,161 @@
+html{
+  background-color: #b1b1b1;
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+}
+img{
+  max-width: 100%;
+}
+h1{
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+p{
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+.main{
+  background-color: #BBDDF6;
+  background-image: url(img/modelo1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 400px;
+  height: 42vh;
+  margin: auto auto;
+  width: 95%;
+}
+
+.header{
+  margin: 0 auto;
+  max-height: 25%;
+  max-width: 95%;
+}
+.header__title{
+  color: #7FB0D4;
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 3px 1px #333;
+}
+.header__subtitle{
+  font-size: 1rem;
+  text-align: right;
+  text-shadow: 1px 1px #fff;
+}
+
+/* ----------- PARRAFOS  ---------- */
+.magazine__parrafo--primero{
+  font-size: 1rem;
+  margin: 50px 20px 0 0;
+  text-align: right;
+  text-shadow: 1px 1px #b1b1b1;
+}
+.magazine__parrafo--sgundo{
+  font-size: 1rem;
+  margin: 50px 0 0 20px;
+  text-align: left;
+  text-shadow: 1px 1px #b1b1b1;
+}
+.magazine__parrafo--tercero{
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 50px 20px 0 0;
+  text-align: right;
+  text-shadow: 1px 1px #b1b1b1;
+}
+.magazine__parrafo--cuarto{
+  color: darkblue;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0px 0 0 20px;
+  text-align: left;
+  text-shadow: 1px 1px #b1b1b1;
+}
+
+/* --------- Footer -------------- */
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  width: 100%;
+}
+.footer__img{
+  margin: 0 20px;
+  max-width: 30%;
+}
+.footer__p{
+  color: white;
+  font-size: 0.5rem;
+  text-align: center;
+  margin: 0px 20px 0 0;
+  width: 100%;
+}
+
+/* 480px --------------------------- */
+@media (min-width: 468px){
+  .main{
+      background-position: center center;
+      height: 85vh;
+      margin: 0 auto;
+      width: 80%;
+  }
+
+  .header__title{
+      font-size: 6rem;
+      text-shadow: 3px 1px #333;
+  }
+  .header__subtitle{
+      font-size: 3rem;
+  }
+  .magazine__parrafo--primero{
+      font-size: 2.7rem;
+      text-shadow: 2px 1px #b1b1b1;
+  }
+  .magazine__parrafo--sgundo{
+      font-size: 2.7rem;
+      text-shadow: 2px 1px #b1b1b1;
+  }
+  .magazine__parrafo--tercero{
+      font-size: 2.7rem;
+      text-shadow: 2px 1px #b1b1b1;
+  }
+  .magazine__parrafo--cuarto{
+      font-size: 2.7rem;
+      text-shadow: 2px 1px #b1b1b1;
+  }
+  .footer__img{
+      margin: 0 20px;
+      max-width: 30%;
+  }
+  .footer__p{
+      font-size: 2rem;
+  }
+}
+
+/* 1200px ------------------------------------------- */
+@media (min-width: 768px){
+  .main{
+      background-size: cover;
+      height: 95vh;
+      margin: 0 auto;
+      max-height: 900px;
+      max-width: 1609px;
+      width: 60vw;
+  }
+}
+
+/* 1200px ------------------------------------------- */
+@media (min-width: 1200px){
+  .main{
+      height: 95vh;
+      max-height: 940px;
+      max-width: 760px;
+      width: 60vw;
+  }
+}
+
+
