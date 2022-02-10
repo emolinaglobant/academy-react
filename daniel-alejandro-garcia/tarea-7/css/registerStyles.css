@@ -1,0 +1,107 @@
+:root {
+    --primary-color: #8A60AC;
+    --second-color: #e287f5;
+    --background-article: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#social {
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+#social i {
+    font-size: 30px;
+    padding: 10px;
+}
+
+#social i:first-child{
+    color: blue;
+    cursor: pointer;
+}
+
+#social i:nth-child(2) {
+    color: red;
+    cursor: pointer;
+}
+
+#social i:last-child {
+    color: lightskyblue;
+    cursor: pointer;
+}
+
+#messageError {
+    color: red;
+    text-align: center;
+    width: 300px;
+}
+
+body {
+    align-items: center;
+    background-image: url(../img/backrgound.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+form {
+    height: 500px;
+    width: 400px;
+}
+
+header {
+    align-items: center;
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    text-align: center;
+    width: 100%;
+}
+
+article {
+    align-items: center;
+    background-color: var(--background-article);
+    display: flex;
+    flex-direction: column;
+    height: 440px;
+    justify-content: center;
+}
+
+i {
+    color: var(--primary-color);
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid var(--second-color);
+    height: 30px;
+    margin: 10px;
+    width: 250px;
+}
+
+input:focus {
+    border-bottom: 3px solid var(--primary-color);
+    outline: none;
+}
+
+button {
+    background-color: var(--second-color);
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-weight: 600;
+    height: 40px;
+    width: 300px;
+}
