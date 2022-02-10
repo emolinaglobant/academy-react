@@ -1,0 +1,165 @@
+$color-background: #E5E5E5;
+$color-backgroundTwo: #ffffff;
+$color-principal: #14213D;
+$color-text: #FCA311;
+$size: 1.2rem;
+
+body {
+    background: $color-background;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px;
+    text-transform: capitalize;
+}
+
+.containerForm {
+    background-color: $color-backgroundTwo;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 70% 59%;
+    width: 80%;
+    margin: 20px;
+}
+
+.title {
+    color: $color-text;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.form {
+    margin: 0px 80px;
+
+    label {
+        font-size: $size;
+    }
+
+    input {
+        background-color: $color-principal;
+        border: none;
+        color: $color-text;
+        margin: 10px 0px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    input:focus {
+        border: 3px solid $color-text;
+    }
+
+    .inputOption {
+
+        .textInfo {
+            font-size: 0.900rem;
+        }
+
+        .checkbox {
+            left: 130px;
+            position: relative;
+            top: -25px;
+            cursor: pointer;
+        }
+    }
+
+    .spanAlert{
+        bottom: 40px;
+        color: $color-text;
+        font-size: 0.800rem;
+        left: 340px;
+        position: relative;
+    }
+}
+
+.btnPay {
+    background-color: $color-text;
+    border: none;
+    border-radius: 10px;
+    color: $color-backgroundTwo;
+    font-size: $size;
+    margin: 0px 50px;
+    padding: 6px;
+    text-transform: capitalize;
+    width: 80%;
+}
+
+.btnPay:hover {
+    background-color: $color-principal;
+    cursor: pointer;
+}
+
+.sectionImg {
+    background-color: $color-principal;
+    height: 80vh;
+    margin: 0px 80px;
+    padding: 8px;
+    border-radius: 0px 20px 20px 0px;
+
+    img {
+        padding-top: 30px;
+        height: 420px;
+        width: 380px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        margin: 80px 0px;
+    }
+
+    .containerForm {
+        grid-template-columns: 100%;
+        width: 100%;
+        height: 60vh;
+        margin: 10px;
+    }
+
+    .form {
+        margin: 0px 60px;
+
+        input {
+            margin: 10px 0px;
+            padding: 8px;
+            width: 100%;
+        }
+
+        .inputOption {
+            .checkbox {
+                left: -40px;
+                position: relative;
+                top: -24px;
+                cursor: pointer;
+            }
+        }
+
+        .messageAlert{
+            bottom: 40px;
+            color: $color-text;
+            font-size: 0.800rem;
+            left: 180px;
+            position: relative;
+        }
+    }
+
+    .btnPay {
+        margin: 0px;
+        padding: 6px;
+        width: 100%;
+    }
+
+    .sectionImg {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+
+    body {
+        margin-top: 100px;
+    }
+
+    .sectionImg {
+        background-color: $color-principal;
+        height: 60vh;
+        margin: 0px 120px;
+    }
+}

@@ -1,0 +1,143 @@
+body {
+  background: #E5E5E5;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 50px;
+  text-transform: capitalize;
+}
+
+.containerForm {
+  background-color: #ffffff;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 70% 59%;
+  width: 80%;
+  margin: 20px;
+}
+
+.title {
+  color: #FCA311;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.form {
+  margin: 0px 80px;
+}
+.form label {
+  font-size: 1.2rem;
+}
+.form input {
+  background-color: #14213D;
+  border: none;
+  color: #FCA311;
+  margin: 10px 0px;
+  padding: 10px;
+  width: 100%;
+}
+.form input:focus {
+  border: 3px solid #FCA311;
+}
+.form .inputOption .textInfo {
+  font-size: 0.9rem;
+}
+.form .inputOption .checkbox {
+  left: 130px;
+  position: relative;
+  top: -25px;
+  cursor: pointer;
+}
+.form .spanAlert {
+  bottom: 40px;
+  color: #FCA311;
+  font-size: 0.8rem;
+  left: 340px;
+  position: relative;
+}
+
+.btnPay {
+  background-color: #FCA311;
+  border: none;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin: 0px 50px;
+  padding: 6px;
+  text-transform: capitalize;
+  width: 80%;
+}
+
+.btnPay:hover {
+  background-color: #14213D;
+  cursor: pointer;
+}
+
+.sectionImg {
+  background-color: #14213D;
+  height: 80vh;
+  margin: 0px 80px;
+  padding: 8px;
+  border-radius: 0px 20px 20px 0px;
+}
+.sectionImg img {
+  padding-top: 30px;
+  height: 420px;
+  width: 380px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 80px 0px;
+  }
+
+  .containerForm {
+    grid-template-columns: 100%;
+    width: 100%;
+    height: 60vh;
+    margin: 10px;
+  }
+
+  .form {
+    margin: 0px 60px;
+  }
+  .form input {
+    margin: 10px 0px;
+    padding: 8px;
+    width: 100%;
+  }
+  .form .inputOption .checkbox {
+    left: -40px;
+    position: relative;
+    top: -24px;
+    cursor: pointer;
+  }
+  .form .messageAlert {
+    bottom: 40px;
+    color: #FCA311;
+    font-size: 0.8rem;
+    left: 180px;
+    position: relative;
+  }
+
+  .btnPay {
+    margin: 0px;
+    padding: 6px;
+    width: 100%;
+  }
+
+  .sectionImg {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  body {
+    margin-top: 100px;
+  }
+
+  .sectionImg {
+    background-color: #14213D;
+    height: 60vh;
+    margin: 0px 120px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
