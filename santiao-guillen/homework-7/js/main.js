@@ -10,11 +10,13 @@ const getName = e =>name = e.target.value;
 const getEmail = e => {
     email = e.target.value;
     messageEmail.innerHTML = (email.includes("@")) ? "valid email" : "it's not an email";
+    return email;
 }
 
 const getNumberCard = e => {
     numberCard = Number(e.target.value);
     messageCard.innerHTML = (isNaN(numberCard)) ? "this value is no a number" : "";
+    return numberCard;
 }
    
 const verifyInput = (e) => {
@@ -29,7 +31,7 @@ const verifyInput = (e) => {
             inputEmpty = true;
         }
     });
-    alert((inputEmpty === true) ? "Please fill all fields" : makePayment(name, email, numberCard));
+    alert((inputEmpty) ? "Please fill all fields" : makePayment(name, email, numberCard));
 }
 
 const makePayment = (...values) => {
@@ -39,9 +41,10 @@ const makePayment = (...values) => {
         message = ("successful payment");
         location.reload();
     } else {
-        message = ("we could not make the payment, some values ​are incorrect");
+        message = ("we could not make the payment, some values are incorrect");
     }
     alert(message);
+    return data;
 }
 
 inputName.addEventListener("keyup", getName);
