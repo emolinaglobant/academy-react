@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+.container {
+  max-width: 440px;
+  margin: 170px auto;
+  padding: 0 20px;
+}
+.seccion-form {
+  box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 5px;
+  width: 100%;
+}
+.seccion-form .title {
+  align-items: center;
+  border-radius: 5px 5px 0 0;
+  background: #000000;
+  color: #fff;
+  display: flex;
+  font-size: 30px;
+  font-weight: 600;
+  height: 90px;
+  justify-content: center;
+}
+.seccion-form form {
+  padding: 30px 25px 25px 25px;
+}
+.seccion-form form .row {
+  height: 45px;
+  margin-bottom: 25px;
+  position: relative;
+}
+.seccion-form form .row input {
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+  height: 100%;
+  outline: none;
+  padding-left: 60px;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+.seccion-form form .row i {
+  align-items: center;
+  background: #000000;
+  border-radius: 5px 0 0 5px;
+  color: #fff;
+  display: flex;
+  font-size: 18px;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  width: 47px;
+}
+.seccion-form form .restablecer {
+  margin: 8px 0 20px 0;
+}
+.seccion-form form .restablecer a {
+  color: #000000;
+  font-size: 18px;
+  text-decoration: none;
+  
+}
+.seccion-form form .button input {
+  background: #000000;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 0px;
+}
+.seccion-form form .link {
+  font-size: 17px;
+  margin-top: 20px;
+  text-align: center;
+}
+.seccion-form form .link a {
+  color: #000000;
+}
