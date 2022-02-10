@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/35804d201e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main class="container">
+        <section class="container__title">LogIn</section>
+        <form action="" method="post" id="form" >
+            <article class="container__user-detail">
+                <section class="user-detail__input-box" id="grupo__email">
+                    <label for="email" class="input-box__details">Email</label>
+                <input type="email" placeholder="Enter your email" name="email" id="user-detail__email">
+                <p class="user-detail__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+
+                <section class="user-detail__input-box" id="grupo__password">
+                    <label for="password" class="input-box__details">Password</label>
+                <input type="password" placeholder="Enter your phone Password" name="password"id="user-detail__password" >
+                <p class="user-detail__input-error">La contraseña tiene que ser de 4 a 12 dígitos.</p>
+                </section>
+                <section class="container__button">
+                    <input type="submit" value="LogIn" id="button-submit">
+                </section>
+            </article>
+            <article class="container__social">
+                <section class="social__go"><i class="fab fa-google"></i>  Google</section>
+                <section class="social__fb"><i class="fab fa-facebook"></i>  Facebook</section>
+            </article>
+            <br>
+            <section class="warnings" id="warnings"></section>
+        </form>
+    </main>
+    <script src="js/code.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&display=swap');
+*{
+    box-sizing: border-box;
+    /* font-family: 'Quintessential', cursive; */
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items:center;
+    background: linear-gradient(100deg,#0EA9F7,#00FF87);
+    display: flex;
+    height:100vh;
+    justify-content:center;
+    padding: 10px;
+}
+
+
+.container {
+    background: #fff;
+    border-radius: 10px;
+    max-width: 400px;
+    padding:25px 30px;
+    width: 100%;
+}
+
+.container__title {
+    font-size:30px;
+    font-weight:700;
+    user-select: none; 
+}
+
+.container__title::before{
+    content:"";
+    background:#0EA9F7;
+    bottom: 0;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 140px;
+}
+
+.container__user-detail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:20px 0 12px 0;
+    user-select: none; 
+}
+
+.user-detail__input-box{
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input-box__details{
+    display:block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.user-detail__input-box input{
+    border-radius: 10px;
+    /* border: 1px solid #ccc; */
+    border-bottom-width: 2px;
+    font-size: 16px;
+    height:45px;
+    outline: none;
+    padding-left: 15px;
+    width:100%;
+}
+
+/* .user-detail__input-box input:focus,
+.user-detail__input-box input:valid{
+    border-color: #FFC300;
+} */
+
+form .container__button{
+    height:45px;
+    margin:45px 0;
+    width:100%;
+}
+
+.user-detail__input-error{
+    color:red;
+    font-size: 15px;
+	margin-bottom: 0;
+	display: none;
+}
+
+form .container__button input{
+    background: linear-gradient(100deg,#0EA9F7,#00FF87);
+    border-radius: 10px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    height:100%;
+    letter-spacing: 5px;
+    outline: none;
+    width:100%;
+}
+
+.container__social{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    user-select: none;    
+}
+.container__social section{
+    border-radius: 3px;
+    color: #FFF;
+    padding: 5px 10px 10px 5px;
+    text-align: center;
+    width: 150px;
+}
+.container__social .social__go{
+    background:  #00933B;
+}
+.container__social .social__fb{
+    background-color: #385898;
+    margin-left: 25px;
+}
+.container__social i{
+    margin-right: 4px;
+}
+
