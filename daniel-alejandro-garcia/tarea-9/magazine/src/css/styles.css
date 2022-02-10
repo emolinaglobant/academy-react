@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600&family=Lato:ital,wght@1,300&display=swap');
+
+:root {
+    --primary-color: #60727c;
+    --second-color: #fff;
+    --second-font: 'Lato', sans-serif;
+    --third-color: #021b24;
+    --title-font: 'Bodoni Moda', serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    background-image: url(../img/portada3.jpg);
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+    height: 100vh;
+    margin: auto;
+    width: 700px;
+}
+
+header {
+    color: var(--second-color);
+    font-family: var(--title-font);
+    font-size: 8rem;
+    grid-column: 1 / span 4;
+    place-self: flex-start center;
+}
+
+main {
+    align-self: flex-end;
+    color: var(--second-color);
+    grid-column: 1 / span 2;
+    padding: 20px;
+}
+
+main section {
+    width: 250px;
+}
+
+main section h2 {
+    color: var(--primary-color);
+    font-family: var(--second-font);
+    font-size: 2.3rem;
+    text-transform: uppercase;
+}
+
+main section p {
+    color: var(--second-color);
+    font-family: var(--second-font);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+aside {
+    align-self: center;
+    color: var(--second-color);
+    display: flex;
+    flex-direction: column;
+    grid-column: 4 / span 5;
+    justify-content: space-evenly;
+    padding: 10px;
+    text-align: center;
+}
+
+aside section h3 {
+    font-family: var(--second-font);
+    text-transform: uppercase;
+}
+
+aside section:first-child h2{
+    color: var(--third-color);
+    font-family: var(--title-font);
+    font-size: 6rem;
+    font-weight: 200;
+}
+
+aside section h4 {
+    color: var(--third-color);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+aside section:first-child p {
+    font-family: var(--second-font);
+}
+
+aside section p {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    grid-column: 1 / span 4;
+    justify-content: space-between;
+    padding: 10px;
+    place-self: end flex-start;
+    width: 100%;
+}
+
+footer img {
+    height: 65px;
+    width: 120px;
+}
+
+footer section {
+    align-self: flex-start;
+    color: var(--second-color);
+    text-align: center;
+}
+
+footer section h2 {
+    font-family: var(--second-font);
+    text-transform: uppercase;
+}
+
+footer section p {
+    font-family: var(--second-font);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
