@@ -1,0 +1,218 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:200,400,700);
+@import url(https://fonts.googleapis.com/css?family=Cinzel:400,500);
+
+p,
+figure,
+h1 {
+  margin: 0px;
+}
+
+.main-container {
+  background-color: #ed1f27;
+  max-width: 960px;
+  padding: 20px 41px 21px 41px;
+}
+
+.top-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+
+.info {
+  font-family: fantasy;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.magazine-cover {
+  border: solid 15px #fcfffc;
+  max-height: 1176px;
+  max-width: 930px;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.magazine-title {
+  color: rgb(216, 226, 232, 0.7);
+  font-family: "Cinzel";
+  font-size: 256px;
+  font-weight: 500;
+  position: absolute;
+  top: 10px;
+}
+
+.dialog-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.ios-dialog {
+  background-color: rgba(220, 220, 220, 0.9);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  height: 216px;
+  position: absolute;
+  top: 576px;
+  width: 618px;
+}
+
+.ios-text {
+  font-family: "Lato";
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.text-container {
+  border-bottom: 1px solid #c0bfc8;
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  justify-content: center;
+  width: 100%;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  height: 30%;
+  width: 100%;
+}
+
+.divider {
+  background-color: #c0bfc8;
+  width: 1px;
+}
+
+.btn {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50%;
+}
+
+.cancel-btn {
+  color: #436ba2;
+}
+
+.delete-btn {
+  color: #d02b37;
+}
+
+.img-container {
+  max-height: 1176px;
+  max-width: 930px;
+}
+
+.background-img {
+  width: 100%;
+}
+
+.articles-container {
+  bottom: 225px;
+  display: flex;
+  flex-direction: column;
+  left: 20px;
+  max-width: 400px;
+  position: relative;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.name,
+.author {
+  color: white;
+  font-family: "Lato";
+}
+
+.name {
+  font-size: 28px;
+  font-weight: 700;
+  max-width: 50%;
+}
+
+.author {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.bottom-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 2px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .main-container {
+    max-width: 480px;
+    padding: 10px 20.5px 10.5px 20.5px;
+  }
+
+  .info {
+    font-size: 8px;
+  }
+
+  .magazine-cover {
+    border: solid 7.5px #fcfffc;
+    max-height: 588px;
+    max-width: 465px;
+  }
+
+  .magazine-title {
+    color: rgb(216, 226, 232, 0.7);
+    font-family: "Cinzel";
+    font-size: 128px;
+    font-weight: 500;
+    position: absolute;
+    top: 14px;
+  }
+
+  .ios-text {
+    font-size: 16px;
+  }
+
+  .ios-dialog {
+    background-color: rgba(220, 220, 220, 0.9);
+    border-radius: 12.5px;
+    display: flex;
+    flex-direction: column;
+    height: 108px;
+    top: 288px;
+    width: 309px;
+  }
+
+  .img-container {
+    max-height: 588px;
+    max-width: 465px;
+  }
+
+  .articles-container {
+    bottom: 112px;
+    left: 14px;
+    max-width: 250px;
+  }
+
+  .name {
+    font-size: 12px;
+    max-width: 35%;
+  }
+
+  .author {
+    font-size: 10px;
+  }
+}
