@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  background: linear-gradient(rgb(111, 238, 141) 25%, rgb(23, 201, 100) 100%);
+  padding: 1em 0;
+  font-size: 50px;
+  text-align: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+span {
+  background-image: linear-gradient(
+    rgb(243, 101, 52) 25%,
+    rgb(246, 159, 39) 100%
+  );
+  font-size: 32px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body {
+  background: black;
+  font-family: "Inter", sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.form__information {
+  background-color: #242323bd;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  padding: 30px;
+}
+
+.form__information--title {
+  color: #ffffff;
+  font-size: 32px;
+  padding-bottom: 1em;
+}
+
+.form__information label {
+  color: azure;
+  font-size: 16px;
+  padding: 0.2em 0;
+}
+
+.form__information input {
+  border-radius: 3px;
+  border-style: none;
+  height: 40px;
+  margin: 10px 0;
+  width: 100%;
+}
+.form__button {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+}
+
+button {
+  background-color: #0070f3;
+  box-shadow: 0 4px 14px 0 rgb(0 118 255 / 39%);
+  border-radius: 4px;
+  border-style: none;
+  color: floralwhite;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  height: 40px;
+  width: 200px;
+}
