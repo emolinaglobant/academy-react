@@ -16,7 +16,3 @@ test ('validate if password is correct', ()=>{
 test ('validate if password is correct and not safe', ()=>{
   expect(signin.validatePassword('colombia123')).not.toMatch(/\S+@\S+\.\S+/)
 });
-//this error will come out because it does not comply with the password validation = (/\S+@\S+\.\S+/)
-test ('validate if password is correct and safe', ()=>{
-  expect(signin.validatePassword('colombia123')).toMatch(/\S+@\S+\.\S+/)
-});
