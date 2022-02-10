@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <main>
+      <article class="content">
+        <section class="login__title">
+          <img src="img/GitHub-Mark-64px.png" alt="" srcset="" />
+          <h1>Sign in to GitHub</h1>
+        </section>
+        <section id="status-message"></section>
+        <section class="section__form">
+          <form class="login__form">
+            <label>Username or email address</label>
+            <input type="text" id="login__username" />
+            <label>
+              Password
+              <a href="#forgot" class="login__forgot">Forgot password?</a>
+            </label>
+            <input type="password" id="login__password" />
+            <button type="submit" class="login__button">Sign in</button>
+          </form>
+        </section>
+        <section class="section__new">
+          New to GitHub? &nbsp;
+          <a href="#new_account" class="login__new">Create an account.</a>
+        </section>
+        <section class="section__links">
+          <a href="#terms">Terms</a>
+          <a href="#privacy">Privacy</a>
+          <a href="#security">Security</a>
+          <a href="#contact" class="link__contact-github">Contact Github</a>
+        </section>
+      </article>
+    </main>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
