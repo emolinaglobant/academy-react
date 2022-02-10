@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testing Form</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Testing Form</h1>
+      </header>
+      <form action="" id="testing-form">
+        <section class="form__information">
+          <h2 class="form__information--title">Sign <span>in</span></h2>
+          <label for="name">User Name: </label>
+          <input type="text" id="user-name" name="name" /><br />
+          <section id="error-message"></section>
+          <label for="password">Password: </label>
+          <input type="password" id="user-password" name="password" /><br />
+          <section class="form__button">
+            <button id="button-testing" type="submit">Sign in</button>
+          </section>
+          <section id="error-message"></section>
+        </section>
+      </form>
+    </main>
+  </body>
+  <script src="./index.js"></script>
+</html>
