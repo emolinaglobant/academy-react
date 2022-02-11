@@ -1,0 +1,127 @@
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #CD88AF;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login {
+  background-color: #D4B16A;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #CD88AF;
+  text-align:left;
+}
+
+.login form {
+  background-color: #D49A6A;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 60vw;
+  height: 70vh;
+}
+
+.login form section {
+  width: 80%;
+  margin-top: 18px;
+}
+
+label {
+  color: #061539;
+  display: block;
+  font-size: 18px;
+  font-weight: 800;
+  margin: 5px;
+  padding: -2px;
+}
+
+input {
+  width: 100%;
+  margin-top: 1px;
+  padding: 5px;
+  height: 20px;
+  background: #FFE3AA;
+  border: none;
+  border-radius: 5px;
+}
+
+input:invalid:focus {
+  background-image: linear-gradient(pink, lightgreen);
+}
+
+.login .signUp {
+  background-color: #86B4AB;
+  border: 1px solid #CD88AF;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 50px;
+  margin-left: 10px;
+}
+
+#formLogin a{
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+#btnLogin {
+    margin-top: 10px;
+    width: 30%;
+    height: 8%;
+    background-color: cornsilk;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px ;
+}
+
+#btnLogin:hover {
+  background-color: #50607B;
+  cursor: pointer;
+}
+
+#btnLogin:active {
+  background-color: #BAAC72;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 47px;
+}
+
+.errorUserName, .errorPassword, .errorConfirm {
+  font-size: 16px;
+  color: #7D4313;
+  font-weight: bolder;
+  display: block;
+}
+
+.errorLogin {
+  font-size: large;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 5px solid red;
+  border-radius: 5px;
+}
