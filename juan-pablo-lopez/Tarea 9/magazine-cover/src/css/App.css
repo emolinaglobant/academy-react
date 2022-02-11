@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,200&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    font-family: 'DM Serif Display', serif;
+}
+
+p {
+    color: #fff;
+    font-family: 'Karla', sans-serif;
+}
+
+.grid-container {
+    background-image: url(../img/woman.PNG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 280px 285px 1fr 1fr;
+    grid-template-areas: 
+    "tittle tittle tittle"
+    ". deck ."
+    "article . suporting-overlines"
+    "lead-article-line . suporting-overlines" 
+    "footer footer footer";
+    height: 100vh;
+    margin: auto;
+    width: 70vh;
+    
+}
+
+.grid-tittle {
+    color: #f79f79;
+    font-size: 100px;
+    grid-area: tittle;
+    place-self: flex-start center;    
+}
+
+.grid-deck {
+    align-self: flex-start;
+    color: #fff;
+    display: inline-grid;
+    font-size: 7px;
+    grid-area: deck;
+    grid-column: 2/4;
+    padding-left: 190px;
+}
+
+.grid-suporting-overlines section p {
+    font-family: 'DM Serif Display', serif;
+    width: 75px;
+}
+
+.grid-article {
+    color: #fff;
+    grid-area: article;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.grid-article section p {
+    width: 75px;
+}
+
+.span_text {
+    color: #f79f79;
+    display: block;
+    font-family: 'DM Serif Display', serif;
+}
+.grid-lead-article-line {
+    color: #fff;
+    grid-area: lead-article-line;
+    margin-left: 30px
+}
+
+.grid-lead-article-line section p {
+    font-size: 20px;  
+    width: 95px;
+}
+
+.grid-suporting-overlines {
+    color: #fff;
+    grid-area: suporting-overlines;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-right: 30px;
+    text-align: right;
+}
+
+.grid-footer {
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    grid-area: footer;
+    grid-column: 1/4;
+    padding: 20px;
+}
+
+.grid-footer section p:first-child {
+    color: #f79f79;
+    font-family: 'DM Serif Display', serif;
+}
