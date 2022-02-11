@@ -1,45 +1,58 @@
-let puzzleBox = document.querySelectorAll('div');
 const arrayPuzzle = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '']
-let numbers = arrayPuzzle
 const numberofGrid = 4
-
-function setUp(){
-    removeDroppable(puzzleBox)
-
-    fillPuzzle(puzzleBox, numbers)
-
-    state.content = getState(puzzleBox)
-    state.dimension = getDimension(state)
-    
-    setBoxId(puzzleBox)
-
-    setDroppable(puzzleBox)
-    setDraggable(puzzleBox)
-}
+let numbers = arrayPuzzle
+let puzzleBox = document.querySelectorAll('div');
 
 const state = {}
 state.content = numbers;
 
-const isCorrect = (solution, gameDimension) => {
-    if(JSON.stringify(solution) == JSON.stringify(gameDimension)) return true
-    return false
+/// DRAG HANDLERS
+const dragstart_handler = ev => {
+    console.log("dragstart")
+    ev.dataTransfer.setData("text/plain", ev.target.id)
+    ev.dataTransfer.dropEffect = "move"
 }
+const dragover_handler = ev => {
+    console.log("dragOver")
+    ev.preventDefault();    
+}
+const drop_handler = ev => {
+    console.log("drag")
+    ev.preventDefault();
+    const data = ev.dataTransfer.getData("text/plain")
+    ev.target.innerText = document.getElementById(data).innerText
 
+    ev.target.classList.remove("empty")
+    ev.target.setAttribute("ondrop", "")
+    ev.target.setAttribute("ondragover", "")
+    document.getElementById(data).innerText = ""
 
-//getters
-const getState = (items) => {
-    const state = []
+    state.content = getState(puzzleBox)
+    state.dimension = getDimension(state)
+}
+function dragend_handler(ev) {
+    console.log("dragEnd")
+    ev.dataTransfer.clearData()
+
+    removeDroppable(document.querySelectorAll('div'))
+
+    setDroppable(document.querySelectorAll('div'))
+    setDraggable(document.querySelectorAll('div'))
+    console.log(state.content)
+    console.log(numbers)
+}
+/// DRAG HANDLERS
+
+const fillPuzzle = (items, numbers) => {
+    let shuffled = shuffle(numbers)
+
+    while(!isSolvable(shuffled)) {
+        shuffled = shuffle(numbers)
+    }
+
     items.forEach((item, i) => {
-        state.push(item.innerText)
+        item.innerText = shuffled[i]
     })
-    return state
-}
-
-const getEmptyBox = ()  => {
-    const emptyBox = state.emptyBoxIndex+1;
-    const emptyBoxRow = Math.ceil(emptyBox/numberofGrid);
-    const emptyBoxCol = numberofGrid - (numberofGrid * emptyBoxRow - emptyBox);
-    return [emptyBoxRow-1, emptyBoxCol-1]
 }
 
 const getDimension = (state) => {
@@ -52,11 +65,50 @@ const getDimension = (state) => {
     }
     return arr
 }
-//getters
+const getEmptyBox = ()  => {
+    const emptyBox = state.emptyBoxIndex+1;
+    const emptyBoxRow = Math.ceil(emptyBox/numberofGrid);
+    const emptyBoxCol = numberofGrid - (numberofGrid * emptyBoxRow - emptyBox);
+    return [emptyBoxRow-1, emptyBoxCol-1]
+}
+const getState = (items) => {
+    const state = []
+    items.forEach((item, i) => {
+        state.push(item.innerText)
+    })
+    return state
+}
 
+const isCorrect = (solution, gameDimension) => {
+    if(JSON.stringify(solution) == JSON.stringify(gameDimension)) return true
+    return false
+}
+const isSolvable = (arr) => {
+    let numberOfInversion = 0
+    arr.forEach((i, j) => {
+        if((arr[i] && arr[j]) && arr[i] > arr[j]) numberOfInversion++
+    })
 
-//setter
+    return (numberOfInversion % 2 == 0)   
+}
 
+const removeDroppable = (items) => {
+    items.forEach((item, i) => {
+        state.emptyBoxIndex = i
+        item.setAttribute("ondrop", "")
+        item.setAttribute("ondragover", "")
+        item.setAttribute("draggable", "false")
+        item.setAttribute("ondragstart", "")
+        item.setAttribute("ondragend", "")
+        item.classList.remove("empty")
+    })
+}
+
+const setBoxId = (puzzleBox) =>{
+    for(let i = 0; i < puzzleBox.length; i++){
+        puzzleBox[i].setAttribute("id", `div${i}`)
+    }
+}
 const setDroppable = (items) => {
     items.forEach((item, i) => {
         if(!item.innerText){
@@ -69,17 +121,6 @@ const setDroppable = (items) => {
             item.setAttribute("ondragend", "");
         }
         return;
-    })
-}
-const removeDroppable = (items) => {
-    items.forEach((item, i) => {
-        state.emptyBoxIndex = i
-        item.setAttribute("ondrop", "")
-        item.setAttribute("ondragover", "")
-        item.setAttribute("draggable", "false")
-        item.setAttribute("ondragstart", "")
-        item.setAttribute("ondragend", "")
-        item.classList.remove("empty")
     })
 }
 const setDraggable = (items) => {
@@ -103,57 +144,19 @@ const setDraggable = (items) => {
             }
     })
 }
+function setUp(){
+    removeDroppable(puzzleBox)
 
-//setter
-
-const setBoxId = (puzzleBox) =>{
-    for(let i = 0; i < puzzleBox.length; i++){
-        puzzleBox[i].setAttribute("id", `div${i}`)
-    }
-}
-
-/// DRAG HANDLERS
-const dragstart_handler = ev => {
-    console.log("dragstart")
-    ev.dataTransfer.setData("text/plain", ev.target.id)
-    ev.dataTransfer.dropEffect = "move"
-}
-
-const dragover_handler = ev => {
-    console.log("dragOver")
-    ev.preventDefault();    
-}
-
-const drop_handler = ev => {
-    console.log("drag")
-    ev.preventDefault();
-    const data = ev.dataTransfer.getData("text/plain")
-    ev.target.innerText = document.getElementById(data).innerText
-
-    ev.target.classList.remove("empty")
-    ev.target.setAttribute("ondrop", "")
-    ev.target.setAttribute("ondragover", "")
-    document.getElementById(data).innerText = ""
+    fillPuzzle(puzzleBox, numbers)
 
     state.content = getState(puzzleBox)
     state.dimension = getDimension(state)
+    
+    setBoxId(puzzleBox)
+
+    setDroppable(puzzleBox)
+    setDraggable(puzzleBox)
 }
-
-function dragend_handler(ev) {
-    console.log("dragEnd")
-    ev.dataTransfer.clearData()
-
-    removeDroppable(document.querySelectorAll('div'))
-
-    setDroppable(document.querySelectorAll('div'))
-    setDraggable(document.querySelectorAll('div'))
-    console.log(state.content)
-    console.log(numbers)
-}
-
-
-
-//shuffle
 const shuffle = (arr) => {
     const copy = [...arr]
 
@@ -166,29 +169,6 @@ const shuffle = (arr) => {
     return copy
 }
 
-//shuffle
-const isSolvable = (arr) => {
-    let numberOfInversion = 0
-
-    for(let i = 0; i < arr.length; i++){
-        for(let j = i+1; j < arr.length; j++){
-            if((arr[i] && arr[j]) && arr[i] > arr[j]) numberOfInversion++
-        }
-    }
-
-    return (numberOfInversion % 2 == 0)
-}
 
 
 
-const fillPuzzle = (items, numbers) => {
-    let shuffled = shuffle(numbers)
-
-    while(!isSolvable(shuffled)) {
-        shuffled = shuffle(numbers)
-    }
-
-    items.forEach((item, i) => {
-        item.innerText = shuffled[i]
-    })
-}
