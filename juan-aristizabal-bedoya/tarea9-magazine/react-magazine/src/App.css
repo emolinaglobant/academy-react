@@ -1,0 +1,85 @@
+.App {
+  background: #d6d7db url("./img/perro1.png") no-repeat fixed center;
+  background-size: 30%;
+}
+
+.header {
+  text-align: center;
+}
+p {
+  margin: 0;
+}
+
+.header p {
+  color: #97999a;
+  font-family: "Cairo", sans-serif;
+  font-size: 0.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.main_title {
+  color: #d77939;
+  font-family: "Shadows Into Light", cursive;
+  font-size: 6rem;
+  height: 7rem;
+  margin: 0px;
+}
+
+.backtitle {
+  background-color: #9c6e58;
+  color: #d6d7db;
+  margin: 0;
+}
+.title2 {
+  color: #9c6e58;
+  font-size: 4rem;
+  font-weight: 100;
+  margin: 0;
+}
+.colordogs {
+  color: #d17c3c;
+}
+.blackbold_font {
+  color: black;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+.graybold_font {
+  color: #97999a;
+  font-family: "Cairo", sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+.thin-font {
+  color: #797b7a;
+  font-size: 1.3rem;
+  font-weight: 100;
+}
+
+.whitebold-font {
+  color: white;
+  font-weight: 700;
+}
+
+.footer_color {
+  color: #6e706f;
+}
+.globalContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.globalContainer_left_right {
+  text-align: center;
+}
+
+.img_dog {
+  border-radius: 50%;
+  border: 1px solid;
+  width: 4rem;
+}
+.figure {
+  margin: 0;
+}
