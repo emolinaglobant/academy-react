@@ -1,0 +1,166 @@
+html, body {
+
+  background-color: white;
+  font-family: Helvetica;
+  margin:0;
+  padding:0;
+}
+
+.container{
+  background-color: rgb(17,17,17);
+  display: grid;
+  grid-template-areas: ". magazine .";
+  grid-template-columns: 1fr 2fr 1fr;
+  height: 150vh;
+  width: 100%;
+}
+.magazine{
+  background-image: url("assets/wp1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  grid-area: magazine;
+  margin: 10px;
+}
+
+.magazine-header{
+  display: flex;
+  flex-direction: column;
+  grid-area: head;
+  justify-content: space-evenly;
+  row-gap: 1px;
+}
+
+.magazine-header figure{
+  display: flex;
+  flex-flow: column;
+  margin: 0px 40px 15px 40px;
+  max-width: 1500px;
+  padding: 2px;
+  
+}
+
+.header-title{
+  color: rgb(7, 7, 7);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 10px;
+  line-height: .9;
+  text-align: center;
+  text-shadow: red 0.1em 0.1em 0.2em;
+}
+.header-title ol{
+  letter-spacing: 2px;
+  line-height: .1;
+  list-style-type: none;
+
+}
+
+.magazine-content{
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "head head head"
+   ". . col"
+  ". . col"
+  ". . col"
+  "code . ad" ;
+  
+  height: 100%;
+  padding: 5px 20px 5px 10px;
+                      
+}
+
+.magazine-column{
+  display: flex;
+  flex-direction: column;
+  grid-area: col;
+  justify-content: flex-start;
+  text-align: right;
+}
+
+
+.main-title{
+  
+  color:white;
+  font-size: 50px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  line-height: 1.2;
+  text-shadow: rgb(255, 238, 0) 0.1em 0.1em 0.2em;
+  padding-bottom: 50px;
+}
+
+.subtitle{
+  color:#a96d14;
+  flex-direction: column;
+  justify-content: flex-end;
+  letter-spacing: -1px;
+  line-height: 2;
+  
+}
+
+.subtitle span{
+  background-color: #ffffff8a;
+  border-radius: 8px;
+  box-shadow: 0 0 50px #ff0000c9;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.ad{
+  align-content: right;
+  align-self:flex-end;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  font-size: 22px;
+  font-weight: bold;
+  grid-area: ad;
+  text-align: right;
+  text-shadow: rgb(255, 30, 0) 0.1em 0.1em 0.2em;
+  
+}
+.ad figure{
+  align-self:flex-end;
+  display: flex;
+  flex-flow: column;
+  justify-content: right;
+  margin: 35px 5px 5px 50px;
+  max-width: 220px;
+  padding: 5px;
+}
+
+.ad img{
+  max-height: 100px;
+  max-width: 135px;
+  position: relative;
+}
+
+.codebar{
+  align-content: flex-end;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  font-size: 8px;
+  font-weight: bold;
+  grid-area: code;
+  justify-content: end;
+  text-align: left;
+}
+.codebar figure {
+  align-self:flex-end;
+  display: flex;
+  flex-flow: column;
+  max-width: 220px;
+  padding: 5px;
+}
+
+.codebar figure img{
+  max-height: 75px;
+  max-width: 110px;
+  position: relative;
+}
