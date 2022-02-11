@@ -9,39 +9,39 @@ body {
 }
 
 header {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  width: 100%;
 }
 
 .login {
+  align-items: center;
   background-color: #D4B16A;
-  height: 80vh;
-  width: 100%;
+  border: 1px solid #CD88AF;
   display: flex;
   flex-direction: row;
+  height: 80vh;
   justify-content: center;
-  align-items: center;
-  border: 1px solid #CD88AF;
   text-align:left;
+  width: 100%;
 }
 
 .login form {
+  align-items: center;
   background-color: #D49A6A;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 60vw;
   height: 70vh;
+  justify-content: flex-start;
+  width: 60vw;
 }
 
 .login form section {
-  width: 80%;
   margin-top: 18px;
+  width: 80%;
 }
 
 label {
@@ -54,13 +54,13 @@ label {
 }
 
 input {
-  width: 100%;
+  background: #FFE3AA;
+  border-radius: 5px;
+  border: none;
+  height: 20px;
   margin-top: 1px;
   padding: 5px;
-  height: 20px;
-  background: #FFE3AA;
-  border: none;
-  border-radius: 5px;
+  width: 100%;
 }
 
 input:invalid:focus {
@@ -68,15 +68,15 @@ input:invalid:focus {
 }
 
 .login .signUp {
+  align-items: center;
   background-color: #86B4AB;
-  border: 1px solid #CD88AF;
   border-radius: 5px;
+  border: 1px solid #CD88AF;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: start;
-  padding: 50px;
   margin-left: 10px;
+  padding: 50px;
 }
 
 #formLogin a{
@@ -85,14 +85,14 @@ input:invalid:focus {
 }
 
 #btnLogin {
-    margin-top: 10px;
-    width: 30%;
-    height: 8%;
     background-color: cornsilk;
+    border-radius: 5px ;
     border: none;
     font-size: 18px;
     font-weight: 600;
-    border-radius: 5px ;
+    height: 8%;
+    margin-top: 10px;
+    width: 30%;
 }
 
 #btnLogin:hover {
@@ -105,23 +105,23 @@ input:invalid:focus {
 }
 
 footer {
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   height: 47px;
+  justify-content: center;
 }
 
 .errorUserName, .errorPassword, .errorConfirm {
-  font-size: 16px;
   color: #7D4313;
-  font-weight: bolder;
   display: block;
+  font-size: 16px;
+  font-weight: bolder;
 }
 
 .errorLogin {
-  font-size: large;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 5px solid red;
   border-radius: 5px;
+  border: 5px solid red;
+  font-size: large;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
