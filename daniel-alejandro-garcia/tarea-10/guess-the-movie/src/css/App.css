@@ -1,0 +1,61 @@
+.App {
+  background-color: #000000;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto-fill, 1fr);
+  width: 100%;
+}
+
+.lifes {
+  color: #FFFFFF;
+  font-size: 30px;
+  font-weight: 600;
+  grid-column: 1 / 2;
+  padding: 20px;
+}
+
+.score {
+  color: #FFFFFF;
+  font-size: 30px;
+  font-weight: 600;
+  grid-column: 2 / 3;
+  padding: 20px;
+  text-align: right;
+}
+
+.game {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / -1;
+  justify-content: center;
+  height: 92.8vh;
+}
+
+.game h2 {
+  color: #FFAC41;
+  font-size: 70px;
+}
+
+.emojis {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.sendInfo input {
+  border-radius: 20px;
+  font-size: 20px;
+  height: 50px;
+  padding-left: 10px;
+  width: 450px;
+}
+
+.sendInfo button {
+  background-color: #59D257;
+  border-radius: 15px;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 55px;
+  margin-left: 20px;
+  width: 120px;
+}
