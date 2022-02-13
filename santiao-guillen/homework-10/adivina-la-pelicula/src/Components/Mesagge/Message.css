@@ -1,0 +1,91 @@
+.containerMessage{
+    background-color: #F2EFEA;
+    border-radius: 10px;
+    height: 200px;
+    left: 345px;
+    padding: 40px;
+    position: absolute;
+    top: 150px;
+    width: 40%;
+    animation: showMessage 0.3s ease-in-out;
+}
+
+.btnClose{
+    background-color: #FC7753;
+    border-radius: 100%;
+    border: none;
+    color: #F2EFEA;
+    font-size: 1.2rem;
+    padding: 12px 16px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+}
+
+.btnClose:hover{
+    background-color: #e90c0c;
+    cursor: pointer;
+}
+
+.sectionMessage{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+}
+
+.image{
+    width: 120px;
+}
+
+.message{
+    color: #403D58;
+    font-size: 2.6rem;
+}
+
+.scoreFinal{
+    color: #FC7753;
+    font-size: 2rem;
+    text-align: center;
+}
+
+@keyframes showMessage {
+    0%{
+        opacity: 0;
+        transform: translateX(-400px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .containerMessage{
+        height: 200px;
+        left: 18px;
+        padding: 40px;
+        width: 70%;
+    }
+    
+    .sectionMessage{
+        gap: 0px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .containerMessage{
+        height: 200px;
+        left: 396px;
+        padding: 40px;
+        top: 250px;
+        width: 40%;
+    }
+    
+    .sectionMessage{
+        gap: 0px;
+    }
+}
