@@ -1,0 +1,29 @@
+.game__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 80%;
+}
+
+.game__form > input {
+  border-radius: 1rem;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.game__form > input:focus {
+  outline: none;
+}
+
+.game__form > .input__invalid {
+  background-color: rgb(163, 87, 87);
+  border: 1px solid rgb(153, 0, 0);
+  display: flex;
+}
+
+.game__form > .message__invalid {
+  color: rgb(161, 36, 36);
+  margin: 0;
+  text-align: center;
+}

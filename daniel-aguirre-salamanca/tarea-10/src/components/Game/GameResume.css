@@ -1,0 +1,7 @@
+.game .game__resume {
+  /* mantain specificity overrides UI css */
+  align-self: center;
+  background-color: rgb(0, 119, 199, 0.5);
+  margin: auto;
+  width: 30%;
+}
