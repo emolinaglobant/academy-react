@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+#title {
+    align-items: center;
+    display: flex;
+    font-size: 8em;
+    grid-area: 1 / 1 / 2 / 5;
+    justify-content: center;
+    margin-top: 0px;
+}
+#subtitle {
+    font-family: 'Abril Fatface';
+    font-size: 5rem;
+    font-weight: lighter;
+    grid-area: 2 / 1 / 5 / 2;
+}
+.container {
+    background: center/110% url("./images/arya.jpg");
+    border: 1px solid black;
+    color: white;
+    display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    height: 900px;
+    margin: 30px;
+    padding: 25px;
+    width: 800px;
+}
+.description {    
+    color: rgb(0 232 255);
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    grid-area: 5 / 1 / 6 / 4;
+    justify-content: space-around;
+}
+.description p:nth-child(2n) {
+    text-align: right;
+}
+.quotes {    
+    background-color: rgba(0, 0, 0, 0.322);
+    border-radius: 10px;
+    color: rgb(0 232 255);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8em;
+    grid-area: 2 / 3 / 4 / 4;
+    justify-content: space-around;
+    text-align: right;
+}
