@@ -1,0 +1,49 @@
+:root{
+    --black: black;
+    --primary-color: rgb(219, 235, 240);
+    --red: #C70039;
+    --white: white;
+    --gray: #b2b2b2;
+    --gold: #fcc604;
+    
+}
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+h1{
+    text-align: center;
+}
+body{
+    background-color: var(--primary-color);
+}
+.puzzle{
+    background-color: var(--black);
+    height: 80%;
+    margin: 0 auto;
+    max-height: 1000px;
+    max-width: 1000px;
+    width: 80%;
+}
+.puzzle__square{
+    display: flex;
+    flex-wrap: wrap;
+}
+p{
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    font-size: 2rem;
+    font-weight: bold;
+    height: 100px;
+    margin: 0px 0px;
+    text-align: center;
+    width: 25%;
+}
+.odd{
+    background-color: var(--red);
+}
+.even{
+    background-color: var(--gray);
+}
