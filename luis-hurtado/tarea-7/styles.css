@@ -1,0 +1,44 @@
+body{
+    background-color: #2a9df4;
+}
+.formContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.formContainer h1 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+.loginForm{
+    background: linear-gradient(0deg, rgba(45,175,253,1) 25%, rgba(34,113,195,1) 93%);
+    width: 400px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 38px 20px 3px #03254c;
+}
+.loginForm input {
+    width: 250px;
+    height: 40px;
+}
+.loginForm label{
+    color: white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* .loginForm button {
+    width: 250px;
+    height: 40px;
+}
+.loginForm button:hover{
+    background-color: #005ec9;
+    color: white;
+} */
+.instructions {
+    color: white;
+    font-size: 18px;
+}
