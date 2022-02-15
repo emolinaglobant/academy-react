@@ -1,0 +1,133 @@
+.containerGame{
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.containerGame .title{
+    color: #d4d4d4;
+    font-size: 3rem;
+    text-align: center;
+}
+
+/* section the score and life */
+
+.sectionScore{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    margin: 0px 300px;
+}   
+
+.score{
+    background-color: #d4d4d4;
+    border-radius: 10px;
+    color: #09acc9;
+    display: inline-block;
+    font-size: 1.4rem;
+    padding: 10px;
+
+}
+
+.score span{
+    color: #FC7753  ;
+}
+
+.emogi{
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.inputMovie{
+    display: grid;
+    grid-template-columns: 100%; 
+    grid-gap: 40px;
+    justify-items: center;
+}
+
+.inputMovie input{    
+    color: #FC7753;
+    padding: 8px;
+    text-transform: capitalize;
+    width: 40%;
+}
+
+.inputMovie input:focus{    
+    box-shadow: 0px 0px 10px #06bada;
+}
+
+.inputMovie button{
+    border: none;
+    background-color: #FC7753;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px 20px;
+    text-transform: capitalize;
+    transition: padding 0.4s ease-in;
+}
+
+.inputMovie button:hover{
+    background-color: #ffffff;
+    border-radius: 10px;
+    color: #FC7753;
+    padding: 12px 40px;
+}
+
+@media screen and (max-width: 600px) {
+    .sectionScore{
+        display: grid;
+        grid-template-columns:58% 30%;
+        grid-gap: 60px;
+        margin: 0px;
+    }   
+    
+    .score{
+        display: inline-block;
+        font-size: 1.1rem;
+    }
+    
+    .emogi{
+        font-size: 2.6rem;
+    }
+    
+    .inputMovie input{    
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .containerGame .title{
+        font-size: 5rem;
+    }
+
+    .sectionScore{
+        display: grid;
+        grid-template-columns:70% 30%;
+        grid-gap: 60px;
+        margin: 0px 400px;
+    }   
+    
+    .score{
+        display: inline-block;
+        font-size: 1.8rem;
+    }
+    
+    .emogi{
+        font-size: 4rem;
+    }
+    
+    .inputMovie input{
+        font-size: 1.3rem;
+        padding: 20px;    
+        width: 50%;
+    }
+
+    .inputMovie button{
+        font-size: 1.6rem;
+        padding: 30px 50px;
+    }
+
+    .inputMovie button:hover{
+        padding: 30px 100px;
+    }
+}
