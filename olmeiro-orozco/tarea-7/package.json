@@ -1,0 +1,26 @@
+{
+  "name": "form-unit-testing",
+  "version": "1.0.0",
+  "description": "forms unit testing jest javascript",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest --verbose",
+    "build": "browserify main.js -o bundle.js"
+  },
+  "keywords": [
+    "jest",
+    "unit",
+    "testing",
+    "forms"
+  ],
+  "author": "olmeiro orozco",
+  "license": "ISC",
+  "devDependencies": {
+    "@testing-library/dom": "^8.11.3",
+    "@testing-library/jest-dom": "^5.16.2",
+    "browserify": "^17.0.0",
+    "http-server": "^14.1.0",
+    "jest": "^27.5.1",
+    "jsdom": "^19.0.0"
+  }
+}
