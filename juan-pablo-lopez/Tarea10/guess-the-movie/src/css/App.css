@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+.app__container {
+  background: linear-gradient(rgb(49, 58, 0), rgb(0, 0, 0));
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fill, 1fr);
+  min-height: 100%;
+  height: 100vh;
+}
+
+.emoji__container {
+  font-size: 50px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  
+}
+
+.game__container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / -1;
+  justify-content: center;
+  height: 100%;
+}
+
+.game__container h2 {
+  color: #ffad41;
+  font-size: 70px;
+  font-family: 'Akaya Telivigala', cursive;
+}
+
+.movie__input input {
+  border-radius: 35px;
+  font-size: 18px;
+  height: 45px;
+  padding-left: 30px;
+  width: 450px;
+}
+
+.movie__input button {
+  background-color: #ffad41;
+  border-radius: 15px;
+  color: #FFFFFF;
+  font-size: 18px;
+  height: 55px;
+  margin-left: 20px;
+  width: 120px;
+} 
