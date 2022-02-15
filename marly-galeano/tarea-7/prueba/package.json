@@ -1,0 +1,15 @@
+{
+  "name": "prueba",
+  "version": "1.0.0",
+  "description": "",
+  "main": "prueba.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "test",
+    "testing"
+  ],
+  "author": "",
+  "license": "ISC"
+}

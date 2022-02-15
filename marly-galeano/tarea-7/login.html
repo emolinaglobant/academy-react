@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <header>
+                <h1>Sign In</h1>
+            </header>
+
+            <article id="loginContainer">
+                <form action="">
+                    <label for="userName" class="required-field">User Name:</label>
+                    <input type='text' id="userName" name=" userName" placeholder="username" required></input>
+
+                    <label for="pwd" class="required-field">Password</label>
+                    <input type="password" id="pwd" name="pwd" placeholder="password" required></input>
+
+                    <input type="submit" id="submitButton" value="SIGN IN" onclick="verifyLogin()"></input>
+ 
+                </form>
+                <aside>
+                    <h2 id="loginMessage"></h2>
+                </aside>
+
+            </article>
+
+        </section>
+    </main>
+
+    <script src="login.js"></script>
+</body>
+
+</html>
