@@ -43,13 +43,13 @@ function App() {
     updateScore(score + 1);                                             
   }
 
-  const nextEmojis = () => {
-    updateEmoji(Object.values(movies)[iMovies + 1]);
-  }
-
   const increaseIMovies = () => {
     updateOption(iMovies + 1);
     nextEmojis();
+  }
+
+  const nextEmojis = () => {
+    updateEmoji(Object.values(movies)[iMovies + 1]);
   }
 
   const updateScreen = () => {
