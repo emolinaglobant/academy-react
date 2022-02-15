@@ -1,0 +1,35 @@
+body {
+  background-color: #fae5d3;
+}
+
+fieldset {
+  background-color: #fa8072;
+  width: 600px;
+  margin-left: 300px;
+  margin-bottom: 7px;
+  padding-bottom: 85px;
+}
+
+h1 {
+  margin-left: 250px;
+  margin-bottom: 100px;
+}
+
+p {
+  margin-left: 272px;
+}
+
+.button {
+  margin-bottom: 50px;
+  margin-top: 40px;
+  margin-left: 230px;
+  background-color: #ebdef0;
+  opacity: 70%;
+}
+
+.login {
+  margin-left: 240px;
+  background-color: #c39bd3;
+  border-radius: 15px;
+  width: 150px;
+}

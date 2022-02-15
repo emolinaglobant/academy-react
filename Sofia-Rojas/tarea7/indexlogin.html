@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/styles.css">
+        
+
+        <script type="text/javascript" src="verifyUsername.js"></script>
+        <script type="text/javascript" src="verifyPassword.js"></script>
+        <script type="text/javascript" src="login.js"></script>
+
+    </head>
+
+    <body>
+        <form name="logInForm">
+            <fieldset name="centralField">
+                <h1>Let's go!</h1>
+                <p>Username</p>
+                <input type="text" id="username" name="username" class="button" required="required">
+                <p>Password</p>
+                <input type="password" id="password" name="password" class="button" minlength="8">
+                <br>
+                <button type="button" class="login" id="logIn" onclick="verifyUser()" >Log in</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
