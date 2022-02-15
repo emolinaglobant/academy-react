@@ -1,0 +1,7 @@
+@import './base.css';
+@import './settings.css';
+
+/* Component */
+@import './components/button.css';
+@import './components/centralGame.css';
+@import './components/headerGame.css';
