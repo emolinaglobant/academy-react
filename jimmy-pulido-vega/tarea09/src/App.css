@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App  {
+  background-image: url(assets/nirvana.jpg);
+  color: #ffffff;
+  font-family: "Hind Siliguri", sans-serif;
+  font-variant: small-caps;
+  height: 100vh;
+  text-align: center;
+  width: 100%;
+}
+
+.container {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 40px 0;
+  width: 100%;
+}
+
+.container .magazine {
+  background-image: url(./assets/nirvana.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: #ffffff solid 10px;
+  position: relative;
+  width: 620px;
+}
+
+.container .magazine .collector {
+  font-family: "Bree Serif", serif;
+  font-size: 65px;
+  letter-spacing: 7px;
+  position: relative;
+  text-decoration: underline;
+  top: -30px;
+}
+
+.container .magazine img {
+  position: relative;
+  top: -60px;
+  width: 100%;
+}
+
+.container .magazine h1 {
+  font-size: 135px;
+  line-height: 85px;
+  margin-top: 245px;
+}
+
+.container .magazine .firstTxt {
+  font-size: 45px;
+  letter-spacing: 2.5px;
+  line-height: 45px;
+}
+
+.container .magazine .firstTxt::after{
+  background-color: #ffffff;
+  content: "";
+  display: block;
+  height: 10px;
+  margin: 5px auto;
+  width: 180px;
+}
+
+.container .magazine .whiteBar {
+  background-color: #ffffff;
+  height: 10px;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.container .magazine h3 {
+  font-size: 33px;
+  letter-spacing: 1px;
+  margin-top: 25px;
+}
+
+.container .magazine h3::after{
+  background-color: #ffffff;
+  content: "";
+  display: block;
+  height: 10px;
+  margin: 0 auto;
+  width: 180px;
+}
+
+.container .magazine h3::first-line {
+  line-height: 0px;
+}
+
+.container .magazine p {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 13px;
+  margin-top: 10px;
+}
+
+.container .magazine h4 {
+  font-size: 15px;
+  line-height: 0;
+  margin-top: 20px;
+}
+
+.container .magazine ul {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.container .magazine ul li {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.container .magazine ul .dote {
+  background-color: #ffffff;
+  border-radius: 5px;
+  height: 4px;
+  margin-top: 3px;
+  width: 4px;
+}
+
+.container .magazine .info {
+  font-family: "Roboto", sans-serif;
+  font-variant: normal;
+  position: absolute;
+  right: 10px;
+  top: 130px;
+}
+
+.container .magazine .info h4 {
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0;
+}
+
+.container .magazine .info p {
+  font-size: 10px;
+  font-weight: 100;
+  letter-spacing: 0;
+  margin-top: 7px;
+  text-align: right;
+}
+
+.container .referent {
+  border: #ffffff solid 10px;
+  width: 620px;
+}
+
+.container .referent img {
+  width: 100%;
+}
