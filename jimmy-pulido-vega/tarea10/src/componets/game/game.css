@@ -1,0 +1,35 @@
+.Game {
+  align-items: center;
+  background-color: #2D46B9;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  padding: 70px;
+  width: 600px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  width: 85%;
+}
+
+.info p{
+  color: #F8F8F8;
+  font-size: 22px;
+}
+
+.succesMesage{
+  color: #F8F8F8;
+  font-size: 25px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.fail{
+  color: #f03768;
+  font-size: 28px;
+  margin-top: 25px;
+}

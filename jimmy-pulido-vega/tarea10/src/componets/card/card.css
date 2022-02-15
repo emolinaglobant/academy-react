@@ -1,0 +1,96 @@
+.card {
+  margin-top: 50px;
+  text-align: center;
+  width: 80%;
+}
+
+.card h4 {
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+
+.card .answer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.card .answer input {
+  background-color: #2d46b9;
+  border-radius: 25px 0 0 25px;
+  border: 2px solid #fff;
+  color: #f037a5;
+  font-size: 22px;
+  height: 40px;
+  margin-bottom: 25px;
+  outline: none;
+  padding: 0 15px;
+  width: 70%;
+}
+
+.card .answer button {
+  background-color: #fff;
+  border-radius: 0 25px 25px 0;
+  border: 2px solid #fff;
+  color: #2d46b9;
+  font-size: 18px;
+  height: 40px;
+  margin-bottom: 25px;
+  outline: none;
+  padding: 0 15px;
+  transition: all ease 0.4s;
+}
+
+.card .answer button:hover {
+  background-color: #2d46b9;
+  color: #fff;
+}
+
+.card h3 {
+  background-color: #fff;
+  border-radius: 100%;
+  color: #2d46b9;
+  font-size: 20px;
+  margin: 0 auto;
+  padding: 10px 0;
+  transition: all ease 0.4s;
+  width: 45px;
+}
+.card h3:hover {
+  background-color: #1e3163;
+  color: #fff;
+}
+
+.card p {
+  color: #f8f8f8;
+  font-size: 22px;
+}
+
+.zeroLives {
+  text-align: center;
+}
+
+.zeroLives p {
+  color: #f03768;
+  font-size: 28px;
+  margin: 50px 0 20px;
+  text-align: center;
+}
+
+.zeroLives button {
+  background-color: #fff;
+  border-radius: 25px;
+  border: 2px solid #fff;
+  color: #2d46b9;
+  font-size: 18px;
+  height: 40px;
+  outline: none;
+  padding: 0 15px;
+  transition: all ease 0.4s;
+}
+
+.zeroLives button:hover {
+  background-color: #2d46b9;
+  color: #fff;
+}
