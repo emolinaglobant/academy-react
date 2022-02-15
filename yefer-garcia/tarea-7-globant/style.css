@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+body{
+  background-color: rgb(0, 140, 255);
+}
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +14,7 @@
   max-width: 440px;
   margin: 170px auto;
   padding: 0 20px;
+
 }
 .seccion-form {
   box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, 0.1);
@@ -77,10 +81,7 @@
   padding-left: 0px;
 }
 .seccion-form form .link {
-  font-size: 17px;
+  font-size: 19px;
   margin-top: 20px;
   text-align: center;
-}
-.seccion-form form .link a {
-  color: #000000;
 }
