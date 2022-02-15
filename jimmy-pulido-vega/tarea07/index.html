@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarea 07 || Unit Test</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <header class="headerLogIn">
+        <h1>Log in</h1>
+      </header>
+      <article>
+        <form name="LogIn" id="form">
+          <label for="userName">User Name:</label>
+          <input
+            type="text"
+            placeholder="with a capital"
+            name="userName"
+            id="userName"
+            autocomplete="off"
+          />
+
+          <label for="passWord">Password:</label>
+          <input
+            type="password"
+            placeholder="Min 8 char. & a capital"
+            name="passWord"
+            id="passWord"
+          />
+
+          <p id="message"></p>
+
+          <button id="log">Log In</button>
+        </form>
+      </article>
+    </main>
+  </body>
+  <script src="index.js"></script>
+</html>

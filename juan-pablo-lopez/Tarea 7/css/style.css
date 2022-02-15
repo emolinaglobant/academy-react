@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    margin: 0px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    background: linear-gradient(100deg,#a000fd, #7f078a);
+    background-size: cover;
+}
+
+.login__container {
+	width: 400px;
+    max-width: 400px;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0,0, 0, 0.2);
+    background: rgb(255, 255, 255);
+    border-radius: 7px;
+}
+
+h1 {
+	margin-bottom: 0;
+    text-align: center;
+    color: #a000fd;
+}
+
+.form {
+	padding: 30px 40px;	
+}
+
+.form__input {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form__input label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form__input input {
+	border: 2px solid #f0f0f0;
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+	font-size: 14px;
+	padding: 10px;
+    transition: background 0.5s, border-color 0.5s;
+	width: 100%;
+}
+
+.form__input input:focus {
+	outline: 0;
+	border-color: #a000fd;
+}
+
+.form__input.success input {
+	border-color: #2ecc71;
+}
+
+.form__input.error input {
+	border-color: #e74c3c;
+}
+
+
+.form__input small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form__input.error small {
+	visibility: visible;
+}
+
+.form button {
+	width: 100%;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: linear-gradient(100deg,#a000fd, #7f078a);
+    border-radius: 10px;
+}
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarea 7</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <article class="seccion-form">
+        <header class="title"><span>Login</span></header>
+        <form action="#">
+
+          <section class="row">
+            <i class="fas fa-user"></i>
+            <input type="text" class="inputName" placeholder="Name" required />
+          </section>
+          
+          <section class="row">
+            <i class="fas fa-lock"></i>
+            <input
+              type="password"
+              placeholder="password"
+              class="inputPassword"
+              required
+            />
+            <span class="spanAlert messageCard"></span>
+          </section>
+
+          <section class="restablecer"><a href="#">Forgot password?</a></section>
+          <section class="row button">
+            <input type="submit" class="btnLogin" value="Login" />
+          </section>
+          <section class="link">
+            Not a member? <a href="#">Signup now</a>
+          </section>
+        </form>
+      </article>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

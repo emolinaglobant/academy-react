@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto Mono", monospace;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    align-items: center;
+    background-color: #3e497a;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  main {
+    background-color: #21325e;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 100px;
+  }
+  
+  .headerLogIn h1 {
+    color: #F1D00A;
+    font-weight: 300;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  #form{
+    background-color: rgba(240, 240, 240, .3);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 50px 50px;  
+    width: 500px;
+  }
+  
+  #form label{
+    color: #F1D00A;
+    font-size: 16px;
+    margin: 0 0 10px 5px;
+  }
+  
+  #form input{
+    border-radius: 5px;
+    border: none;
+    height: 45px;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 5px 15px;
+    width: 100%;
+  }
+  
+  #form button{
+    background-color: #F1D00A;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;     
+    font-weight: 600;
+    height: 45px;
+    margin: 25px auto 0;
+    width: 50%;
+  }
+  
+  #message {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .logSuccessful{
+    color: #F1D00A;
+  }
+  
+  .logFail {
+    color: #e1a4a4;  
+  }

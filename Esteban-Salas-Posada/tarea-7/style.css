@@ -1,0 +1,11 @@
+section{
+    margin-bottom: 10px;   
+}
+
+.form{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    text-align: center;
+    border: 1px solid #000;
+}
