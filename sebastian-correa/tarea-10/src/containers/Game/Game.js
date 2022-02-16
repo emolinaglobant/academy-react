@@ -35,7 +35,6 @@ const Game = () => {
     setGameLost(false);
     setGameWon(false);
   }
-
   
   const validateAnswer = (inputData) => {
     let playerAnswer = inputData.toLowerCase();
