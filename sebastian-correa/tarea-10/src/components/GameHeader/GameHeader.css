@@ -1,0 +1,14 @@
+p {
+  color: white;
+  font-family: "Turret Road", cursive;
+  font-size: 32px;
+  margin: 0;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  padding: 10px 20px 0px 20px;
+}
