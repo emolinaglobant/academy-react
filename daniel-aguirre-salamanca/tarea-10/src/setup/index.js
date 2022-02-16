@@ -1,7 +1,7 @@
 import database from "./database";
 const databaseSize = Object.keys(database).length;
 
-// modify lifes and points to win
+// modify game lifes and points to win
 const gameLifes = 4;
 let gameMaxPoints = 5;
 
