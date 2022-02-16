@@ -6,18 +6,6 @@ class Box
         this.y = y
     }
 
-    getTopBox()
-    {
-        if (this.y === 0) return null
-        return new Box(this.x, this.y - 1)
-    }
-
-    getRightBox()
-    {
-        if (this.x === 3) return null
-        return new Box(this.x + 1, this.y)
-    }
-
     getBottomBox()
     {
         if (this.y === 3) return null
@@ -45,6 +33,18 @@ class Box
         const nextdoorBoxes = this.getNextdoorBoxes()
         return nextdoorBoxes[Math.floor(Math.random() * nextdoorBoxes.length)]
     }
+
+    getRightBox()
+    {
+        if (this.x === 3) return null
+        return new Box(this.x + 1, this.y)
+    }            
+
+    getTopBox()
+    {
+        if (this.y === 0) return null
+        return new Box(this.x, this.y - 1)
+    }            
 }
 
 const swapBoxes = (grid, box1, box2) => {
@@ -122,16 +122,6 @@ class Game
         this.tick = this.tick.bind(this)
         this.render()
         this.handleClickBox = this.handleClickBox.bind(this)
-    }
-
-    static ready()
-    {
-        return new Game(State.ready())
-    }
-
-    tick()
-    {
-        this.setState({ time: this.state.time + 1 })
     }
 
     setState(newState)
@@ -218,6 +208,16 @@ class Game
             document.querySelector(".message").textContent = ""
         }
     }
+
+    static ready()
+    {
+        return new Game(State.ready())
+    }        
+
+    tick()
+    {
+        this.setState({ time: this.state.time + 1 })
+    }        
 }
 
 const GAME = Game.ready()

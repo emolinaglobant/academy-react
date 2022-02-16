@@ -16,7 +16,6 @@ body
 {
     align-items: center;
     background-image: linear-gradient(#f8c025, #df2027);
-    /* background-image: linear-gradient(#7b9f35, #226666); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,11 +27,7 @@ body
     background-color: #000;
     border-radius: 5px;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .5);
-    /* left: 50%; */
     padding: 15px;
-    /* position: absolute; */
-    /* top: 50%; */
-    /* transform: translate(-50%, -50%); */
 }
 
 .grid
