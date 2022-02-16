@@ -1,35 +1,30 @@
 import "./MovieInput.css";
-import React from "react";
+import React, {  useState } from "react";
 
-class MovieInput extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { playerAnswer: "" };
+const MovieInput = (props) => {
+  const [playerAnswer, setPlayerAnswer] = useState("");
+
+  const handleClick = () => {
+    props.validateAnswer(playerAnswer);
+    setPlayerAnswer("");
   }
 
-  handleClick = () => {
-    this.props.validateAnswer(this.state.playerAnswer);
-    this.setState({ playerAnswer: "" })
+  const updatePlayerAnswer = (event) => {
+    setPlayerAnswer(event.target.value);
   }
 
-  updatePlayerAnswer = (event) => {
-    this.setState({ playerAnswer: event.target.value });
-  }
-
-  render() {
-    return (
-      <section className="movie-container">
-        <p className="game-title">Guess the movie</p>
-        <p className="emojis">{this.props.movie.emojis}</p>
-        <section className="input-container">
-          <input type="text" name="movie-name" id="movie-name" value={this.state.playerAnswer} onChange={this.updatePlayerAnswer} />
-          <button className="send-btn" onClick={this.handleClick}>
-            Send
-          </button>
-        </section>
+  return (
+    <section className="movie-container">
+      <p className="game-title">Guess the movie</p>
+      <p className="emojis">{props.movie.emojis}</p>
+      <section className="input-container">
+        <input type="text" name="movie-name" id="movie-name" value={playerAnswer} onChange={updatePlayerAnswer} />
+        <button className="send-btn" onClick={handleClick}>
+          Send
+        </button>
       </section>
-    );
-  }
-}
+    </section>
+  );
+};
 
 export default MovieInput;
