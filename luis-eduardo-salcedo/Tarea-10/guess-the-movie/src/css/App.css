@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+
+.container {
+    background: rgb(12,230,11);
+    background: radial-gradient(circle, rgba(12,230,11,1) 35%, rgba(2,0,36,1) 76%);
+    display: grid;
+    font-family: 'Orbitron', sans-serif;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fill, 1fr);
+    width: 100%;
+}
+
+.container__lifes {
+    color: #FFFFFF;
+    font-size: 30px;
+    grid-column: 1 / 2;
+    padding: 30px;
+}
+
+.container__score {
+    color: #FFFFFF;
+    font-size: 30px;
+    grid-column: 2 / 3;
+    padding: 30px;
+    text-align: right;
+}
+
+.container__game {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / -1;
+    justify-content: flex-start;
+    height: 89vh;
+}
+
+.game__title {
+    color: #fff;
+    font-size: 80px;
+}
+
+.game__emojis{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.game__sendInfo input{
+    border-radius: 50px;
+    font-size:40px;
+    height:60px;
+    padding-left: 20px;
+    width:600px;
+}
+
+.game__button{
+    background-color:#FFF;
+    border-radius: 50px;
+    color: #000;
+    font-size:15px;
+    height: 55px;
+    margin-left:30px;
+    width: 100px;
+}
