@@ -1,0 +1,8 @@
+body {
+  background-attachment: scroll;
+  background-image: url(https://i.pinimg.com/564x/53/9c/87/539c87d7bf15e8b8d9c1d80bec19cbb2.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 64% 100%;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.164);
+}
