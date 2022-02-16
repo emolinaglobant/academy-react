@@ -1,39 +1,39 @@
 import "./App.css";
-import peliculas from "./data/peliculas";
+import movies from "./data/movies";
 import Game from "./componets/game/game";
 import { useState } from "react";
 
 function App() {
-  const [nivel, setNivel] = useState(0);
-  const [vidas, setVidas] = useState(3);
-  const [respuestaCorrecta, setRespuestaCorrecta] = useState(false);
-  const [respuestaIncorrecta, setRespuestaIncorrecta] = useState(false);
-  const pasarNivel = () => {
-    setRespuestaCorrecta(true);
+  const [level, setLevel] = useState(0);
+  const [lives, setLives] = useState(3);
+  const [rightAnswer, setRightAnswer] = useState(false);
+  const [wrongAnswer, setWrongAnswer] = useState(false);
+  const nextLevel = () => {
+    setRightAnswer(true);
     setTimeout(() => {
-      setRespuestaCorrecta(false);
+      setRightAnswer(false);
     }, 1100);
   };
-  const errarNivel = () => {
-    setRespuestaIncorrecta(true);
+  const failLevel = () => {
+    setWrongAnswer(true);
     setTimeout(() => {
-      setRespuestaIncorrecta(false);
+      setWrongAnswer(false);
     }, 1500);
   };
 
   return (
     <div className="App">
-      {nivel < 10 ? (
+      {level < 10 ? (
         <Game
-          peliculas={peliculas}
-          nivel={nivel}
-          setNivel={setNivel}
-          vidas={vidas}
-          setVidas={setVidas}
-          respuestaCorrecta={respuestaCorrecta}
-          pasarNivel={pasarNivel}
-          respuestaIncorrecta={respuestaIncorrecta}
-          errarNivel={errarNivel}
+          movies={movies}
+          level={level}
+          setLevel={setLevel}
+          lives={lives}
+          setLives={setLives}
+          rightAnswer={rightAnswer}
+          nextLevel={nextLevel}
+          wrongAnswer={wrongAnswer}
+          failLevel={failLevel}
         />
       ) : (
         <section className="win">

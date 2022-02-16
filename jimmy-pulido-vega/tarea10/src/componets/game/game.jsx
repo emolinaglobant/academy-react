@@ -3,20 +3,20 @@ import Card from "../card/card";
 import "./game.css";
 
 function Game({
-  peliculas,
-  nivel,
-  setNivel,
-  vidas,
-  setVidas,
-  respuestaCorrecta,
-  pasarNivel,
-  respuestaIncorrecta,
-  errarNivel,
+  movies,
+  level,
+  setLevel,
+  lives,
+  setLives,
+  rightAnswer,
+  nextLevel,
+  wrongAnswer,
+  failLevel
 }) {
 
-  const lives = () => {
+  const showLives = () => {
     let result = ""
-    for(let i = 0; i < vidas; i++){
+    for(let i = 0; i < lives; i++){
       result += "🤍"
     }
     return result
@@ -25,25 +25,25 @@ function Game({
   return (
     <section className="Game">
       <section className="info">
-        {vidas !== 0 ? <p>{lives()}</p> : <p>sin vidas</p>}
-        <p>nivel: {nivel + 1}</p>
+        {lives !== 0 ? <p>{showLives()}</p> : <p>sin vidas</p>}
+        <p>nivel: {level + 1}</p>
       </section>
-      {respuestaCorrecta ? (
+      {rightAnswer ? (
         <section className="succesMesage">
           <p>🎉 Correctro! 🎉<br></br> pasate al seguiente nivel.</p>
         </section>
       ) : (
         <Card
-          {...peliculas[nivel]}
-          pasarNivel={pasarNivel}
-          nivel={nivel}
-          setNivel={setNivel}
-          vidas={vidas}
-          setVidas={setVidas}
-          errarNivel={errarNivel}
+          {...movies[level]}
+          level={level}
+          setLevel={setLevel}
+          lives={lives}
+          setLives={setLives}
+          nextLevel={nextLevel}
+          failLevel={failLevel}
         />
       )}
-      {respuestaIncorrecta && <p className="fail">Fallaste! pierdes una vida.</p>}
+      {wrongAnswer && <p className="fail">Fallaste! pierdes una vida.</p>}
     </section>
   );
 }

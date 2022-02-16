@@ -3,34 +3,34 @@ import "./card.css";
 
 function Card({
   emojis,
-  nombre,
-  pista,
-  pasarNivel,
-  nivel,
-  setNivel,
-  vidas,
-  setVidas,
-  errarNivel,
+  name,
+  clue,
+  level,
+  setLevel,
+  lives,
+  setLives,
+  nextLevel,
+  failLevel
 }) {
-  const [respuesta, setRespuesta] = useState("");
-  const [ayuda, setAyuda] = useState(false);
-  const changeHandler = (e) => setRespuesta(e.target.value.toLowerCase());
+  const [answer, setAnswer] = useState("");
+  const [help, setHelp] = useState(false);
+  const changeHandler = (e) => setAnswer(e.target.value.toLowerCase());
   const clickHandler = () => {
-    if (respuesta === nombre) {
-      setNivel(nivel + 1);
-      pasarNivel();
+    if (answer === name) {
+      setLevel(level + 1);
+      nextLevel();
     } else {
-      setVidas(vidas - 1);
-      setRespuesta("")
-      errarNivel();
+      setLives(lives - 1);
+      setAnswer("")
+      failLevel();
     }
   };
-  const necesitoAyuda = () => setAyuda(true);
+  const needHelp = () => setHelp(true);
   const reload = () => window.location.reload(true);
 
   return (
     <>
-      {vidas > 0 ? (
+      {lives > 0 ? (
         <section className="card">
           <h4>{emojis}</h4>
           <section className="answer">
@@ -38,11 +38,11 @@ function Card({
               type="text"
               placeholder="Adivina la pelicula"
               onChange={changeHandler}
-              value={respuesta}
+              value={answer}
             />
             <button onClick={clickHandler}>check</button>
           </section>
-          {ayuda ? <p>{pista}</p> : <h3 onClick={necesitoAyuda}>?</h3>}
+          {help ? <p>{clue}</p> : <h3 onClick={needHelp}>?</h3>}
         </section>
       ) : (
         <section className="zeroLives">
