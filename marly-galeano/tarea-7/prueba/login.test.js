@@ -1,5 +1,10 @@
 //const sum = require('../login');
 
+/**
+ * @jest-environment jsdom
+ */
+
+
 const login = require('../login');
  
 test('mgaleano username and 123pwd password', () => {

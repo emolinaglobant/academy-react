@@ -22,7 +22,7 @@ const matchUser = (object) => {
     indexUser[0] = allUsersData.indexOf(object);
     allUsersData.forEach(matchPwd);
   }
-};
+}
 var pwd = document.getElementById("pwd");
 var userName = document.getElementById("userName");
 function verifyLogin() {
@@ -40,6 +40,18 @@ function verifyLogin() {
 }
 //module.exports = sum;
 
-const functions = {allUsersData, verifyLogin, pwd, userName, indexUser, getElementValue, getPassword, getUserName, loginMessageEdit, matchPwd, matchUser};
+const functions = {
+  allUsersData,
+  verifyLogin,
+  pwd,
+  userName,
+  indexUser,
+  getElementValue,
+  getPassword,
+  getUserName,
+  loginMessageEdit,
+  matchPwd,
+  matchUser,
+};
 
 module.exports = functions;

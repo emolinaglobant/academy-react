@@ -22,7 +22,7 @@
                     <label for="pwd" class="required-field">Password</label>
                     <input type="password" id="pwd" name="pwd" placeholder="password" required></input>
 
-                    <input type="submit" id="submitButton" value="SIGN IN" onclick="verifyLogin()"></input>
+                    <input type="submit" id="submitButton" value="SIGN IN" onclick="verifyLogin(document.getElementById("userName").value, document.getElementById("pwd").value)"></input>
  
                 </form>
                 <aside>
