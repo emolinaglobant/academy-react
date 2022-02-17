@@ -1,0 +1,42 @@
+.button {
+    background-color: #f0e117;
+    border-color: rgb(0, 0, 0);
+    border-radius: 35px;
+    color: #000000;
+    cursor: pointer;
+    font-size: 18px;
+    height: 55px;
+    margin: 0;
+    width: 120px;
+} 
+
+.button:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.emoji {
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.input {
+    border-color: #000000;
+    border-radius: 35px;
+    font-size: 18px;
+    height: 45px;
+    margin: 0;
+    padding-left: 30px;
+    width: 450px;
+}
+
+.input:hover {
+    opacity: 0.9;
+}
+
+.send_input {
+    margin: 0;
+    text-align: center;
+}
