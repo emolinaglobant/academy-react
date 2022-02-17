@@ -1,3 +1,40 @@
+
+.box {
+  align-items: center;
+  border-radius: 10px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  justify-content: center;
+  width: 200px;
+}
+.box:hover {
+  background-color: rgb(238, 238, 238);
+  box-shadow: 3px 3px 5px rgb(0, 0, 0);
+  cursor: pointer;
+}
+.container-box {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+.items-game {
+  color: rgb(0, 132, 240);
+  font-weight: 900;
+}
+.points {
+  align-items: center;
+  box-shadow: 3px 3px 20px 5px rgb(46, 46, 46);
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  left: 34%;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  width: 30%;
+}
 .quiz-box {
   align-items: center;
   background-color: rgb(0, 140, 255);
@@ -9,27 +46,7 @@
   justify-content: center;
   width: 60%;
 }
-.box {
-  align-items: center;
-  border-radius: 10px;
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  height: 200px;
-  justify-content: center;
-  width: 200px;
-}
-.container-box {
-  display: flex;
-  justify-content: space-around;
-  width: 80%;
-}
-.box:hover {
-  background-color: rgb(238, 238, 238);
-  box-shadow: 3px 3px 5px rgb(0, 0, 0);
-  cursor: pointer;
-}
-.verificar {
+.verify {
   border: none;
   border-radius: 10px;
   background-color: rgb(0, 0, 0);
@@ -38,17 +55,4 @@
   height: 40px;
   margin-top: 30px;
   width: 100px;
-}
-.points {
-  align-items: center;
-  box-shadow: 3px 3px 20px 5px rgb(46, 46, 46);
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  width: 30%;
-  margin-bottom: 50px;
-}
-.items-game {
-  color: rgb(0, 132, 240);
-  font-weight: 900;
 }

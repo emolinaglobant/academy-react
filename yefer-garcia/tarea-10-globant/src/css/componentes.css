@@ -5,9 +5,9 @@ footer {
   color: white;
   display: flex;
   flex-direction: column;
-  height: 80px;
+  height: 83px;
   justify-content: space-around;
-  position: absolute;
+  position: relative;
   width: 100%;
 }
 nav {
