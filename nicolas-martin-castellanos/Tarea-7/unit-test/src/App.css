@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(Imagenes/fondo.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.login__form{
+    background-image: url(Imagenes/colores.jpg);
+    background-position: center;
+    background-size: cover;
+    border: solid black 1px;
+    height: 676px;
+    margin-left: 410px;
+    margin-top: -16px;
+    width: 461px;
+}
+#usuario{
+    border-radius: 20px;
+    display: block;
+    margin-bottom: 20px;
+    margin-left: 61px;
+    margin-top: 369px;
+    padding: 15px;
+    width: 316px;
+}
+#password{
+    border-radius: 20px;
+    display: block;
+    margin-left: 61px;
+    margin-top: 21px;
+    padding: 15px;
+    width: 316px;
+}
+.login__button{
+    background-color: rgb(3, 4, 5);
+    border-radius: 19px;
+    color: white;
+    font-size: 34px;
+    margin-left: 160px;
+    margin-top: 42px;
+    padding: 15px;
+}   
+.Fondo1{
+  width: 200px;
+}
