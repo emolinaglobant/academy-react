@@ -1,0 +1,36 @@
+.container-score {
+    align-content: flex-start;
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-around;
+    justify-items: flex-start;
+    margin: 0;
+}
+
+.score {
+    align-items: center;
+    background-color: #f0e117;
+    border-radius:40px ;
+    display: flex;
+    height: 44px;
+    justify-content: center;
+    margin-bottom: 25px;
+    overflow: hidden;
+    padding: 0;
+    white-space: nowrap;    
+    width: 200px;
+}
+
+.score p {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.title h1 {
+    color: #f0e117;
+    font-family: cursive;
+    font-size: 70px;
+    margin: 0;
+    text-align: center;
+}
