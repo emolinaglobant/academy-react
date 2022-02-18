@@ -1,0 +1,26 @@
+.login {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 60vh;
+  justify-content: center;
+}
+
+.login h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.login button {
+  background-color:  #008CBA;
+  border-radius: 5px;
+  border: none;
+  font-size: 18px;
+  height: 30px;
+  margin-top: 20px;
+  width: 30%;
+}
+
+.login button:hover {
+  background-color: burlywood;
+}

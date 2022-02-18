@@ -1,0 +1,41 @@
+.createTodo {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 35px;
+  padding: 10px;
+}
+
+.createTodo form {
+  flex-direction: column;
+  display: flex;
+  margin: 30px;
+  width: 90%;
+}
+
+.createTodo form input {
+  border-radius: 5px;
+  border: groove;
+  font-size: 18px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.createTodo form button {
+  background-color: #d7c0a1;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 10px;
+  width: 60%;
+}
+
+.createTodo form button:hover {
+  background-color: #b69870;
+}
+
+.createTodo form button:active {
+  background-color: cadetblue;
+}
