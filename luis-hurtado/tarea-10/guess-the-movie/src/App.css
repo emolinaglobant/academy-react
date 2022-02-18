@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+body {
+  background-color: black;
+  color: white;
+}
+.app{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.inputContainer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  justify-content: space-evenly;
+}
+.gameContainer h1{
+  color: rgb(216, 140, 0);
+  font-family: 'Play', sans-serif;
+  font-size: 70px;
+  font-weight: 100;
+}
+.movieInput input{
+  border-radius: 20px;
+  height: 40px;
+  margin: 10px;
+  width: 300px;
+}
+.movieInput input:nth-child(2){
+  background-color: greenyellow;
+  width: 100px;
+}
+.movieInput input:nth-child(2):hover{
+  background-color: green;
+}
+.emojis{
+  display: flex;
+  font-size: 60px;
+  justify-content: center;
+}
+
