@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests components CentralGame should render component correctly 1`] = `
+<main>
+  <HeaderGame
+    livesGame={0}
+    pointsGame={0}
+  />
+  <header>
+    <h1>
+      Guess the movie
+    </h1>
+    <p
+      value={
+        Object {
+          "nameMovie": "",
+        }
+      }
+    />
+  </header>
+  <section>
+    🛳️  🏔️  💔 💀 
+  </section>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoComplete="off"
+      className="inputNameMovie"
+      name="nameMovie"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <button
+      className="btn"
+      type="submit"
+    >
+      Send
+    </button>
+  </form>
+</main>
+`;

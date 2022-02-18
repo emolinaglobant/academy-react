@@ -1,0 +1,51 @@
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Righteous', cursive;
+  height: 85vh;
+  justify-content: center;
+  margin-top: 40px;
+  width: 100%;
+}
+
+main header {
+  height: 100px;
+  margin-bottom: 90px;
+}
+
+main header h1 {
+  font-size: 65px;
+  margin-bottom: 20px;
+
+}
+
+main header section p {
+  font-size: 45px;
+}
+
+main section {
+  align-items: center;
+  display: flex;
+  font-size: 50px;
+  justify-content: center;
+  margin-bottom: 15px;
+  width: 70%;
+}
+
+main form {
+  align-items: center;
+  display: flex;
+  font-size: 18px;
+  justify-content: center;
+  margin-top: 40px;
+  width: 60%;
+}
+
+main form input {
+  border-radius: 30px;
+  font-size: 30px;
+  height: 70px;
+  margin-right: 15px;
+  width: 70%;
+}

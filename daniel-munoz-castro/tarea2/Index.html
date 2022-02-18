@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Bienvenido a kiralant</h1>
+      <p>
+        Para registrarte al concurso del pase de batalla y tener la posibilidad
+        de ganar debes llenar el formulario
+      </p>
+    </header>
+    <main>
+      <article class="container">
+        <section>
+          <form action="" method="post">
+            <p></p>
+            <label for=""><h3>¿Cual es tu fecha de nacimiento?</h3></label>
+            <input type="date" />
+            <p>
+              <u
+                >Recuerda que si eres menor de edad debes adjuntar el archivo
+                con el permiso de tus padres.</u
+              >
+            </p>
+            <input type="file" />
+            <hr />
+            <label for="" class="col col-6"><h3>¿Cual es tu nombre?</h3></label>
+            <input
+              type="text"
+              class="btn btn-form col-6 col-md-6 col-sm-6"
+              id="nameUserForm"
+            />
+            <hr />
+            <h3>¿Cuales son tus apellidos?</h3>
+            <input type="text" id="lastNameUserForm" />
+            <hr />
+            <h3>¿Cual es tu numero de celular?</h3>
+            <input type="number" id="numberCellUserForm" />
+            <hr />
+            <h3>Ingresa tu correo electronico</h3>
+            <input type="email required" required id="emailUserForm" />
+            <hr />
+            <h3>Ingresa una contraseña</h3>
+            <input type="password" required />
+            <hr />
+            <h3>Confirma tu contraseña</h3>
+            <input type="password" required />
+            <hr />
+            <h3>Elija genero</h3>
+            <input type="radio" value="Masculino" id="genderMaleForm" />Masculino
+            <input type="radio" value="Femenino" id="genderFemaleForm" />Femenino
+            <br><br>
+            <input type="button" value="Enviar" />
+          </form>
+        </section>
+        <br />
+        <section>
+          <header>
+            <h2>Ahora hablemos un poco del juego!</h2>
+            <p>
+              Para nosotros es demasiado importante conocer acerca de tu
+              experiencia en Kiralant, debido a que queremos mejorar y hacer de
+              este juego el más increible para ti, necesitamos saber algunas
+              cosas, acontinuación encontraran unas preguntas.
+            </p>
+          </header>
+          <form action="" method="POST">
+            <label for=""
+              ><h3>
+                Si tuvireras a los creadodes del juego en frente, ¿Que les
+                recomendarias?.
+              </h3></label
+            >
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="dejanos saber todo lo que prefieres!"
+            ></textarea><br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+          </form>
+        </section>
+      </article>
+    </main>
+  </body>
+</html>

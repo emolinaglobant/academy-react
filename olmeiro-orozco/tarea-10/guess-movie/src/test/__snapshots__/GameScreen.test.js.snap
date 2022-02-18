@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests component GameScreen should render component correctly 1`] = `
+<Fragment>
+  <CentralGame
+    lives={3}
+    points={0}
+    question={0}
+  />
+</Fragment>
+`;

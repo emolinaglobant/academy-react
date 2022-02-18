@@ -1,0 +1,10 @@
+.points {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.points__counter {
+  font-size: 4rem;
+  margin: 0;
+}

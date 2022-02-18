@@ -1,0 +1,10 @@
+*{
+  box-sizing: content-box;
+  margin: 0px;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--colorFont);
+}
+
