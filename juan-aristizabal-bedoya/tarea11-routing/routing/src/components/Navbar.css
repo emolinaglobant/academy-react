@@ -1,0 +1,29 @@
+.center-text {
+  text-align: center;
+}
+.navbar-ul {
+  align-items: center;
+  background-color: teal;
+  box-shadow: 5px 0px 5px 0px grey;
+  display: flex;
+  height: 3rem;
+  justify-content: space-around;
+  padding: 0;
+  text-decoration: none;
+}
+.navbar-li {
+  list-style: none;
+}
+.navlink {
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: rgb(1, 88, 88);
+}
+.active {
+  background-color: rgb(0, 54, 54);
+  color: white;
+}
