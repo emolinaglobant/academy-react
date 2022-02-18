@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@700&family=Roboto+Condensed:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.Fondo{
+  bottom: -131px;
+  left: -186px;
+  position: fixed;
+}
+.Fondo1{
+  bottom: -131px;
+  position: fixed;
+  right: 0px;
+}
+.box{
+  align-items: center;
+  background-color: rgba(0, 0, 0, .4);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+.jordan{
+  background-color: black;
+  border: 2px solid white;
+  box-shadow: 0 0 8px white inset;
+  height: auto;
+  position: relative;
+  width: 30%;
+  z-index: 1;
+}
+.jordan img{
+  width: 100%;
+}
+h1,h2,h3,h4,h5,h6,p{
+  color: white;
+  position: absolute;
+}
+h1{
+  color: red;
+  font-family: 'Antonio', sans-serif;
+  font-size: 699%;
+  left: 36%;
+  letter-spacing: 6px;
+  top: 5%;
+  transform: scaleY(1.5);
+  z-index: 2;
+}
+.text h2{
+  color: red;
+  font-family: 'Antonio', sans-serif;
+  font-size: 179%;
+  left: 19%;
+  top: 36%;
+}
+.text2 h2{
+  color: white;
+  font-family: 'Antonio', sans-serif;
+  font-size: 265%;
+  left: 7%;
+  top: 40%;
+}
+.text3 h2{
+  color: red;
+  font-family: 'Antonio', sans-serif;
+  font-size: 180%;
+  left: 19%;
+  top: 47%;
+}
+.text4 h2{
+  color: white;
+  font-family: 'Antonio', sans-serif;
+  font-size: 265%;
+  left: 8%;
+  top: 51%;
+}
+.subtitle h3{
+  color: white;
+  font-family: 'Antonio', sans-serif;
+  font-size: 105%;
+  left: 63%;
+  top: 82%;
+}
+.subtitle2 h3{
+  color: white;
+  font-family: 'Antonio', sans-serif;
+  font-size: 102%;
+  left: 65%;
+  top: 87%;
+}
+.jordan img{
+  width: 100%;
+}
+h1,h2,h3,h4,h5,h6,p{
+  color: white;
+  position: absolute;
+}
+h1{
+  color: red;
+  font-family: 'Antonio', sans-serif;
+  font-size: 699%;
+  left: 36%;
+  letter-spacing: 6px;
+  top: 5%;
+  transform: scaleY(1.5);
+  z-index: 2;
+}
+.text h2{
+  color: red;
+  font-family: 'Antonio', sans-serif;
+  font-size: 179%;
+  left: 19%;
+  top: 36%;
+}
+.text2 h2{
+  color: white;
+  font-family: 'Antonio', sans-serif;
+  font-size: 265%;
+  left: 7%;
+  top: 40%;
+}
+.text3 h2{
+  color: red;
+  font-family: 'Antonio', sans-serif;
+  font-size: 180%;
+  left: 19%;
+  top: 47%;
+}
+.text4 h2{
+  color: white;
+  font-family: 'Antonio', sans-serif;
+  font-size: 265%;
+  left: 8%;
+  top: 51%;
+}
+.subtitle h3{
+  color: white;
+  font-family: 'Antonio', sans-serif;
+  font-size: 105%;
+  left: 63%;
+  top: 82%;
+}
+.subtitle2 h3{
+  color: white;
+  font-family: 'Antonio', sans-serif;
+  font-size: 102%;
+  left: 65%;
+  top: 87%;
+}
+.subtitle3 h3{
+  color: white;
+  font-family: 'Antonio', sans-serif;
+  font-size: 96%;
+  left: 65%;
+  top: 92%;
+}
+.inf1 h4{
+  color: white;
+  font-family: 'Antonio', sans-serif;
+  font-size: 96%;
+  left: -5%;
+  top: 9%;
+  transform: rotate(-90deg);
+}
+.codigo img{
+  left: 36%;
+  position: absolute;
+  top: 87%;
+  width: 7%;
+  z-index: 1;
+}
+.circulo h4{
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  font-family: 'Antonio', sans-serif;
+  font-size: 105%;
+  height: 6%;
+  left: 82%;
+  line-height: 213%;
+  position: absolute;
+  text-align: center;
+  top: 32%;
+  width: 10%;
+}
+h4{
+  color: white;
+  font-family: 'Antonio', sans-serif;
+  font-size: 63%;
+  left: 58%;
+  top: 28%;
+  z-index: 2;
+}
