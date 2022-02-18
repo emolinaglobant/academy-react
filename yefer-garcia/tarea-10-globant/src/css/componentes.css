@@ -1,0 +1,30 @@
+footer {
+  align-items: center;
+  background-color: rgb(20, 20, 20);
+  bottom: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 83px;
+  justify-content: space-around;
+  position: relative;
+  width: 100%;
+}
+nav {
+  align-items: center;
+  background-color: rgb(20, 20, 20);
+  color: white;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  width: 100%;
+}
+nav h1 {
+  margin-left: 15px;
+}
+.opciones {
+  margin-right: 10px;
+}
+.icon {
+  margin: 0 10px;
+}
