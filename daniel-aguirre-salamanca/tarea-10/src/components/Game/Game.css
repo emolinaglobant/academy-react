@@ -1,0 +1,17 @@
+.game {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.game__movie {
+  font-size: 3rem;
+}
+.game__title {
+  font-size: 2rem;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 2rem;
+}
+
