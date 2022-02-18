@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f3f1f5;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.main-section {
+  background-color: #f0d9ff;
+  border-radius: 50px;
+  box-shadow: 2px 2px 2px #7f7c82;
+  color: #7f7c82;
+  height: 90vh;
+  margin: 2rem;
+  padding: 2rem;
+  position: relative;
+}
+
+.main-section button {
+  background-color: #bfa2db;
+  border-radius: 10%;
+  border-width: 0;
+  bottom: 2rem;
+  box-shadow: 2px 2px 2px #7f7c82;
+  cursor: pointer;
+  font-size: 30px;
+  height: 3rem;
+  padding: 10px;
+  position: absolute;
+  right: 3rem;
+  width: 3rem;
+}
+
+.main-new {
+  background-color: #cdf0ea;
+  border-radius: 50px;
+  box-shadow: 2px 2px 2px #7f7c82;
+  color: #7f7c82;
+  height: 90vh;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  width: 90vw;
+}
+.form-section button {
+  box-shadow: 1px 1px 1px #7f7c82;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding: 5px;
+}
+
+.form-section input[type="text"] {
+  font-size: 20px;
+  padding: 20px 20px;
+}
+
+.main-detail {
+  background-color: #f6eabe;
+  border-radius: 50px;
+  box-shadow: 2px 2px 2px #7f7c82;
+  color: #7f7c82;
+  height: 90vh;
+  margin: 2rem;
+  padding: 2rem;
+  position: relative;
+}
