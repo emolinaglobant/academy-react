@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Play&display=swap");
+
+.App {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 600px;
+}
+article {
+  margin-bottom: 40px;
+}
+.btn {
+  background-color: #59d257;
+  border-radius: 500px;
+  border: none;
+  font-size: small;
+  margin: 21px 0px;
+  padding: 6px 25px;
+}
+form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  color: #f6a63e;
+  font-size: xx-large;
+}
+h1,
+h2 {
+  color: aliceblue;
+  font-family: "Play", sans-serif;
+  font-weight: lighter;
+  transform: scale(1.3, 1);
+}
+h2 {
+  font-size: medium;
+  margin-top: 2px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 30px;
+}
+input {
+  border-radius: 500px;
+  border: none;
+  font-size: small;
+  margin: 21px 16px;
+  padding: 6px 40px;
+}
+p {
+  font-size: xx-large;
+  margin: 10px 10px;
+}
