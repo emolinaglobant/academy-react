@@ -1,0 +1,140 @@
+.containerToDo {
+    display: grid;
+    grid-template-columns: 40% 56%;
+    gap: 40px;
+}
+
+/* section of aside  */
+
+.boxAside {
+    background-color: #ffff;
+    box-shadow: 3px 0px 20px #000000;
+    height: 100vh;
+    padding: 0px 40px;
+}
+
+.title {
+    text-transform: capitalize;
+}
+
+.title h1 {
+    color: #FCA311;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.btnCreateTask {
+    background-color: #14213D;
+    border: 3px solid #14213D;
+    color: #E5E5E5;
+    cursor: pointer;
+    font-size: 1.6rem;
+    margin-left: 90px;
+    padding: 20px;
+    text-transform: capitalize;
+    transition: background-color 0.6s ease-in-out;
+    width: 60%;
+}
+
+.btnCreateTask:hover {
+    background-color: transparent;
+    color: #000000;
+}
+
+.sectionForm {
+    background-color: #14213d75;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    margin: 60px 0px;
+    padding: 50px 10px;
+}
+
+.text {
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.form label {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin: 40px;
+    text-transform: capitalize;
+}
+
+.form input {
+    background-color: #000000;
+    border: none;
+    border-radius: 2px;
+    color: #ffffff;
+    margin: 10px 30px;
+    padding: 10px;
+    width: 80%;
+}
+
+.form .btnAdd {
+    background-color: #da0303;
+    border-radius: 20px;
+    cursor: pointer;
+    left: 110px;
+    position: relative;
+    top: 20px;
+    width: 30%;
+}
+
+@media only screen and (max-width: 600px) {
+    .containerToDo {
+        display: grid;
+        grid-template-columns: 100%;
+        gap: 20px;
+    }
+
+    /* section of aside  */
+
+    .boxAside {
+        height: 80vh;
+        padding: 0px 20px;
+    }
+
+    .title h1 {
+        font-size: 2.4rem;
+    }
+
+    .btnCreateTask {
+        font-size: 1.4rem;
+        margin-left: 40px;
+        padding: 10px;
+        width: 80%;
+    }
+
+    .sectionForm {
+        margin: 80px 0px;
+        padding: 50px 10px;
+    }
+    
+    .text {
+        color: #ffffff;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+    
+    .form label {
+        color: #ffffff;
+        font-size: 1.2rem;
+        margin: 40px;
+    }
+    
+    .form input {
+        margin: 14px 24px;
+    }
+    
+    .form .btnAdd {
+        background-color: #da0303;
+        border-radius: 20px;
+        cursor: pointer;
+        left: 60px;
+        position: relative;
+        top: 20px;
+        width: 50%;
+    }
+}
