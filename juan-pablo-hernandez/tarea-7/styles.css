@@ -1,0 +1,86 @@
+* {
+	color: rgb(0, 0, 0);
+	font-family: Verdana, sans-serif;
+}
+body {
+	background-color: rgb(253, 243, 243);
+	overflow: hidden;
+}
+main {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	width: 100vw;
+}
+.login-container {
+	align-items: center;
+	background-color: rgb(252, 251, 232);
+	border: 1px solid gray;
+	box-shadow: 3px 3px 1px #666;
+	display: flex;
+	flex-direction: column;
+	height: 400px;
+	margin-bottom: 25px;
+	padding: 10px 30px;
+	width: 260px;
+}
+.login-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 30px;
+	width: 100%;
+}
+.login-form input {
+	border: 1px solid gray;
+	box-shadow: 3px 3px 1px #666;
+	height: 40px;
+	margin-bottom: 25px;
+	padding-left: 12px;
+	padding-right: 12px;
+	width: calc(100% - 24px);
+}
+.login-form .login-info {
+	font-size: 12px;
+	margin-top: -20px;
+	position: absolute;
+}
+#submit {
+	background-color: rgba(230, 87, 122, 0.808);
+	border: 1px solid gray;
+	color: white;
+	cursor: pointer;
+	height: 40px;
+	margin-top: 12px;
+	width: 100%;
+}
+#submit:hover {
+	background-color: rgba(247, 129, 129, 0.808);
+}
+.login-container a {
+	font-size: 12px;
+}
+.signup-container {
+	align-items: center;
+	background-color: rgb(252, 251, 232);
+	border: 1px solid gray;
+	box-shadow: 3px 3px 1px #666;
+	display: flex;
+	font-style: bold;
+	height: 50px;
+	justify-content: space-evenly;
+	width: 320px;
+}
+.signup-container button {
+	background-color: rgba(230, 87, 122, 0.808);
+	border: 1px solid gray;
+	box-shadow: 3px 3px 1px #666;
+	color: white;
+	cursor: pointer;
+	padding: 6px 10px;
+}
+.signup-container button:hover {
+	background-color: rgba(247, 129, 129, 0.808);
+}

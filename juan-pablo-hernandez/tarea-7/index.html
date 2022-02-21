@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Testing</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main>
+        <article class="login-container">
+            <head>
+                <h1>Login</h1>
+            </head>
+            <form class="login-form" name="mainForm" >
+                <label for ="username">
+                    <input id="username" placeholder="Username" maxlength="50" type="text" required>
+                    <span class="login-info" id="username-info"></span>
+                </label>
+                <label for ="password">
+                    <input id="password" placeholder="Password" maxlength="50" type="password" required>
+                    <span class="login-info" id="password-info"></span>
+                </label>
+                <input id="submit" type="button" value="Login"></input>
+            </form>
+            <section>
+                <a href="#">Forgot password?</a>
+            </section>
+        </article>
+        <footer class="signup-container">
+            <small>Don't have an account?</small>
+            <button>Sign up</button>
+        </footer>
+    </main>
+    <script type="module" src="./login.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
