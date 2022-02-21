@@ -1,0 +1,59 @@
+.newTask {
+    width: 70%;
+
+        h2{
+            color: #666666;
+            font-size: 32px;
+            margin-bottom: 20px;
+
+                span {
+                    animation: blink 2.5s infinite;
+                }
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 0 70px 0 25px;
+
+                label {
+                    font-size: 22px;
+                    color: #666666;
+                    margin-bottom: 15px;
+                }
+
+                input {
+                    background-color: #F3F0D7;
+                    border: none;
+                    color: #666666;
+                    font-size: 18px;
+                    height: 50px;
+                    margin-bottom: 30px;
+                    outline: none;
+                    padding: 10px;
+                }
+                
+                button {
+                    height: 50px;
+                    font-size: 18px;
+                    background-color: #a6cea9;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    color: #666666;
+                    font-weight: 500;
+                    transition: all ease .4s;
+
+                        &:hover {
+                            background-color: #FED2AA;
+                            color: #FFFFFF;
+                        }
+                }
+        }
+}
+
+@keyframes blink {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
