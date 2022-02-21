@@ -1,0 +1,44 @@
+input[type="text"] {
+  border-radius: 18px;
+  border: none;
+  font-family: "Turret Road", cursive;
+  font-size: 24px;
+  font-weight: 700;
+  height: 36px;
+  margin: 10px;
+  text-align: center;
+  width: 350px;
+}
+
+.emojis {
+  font-size: 64px;
+}
+
+.input-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.movie-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-container p {
+  margin: 25px;
+}
+
+.send-btn {
+  background-color: limegreen;
+  border-radius: 18px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: "Turret Road", cursive;
+  font-size: 24px;
+  height: 36px;
+  margin: 10px;
+  width: 120px;
+}

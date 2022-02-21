@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@300;400;500;700&display=swap');
+
+article {
+  height: 100vh;
+}
+
+.game {
+  background-color: black;
+  height: 100vh;
+  text-align: center;
+}
+
+.game-title {
+  color: darkorange;
+  font-family: "Turret Road", cursive;
+  font-size: 64px;
+  font-weight: 700;
+}
