@@ -23,16 +23,6 @@ main{
 }
 
 /* CLASSES */
-.header{
-  align-items: center;
-  background-color: black;
-  color: white;
-  display: flex;
-  font-size: 1.3rem;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-}
-
 .buttons{
   align-items: center;
   display: flex;
@@ -47,6 +37,7 @@ main{
   justify-content: center;
   width: 100%;
 }
+
 .create > *{
   border-radius: 1rem;
   border: none;
@@ -56,12 +47,15 @@ main{
   width: 50%;
   
 }
+
 .create >input:focus{
   outline: none;
 }
+
 .create textarea{
   font-size: .9rem;
 }
+
 .create >textarea:focus{
   outline: none;
 }
@@ -82,9 +76,21 @@ main{
 .delete-todo:hover{
   filter: brightness(1.2);
 }
+
+.header{
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  font-size: 1.3rem;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
 .nav__link{
   text-decoration: none;
 }
+
 .nav__link--home{
   color: white;
 }
@@ -94,14 +100,17 @@ main{
   text-decoration: none;
   transition: all .3s ease;
 }
-.nav__link--todoDescription{
-  align-self: start;
-}
+
 .nav__link--create:hover{
   filter: brightness(1.5);
   text-shadow: 0 0 4px rgb(160, 40, 190);
   transform: scale(1.05);
 }
+
+.nav__link--todoDescription{
+  align-self: start;
+}
+
 .todo{
   display: flex;
   flex-wrap: wrap;
@@ -110,6 +119,7 @@ main{
   padding: 0;
   width: 100%;
 }
+
 .todo__item {
   align-items: center;
   background-color: rgb(48, 48, 48);
@@ -120,11 +130,13 @@ main{
   padding: .5rem 1rem;
   position: relative;
 }
+
 .todo__item:not(.todo__item--empty):hover{
   cursor: pointer;
   filter: brightness(1.1);
   user-select: none;
 }
+
 .todo__item--empty{
   width: 80%;
 }
