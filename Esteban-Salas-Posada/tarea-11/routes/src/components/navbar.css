@@ -1,0 +1,8 @@
+.active{
+    color: gold;
+    font-weight: bold;
+}
+.link{
+    text-decoration: none;
+    color: aliceblue;
+}
