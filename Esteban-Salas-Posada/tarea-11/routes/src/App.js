@@ -21,7 +21,6 @@ function App() {
         <BrowserRouter>
           <Navbar/>
           <Routes>
-            <Route path='/'  />
             <Route path='/task1' element={ <Task1/> } />
             <Route path='/task2' element={ <Task2/> } />
             <Route path='/task3' element={ <Task3/> } />
