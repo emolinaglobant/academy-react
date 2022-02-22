@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f3f1f5;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.main-container {
+  padding: 2rem;
+}
+
+.todo-section {
+  background-color: #94daff;
+  border-radius: 50px;
+  box-shadow: 2px 2px 2px #7f7c82;
+  color: #7f7c82;
+  height: calc(100vh - 5rem);
+  padding: 2rem;
+  position: relative;
+}
+
+.new-todo {
+  background-color: #b983ff;
+  border-radius: 10%;
+  border-width: 0;
+  bottom: 2rem;
+  box-shadow: 2px 2px 2px #7f7c82;
+  cursor: pointer;
+  font-size: 30px;
+  height: 3rem;
+  padding: 10px;
+  position: absolute;
+  right: 3rem;
+  width: 3rem;
+}
+
+.main-new {
+  background-color: #cdf0ea;
+  border-radius: 50px;
+  box-shadow: 2px 2px 2px #7f7c82;
+  color: #7f7c82;
+  height: 90vh;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  width: 90vw;
+}
+
+.form-section button {
+  box-shadow: 1px 1px 1px #7f7c82;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding: 5px;
+}
+
+.form-section input[type="text"] {
+  font-size: 20px;
+  padding: 20px 20px;
+}
+
+.main-detail {
+  background-color: #f6eabe;
+  border-radius: 50px;
+  box-shadow: 2px 2px 2px #7f7c82;
+  color: #7f7c82;
+  height: 90vh;
+  margin: 2rem;
+  padding: 2rem;
+  position: relative;
+}
+
+.delete-todo {
+  background-color: #99feff;
+  border-radius: 30%;
+  border-width: 0;
+  box-shadow: 2px 2px 2px #7f7c82;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  height: 2rem;
+  padding: 10px;
+  width: 2rem;
+}
+
+.todo-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.back-icon {
+  color: #1572a1;
+  font-size: 3rem;
+}
+
+.edit-todo {
+  background-color: #eec373;
+  border-radius: 10%;
+  border-width: 0;
+  box-shadow: 2px 2px 2px #7f7c82;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  height: 3rem;
+  padding: 10px;
+  width: 7rem;
+}
+
+.edit-todo-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem;
+  row-gap: 1rem;
+}
