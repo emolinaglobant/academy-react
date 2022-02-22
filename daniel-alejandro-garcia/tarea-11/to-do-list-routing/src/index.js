@@ -1,39 +1,37 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import  {BrowserRouter, Routes, Route} from 'react-router-dom';
-import TaskOne from './components/taskOne';
-import TaskTwo from './components/taskTwo';
-import TaskThree from './components/taskThree';
-import TaskFour from './components/taskFour';
-import TaskFive from './components/taskFive';
-import TaskSix from './components/taskSix';
-import TaskSeven from './components/taskSeven';
-import TaskEight from './components/taskEight';
-import TaskNine from './components/taskNine';
-import TaskTen from './components/taskTen';
-import TaskEleven from './components/taskEleven';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Task from "./components/Task";
+
+const data = [
+  { nameTask: "Magazine cover" },
+  { nameTask: "Form" },
+  { nameTask: "3 Kata" },
+  { nameTask: "Calculator" },
+  { nameTask: "Slide Puzzle" },
+  { nameTask: "Kata" },
+  { nameTask: "Login testing" },
+  { nameTask: "Create-react-app y expo" },
+  { nameTask: "Magazine cover with react" },
+  { nameTask: "Guess the movie" },
+  { nameTask: "Routing" },
+];
 
 ReactDOM.render(
   <BrowserRouter>
-    <Routes>
-      <Route path='/' element={<App />}/>
-      <Route path='/taskOne' element={<TaskOne />}></Route>
-      <Route path='/taskTwo' element={<TaskTwo />}></Route>
-      <Route path='/taskThree' element={<TaskThree />}></Route>
-      <Route path='/taskFour' element={<TaskFour/>}></Route>
-      <Route path='/taskFive' element={<TaskFive />}></Route>
-      <Route path='/taskSix' element={<TaskSix />}></Route>
-      <Route path='/taskSeven' element={<TaskSeven />}></Route>
-      <Route path='/taskEight' element={<TaskEight />}></Route>
-      <Route path='/taskNine' element={<TaskNine />}></Route>
-      <Route path='/taskTen' element={<TaskTen />}></Route>
-      <Route path='/taskEleven' element={<TaskEleven />}></Route>
-    </Routes>
+    <React.StrictMode>
+      <Routes>
+        <Route path="/" element={<App data={data} />} />
+        <Route path="/task:id" element={<Task name={data}/>}/>
+        <Route path="*" element={<div>404 - not found</div>}/>
+      </Routes>
+    </React.StrictMode>
   </BrowserRouter>,
-  document.getElementById('root')
+
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
