@@ -1,0 +1,18 @@
+* {
+  box-sizing: content-box;
+  margin: 0px;
+}
+
+body {
+  background: linear-gradient(#D7C0A1, 30%, #FAEBD7);
+  margin: 50px;
+}
+
+@import './components/login/login.css';
+@import './components/navbar/navBar.css';
+@import './components/todos/createTodo.css';
+@import './components/todos/deleteTodo.css';
+@import './components/todos/listTodos.css';
+
+
+
