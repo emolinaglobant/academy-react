@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;400;500;600;700&display=swap");
+
+body {
+  background: black;
+}
+
+p {
+  font-family: "Lexend", sans-serif;
+  margin: 0;
+}
+
+.todo-app {
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 128px auto;
+  min-height: 600px;
+  padding-bottom: 32px;
+  text-align: center;
+  width: 620px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .todo-app {
+    border-radius: 10px;
+    margin: 64px auto;
+    min-height: 500px;
+    padding-bottom: 32px;
+    width: 520px;
+  }
+}
