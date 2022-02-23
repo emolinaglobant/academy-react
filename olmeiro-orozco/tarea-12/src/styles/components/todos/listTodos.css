@@ -1,0 +1,17 @@
+.listTodos {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.listTodos ul li {
+  font-size: 20px;
+  font-weight: 400;
+  list-style-type: none;
+  margin: 20px;
+}
+
+.listTodos ul li p {
+  background-color: blanchedalmond;
+  border-radius: 15px;
+  padding: 10px;
+}
