@@ -3,19 +3,22 @@ import './navbar.css'
 import { NavLink } from 'react-router-dom'
 
 export default function Navbar() {
+
+  const index = [1,2,3,4,5,6,7,8,9,10]
+
   return (
       <>
         <ul>
-            <li> <NavLink className={({isActive})=> isActive ? 'active' : 'link' } to='/task1'>Task 1</NavLink> </li>
-            <li> <NavLink className={({isActive})=> isActive ? 'active' : 'link' } to='/task2'>Task 2</NavLink> </li>
-            <li> <NavLink className={({isActive})=> isActive ? 'active' : 'link' } to='/task3'>Task 3</NavLink> </li>
-            <li> <NavLink className={({isActive})=> isActive ? 'active' : 'link' } to='/task4'>Task 4</NavLink> </li>
-            <li> <NavLink className={({isActive})=> isActive ? 'active' : 'link' } to='/task5'>Task 5</NavLink> </li>
-            <li> <NavLink className={({isActive})=> isActive ? 'active' : 'link' } to='/task6'>Task 6</NavLink> </li>
-            <li> <NavLink className={({isActive})=> isActive ? 'active' : 'link' } to='/task7'>Task 7</NavLink> </li>
-            <li> <NavLink className={({isActive})=> isActive ? 'active' : 'link' } to='/task8'>Task 8</NavLink> </li>
-            <li> <NavLink className={({isActive})=> isActive ? 'active' : 'link' } to='/task9'>Task 9</NavLink> </li>
-            <li> <NavLink className={({isActive})=> isActive ? 'active' : 'link' } to='/task10' >Task 10</NavLink> </li>
+              {
+                index.map( (value, key)=>{
+                  return <li>
+                          <NavLink key={key} className={({isActive})=> isActive ? 'active' : 'link' } to={`/task${value}`}>
+                            Task {value}
+                          </NavLink>
+                        </li>
+                } )
+              }
+            
         </ul>
       </>
     )

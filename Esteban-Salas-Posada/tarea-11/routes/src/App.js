@@ -1,36 +1,34 @@
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar';
-import Task1 from './pages/01/task1';
-import Task2 from './pages/02/task2';
-import Task3 from './pages/03/task3';
-import Task4 from './pages/04/task4';
-import Task5 from './pages/05/task5';
-import Task6 from './pages/06/task6';
-import Task7 from './pages/07/task7';
-import Task8 from './pages/08/task8';
-import Task9 from './pages/09/task9';
-import Task10 from './pages/10/task10';
-
+import Task from './components/Task';
 
 function App() {
+
+  const index = [1,2,3,4,5,6,7,8,9,10]
+  const descriptions = ['We worked in a Magazine!!',
+                        'We worked in a form using A11Y!!',
+                        'We worked in three Katas',
+                        'We did a calculator',
+                        'We worked in a puzzle',
+                        'Strategy pattern',
+                        'We worked JEST',
+                        'We created a react app and a react native app using expo',
+                        'We did a magazine using a react app',
+                        'Guess the movie']
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Tareas del Bootcamp</h1>
+        <h1>Bootcamp Task</h1>
         <BrowserRouter>
           <Navbar/>
           <Routes>
-            <Route path='/task1' element={ <Task1/> } />
-            <Route path='/task2' element={ <Task2/> } />
-            <Route path='/task3' element={ <Task3/> } />
-            <Route path='/task4' element={ <Task4/> } />
-            <Route path='/task5' element={ <Task5/> } />
-            <Route path='/task6' element={ <Task6/> } />
-            <Route path='/task7' element={ <Task7/> } />
-            <Route path='/task8' element={ <Task8/> } />
-            <Route path='/task9' element={ <Task9/> } />
-            <Route path='/task10' element={ <Task10/> } />
+            <Route path="/" />
+            {
+              index.map( (value, key)=>{
+                  return <Route key={key} path={`/task${value}`} element={ <Task title={`Task ${value}`} description={`${descriptions[key]}`}/> } />
+              } )
+            }
           </Routes>
         </BrowserRouter>
       </header>
