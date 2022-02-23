@@ -1,0 +1,120 @@
+* {
+    box-sizing:border-box;
+    margin:0;
+    -moz-box-sizing:border-box;
+    padding:0;
+    -webkit-box-sizing:border-box;
+}
+
+button{
+    border:none;
+    color:#fff;
+    cursor:pointer; 
+    display:inline-block;
+    float:left;
+    font-family: 'Open Sans', sans-serif;
+    height:60px;
+    margin-top:-10px;
+    text-transform:uppercase;
+    width:250px;
+}
+.container {
+    align-items: center;
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    height:100vh;
+    justify-content: center;
+}
+
+.error{
+    border:none;
+    color: #fa774f;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    height:30px;
+    justify-content:space-between;
+    list-style: none;
+    margin: 5px auto;
+    padding:0 45px;
+    transition:.5s;
+    -webkit-transition:.5s;
+}
+
+.error span, .error li{
+    display: none;
+}
+
+.form-group{
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    height:380px;
+    left:35%;
+    overflow:hidden;
+    top:200px;
+    width:500px;
+    z-index:1;
+}
+
+
+input{
+    border:none;
+    display:block;
+    height:50px;
+    margin:0 auto;
+    width:90%;
+}
+
+label{
+    color:rgba(255,255,255,.3);
+    font-weight:bolder;
+    left:20%; 
+    position:absolute;
+    text-transform:uppercase;
+    top:-100%;
+    transition:.3s ease-in-out 1.2s;
+    -webkit-transition:.3s ease-in-out 1.2s;
+}
+
+legend{
+    color:#858585;
+    font-weight:lighter;
+    padding:40px;
+    text-transform:uppercase;
+}
+
+.link{
+    color:#858585;
+    display:inline-block;
+    margin: 0px 33% 33px;
+    text-decoration:none;
+}
+
+.not-validated{color: #fa774f}
+
+.register{background:#8467b6}
+
+.register:hover{background:#673ab7}
+
+.signin{ background:#fa774f}
+
+.signin:hover{ background:#ff5722}
+
+.user-name,.pwd {
+    border-bottom:1px solid rgba(0,0,0,.1);
+    color:#858585;
+    font-family: 'Open Sans', sans-serif;
+    font-weight:lighter;
+    padding-left:20px;
+    position:relative;
+    text-transform:uppercase;
+    transition:.5s;
+    -webkit-transition:.5s;
+    z-index:1;
+}
+
+.validated{color: #77fa4f}

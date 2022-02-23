@@ -1,0 +1,27 @@
+{
+  "name": "tarea7",
+  "version": "1.0.0",
+  "description": "unit test",
+  "main": "form.js",
+  "type": "module",
+  "dependencies": {
+    "jest": "^27.5.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.16.8"
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "plugins": [
+          "@babel/plugin-transform-modules-commonjs"
+        ]
+      }
+    }
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Jessica",
+  "license": "ISC"
+}

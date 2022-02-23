@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="container">
+        <form action="" class="form-group">
+            <legend>LOGIN</legend>
+            <label for="user-name">User name:</label>
+            <input class="user-name" type="text" id="user-name" name="user-name" placeholder="USER NAME"required>
+            <p class="error" id="error-user"><span>must be eight characters or longer</span></p> 
+            <label for="password">Password:</label>
+            <input class="pwd" type="password" id="password" name="password" placeholder="PASSWORD" required>
+            <!-- <div class="lds-ripple"><div></div><div></div></div> -->
+            <ul class="error" id="error-pwd">
+                <li>eight chars</li>
+                <li>special char</li>
+                <li>numeric char</li>
+                <li>uppercase char</li>
+            </ul>
+            <a href="#" class="link">Forgot your password?</a>
+            <button class="register">
+                <span>register</span>
+            </button>
+            <button class="signin" id="signin" type="submit">
+                <span>sign in</span>
+            </button>
+        </form>
+    </main>
+    <script src="./js/Validation.js" type="module"></script>
+    <script src="./js/form.js" type="module"></script>
+</body>
+</html>
