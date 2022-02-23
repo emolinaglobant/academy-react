@@ -1,0 +1,29 @@
+.taskView{
+    width: 70%;
+    span{
+        animation: blink 4s infinite;
+        color: #FED2AA;
+        font-size: 145px;
+        font-weight: 900;
+        left: 10px;
+        position: absolute;
+        top: 10px;
+    }
+
+    h2 {
+        color: #666666;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 20px;
+        color: #666666;
+    }
+}
+
+@keyframes blink {
+    0% {opacity: 0.8;}
+    50% {opacity: 1;}
+    100% {opacity: 0.8;}
+}
