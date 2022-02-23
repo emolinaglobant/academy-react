@@ -4,25 +4,6 @@
     padding: 0;
 }
 
-.container{
-    background-image: url("../img/background.jpg");
-    background-size:100%;
-    height: 100vh;
-    display:grid;
-    justify-content: center;
-}
-#congratulations{
-    padding: 30px 25px;
-    color: rgb(55, 116, 116);
-    display: none;
-}
-
-.header{
-    display:flex;
-    height: 90px;
-    justify-content: flex-end;
-}
-
 .button{
     background-color: #fe6f61;
     border: none;
@@ -32,12 +13,10 @@
     cursor: pointer;
     font-size: 17px;
     margin: 20px 10px;
+    outline: none;
     padding: 15px 25px;
     text-align: center;	
-    outline: none;
 }
-
-.button:hover {background-color: #ff6152}
 
 .button:active {
     background-color: #ff6152;
@@ -45,9 +24,57 @@
     transform: translateY(4px);
 }
 
+.button:hover {background-color: #ff6152}
+
+#congratulations{
+    color: rgb(55, 116, 116);
+    display: none;
+    padding: 30px 25px;
+}
+
+.container{
+    background-image: url("../img/background.jpg");
+    background-size:100%;
+    display:grid;
+    height: 100vh;
+    justify-content: center;
+}
+
+.empty-piece{
+    background-color: black;
+}
+
+.even-pieces {
+    background-color: aqua;
+    color: #fff;
+}
+
+.header{
+    display:flex;
+    height: 90px;
+    justify-content: flex-end;
+}
+
+.initial-pieces{
+    background-color: #fe6f61;
+}
+
+.odd-pieces{
+    background-color: rgb(55, 116, 116);
+    color: #fff;
+}
+
+
+.piece-puzzle {
+    font-size: 17px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+
 .puzzle-container {
-    border: 5px solid #999;
     background-color: #ffffff80;
+    border: 5px solid #999;
     border-radius: 15px;
     height: 400px;
     width: 400px;
@@ -72,27 +99,6 @@ th, td {
     width: 25%;
 }
 
-.piece-puzzle {
-    font-size: 17px;
-    font-weight: bold;
-    text-align: center;
-    vertical-align: middle;
-}
-.initial-pieces{
-    background-color: #fe6f61;
-}
 
-.even-pieces {
-    background-color: aqua;
-    color: #fff;
-}
 
-.odd-pieces{
-    background-color: rgb(55, 116, 116);
-    color: #fff;
-}
-
-.empty-piece{
-    background-color: black;
-}
 
