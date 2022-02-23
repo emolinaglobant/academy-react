@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.group-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+button {
+  font-size: 32px;
+  width: 100px;
+  height: 85px;
+}
+
+.gray-button {
+  background-color: #cdcccb;
+  border-color: #cdcccb;
+}
+
+.orange-button {
+  background-color: #f77f08;
+  border-color: #f77f08;
+  color: white;
+}
+
+.result {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 48px;
+  margin-bottom: 36px;
+  margin-top: 65px;
+  margin-right: 12px;
+}
+
+.button-grow {
+  flex-grow: 1;
+}
+
+h1 {
+  font-size: 28px;
+  padding-top: 120px;
+}
+
+.body-general {
+  color: white;
+  font-family: "Times New Roman";
+  height: 920px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 400px;
+}
+
+.background {
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/d2/IPhone_4S_No_shadow.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 550px 950px;
+}
