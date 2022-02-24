@@ -1,0 +1,38 @@
+h2 {
+  color: #82ba3d;
+  font-family: "Lexend", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  margin: 24px 0;
+}
+
+.detail-row {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 15px;
+}
+
+.high-priority {
+  color: rgba(221, 51, 29, 1);
+}
+
+.low-priority {
+  color: rgba(130, 186, 61, 1);
+}
+
+.mid-priority {
+  color: rgba(239, 208, 0, 1);
+}
+
+.row-title, .row-value {
+  font-size: 24px;
+}
+
+.row-title {
+  font-weight: 500;
+}
+
+.row-value {
+  font-weight: 200;
+  margin-left: 10px;
+}

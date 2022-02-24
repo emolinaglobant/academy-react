@@ -1,0 +1,50 @@
+.add-todo-btn {
+  background: linear-gradient(
+    90deg,
+    rgba(130, 186, 61, 1) 0%,
+    rgba(201, 211, 37, 1) 100%
+  );
+  border-radius: 0 4px 4px 0;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Lexend", sans-serif;
+  outline: none;
+  padding: 16px;
+}
+
+.priority-select {
+  border: 2px solid #82ba3d;
+  border-left: none;
+  font-family: "Lexend", sans-serif;
+  padding: 13px 26px 13px 9px;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  background: transparent;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #82ba3d;
+  color: black;
+  font-family: "Lexend", sans-serif;
+  outline: none;
+  padding: 14px 32px 14px 16px;
+  width: 320px;
+}
+
+.todo-input::placeholder {
+  color: #e2e2e2;
+}
+
+@media only screen and (max-width: 1280px) {
+  .todo-input {
+    width: 220px;
+  }
+
+  .priority-select {
+    padding: 13.5px 26px 13px 9px;
+  }
+}
