@@ -1,0 +1,10 @@
+.App {
+  margin: auto;
+}
+
+.formulario{
+  border: 1px solid black;
+  margin: auto;
+  height: 500px;
+  width: 500px;
+}
