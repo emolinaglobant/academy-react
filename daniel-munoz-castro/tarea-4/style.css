@@ -60,9 +60,9 @@ button:focus{
     box-shadow: 0px 0px 0px 10px #00000033;
 }
 
-#valor-actual{
+#current-value{
     font-size: 2em;
 }
-#valor-anterior{
+#previous-value{
     font-size: 1em;
 }
