@@ -1,0 +1,65 @@
+body{
+    background-image: url(/public/fondo.jpeg)
+}
+body{
+    background-position: center;
+    background-size: cover;
+}
+.Button{
+    background-color: rgb(3, 4, 5);
+    border-radius: 15px;
+    color: white;
+    font-size: 34px;
+    margin-left: 580px;
+    margin-top: 13px;
+    padding: 17px;
+}
+.barra{
+    border-radius: 20px;
+    font-size: 28px;
+    margin-left: 450px;
+    margin-top: 410px;
+    padding: 23px;
+    text-align: center;
+}
+.const #series{
+    border-radius: 15px;
+    color: white;
+    font-size: 34px;
+    margin-left: 580px;
+    margin-top: 33px;
+    padding: 17px;
+}
+#h1 .points{
+    border-top: 10px;
+}
+.lifes h1{
+    font-size: 396%;
+    margin-left: 72px;
+    margin-top: 528px;
+    position: absolute;
+}
+.points h1{
+    font-size: 396%;
+    margin-left: 967px;
+    margin-top: 528px;
+    position: absolute;
+}
+.Winner h1{
+    font-size: 906%;
+    margin-left: 304px;
+    margin-top: 249px;
+    position: absolute;
+}
+.emojis h1{
+    font-size: 1148%;
+    margin-left: 241px;
+    margin-top: 152px;
+    position: absolute;
+}
+.title h1{
+    font-size: 347%;
+    margin-left: 371px;
+    margin-top: 59px;
+    position: absolute;
+}
