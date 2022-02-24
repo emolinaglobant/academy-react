@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --second_tittle--color: rgb(203, 4, 7);
+  --tittle_color: rgb(20, 20, 72);
+}
+body {
+  color: #ffffff;
+  text-align: center;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 0;
+}
+.container_magazine {
+  background: linear-gradient(rgb(214, 206, 221), rgb(201, 191, 209));
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: #ffffff solid 10px;
+  height: 1014px;
+  width: 720px;
+}
+.container_first {
+  font-family: "Oswald", sans-serif;
+  left: -230px;
+  position: relative;
+}
+.container_second {
+  left: -230px;
+  position: relative;
+  top: 60px;
+}
+.container_third {
+  font-family: "Anton", sans-serif;
+  left: -120px;
+  position: relative;
+  top: 290px;
+}
+.container_barcode {
+  position: relative;
+  right: -70px;
+  top: 135px;
+}
+.container_barcode img {
+  width: 100px;
+}
+.fourth_container {
+  position: relative;
+  right: -200px;
+  top: -50px;
+}
+.first_txt {
+  color: var(--second_tittle--color);
+  font-size: 30px;
+}
+.first_txt--two {
+  color: black;
+}
+
+.fourth_txt {
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+}
+.fourth_txt--two {
+  color: var(--second_tittle--color);
+  font-size: 42px;
+  font-family: "Anton", sans-serif;
+}
+.fourth_txt--three {
+  font-family: "Oswald", sans-serif;
+}
+.img_principal {
+  height: 750px;
+  left: 450px;
+  position: absolute;
+  top: 290px;
+}
+.second_txt {
+  color: var(--second_tittle--color);
+  font-size: 35px;
+  font-family: "Anton", sans-serif;
+}
+.second_txt_two {
+  color: black;
+  font-family: "Oswald", sans-serif;
+}
+.title_magazine {
+  color: var(--tittle_color);
+  font-family: "DM Serif Display", serif;
+  font-size: 220px;
+  letter-spacing: 15px;
+}
+.third_txt {
+  font-size: 90px;
+  letter-spacing: 5px;
+  letter-spacing: 6px;
+}
+.third_txt--two {
+  color: var(--second_tittle--color);
+  font-size: 60px;
+}
+.third_txt--three {
+  font-family: "Oswald", sans-serif;
+}
