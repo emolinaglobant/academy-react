@@ -1,0 +1,18 @@
+.input{
+    padding: 10px;
+    font-size: 1.15rem;
+}
+.button__add{
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid #e1e1e1;
+    padding: 10px 10px;
+    width: 120px;
+}
+.button__add:hover{
+    background-color: #20c997;
+    border-style: none;
+    border: 1px solid #e1e1e1;
+    color: white;
+    cursor: pointer;
+}
