@@ -1,0 +1,24 @@
+.li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.button{
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid #e1e1e1;
+    padding: 10px 10px;
+}
+.button:hover{
+    background-color: red;
+    border-style: none;
+    border: 1px solid #e1e1e1;
+    color: white;
+    cursor: pointer;
+}
+input, p{
+    display: inline-block;
+}
+input[type="checkbox"]{
+    margin-right: 20px;
+}
