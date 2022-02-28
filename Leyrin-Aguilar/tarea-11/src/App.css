@@ -1,0 +1,119 @@
+/* TAGS */
+body {
+  background-color: white;
+  font-family: "Montserrat";
+}
+button,
+input {
+  font-family: inherit;
+}
+
+h1 {
+  align-self: center;
+  color: white;
+  margin: 0;
+  text-align: center;
+  letter-spacing: 2px;
+}
+main {
+  background: rgb(20, 20, 20);
+  background-size: cover;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1002%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(30%2c 30%2c 30%2c 1)'%3e%3c/rect%3e%3cpath d='M627.76 649.96C794.09 619.01 873.35 201.77 1133.29 200.08 1393.24 198.39 1502.3 403.31 1638.83 407.28' stroke='rgba(144%2c 51%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M147.33 636.05C302.01 606.36 365.05 219.42 614.75 213.63 864.45 207.84 848.46 283.63 1082.17 283.63 1315.88 283.63 1431.43 213.82 1549.59 213.63' stroke='rgba(144%2c 51%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M298.5 650.29C453.17 649.73 587.84 535.66 905.64 531.37 1223.44 527.08 1347.98 279.02 1512.78 273.77' stroke='rgba(144%2c 51%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M355.83 639.25C515.87 635.86 639.7 425.5 957.39 419.93 1275.08 414.36 1401.22 231.78 1558.95 229.53' stroke='rgba(144%2c 51%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3cpath d='M711.51 614.92C880.14 581.9 956.7 153.8 1219.18 151.57 1481.67 149.34 1590.85 344.21 1726.86 347.57' stroke='rgba(144%2c 51%2c 194%2c 0.58)' stroke-width='2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1002'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* CLASSES */
+.header {
+  align-items: center;
+  background-color: black;
+  color: white;
+  display: flex;
+  font-size: 1.3rem;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.buttons {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.create {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+}
+.create > * {
+  border-radius: 1rem;
+  border: none;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  padding: 0.4rem 1rem;
+  width: 50%;
+}
+.create > input:focus {
+  outline: none;
+}
+
+.delete-todo {
+  align-items: center;
+  background-color: rgb(149, 32, 160);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: -4px;
+  top: -4px;
+}
+
+.delete-todo:hover {
+  filter: brightness(1.2);
+}
+.nav__link {
+  text-decoration: none;
+}
+.nav__link--home {
+  color: white;
+}
+
+.nav__link--create {
+  color: rgb(160, 40, 190);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.nav__link--create:hover {
+  filter: brightness(1.5);
+  text-shadow: 0 0 4px rgb(160, 40, 190);
+  transform: scale(1.05);
+}
+.todo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 0;
+  width: 100%;
+}
+.todo__item {
+  align-items: center;
+  background-color: rgb(48, 48, 48);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+.todo__item--empty {
+  width: 80%;
+}

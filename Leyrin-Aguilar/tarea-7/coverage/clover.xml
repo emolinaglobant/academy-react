@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1645468460589" clover="3.2.0">
-  <project timestamp="1645468460589" name="All files">
+<coverage generated="1646054691029" clover="3.2.0">
+  <project timestamp="1646054691030" name="All files">
     <metrics statements="28" coveredstatements="28" conditionals="7" coveredconditionals="4" methods="2" coveredmethods="2" elements="37" coveredelements="34" complexity="0" loc="28" ncloc="28" packages="1" files="1" classes="1"/>
-    <file name="login.js" path="C:\Users\leyrin.aguilar\Documents\GLOBANT\academy-react\Leyrin-Aguilar\tarea-7\login.js">
+    <file name="login.js" path="/Users/e.molina/Documents/CLIENTS/GLOBANt/React/academy-react/Leyrin-Aguilar/tarea-7/login.js">
       <metrics statements="28" coveredstatements="28" conditionals="7" coveredconditionals="4" methods="2" coveredmethods="2"/>
       <line num="1" count="1" type="stmt"/>
       <line num="2" count="1" type="stmt"/>
