@@ -1,0 +1,21 @@
+
+.delete{
+    background-color: transparent;
+    color: #b895f0;
+    border:0;
+}
+.delete:hover{
+    width: 30px;
+  height: 30px;
+  border-radius: 50%;
+   font-size: medium;
+   background-color: rgba(226, 145, 139, 0.562);
+}
+div li{
+    color: #b895f0;
+    display:flex;
+    justify-content: space-between;
+}
+div li:hover{
+    background-color: #25255c;
+}
