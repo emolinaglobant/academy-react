@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Merriweather+Sans:wght@300&family=Space+Mono:ital@1&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+body {
+  background-color: #a0d2f3;
+  color: white;
+}
+
+.mainContainer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.navTask {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.637);
+  display: flex;
+  height: 35px;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.navTask a {
+  color: black;
+  text-decoration: none;
+  transition: 0.2s ease-in;
+}
+
+.navTask a:hover {
+  transform: scale(1.2);
+}
