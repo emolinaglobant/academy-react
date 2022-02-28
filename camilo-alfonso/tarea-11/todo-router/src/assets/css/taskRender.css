@@ -1,0 +1,11 @@
+.taskRender {
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(50px);
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}

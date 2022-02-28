@@ -1,0 +1,16 @@
+.emptyRender {
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(50px);
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.emptyRender__descriptions,
+.emptyRender__header {
+  padding: 1em 0;
+}

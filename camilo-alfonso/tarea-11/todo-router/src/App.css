@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  margin: 0 auto;
+  text-align: center;
+}
+
+body {
+  background: url("./assets/images/darkwp2.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #ffff;
+  font-family: "Source Sans Pro", sans-serif;
+}

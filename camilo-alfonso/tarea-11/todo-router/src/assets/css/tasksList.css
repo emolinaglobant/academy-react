@@ -1,0 +1,22 @@
+.taskList {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin: 2em;
+}
+
+.taskList__content {
+  align-content: center;
+  display: grid;
+  grid-gap: 0.5em;
+  grid-template-columns: repeat(auto-fit, 240px);
+  justify-content: center;
+  margin-bottom: 1em;
+  padding: 0%;
+}
+
+@media (max-width: 620px) {
+  .taskList {
+    display: flex;
+    flex-direction: column;
+  }
+}
