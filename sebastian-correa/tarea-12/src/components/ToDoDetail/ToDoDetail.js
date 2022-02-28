@@ -1,9 +1,11 @@
 import "./ToDoDetail.css";
 import React from "react";
 import { useParams } from 'react-router-dom';
+import { useSelector } from "react-redux";
 
-const ToDoDetail = ({todos}) => {
+const ToDoDetail = () => {
   let { id } = useParams();
+  const todos = useSelector(state => state.todos);
   const statusClasses = `row-value ${todos[id-1].priority}-priority`;
 
   return (
