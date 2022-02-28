@@ -1,0 +1,41 @@
+.taskList {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 10px;
+    width: 100%;
+}
+.taskList li {
+    align-items: center;
+    background-color:rgb(255 255 176);
+    display: flex;
+    height: 45px;
+    justify-content: space-between;
+    list-style: none;
+    margin: 5px;
+    padding: 5px;
+    width: 80%;
+}
+.taskList li a {
+    text-decoration: none;
+}
+.taskContainer {
+    height: 500px;
+    width: 400px;
+}
+.taskContainer h3 {
+    font-family: 'Space Mono', monospace;
+    font-size: 30px;
+    text-align: center;
+}
+.taskTitle {
+    color: black;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+.deleteButton {
+    background-color: #f8a2a2;
+    height: 40px;
+    width: 40px;
+} 
