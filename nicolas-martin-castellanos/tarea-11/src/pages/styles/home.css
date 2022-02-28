@@ -1,0 +1,137 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.background{
+    background-image: url(/public/fondo.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.task{
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    color: white;  
+    display: flex;
+    font-size: 10px;
+    margin-left: 308px;
+    margin-right: 303px;
+    margin-top: 5px;
+    position: relative;
+    top: 55px;
+}
+.task2{
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    color: white;  
+    display: flex;
+    font-size: 10px;
+    margin-left: 308px;
+    margin-right: 303px;
+    margin-top: 5px;
+    position: relative;
+    top: -60px;
+}
+.task3{
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    color: white;  
+    display: flex;
+    font-size: 10px;
+    margin-left: 308px;
+    margin-right: 303px;
+    margin-top: 5px;
+    position: relative;
+    top: -60px;
+}
+.selector{
+    background: rgba(0,0,0,0.5);
+    border-color: white;
+    border-radius: 10px;
+    color: white;
+    display: block;
+    font-size: 20px;
+    height: 30px;
+    margin-left: 400px;
+    margin-top: 10px;
+    position: absolute;
+    text-align: center;
+}
+a:link, a:visited, a:active {
+    color: white;
+    text-decoration:none;
+}
+a:link, a:active :hover {
+    color: gray;
+}
+.tasks{
+    font-size: 30px;
+    margin-left: 91px;
+    position: absolute;
+}
+.inprogress {
+    font-size: 30px;
+    margin-left: 517px;
+    position: absolute;
+}
+.realizadas{
+    font-size: 30px;
+    margin-left: 873px;
+    margin-top: -10px;
+    position: relative;
+}
+.tareasporhacer{
+    color: black;
+    font-size: 50px;
+    margin-left: 324px;
+    margin-top: -69px;
+}
+.barra{
+    border-radius: 10px;
+    font-size: 20px;
+    height: 30px;
+    margin-left: 377px;
+    margin-top: -62px;
+    position: absolute;
+    text-align: center;
+    width: 485px;
+}
+ul{
+    border-radius: 10px;
+    background-color: black;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: center;
+    margin-top: 16px
+}
+.add{
+    background-color: rgb(3, 4, 5);
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+    margin-left: 559px;
+    margin-top: -22px;
+    padding: 13px;
+    position: absolute;
+}
+h3{
+    font-size: 15px;
+    margin-left: 163px;
+    text-align: center;
+}
+.inprogresstask{
+    font-size: 10px;
+    margin-left: 30px;
+    position:static;
+}
+.tareasporhacer2{
+    color: black;
+    font-size: 50px;
+    margin-left: 257px;
+    margin-top: -69px;
+}
+.tareasporhacer3{
+    color: black;
+    font-size: 50px;
+    margin-left: 415px;
+    margin-top: -69px;
+}
