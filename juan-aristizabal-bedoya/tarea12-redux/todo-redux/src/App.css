@@ -1,0 +1,32 @@
+.App {
+  background-color: teal;
+  height: 100vh;
+  overflow: hidden;
+  text-align: center;
+}
+.app-container {
+  background: white;
+  border-radius: 20px;
+  border: 1px black;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  height: 60%;
+  margin: auto;
+  margin-top: 20vh;
+  width: 50%;
+}
+.task-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  text-align: justify;
+  width: 41%;
+}
+a {
+  color: black;
+  outline: none;
+}
+
+a:hover {
+  color: teal;
+}
