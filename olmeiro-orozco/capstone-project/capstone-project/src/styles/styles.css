@@ -1,0 +1,23 @@
+@import './base/__base.css';
+@import './base/__settings.css';
+
+
+@import './base/__buttons.css';
+@import './base/__links.css';
+@import './components/auth.css';
+@import './components/cardQuestion.css';
+@import './components/centralGame.css';
+@import './components/footerGame.css';
+@import './components/headerButtons.css';
+@import './components/headerGame.css';
+@import './components/rulesGame.css';
+@import './components/sidebarLeft.css';
+@import './components/sidebarRight.css';
+@import './components/triviaGame.css';
+
+@import './base/responsive.css';
+
+
+
+
+

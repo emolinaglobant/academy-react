@@ -1,0 +1,34 @@
+/* Colors */
+:root {
+  --darkgray: gray;
+  --error: red;
+  --primary: greenyellow;
+  --secondary: green;
+
+  /* Colors CentralGame */
+  --Amber :  #ffc10b;
+  --BaliHai: #86a7b0;
+  --BayLeaf: #76a994;
+  --BlueHaze:   #d5c8dc;
+  --BlueRibbon: #0e6efe;
+  --CarrotOrange: #e98c26;
+  --ChelseaGem: #966d01;
+  --CopperRose: #9b6171;
+  --Eucalyptus: #1b8554;
+  --Genoa:  #1a8652;
+  --Malibu:   #5fd8f3;
+  --Mischka :  #dad4e0;
+  --OrientalPink: #c39b8c;
+  --PickledBluewood: #2e4c55;
+  --PinkSalmon: #ff8396;
+  --Shark :  #202529;
+  --Spray: #8cd8f0;
+  --Valencia : #db3745;
+  --Blue : #B2D6FF;
+  --Yellow: #f5cf8e;
+
+  /* Button Google */
+  --button-active-blue: #1669f2;
+  --google-blue: #4285f4;
+  --white: #fff;
+}

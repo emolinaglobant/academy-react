@@ -1,0 +1,303 @@
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: var(--Blue); /* Blue */
+  }
+
+  .btn__start {
+    background-color: var(--Genoa);
+    font-size: 14px;
+    height: 34px;
+    width: 120px;
+  }
+
+  .btn__header-question {
+    color: var(--Shark);
+    font-size: 15px;
+    height: 29px;
+    margin: 1px;
+    width: 29px;
+  }
+
+  .btn__header-question:hover {
+    background-color: var(--Shark);
+    color: var(--white);
+  }
+
+  .btn__header-question:disabled {
+    background-color: var(--Shark);
+    color: var(--white);
+  }
+
+  .btn__end {
+    width: 115px;
+  }
+
+  .trivia__sidebar-right > h2 {
+    font-size: 25px;
+  }
+
+  .trivia__acumulated {
+    text-align: center;
+    width: 100%;
+  }
+  .trivia__acumulated > h4 {
+    font-size: 20px;
+  }
+  .trivia__acumulated > p {
+    text-align: center;
+  }
+
+  .trivia__totalAward {
+    text-align: center;
+    width: 100%;
+  }
+
+  .trivia__totalAward > h4 {
+    font-size: 20px;
+  }
+  .trivia__totalAward > p {
+    text-align: center;
+  }
+
+  .btn__header-warginbox {
+    margin-right: 15px;
+  }
+
+  .trivia__footer {
+    margin-top: -2%;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: var(--Yellow);
+  }
+
+  .trivia__img {
+    width: 100px;
+    height: 50px;
+  }
+
+  .trivia__main-content {
+    height: 120vh;
+  }
+
+  .btn__start {
+    background-color: var(--Genoa);
+    font-size: 14px;
+    height: 34px;
+    width: 120px;
+  }
+
+  .btn__header-question {
+    color: var(--Shark);
+    font-size: 10px;
+    height: 20px;
+    margin: 0.5px;
+    width: 20px;
+  }
+
+  .btn__header-warginbox {
+    margin-right: 0px;
+  }
+
+  .trivia__sidebar-left {
+    height: 110vh;
+  }
+
+  .trivia__sidebar-right {
+    height: 110vh;
+  }
+
+  .trivia__sidebar-left > h2 {
+    font-size: 1px;
+  }
+
+  .trivia__difficulty button {
+    display: none;
+  }
+
+  .trivia__sidebar-right > h2 {
+    font-size: 12px;
+  }
+
+  .trivia__acumulated > h4 {
+    font-size: 10px;
+  }
+  .trivia__acumulated > p {
+    text-align: center;
+  }
+
+  .trivia__totalAward {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .trivia__totalAward > h4 {
+    font-size: 10px;
+  }
+  .trivia__totalAward > p {
+    text-align: center;
+  }
+
+  .trivia__main-central {
+    height: 83vh;
+  }
+
+  .trivia__categories > h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 5px;
+  }
+
+  .trivia__categories button {
+    font-size: 10px;
+  }
+
+  .trivia__footer {
+    font-size: 12px;
+    margin-top: 32%;
+    width: 100%;
+  }
+
+  .btn__retirement {
+    width: 60%;
+  }
+
+  .btn__end {
+    width: 65px;
+  }
+
+  .rules__container header h1{
+    font-size: 20px;
+    margin-top: 70px;
+  }
+
+  .rules__list {
+    font-size: 15px;
+    margin-bottom: -30px;
+  }
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #f09a9d;
+  }
+
+  .trivia__header {
+    height: 7vh;
+  }
+
+  .trivia__main-content {
+    height: 116vh;
+  }
+
+  .trivia__main-central {
+    height: 107vh;
+  }
+
+  .trivia__footer {
+    height: 7vh;
+    width: 100%;
+  }
+  
+  .trivia__footer p {
+    font-size: 10px;
+  }
+
+  .btn__start {
+    background-color: var(--Genoa);
+    font-size: 14px;
+    height: 34px;
+    width: 120px;
+  }
+
+  .trivia__difficulty button {
+    display: none;
+  }
+
+  .trivia__img {
+    display: none;
+  }
+
+  .trivia__sidebar-left {
+    height: 102vh;
+  }
+
+  .trivia__sidebar-right {
+    height: 102vh;
+  }
+
+  .trivia__sidebar-left > h2 {
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .trivia__categories > h3 {
+    font-size: 10px;
+    font-weight: 600;
+    margin-top: 5px;
+  }
+
+  .trivia__categories button {
+    font-size: 8px;
+  }
+
+  .trivia__header-buttons {
+    display: none;
+  }
+
+  .trivia__sidebar-right > h2 {
+    font-size: 10px;
+  }
+
+  .trivia__acumulated {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .trivia__acumulated > h4 {
+    font-size: 10px;
+    text-align: center;
+  }
+  .trivia__acumulated > p {
+    text-align: center;
+  }
+
+  .trivia__totalAward {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .trivia__totalAward > h4 {
+    font-size: 10px;
+    text-align: center;
+  }
+  .trivia__totalAward > p {
+    text-align: center;
+  }
+
+  .btn__retirement {
+    width: 60%;
+  }
+
+  .btn__end {
+    width: 65px;
+  }
+
+  .rules__container header h1{
+    font-size: 20px;
+    margin-top: 70px;
+  }
+
+  .rules__list {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+}

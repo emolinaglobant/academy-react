@@ -1,0 +1,55 @@
+.card__question {
+  padding: 20px;
+}
+
+.card__question-title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.card__question-title > h5 {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.card__options {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card__option {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.card__footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn__startQuestion {
+  background-color: var(--BlueRibbon);
+  border-radius: 5px;
+  width: 90%;
+}
+
+.btn__startQuestion:hover {
+  background-color: var(--BaliHai);
+}
+
+.btn__retirement {
+  background-color: var(--Shark);
+  border-radius: 5px;
+  width: 50%;
+}
+
+.btn__retirement:hover {
+  background-color: var(--Valencia);
+}
