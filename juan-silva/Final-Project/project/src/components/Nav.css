@@ -1,0 +1,35 @@
+#avatar:hover{
+    content: url("../assets/avatarback.png");
+    filter: drop-shadow(5px 5px 5px rgb(245, 241, 241));
+    height: 5vw;
+}
+#games:hover{
+    content: url("../assets/pokedex.png");
+    filter: drop-shadow(5px 5px 5px rgb(245, 241, 241));
+    height: 5vw;
+}
+#home:hover{
+    filter: drop-shadow(5px 5px 5px rgb(245, 241, 241));
+}
+.navigation{
+    background-color: #222224;
+    width: 100%;
+
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+.nav-bar li img{
+    height: 5vw;
+}
+#pokemon:hover{
+    content: url("../assets/ball2.png");
+    filter: drop-shadow(5px 5px 5px rgb(245, 241, 241));
+    height: 5vw;
+}
+#map:hover{
+    filter: drop-shadow(5px 5px 5px rgb(245, 241, 241));
+}
