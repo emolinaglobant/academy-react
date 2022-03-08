@@ -6,11 +6,9 @@ import { removeError, setError } from "../../actions/ui";
 import { startRegisterWithEmailPasswordName } from "../../actions/auth";
 import { useSelector, useDispatch } from "react-redux";
 
-
 export const RegisterScreen = () => {
-
   const dispatch = useDispatch();
-  const { msgError } = useSelector( state => state.ui );
+  const { msgError } = useSelector((state) => state.ui);
 
   const [formValues, handleInputChange] = useForm({
     name: "",
@@ -24,7 +22,7 @@ export const RegisterScreen = () => {
   const handleRegister = (e) => {
     e.preventDefault();
 
-    if ( isFormValid() ) {
+    if (isFormValid()) {
       dispatch(startRegisterWithEmailPasswordName(email, password, name));
     }
   };
@@ -50,12 +48,7 @@ export const RegisterScreen = () => {
 
   return (
     <section>
-      {
-        msgError && 
-        <section className="auth__alert-error">
-          {msgError}
-        </section>
-      }
+      {msgError && <section className="auth__alert-error">{msgError}</section>}
 
       <h3 className="auth__title">Register</h3>
 

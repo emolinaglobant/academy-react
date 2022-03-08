@@ -1,6 +1,7 @@
 .auth__main {
   align-items: center;
   background-color: var(--BlueHaze);
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../../../public/assets/trivia2.jpg");
   display: flex;
   height: 100vh;
   justify-content: center;

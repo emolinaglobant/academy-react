@@ -6,9 +6,8 @@ import { startGoogleLogin, startLoginEmailPassword } from "../../actions/auth";
 import { useForm } from "../../hooks/useForm";
 
 export const LoginScreen = () => {
-
   const dispatch = useDispatch();
-  const { loading } = useSelector( state => state.ui );
+  const { loading } = useSelector((state) => state.ui);
 
   const [formValues, handleInputChange] = useForm({
     email: "",
@@ -18,18 +17,18 @@ export const LoginScreen = () => {
   const { email, password } = formValues;
 
   const handleLogin = (e) => {
-    e.preventDefault()
-    dispatch( startLoginEmailPassword( email, password ));
+    e.preventDefault();
+    dispatch(startLoginEmailPassword(email, password));
   };
 
   const handleGoogleLogin = () => {
     dispatch(startGoogleLogin());
-  }
+  };
 
   return (
     <section>
       <h3 className="auth__title">Login</h3>
-      <form onSubmit={ handleLogin }>
+      <form onSubmit={handleLogin}>
         <input
           autoComplete="off"
           className="auth__input"
@@ -48,18 +47,14 @@ export const LoginScreen = () => {
           value={password}
         />
 
-        <button
-          className="btn btn__primary"
-          disabled={ loading }
-          type="submit"
-        >
+        <button className="btn btn__primary" disabled={loading} type="submit">
           Login
         </button>
 
         <section className="auth__google">
           <p>Login with google</p>
 
-          <section className="google__btn" onClick={ handleGoogleLogin }>
+          <section className="google__btn" onClick={handleGoogleLogin}>
             <section className="google__icon-wrapper">
               <img
                 alt="google button"

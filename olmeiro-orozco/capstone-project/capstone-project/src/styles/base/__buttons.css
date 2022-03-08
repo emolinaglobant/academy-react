@@ -1,6 +1,5 @@
 .btn {
   border: none;
-  color: var(--white);
   cursor: pointer;
   font-size: 14px;
   font-weight: 600;
@@ -13,16 +12,21 @@
 .btn__primary {
   background-color: var(--google-blue);
   border-radius: 2px;
+  color: white;
 }
 
 .btn__end {
-  background-color: var(--OrientalPink);
+  background-color: var(--BlueHaze);
   border-radius: 50px;
   border: 3px solid var(--Valencia);
   font-size: 14px;
   height: 34px;
   margin-right: 5px;
   width: 100px;
+}
+
+.btn__end:hover {
+  background-color: var(--PinkSalmon);
 }
 
 .btn__primary:hover {
@@ -92,8 +96,16 @@
   background-color: var(--BayLeaf);
   border-radius: 5px;
   width: 400px;
+  border: 1px solid black;
 }
 .btn__option:hover {
+  background-color: var(--PinkSalmon);
+  border-radius: 5px;
+  width: 400px;
+  color: black;
+}
+
+.btn__option:disabled {
   background-color: var(--PickledBluewood);
   border-radius: 5px;
   width: 400px;

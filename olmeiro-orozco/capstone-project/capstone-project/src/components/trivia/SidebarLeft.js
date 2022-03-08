@@ -1,22 +1,41 @@
 import React from 'react'
+import { useDispatch, useSelector } from 'react-redux';
+
+import { startRound, loadQuestions, roundChange } from "../../actions/game";
+import { getDifficulty } from '../../helpers/getDifficulty';
 
 export const SidebarLeft = () => {
+
+  const dispatch = useDispatch();
+  const {round, changeRound } = useSelector( state => state.game );
+
+  const clickCategory = (e) => {
+    if(changeRound === true){
+      dispatch(roundChange(false));
+    }
+    e.target.disabled = true;
+    let numCategory = e.target.dataset.numbercategory;
+    const newDifficulty = getDifficulty(round);
+    dispatch(startRound(true, numCategory, newDifficulty));
+    dispatch(loadQuestions());
+  }
+ 
   return (
     <aside className='trivia__sidebar-left'>
-        <h2>Nivel Dificultad</h2>
+        <h2>Difficulty level</h2>
         <section className="trivia__difficulty">
-          <button type="button" data-level="easy" className="btn btn__warning mr-3 ml-3">Baja</button>
-          <button type="button" data-level="medium" className="btn btn__success mr-3">Media</button>
-          <button type="button" data-level="hard" className="btn btn__danger mr-3">Alta</button>
+          <button type="button" data-level="easy" className="btn btn__warning mr-3 ml-3">Low</button>
+          <button type="button" data-level="medium" className="btn btn__success mr-3">Medium</button>
+          <button type="button" data-level="hard" className="btn btn__danger mr-3">High</button>
         </section>
 
         <section className="trivia__categories">
-          <h3>Categorías</h3>
-          <button type="button" className="btn btn__outline-dark mt-3 mr-3" id="btn-check-celebrities" data-category="Celebrities" data-numero="26">Celebridades</button>
-          <button type="button" className="btn btn__outline-dark mt-3 mr-3" id="btn-check-historia" data-category="History" data-numero="23">Historia</button>
-          <button type="button" className="btn btn__outline-dark mt-3 mr-3" id="btn-check-deporte" data-category="Sports" data-numero="21">Deporte</button>
-          <button type="button" className="btn btn__outline-dark mt-3 mr-3" id="btn-check-animales" data-category="Animals" data-numero="27">Animales</button>
-          <button type="button" className="btn btn__outline-dark mt-3 mr-3" id="btn-check-geo" data-category="Geography" data-numero="22">Geografía</button>
+          <h3>Categories</h3>
+          <button onClick={ clickCategory }  type="button" className="btn btn__outline-dark mt-3 mr-3 category" data-category="Celebrities" data-numbercategory="26">Celebrities</button>
+          <button onClick={ clickCategory }  type="button" className="btn btn__outline-dark mt-3 mr-3 category" data-category="History" data-numbercategory="23">History</button>
+          <button onClick={ clickCategory }  type="button" className="btn btn__outline-dark mt-3 mr-3 category" data-category="Sports" data-numbercategory="21">Sports</button>
+          <button onClick={ clickCategory }  type="button" className="btn btn__outline-dark mt-3 mr-3 category" data-category="Animals" data-numbercategory="27">Animals</button>
+          <button onClick={ clickCategory }  type="button" className="btn btn__outline-dark mt-3 mr-3 category" data-category="Geography" data-numbercategory="22">Geography</button>
         </section>
     </aside>
   )

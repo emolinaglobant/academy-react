@@ -12,13 +12,6 @@
   margin-top: 10px;
 }
 
-.card__options {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .card__option {
   align-items: center;
   display: flex;
@@ -45,11 +38,40 @@
 }
 
 .btn__retirement {
-  background-color: var(--Shark);
+  background-color: var(--PinkSalmon);
   border-radius: 5px;
   width: 50%;
 }
 
 .btn__retirement:hover {
   background-color: var(--Valencia);
+}
+
+.card__start {
+  align-items: center;
+  display: flex;
+  font-size: 20px;
+  height: 44vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.card__options {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card__options > .order-1 {
+  order: 1;
+}
+.card__options > .order-2 {
+  order: 2;
+}
+.card__options > .order-3 {
+  order: 3;
+}
+.card__options > .order-4 {
+  order: 4;
 }

@@ -12,9 +12,18 @@
 }
 
 .trivia__header-link {
-  text-decoration: none;
+  background-color: var(--PinkSalmon);
+  border-radius: 5px;
+  border: 1px solid black;
+  color: black;
+  display: block;
   font-size: 18px;
-  color: var(--PickledBluewood);
+  padding: 3px;
+  text-decoration: none;
+}
+
+.trivia__header-link:hover {
+  background-color: var(--Genoa);
 }
 
 .trivia__img {

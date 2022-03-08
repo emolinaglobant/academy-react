@@ -1,10 +1,11 @@
 .rules__container {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../../../public/assets/idea.jpg");
+  display: flex;
   flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
 }
 
 .rules__container header {
@@ -21,6 +22,7 @@
   width: 100%;
   border: 1px solid black;
   border-radius: 5px;
+  text-decoration: none;
   text-align: center;
   display: block;
   margin-top: 10px;
