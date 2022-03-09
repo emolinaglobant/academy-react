@@ -1,0 +1,44 @@
+@import "../../generalStyles.scss";
+
+.weakImg {
+  border: 1px solid $BorderColor;
+  height: 50px;
+  margin: 0 5px 0;
+  padding: 3px;
+  position: relative;
+  width: 50px;
+
+  figure {
+    border: 2px solid $BorderColor;
+    height: 100%;
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  p{
+    background-color: rgba(0,0,0, .6);
+    color: $GrayTitular;
+    font-size: 22px;
+    min-width: 250px;
+    padding: 5px;
+    position: absolute;
+    right: 0;
+    text-align: right;
+    text-transform: capitalize;
+    top: 95px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .weakImg {
+    height: 90px;
+    width: 90px;
+
+    figure {
+      padding: 5px;
+    }
+  }
+}

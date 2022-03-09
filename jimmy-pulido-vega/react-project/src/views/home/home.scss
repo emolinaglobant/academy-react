@@ -1,0 +1,230 @@
+@import "../../generalStyles.scss";
+
+.home {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .randomMonster {
+    .infoMonster {
+      h2 {
+        color: $GrayTitular;
+        font-size: 25px;
+        font-weight: 600;
+        text-transform: capitalize;
+          &:hover {
+            color: white;
+          }
+      }
+
+      h4 {
+        color: $GrayTitular;
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 15px;
+      }
+
+      .homeWeakness {
+        display: none;
+      }
+    }
+
+    .borderMonsterHomeImg {
+      border: 1px solid $BorderColor;
+      height: 300px;
+      margin-bottom: 45px;
+      padding: 5px;
+      width: 300px;
+
+      figure {
+        border: 2px solid $BorderColor;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        width: 100%;
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .biography {
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 30px;
+
+    .borderBiographyHomeImg {
+      border: 1px solid $BorderColor;
+      padding: 5px;
+      width: 300px;
+
+      figure {
+        border: 2px solid $BorderColor;
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .biographyText {
+      h3 {
+        color: $GrayTitular;
+        cursor: pointer;
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 25px;
+        text-align: center;
+
+        .thingTxt {
+          font-weight: 300;
+          color: $BorderColor;
+        }
+      }
+
+      p {
+        color: $GrayText;
+        margin-bottom: 25px;
+        height: 250px;
+        overflow-y: scroll;
+        width: 300px;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .home {
+    padding: 0 80px;
+
+    .randomMonster {
+      width: 100%;
+
+      .infoMonster {
+        h2 {
+          font-size: 45px;
+        }
+
+        h4 {
+          font-size: 30px;
+          margin-bottom: 20px;
+        }
+      }
+
+      .borderMonsterHomeImg {
+        height: 500px;
+        margin: 0 auto 50px;
+        width: 500px;
+      }
+    }
+
+    .biography {
+      margin-bottom: 60px;
+      width: 100%;
+
+      .borderBiographyHomeImg {
+        width: 470px;
+      }
+
+      .biographyText {
+        h3 {
+          font-size: 35px;
+          text-align: left;
+        }
+
+        p {
+          font-size: 20px;
+          margin-bottom: 30px;
+          height: 350px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home {
+    padding: 0 30px;
+
+    .randomMonster {
+      align-items: flex-end;
+      justify-content: center;
+      display: flex;
+      margin-bottom: 70px;
+      width: 100%;
+
+      .infoMonster {
+        text-align: right;
+        margin: 0 30px 0 0;
+        width: 500px;
+        .homeWeakness {
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+        }
+      }
+
+      .borderMonsterHomeImg {
+        height: 460px;
+        margin: 0;
+        width: 460px;
+      }
+    }
+
+    .biography {
+      margin-bottom: 100px;
+      flex-direction: row;
+      justify-content: center;
+
+      .borderBiographyHomeImg {
+        margin-right: 30px;
+      }
+
+      .biographyText {
+        align-self: stretch;
+        p {
+          height: 460px;
+          margin: 0;
+          width: 460px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .home {
+    padding: 0;
+
+    .randomMonster {
+      .borderMonsterHomeImg {
+        height: 665px;
+        width: 665px;
+      }
+    }
+
+    .biography {
+      .borderBiographyHomeImg {
+          width: 500px;
+      }
+
+      .biographyText{
+          p{
+              font-size: 22px;
+              height: 495px;
+              width: 665px;
+          }
+      }
+    }
+  }
+}

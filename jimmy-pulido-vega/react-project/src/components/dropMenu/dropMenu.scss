@@ -1,0 +1,67 @@
+@import "../../generalStyles.scss";
+
+.dropMenu {
+  color: $GrayText;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 0 30px;
+  position: relative;
+  text-transform: capitalize;
+
+  h4 {
+    margin: 5px 0;
+  }
+
+  form {
+    background-color: rgba(0, 0, 0, 0.9);
+    left: 0;
+    padding: 15px 30px;
+    position: absolute;
+    top: 30px;
+    z-index: 10;
+
+    section {
+      margin: 5px 0;
+
+      input {
+        display: none;
+      }
+
+      label {
+        cursor: pointer;
+
+        &:hover {
+          color: $Withe;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .dropMenu {
+    h4 {
+      font-size: 18px;
+    }
+
+    form {
+      label {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .dropMenu {
+    h4 {
+      font-size: 22px;
+    }
+
+    form {
+      label {
+        font-size: 22px;
+      }
+    }
+  }
+}

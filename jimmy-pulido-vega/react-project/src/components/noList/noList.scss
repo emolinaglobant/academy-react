@@ -1,0 +1,15 @@
+@import "../../generalStyles.scss";
+
+.noList{
+    align-items: center;
+    display: flex;
+    height: 60vh;
+    justify-content: center;
+    width: 100%;
+
+        h1 {
+            color: $GrayText;
+            font-size: 45px;
+            text-align: center;
+        }
+}
