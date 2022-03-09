@@ -1,0 +1,58 @@
+.result-container {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  height: 64px;
+  width: 474px;
+}
+
+.result-container:hover {
+  background-color: #bcd336;
+  cursor: pointer;
+}
+
+.short-cover-container {
+  width: 64px;
+}
+
+.short-album-cover {
+  width: 100%;
+}
+
+.track-artists {
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+  margin: 0px;
+}
+
+.track-info {
+  margin-left: 5px;
+  max-width: 402px;
+}
+
+.track-name {
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 13.5px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 1280px) {
+  .result-container {
+    height: 48px;
+  }
+
+  .short-cover-container {
+    width: 48px;
+  }
+
+  .track-artists {
+    font-size: 11px;
+  }
+
+  .track-name {
+    font-size: 13px;
+  }
+}
