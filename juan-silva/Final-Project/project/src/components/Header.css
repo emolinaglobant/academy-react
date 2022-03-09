@@ -1,5 +1,6 @@
 .title{
     background-color: 	#f00000;
+    background: radial-gradient(circle, rgba(241,79,79,1) 0%, rgba(240,0,0,1) 59%);
     display: flex;
     justify-content: center;
     width: 100%;
@@ -12,5 +13,6 @@
     letter-spacing:30px;
     margin:5px;
     padding: 0;
-    text-shadow: -2px -2px 1px #000, 2px 2px 1px #000, -2px 2px 1px #000, 2px -2px 1px #000;
+    text-shadow: -2px -2px 5px #000, 2px 2px 9px #000, -2px 2px 1px #000, 2px -2px 5px #000;
 }
+

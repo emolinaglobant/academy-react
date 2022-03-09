@@ -14,7 +14,7 @@
 .navigation{
     background-color: #222224;
     width: 100%;
-
+    background: radial-gradient(circle, rgba(84,77,77,1) 0%, rgba(34,34,36,1) 58%);
 }
 .nav-bar{
     display: flex;

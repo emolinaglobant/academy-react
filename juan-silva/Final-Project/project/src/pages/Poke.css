@@ -1,0 +1,96 @@
+.abilities-list{
+    padding: 0;
+    list-style-type: none;
+}
+.pokemon-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 30px;
+    font-family: 'Consolas';
+    
+}
+.name{
+    margin: 0;
+    border-style: none;
+    grid-area:name;
+}
+.id{
+    margin: 0;
+    font-size: 2vw;
+    grid-area: id;
+}
+.titlepoke{
+    padding: 40px;
+}
+.type{
+    display: flex;
+    column-gap: 5px;
+    grid-area: type;
+    list-style-type: none;
+}
+.type-item{
+    background: radial-gradient(circle, rgba(240, 219, 195, 0.815) 16%, rgba(230, 202, 165, 0.815) 65%);    border-radius: 5px;
+    border-radius: 5px;
+    padding: 2px;
+}
+.pic{
+    filter: drop-shadow(5px 5px 5px rgb(78, 74, 74));
+    margin: 0;
+}
+.container-pic{
+    display: flex;
+    margin: 0;
+    grid-area: pic;
+    justify-content: center;
+}
+.info{
+    background: radial-gradient(circle, rgba(255,255,255,0.8216328767835259) 16%, rgba(240,240,240,0.6115488431700805) 65%);    border-radius: 5px;
+    padding: 10px;
+    grid-area:info;
+}
+.info h4{
+    margin: 0;
+}
+.info h5{
+    margin:0;
+    padding: 2px;
+}
+.info-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    box-shadow: inset 0 0 0 7px rgb(158, 151, 151);
+    filter: drop-shadow(5px 5px 5px rgb(78, 74, 74));
+    padding: 15px;
+    display: grid;
+    background: radial-gradient(circle, rgba(255,241,241,0.9084676106770834) 0%, rgba(215,205,205,0.8524452017134979) 82%);
+    border-radius: 10px;
+    grid-template-areas: 
+    "name name id"
+    "type type type"
+    "pic pic pic"
+    "pic pic pic"
+    "info info info"
+    "info info info";
+    width: 22vw;
+}
+.card:hover{
+    filter: drop-shadow(5px 5px 5px rgb(194, 184, 238));
+    transform:matrix(1.00,0.00,0.00,1.00,0,-10);
+}
+.loading{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.loading img{
+    padding: 10px;
+    width: 20vw;
+    
+}
