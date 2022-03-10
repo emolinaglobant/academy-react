@@ -1,0 +1,37 @@
+.dish-item {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 2fr 1fr;
+  margin-inline: 1rem;
+  min-width: 300px;
+  padding-top: 1rem;
+}
+
+.dish-details {
+  display: grid;
+  grid-gap: 1rem;
+  grid-row-start: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.dish-name {
+  font-weight: bold;
+}
+
+.dish-quantity {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+.dish-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+}
+
+.attention-message {
+  margin-inline: 1rem;
+}

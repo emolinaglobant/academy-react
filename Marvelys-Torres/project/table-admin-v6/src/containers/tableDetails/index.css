@@ -1,0 +1,44 @@
+.table-details {
+  align-items: center;
+  background-color: #deecf181;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.inputs-details {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+
+.button-section {
+  align-items: flex-end;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+
+.direction-button {
+  background-color: #1a1a40;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  color: #f6f6f6;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.attention-message {
+  padding-top: 1rem;
+}
+
+.ant-select-selection-placeholder {
+  color: black !important;
+}
