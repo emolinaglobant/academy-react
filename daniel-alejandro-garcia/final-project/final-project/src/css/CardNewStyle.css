@@ -1,0 +1,36 @@
+.card-news {
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.3 );
+    backdrop-filter: blur( 3px );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 10px;
+    width: 300px;
+    -webkit-backdrop-filter: blur( 3px );
+}
+
+.card-news figure img {
+    width: 100%;
+}
+
+section h2 {
+    font-size: 25px;
+}
+
+p {
+    text-align: justify;
+}
+
+section h3 {
+    font-size: 15px;
+}
+
+section a {
+    border: 1px solid #30a7d7;
+    border-radius: 5px;
+    list-style: none;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+}

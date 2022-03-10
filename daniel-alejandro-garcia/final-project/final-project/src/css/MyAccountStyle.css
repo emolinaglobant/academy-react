@@ -1,0 +1,70 @@
+.containerProfile {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+}
+
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.name {
+    text-transform: uppercase;
+}
+
+.profile section {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.profile section h2 {
+    font-size: 20px;
+}
+
+.profile section h2:first-child {
+    font-size: 28px;
+}
+
+.profile section h2:nth-child(2) {
+    color: #bbb;
+}
+
+.profile figure img {
+    width: 200px;
+}
+
+.myPokemons {
+    display: flex;
+    border: 1px solid green;
+    background-color: #EFF5E2;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    padding: 3px;
+    width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .containerProfile {
+        flex-direction: column;
+    }
+    .containerProfile {
+        flex-direction: column;
+    }
+    .profile {
+        justify-content: center;
+    }
+    h2 {
+        text-align: center;
+    }
+    h3 {
+        text-align: center;
+    }
+}

@@ -1,0 +1,15 @@
+.contentInitialPage {
+    align-items: center;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+}
+
+.card-group-news {
+    align-items: center;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}

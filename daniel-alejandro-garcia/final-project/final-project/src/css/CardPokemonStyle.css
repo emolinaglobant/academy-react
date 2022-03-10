@@ -1,0 +1,148 @@
+.card-group-pokeapi {
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.card-pokemons {
+  align-items: center;
+  background: rgba(154, 41, 163, 0.05);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  justify-content: center;
+  width: 300px;
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.pokemon-id {
+  display: flex;
+  justify-content: flex-end;
+  width: 60%;
+}
+
+h2 {
+  color: #4d4d4d;
+}
+
+h3 {
+  text-transform: capitalize;
+}
+
+.card-pokemons img {
+  width: 170px;
+}
+
+.pokemon-types {
+  display: flex;
+}
+
+.pokemon-type-text {
+  align-items: center;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  padding: 0 10px;
+  text-transform: capitalize;
+}
+
+.pokemon-type-text:first-child {
+  margin-right: 10px;
+}
+
+.options-pokemon {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.options-pokemon a {
+  background-color: lightseagreen;
+  border-radius: 5px;
+  outline: none;
+  padding: 3px 5px;
+}
+
+.type-grass {
+  background-color: rgb(38, 235, 90);
+}
+
+.type-fire {
+  background-color: rgb(235, 71, 38);
+}
+
+.type-water {
+  background-color: rgb(38, 186, 235);
+}
+
+.type-electric {
+  background-color: rgb(235, 209, 38);
+}
+
+.type-ice {
+  background-color: rgb(38, 219, 235);
+}
+
+.type-fighting {
+  background-color: rgb(235, 104, 38);
+}
+
+.type-poison {
+  background-color: rgb(176, 38, 235);
+}
+.type-ground {
+  background-color: rgb(181, 131, 92);
+}
+
+.type-flying {
+  background-color: rgb(161, 215, 230);
+}
+
+.type-psychic {
+  background-color: rgb(219, 77, 207);
+}
+
+.type-ghost {
+  background-color: rgb(131, 24, 133);
+}
+
+.type-bug {
+  background-color: rgb(113, 209, 10);
+}
+
+.type-rock {
+  background-color: rgb(166, 87, 8);
+}
+
+.type-dragon {
+  background-color: rgb(50, 24, 217);
+}
+
+.type-normal {
+  background-color: rgb(168, 162, 157);
+}
+
+.type-fairy {
+  background-color: rgb(255, 148, 191);
+}
+
+.type-dark {
+  background-color: rgb(112, 112, 112);
+}
+
+.type-steel {
+  background-color: rgb(158, 183, 184);
+}
