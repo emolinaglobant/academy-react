@@ -24,9 +24,7 @@ class App extends Component{
     let page = this.state.page
     if(page===1 ) return null
     page -= 1
-    this.setState({
-      page: page
-    }, /* Esto es un callback, se usa porque tenemos que mandar llamar la funcion para que re-renderice pues el cambia el estado pero no renderiza */()=>{
+    this.setState({ page: page }, /* Esto es un callback, se usa porque tenemos que mandar llamar la funcion para que re-renderice pues el cambia el estado pero no renderiza */()=>{
       this.consultAPI()
       this.scroll()
     })
@@ -48,7 +46,6 @@ class App extends Component{
     const word = this.state.word
     const page = this.state.page
     const url = `https://pixabay.com/api/?key=22277954-decb6172c69f1020f50219e2b&q=${word}&per_page=30&page=${page}`
-    console.log(url)
  
     fetch(url)
       .then(answer => answer.json())
@@ -56,10 +53,7 @@ class App extends Component{
   }
 
   getDataToSearch = (wordToSearch) => {
-    this.setState({
-      word: wordToSearch,
-      page: 1
-    }, /* Esto es un callback*/ ()=>{
+    this.setState({word: wordToSearch, page: 1 },  ()=>{
       this.consultAPI()
     });
   }
@@ -75,6 +69,7 @@ class App extends Component{
 
         <div className="row justify-content-center">
           <Result
+            id='results'
             image={this.state.image}
             previousPage={this.previousPage}
             nextPage={this.nextPage}

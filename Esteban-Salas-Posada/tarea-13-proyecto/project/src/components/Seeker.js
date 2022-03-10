@@ -4,9 +4,15 @@ import { FocusScope } from '@react-aria/focus';
 
 class Seeker extends Component{
 
-    seekerRef = React.createRef();
-    // titleProps = React.dialogProps()
+    constructor(props) {
+        super(props);
+        this.seekerRef = React.createRef();
+    }
     
+    componentDidMount() {
+        this.seekerRef.current.focus()
+    }
+
     handlerData = (e) =>{
         e.preventDefault()
         // Manera de obtener el valor del texto
@@ -19,7 +25,7 @@ class Seeker extends Component{
         return (
             <form onSubmit={this.handlerData}>
                 <div className="row">
-                    <FocusScope contain autoFocus restoreFocus >
+                    <section contain autoFocus restoreFocus >
                         <label className="form-group col-md-8" htmlFor="seeker" aria-describedby="info-text">
                             <p className="d-none" id="info">Escribe una palabra para buscar imagenes</p>
                             <input id="seeker" data-testid="seeker" ref={this.seekerRef} type="text" className="form-control form-control-lg" placeholder="Busca tu imagen" />
@@ -28,7 +34,7 @@ class Seeker extends Component{
                             <p className="d-none" id="info-button">Boton para buscar la imagen</p>
                             <input id="send-form" data-testid="send-form" type="submit" className="btn btn-lg btn-danger btn-block" value="buscar..." />
                         </label>
-                    </FocusScope>
+                    </section>
                 </div>
             </form>
         )
