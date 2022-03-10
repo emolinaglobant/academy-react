@@ -1,0 +1,543 @@
+.continerLogin {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 6px 6px 0px #ff0000;
+    display: grid;
+    justify-content: center;
+    margin: 140px 400px;
+    padding: 30px;
+    text-transform: capitalize;
+}
+
+.optionsLogin {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btnSing,
+.btnCreate {
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1.6rem;
+    height: 60px;
+    transition: all 0.2s ease-in;
+    width: 100%;
+}
+
+.btnSing:hover,
+.btnCreate:hover {
+    background-color: transparent;
+    border: 2px solid #000000;
+    color: #000000;
+}
+
+.btnSing {
+    background-color: #ff0000;
+}
+
+.btnCreate {
+    background-color: #000000;
+}
+
+.formLogin {
+    padding: 30px;
+    margin: 0px;
+}
+
+.formLogin .inputs {
+    position: relative;
+}
+
+.formLogin label {
+    font-size: 1.2rem;
+    position: relative;
+    top: -60px;
+    transition: 0.4s ease-in-out all;
+}
+
+.formLogin .inputLogin:focus~label {
+    top: -80px;
+}
+
+.formLogin .inputLogin {
+    border: none;
+    border-bottom: 3px solid #FF0000;
+    color: #7c7a7a;
+    font-size: 0.900rem;
+    margin: 10px 0px;
+    padding: 6px;
+    width: 100%;
+}
+
+.formLogin .inputLogin:focus {
+    outline: none;
+}
+
+.alertGood {
+    color: #000000;
+    font-size: 0.620rem;
+    position: absolute;
+    top: 460px;
+    left: 450px;
+}
+
+.btnShowPassword {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    right: 520px;
+    position: absolute;
+    top: 424px;
+    width: 100px;
+}
+
+.btnShowPassword img {
+    width: 24px;
+    height: 24px;
+    z-index: 1;
+}
+
+.btnShowPasswordSing {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    right: 520px;
+    position: absolute;
+    top: 340px;
+    width: 100px;
+}
+
+.btnShowPasswordSing img {
+    width: 24px;
+    height: 24px;
+    z-index: 1;
+}
+
+.btnForm {
+    border: none;
+    background-color: #f60707;
+    box-shadow: 0px 6px 0px #000000;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    left: 70px;
+    height: 44px;
+    position: relative;
+    top: 20px;
+    text-transform: capitalize;
+    width: 60%;
+}
+
+.btnForm:active {
+    top: 22px;
+    box-shadow: 0px 3px 0px #000000;
+}
+
+.alert {
+    color: #ff0000;
+    text-align: center;
+}
+
+.messageLogin {
+    animation: showAlert 0.2s ease-in-out;
+    background-color: #ffffff;
+    border-radius: 6px;
+    position: absolute;
+    right: 8px;
+    top: 160px;
+    width: 28%;
+}
+
+.messageLogin p {
+    color: #0f9716;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.messageLogin p::first-letter {
+    color: #0f9743;
+    font-size: 1.4rem;
+
+}
+
+.containerAlertForm {
+    animation: pathAlert 0.8s infinite;
+    background-color: #000000;
+    border-radius: 10px;
+    bottom: 100px;
+    box-shadow: 0 0 20px #ff0000;
+    padding: 10px 10px;
+    position: absolute;
+    right: 460px;
+    width: 30%;
+}
+
+.containerAlertForm span {
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.titleAlert {
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.infoAlert {
+    color: #ffffff;
+    font-size: 0.800rem;
+    text-align: justify;
+}
+
+@keyframes showAlert {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: transiX(100px);
+    }
+}
+
+@keyframes pathAlert {
+    0% {
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0);
+    }
+
+    50% {
+        box-shadow: 0px 0px 20px rgb(146, 0, 0);
+    }
+
+    100% {
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0);
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 1440px) {
+    .continerLogin {
+        margin: 100px 460px;
+    }
+
+    .btnSing,
+    .btnCreate {
+        font-size: 1.8rem;
+        height: 80px;
+    }
+
+    .formLogin {
+        padding: 60px;
+        margin: 0px;
+    }
+
+    .formLogin label {
+        font-size: 1.6rem;
+        top: -70px;
+        left: 0px;
+    }
+
+    .formLogin .inputLogin:focus~label {
+        top: -80px;
+    }
+
+    .formLogin .inputLogin {
+        font-size: 1rem;
+        margin: 10px 0px;
+        width: 100%;
+    }
+
+    .alertGood {
+        font-size: 0.740rem;
+        top: 570px;
+        left: 520px;
+    }
+
+    .btnShowPassword {
+        top: 460px;
+        left: 900px;
+    }
+
+    .btnShowPassword img {
+        width: 30px;
+    }
+
+    .btnShowPasswordSing {
+        left: 880px;
+        top: 370px;
+        width: 100px;
+    }
+
+    .btnForm {
+        font-size: 1.2rem;
+        left: 80px;
+        top: 40px;
+        width: 60%;
+    }
+
+    .btnForm:active {
+        top: 42px;
+        box-shadow: 0px 2px 0px #424242;
+    }
+
+
+    .containerAlertForm {
+        bottom: 300px;
+        box-shadow: 0 0 20px #ff0000;
+        padding: 20px 10px;
+        position: absolute;
+        right: 546px;
+        width: 30%;
+    }
+
+    .containerAlertForm span {
+        cursor: pointer;
+        font-size: 1.4rem;
+    }
+
+    .titleAlert {
+        color: #ff0000;
+        font-size: 1rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .infoAlert {
+        font-size: 0.800rem;
+        text-align: justify;
+    }
+}
+
+/* tablets */
+@media only screen and (max-width: 1200px) {
+
+    .continerLogin {
+        margin: 150px 20px;
+        padding: 40px 10px;
+    }
+
+    .btnSing,
+    .btnCreate {
+        border: none;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-size: 1.4rem;
+        height: 50px;
+        transition: all 0.2s ease-in;
+        width: 100%;
+    }
+
+    .formLogin {
+        padding: 40px;
+        margin: 0px;
+    }
+
+    .formLogin label {
+        font-size: 1rem;
+        left: 0px;
+        top: -60px;
+    }
+
+    .formLogin .inputLogin:focus~label {
+        top: -76px;
+    }
+
+    .formLogin .inputLogin {
+        margin: 10px 0px;
+        padding: 6px;
+        width: 100%;
+    }
+
+    .alertGood {
+        font-size: 0.680rem;
+        top: 460px;
+        left: 156px;
+    }
+
+    .btnShowPassword {
+        left: 180px;
+        position: relative;
+        top: -70px;
+    }
+
+    .btnShowPasswordSing {
+        left: 470px;
+        top: 360px;
+        width: 100px;
+    }
+
+    .btnForm {
+        left: 80px;
+        top: 20px;
+        width: 50%;
+    }
+
+    .btnForm:active {
+        top: 22px;
+        box-shadow: 0px 2px 0px #424242;
+    }
+
+
+    .alert {
+        color: #ff0000;
+        text-align: center;
+    }
+
+    .messageLogin {
+        animation: showAlert 0.2s ease-in-out;
+        background-color: #ffffff;
+        border-radius: 6px;
+        border: 4px solid #058b2d;
+        position: absolute;
+        right: 220px;
+        top: 340px;
+        width: 44%;
+    }
+
+    .containerAlertForm {
+        bottom: 600px;
+        box-shadow: 0 0 20px #ff0000;
+        padding: 0px 10px;
+        position: absolute;
+        right: 70px;
+        width: 80%;
+    }
+
+    .containerAlertForm span {
+        cursor: pointer;
+        font-size: 1.4rem;
+    }
+
+    .titleAlert {
+        color: #ff0000;
+        font-size: 1rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .infoAlert {
+        font-size: 1rem;
+        text-align: justify;
+    }
+}
+
+/* phone*/
+@media only screen and (max-width: 600px) {
+
+    .continerLogin {
+        margin: 150px 20px;
+        padding: 40px 10px;
+    }
+
+    .btnSing,
+    .btnCreate {
+        border: none;
+        color: #FFFFFF;
+        cursor: pointer;
+        font-size: 1.4rem;
+        height: 50px;
+        transition: all 0.2s ease-in;
+        width: 100%;
+    }
+
+    .formLogin {
+        padding: 40px;
+        margin: 0px;
+    }
+
+    .formLogin label {
+        font-size: 1rem;
+        left: 0px;
+        top: -60px;
+    }
+
+    .formLogin .inputLogin:focus~label {
+        top: -76px;
+    }
+
+    .formLogin .inputLogin {
+        margin: 10px 0px;
+        padding: 6px;
+        width: 100%;
+    }
+
+    .btnShowPassword {
+        left: 60px;
+        position: relative;
+        top: -60px;
+    }
+
+    .alertGood {
+        font-size: 0.420rem;
+        top: 470px;
+        left: 40px;
+    }
+
+    .btnShowPasswordSing {
+        left: 240px;
+        top: 360px;
+        width: 100px;
+    }
+
+    .btnForm {
+        left: 65px;
+        top: 20px;
+        width: 50%;
+    }
+
+    .btnForm:active {
+        top: 22px;
+        box-shadow: 0px 2px 0px #424242;
+    }
+
+    .alert {
+        color: #ff0000;
+        text-align: center;
+    }
+
+    .messageLogin {
+        animation: showAlert 0.2s ease-in-out;
+        background-color: #ffffff;
+        border-radius: 6px;
+        position: absolute;
+        right: 40px;
+        top: 300px;
+        width: 80%;
+    }
+
+    .containerAlertForm {
+        bottom: 340px;
+        box-shadow: 0 0 20px #ff0000;
+        padding: 20px 10px;
+        position: absolute;
+        right: 46px;
+        width: 70%;
+    }
+
+    .containerAlertForm span {
+        cursor: pointer;
+        font-size: 1.4rem;
+    }
+
+    .titleAlert {
+        color: #ff0000;
+        font-size: 1rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .infoAlert {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+}

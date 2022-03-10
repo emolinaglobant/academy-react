@@ -1,0 +1,52 @@
+
+table {
+    color: #fff;
+    text-align: center;
+}
+
+th{
+    background: rgb(255, 0, 0);
+    color: #fff;
+    font-size: 1rem;
+    padding: 15px 80px 15px 80px;
+    text-transform: uppercase;
+}
+
+td{
+    border: 2px solid rgb(255, 255, 255);
+    padding: 14px;
+}
+
+.table-ranking{
+    display: flex;
+    justify-content:center;
+    margin: 50px;
+}
+
+.title-table-ranking h3{
+    color: #fff;
+    font-size: 2.8rem;
+    margin-top: 120px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    th{
+        background: rgb(255, 0, 0);
+        color: #fff;
+        font-size: 0.700rem;
+        text-transform: uppercase;
+        padding: 10px 20px 15px 20px;
+    }
+    
+    td{
+        border: 1px solid rgb(255, 255, 255);
+        font-size: 0.660rem;
+        padding: 5px 10px 5px 10px;
+    }
+    .table-ranking{
+        display: flex;
+        justify-content:center;
+        margin: 30px;
+    }
+}
