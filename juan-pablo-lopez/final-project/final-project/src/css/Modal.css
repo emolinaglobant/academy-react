@@ -1,0 +1,36 @@
+.shade-area {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.modal-container {
+  background-color: #fff;
+  height: auto;
+  padding: 20px;
+  position: relative;
+  width: 300px;
+}
+
+.delete-icon {
+  align-items: center;
+  background-color: #e00a02;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 12px;
+  font-weight: 600;
+  height: 25px;
+  justify-content: center;
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  width: 25px;
+}

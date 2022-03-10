@@ -1,0 +1,72 @@
+.filter-products-main-box{
+    display: flex;  
+    width: 100%;
+  }
+  
+  .filter-products-main-box .my-products{
+    align-items: center;  
+    display: flex;
+    flex: 3.3;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .filter-box{
+    display: flex;
+    flex: 0.7;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-top: 10px;
+  }
+
+  .filter-box h6{
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .filter-box span{
+    cursor: pointer;
+    font-size: 14px;
+    margin: 15px 0px;
+  }
+  
+  .filter-box span.ElectronicDevices{
+    color: #7656FF;
+  }
+  
+  .filter-box span.MobileAccessories{
+    color: #7656FF;
+  }
+  
+  .filter-box span.TVAndHomeAppliances{
+    color: #7656FF;
+  }
+  
+  .filter-box span.SportsAndOutdoors{
+    color: #7656FF;
+  }
+  
+  .HealthAndBeauty,.HomeAndLifestyle,.MensFashion,.WatchesBagsAndJewellery,.Groceries{
+    color: #7656FF;
+  }
+
+  @media(max-width: 540px){
+    .filter-products-main-box .my-products{
+      margin-top: 30px; 
+      width: 100%;
+    }
+  }
+  
+  @media(max-width: 540px){
+    .filter-products-main-box{
+      flex-direction: column;
+    }
+  }
+
+  @media(max-width: 540px){
+    .filter-box{
+      padding-left: 10px;
+      padding-top: 5px;
+      width: 100%;
+    }
+  }

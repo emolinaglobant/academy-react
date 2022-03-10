@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.body{
+  background-color: #fff;
+}
+.wrapper{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.btn-box{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media(max-width: 450px){
+  .btn-box{
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.success-msg{
+  background-color: #dff0d8;
+  color: #468847;
+  padding: 14px;
+  width: 100%;
+}
+
+.error-msg{
+  background-color: #f0d0d3;
+  color: #df786f; 
+  padding: 14px;
+  width: 100%;
+}
+
+.link{
+  text-decoration: none;
+}
+
+h5, .h5 {
+  font-size: 3.25rem;
+}
+
+
+.navlink{
+  color: rgb(255, 255, 255);
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+img{
+  vertical-align: middle;
+  width: 200px;
+}
+
+@media(max-width: 450px){
+  .navbar .rightside{
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0px;  
+    margin-top: 20px;
+  }
+}
+
+.rightside{
+  color: white;
+}
+.btn-danger {
+  background-color: #7656FF;
+  border-color: #ffffff;
+  color: #fff;
+}
+
+.container_login{
+  border: 1px solid #000;
+  padding: 15px;
+  padding-top: 10px;  
+  width: 100%;
+}
+
+.form-group_login{
+  background-color: #fff;
+  margin-top:90px;
+}
+
+h1{
+  text-align: center;
+}
+
+.text-center, a{
+  color: #7656FF;
+}
+
+.btn{
+  margin-left: 30px;
+}
