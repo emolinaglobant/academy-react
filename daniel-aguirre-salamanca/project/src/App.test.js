@@ -4,8 +4,7 @@ import {BrowserRouter} from "react-router-dom";
 import {Provider} from "react-redux";
 import store from "./store";
 
-test('renders links correctly', () => {
+test('renders app correctly', () => {
   const {container} = render(<Provider store={store}><BrowserRouter><App /></BrowserRouter></Provider>);
-//   const links = document.querySelectorAll("a");
   expect(container).toBeInTheDocument();
 });
