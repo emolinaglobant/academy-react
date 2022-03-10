@@ -1,0 +1,65 @@
+#logreg-forms {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#input__Control {
+    width: 100%;
+}
+#input__Control::placeholder {
+    color: red;
+}
+
+#logreg-forms button[type="submit"] {
+    margin-top: 10px;
+}
+.img-background {
+    background-image: url(../assets/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+.button__sign {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#facebook-btn {
+    background-color: #3c589c;
+}
+
+#logreg-forms .google-btn {
+    background-color: #df4b3b;
+    margin-right: 5px;
+}
+.message__login {
+    background-color: #f0d0d3;
+    color: #df786f;
+    padding: 14px;
+    width: 100%;
+}
+@media screen and (max-width: 500px) {
+    #logreg-forms {
+        width: 300px;
+    }
+
+    #logreg-forms {
+        width: 200px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    #logreg-forms .social-btn span {
+        display: none;
+    }
+    #logreg-forms .facebook-btn:after {
+        content: "Facebook";
+    }
+
+    #logreg-forms .google-btn:after {
+        content: "Google+";
+    }
+}
