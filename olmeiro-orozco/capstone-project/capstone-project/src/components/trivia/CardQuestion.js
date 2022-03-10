@@ -17,7 +17,7 @@ export const CardQuestion = () => {
 
   const dispatch = useDispatch();
   const { questions, start, changeRound } = useSelector((state) => state.game);
-
+  
   useEffect(() => {
     setStart(start);
     setDisabled(changeRound);

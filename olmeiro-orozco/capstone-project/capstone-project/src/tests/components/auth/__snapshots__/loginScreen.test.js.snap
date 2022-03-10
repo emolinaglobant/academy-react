@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests on <LoginScreen />  should show it correctly 1`] = `
+<section>
+  <h3
+    className="auth__title"
+  >
+    Login
+  </h3>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoComplete="off"
+      className="auth__input"
+      name="email"
+      onChange={[Function]}
+      placeholder="email"
+      type="text"
+      value=""
+    />
+    <input
+      className="auth__input"
+      name="password"
+      onChange={[Function]}
+      placeholder="password"
+      type="password"
+      value=""
+    />
+    <button
+      className="btn btn__primary"
+      disabled={false}
+      type="submit"
+    >
+      Login
+    </button>
+    <section
+      className="auth__google"
+    >
+      <p>
+        Login with google
+      </p>
+      <section
+        className="google__btn"
+        onClick={[Function]}
+      >
+        <section
+          className="google__icon-wrapper"
+        >
+          <img
+            alt="google button"
+            className="google__icon"
+            src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
+          />
+        </section>
+        <p
+          className="btn__text"
+        >
+          <b>
+            Sign in with google
+          </b>
+        </p>
+      </section>
+    </section>
+    <a
+      className="link"
+      href="/auth/register"
+      onClick={[Function]}
+    >
+      Create new account
+    </a>
+  </form>
+</section>
+`;

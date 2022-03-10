@@ -66,7 +66,7 @@ export const RegisterScreen = () => {
           className="auth__input"
           value={email}
           onChange={handleInputChange}
-          type="text"
+          type="email"
           placeholder="email"
           name="email"
           autoComplete="off"

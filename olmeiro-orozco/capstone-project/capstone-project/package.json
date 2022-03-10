@@ -43,6 +43,11 @@
     ]
   },
   "devDependencies": {
-    "redux-devtools-extension": "^2.13.9"
+    "@testing-library/react-hooks": "^7.0.2",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.6",
+    "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.6.2",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-mock-store": "^1.5.4"
   }
 }

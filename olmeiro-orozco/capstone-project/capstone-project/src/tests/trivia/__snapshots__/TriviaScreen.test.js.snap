@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests component <TriviaScreen /> should render component correctly 1`] = `
+<section
+  className="trivia__main-content"
+>
+  <HeaderGame />
+  <section
+    className="trivia__main-central"
+  >
+    <SidebarLeft />
+    <CentralGame />
+    <SidebarRight />
+  </section>
+  <FooterGame />
+</section>
+`;

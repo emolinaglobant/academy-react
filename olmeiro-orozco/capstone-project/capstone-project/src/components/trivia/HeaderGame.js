@@ -21,7 +21,7 @@ export const HeaderGame = () => {
         <img
           src={imagePath}
           className="trivia__img animate__animated animate__flash"
-          alt="image trivia"
+          alt="trivia game"
         />
         <h1 className="animate__animated animate__bounce">
           Trivia Game: {name}
