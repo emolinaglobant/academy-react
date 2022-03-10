@@ -1,0 +1,79 @@
+@import "../../generalStyles.scss";
+
+a {
+  text-decoration: none;
+}
+
+.card {
+  border: 1px solid $BorderColor;
+  height: 300px;
+  margin: 2.5px 0;
+  padding: 5px;
+  transition: all ease 0.4s;
+  width: 300px;
+
+  .cardBorder {
+    border: 2px solid $BorderColor;
+    height: 100%;
+    padding: 15px;
+    position: relative;
+    transition: all ease 0.4s;
+    width: 100%;
+
+    .hunted {
+      height: 50px;
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      width: 50px;
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+
+    figure {
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    .cardText {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+
+      h2 {
+        font-size: 20px;
+        color: $GrayTitular;
+        max-width: 250px;
+        text-transform: capitalize;
+      }
+
+      p {
+        font-size: 18px;
+        color: $GrayText;
+      }
+    }
+
+    &:hover {
+      border-color: $Silver;
+    }
+  }
+
+  &:hover {
+    border-color: $Silver;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    margin: 2.5px;
+  }
+}

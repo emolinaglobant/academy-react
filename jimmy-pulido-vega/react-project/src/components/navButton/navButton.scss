@@ -1,0 +1,44 @@
+@import "../../generalStyles.scss";
+
+a {
+  color: $GrayText;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.navBorder {
+  border: 1px solid $BorderColor;
+  display: inline-block;
+  margin: 0 5px;
+  padding: 3px;
+  transition: all ease 0.3s;
+  width: 115px;
+
+  &:hover {
+    border-color: $HoverColor;
+    color: $Withe;
+  }
+
+  .navButton {
+    align-items: center;
+    border: 2px solid $BorderColor;
+    display: flex;
+    height: 45px;
+    justify-content: center;
+    transition: all ease 0.5s;
+
+    &:hover {
+      border-color: $HoverColor;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  a {
+    font-size: 24px;
+  }
+
+  .navBorder {
+    width: 140px;
+  }
+}

@@ -1,0 +1,79 @@
+@import "../../generalStyles.scss";
+
+.bestiary {
+  width: 100%;
+  padding: 0 10px 50px;
+
+  h4 {
+    font-size: 16px;
+    font-weight: 400;
+    color: $GrayTitular;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .listWeakness {
+    border: 1px solid $BorderColor;
+    margin-bottom: 30px;
+    padding: 5px;
+    width: 100%;
+  }
+
+  .listGroups {
+    border: 1px solid $BorderColor;
+    margin: 0 auto 30px;
+    max-width: 300px;
+    padding: 5px;
+    width: 100%;
+  }
+
+  .borderList {
+    width: 100%;
+    border: 2px solid $BorderColor;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .listBeasts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bestiary {
+    h4 {
+      font-size: 18px;
+    }
+
+    .borderList {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bestiary {
+    h4 {
+      font-size: 22px;
+    }
+
+    .borderList {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    .listWeakness {
+        margin: 0 auto 30px;
+        max-width: 1200px;
+    }
+
+    .listGroups {
+      margin: 0 auto 40px;
+    }
+  }
+}

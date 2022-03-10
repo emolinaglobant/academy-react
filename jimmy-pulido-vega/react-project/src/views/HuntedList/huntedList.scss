@@ -1,0 +1,31 @@
+@import "../../generalStyles.scss";
+
+.huntedList {
+  width: 100%;
+  padding-bottom: 30px;
+  min-height: 60vh;
+
+  h3 {
+    font-size: 22px;
+    font-weight: 400;
+    color: $GrayTitular;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .cardList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .huntedList {
+    padding-bottom: 60px;
+    h3 {
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
+  }
+}

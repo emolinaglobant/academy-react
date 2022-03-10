@@ -1,0 +1,65 @@
+@import "../../generalStyles.scss";
+
+.footerBorder {
+  border: 1px solid $BorderColor;
+  padding: 5px;
+  width: 100%;
+
+  .footerConteiner {
+    border: 2px solid $BorderColor;
+    color: $GrayText;
+    font-size: 14px;
+    padding: 10px 0;
+    text-align: center;
+
+    p {
+        &:first-child {
+            margin-bottom: 10px;
+        }
+      span {
+        font-weight: 700;
+      }
+
+      .netWorks {
+        color: $GrayText;
+        font-size: 14px;
+        font-weight: 300;
+        text-decoration: none;
+
+        &:hover {
+          color: $Withe;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+    .footerBorder {
+        .footerConteiner{
+            font-size: 18px;
+            padding: 15px 0;
+
+                p{
+                    &:first-child {
+                        margin-bottom: 20px;
+                    }
+                }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footerBorder {
+        .footerConteiner{
+            display: flex;
+            justify-content: center;
+
+                p{
+                    &:first-child {
+                        margin: 0 50px 0 0;
+                    }
+                }
+        }
+    }
+}

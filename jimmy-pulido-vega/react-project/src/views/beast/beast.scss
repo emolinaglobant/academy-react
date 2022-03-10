@@ -1,0 +1,227 @@
+@import "../../generalStyles.scss";
+
+.beastView {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    color: $GrayTitular;
+    font-size: 22px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  h4 {
+    color: $GrayText;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .beastInfo {
+    .beastImg {
+      border: 1px solid $BorderColor;
+      height: 300px;
+      margin-bottom: 15px;
+      padding: 5px;
+      width: 300px;
+
+      figure {
+        border: 2px solid $BorderColor;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        width: 100%;
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+
+    .beastWeakness {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    .BeastHunted {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 20px;
+
+      .borderButton {
+        border: 1px solid $BorderColor;
+        height: 50px;
+        margin-bottom: 20px;
+        padding: 5px;
+        transition: all ease 0.4s;
+        width: 150px;
+
+        &:hover {
+          border-color: $Silver;
+        }
+
+        button {
+          background-color: $Black;
+          border: 2px solid $BorderColor;
+          color: $GrayText;
+          font-size: 20px;
+          height: 100%;
+          outline: none;
+          text-transform: capitalize;
+          transition: all ease 0.4s;
+          width: 100%;
+
+          &:hover {
+            border-color: $Silver;
+          }
+        }
+      }
+
+      form {
+        border: 1px solid $BorderColor;
+        height: 50px;
+        margin-bottom: 15px;
+        padding: 5px;
+        width: 300px;
+
+        input {
+          background-color: rgba(255, 255, 255, 0.1);
+          border: 2px solid $BorderColor;
+          color: $GrayText;
+          font-size: 20px;
+          height: 100%;
+          outline: none;
+          text-align: center;
+          text-transform: capitalize;
+          width: 100%;
+        }
+      }
+    }
+
+    p {
+      color: $GrayText;
+      font-size: 20px;
+
+      span {
+        color: $GrayTitular;
+        font-weight: 600;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  .beastText {
+    width: 300px;
+    overflow-x: scroll;
+    margin-bottom: 40px;
+    height: 320px;
+    font-size: 18px;
+    color: $GrayText;
+
+      &::-webkit-scrollbar{
+        display: none;
+      }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .beastView {
+    padding: 0 80px;
+
+    h1 {
+      font-size: 45px;
+      text-align: left;
+      width: 100%;
+    }
+
+    h4 {
+      font-size: 30px;
+      margin-bottom: 30px;
+      text-align: left;
+      width: 100%;
+    }
+
+    .beastInfo {
+      .beastImg {
+        height: 500px;
+        margin-bottom: 30px;
+        width: 500px;
+      }
+
+      .beastWeakness {
+        margin-bottom: 25px;
+      }
+
+      .borderButton {
+        button {
+          font-size: 22px;
+        }
+      }
+
+      p {
+        font-size: 25px;
+      }
+    }
+
+    .beastText {
+      height: 390px;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .beastView {
+    align-items: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 3%;
+
+    .beastInfo {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      .beastImg {
+        width: 100%;
+        height: auto;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .beastWeakness {
+        justify-content: flex-end;
+      }
+
+      .BeastHunted {
+        align-items: flex-end;
+      }
+    }
+
+    .beastText {
+      width: 50%;
+      padding-left: 30px;
+      height: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .beastView {
+    padding: 0 12.5%;
+
+    .beastText{
+        font-size: 22px;
+    }
+  }
+}
