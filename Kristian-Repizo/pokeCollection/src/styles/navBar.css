@@ -1,0 +1,70 @@
+#style {
+    background-color: rgb(32, 30, 30);
+    box-shadow: 2px 1px 29px 6px rgba(14, 13, 13, 0.445);
+    color: white;
+    display: flex;
+    padding: 5px 0;
+}
+
+.con-title {
+    align-items: center;
+    display: flex;
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+
+.nav-title {
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+    font: oblique bold 120% cursive;
+    padding: 0 30px 0 20px;
+    text-align: center;
+}
+
+.textField{
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+    height: 32px;
+    padding: 0 16px 0 16px;
+    width: 200px;
+}
+.textField:hover {
+    opacity: 0.8;
+}
+    
+.searchButton{
+    align-items: center;
+    background-color: rgba(204, 204, 204, 0.925);
+    border-radius: 12px;
+    border: 1px;
+    border: none;
+    box-shadow: 2px 1px 29px 6px rgba(0, 0, 0, 0.3);
+    color: rgb(66, 65, 65);
+    display: flex;
+    height: 35px;
+    justify-content: center;
+    margin: 0 1px;
+    width: 35px;
+}
+.searchButton:hover{
+    background-color: #e5e5e5f1;
+    color: #000000;
+    cursor: pointer;
+}
+
+.searchBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+
+.exit-button {
+    color: white;
+}
+
+.exit-button:hover {
+    cursor:pointer;
+    opacity: 0.7;
+}

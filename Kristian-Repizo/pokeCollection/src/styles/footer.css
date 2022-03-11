@@ -1,0 +1,22 @@
+.icons {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 40%;
+}
+
+.footer {
+    align-items: center;
+    background-color: rgb(32, 30, 30);
+    color: ivory;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-container {
+    margin-top: 30px;
+}
