@@ -1,0 +1,23 @@
+[
+  {
+    "model": "employees.gender",
+    "fields": {
+      "long_name": "MASCULINO",
+      "short_name": "M"
+    }
+  },
+  {
+    "model": "employees.gender",
+    "fields": {
+      "long_name": "FEMENINO",
+      "short_name": "F"
+    }
+  },
+  {
+    "model": "employees.gender",
+    "fields": {
+      "long_name": "OTROS",
+      "short_name": "O"
+    }
+  }
+]
