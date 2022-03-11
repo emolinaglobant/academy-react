@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { FocusScope } from '@react-aria/focus';
-// import { useDialog } from '@react-aria/dialog';
+
 
 class Seeker extends Component{
 
@@ -25,7 +24,7 @@ class Seeker extends Component{
         return (
             <form onSubmit={this.handlerData}>
                 <div className="row">
-                    <section contain autoFocus restoreFocus >
+                    <section>
                         <label className="form-group col-md-8" htmlFor="seeker" aria-describedby="info-text">
                             <p className="d-none" id="info">Escribe una palabra para buscar imagenes</p>
                             <input id="seeker" data-testid="seeker" ref={this.seekerRef} type="text" className="form-control form-control-lg" placeholder="Busca tu imagen" />

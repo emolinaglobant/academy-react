@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Seeker from './components/Seeker'
 import Result from './components/Result'
+import PixabayContext from './context/PixabayContext';
 
 class App extends Component{
 
@@ -25,23 +26,24 @@ class App extends Component{
     if(page===1 ) return null
     page -= 1
     this.setState({ page: page }, /* Esto es un callback, se usa porque tenemos que mandar llamar la funcion para que re-renderice pues el cambia el estado pero no renderiza */()=>{
+      // se llama al api
       this.consultAPI()
       this.scroll()
     })
   }
 
-  // Ir a la siguiente pagina de imagenes
   nextPage = ()=>{
     let page = this.state.page
     page += 1
     this.setState({
       page: page
-    }, /* Esto es un callback, se usa porque tenemos que mandar llamar la funcion para que re-renderice pues el cambia el estado pero no renderiza */ ()=>{
+    }, ()=>{
       this.consultAPI()
       this.scroll()
     })
   }
 
+  // Cada llamado del api debe enviar la palabra, el numero de pagina por parametro
   consultAPI = () =>{
     const word = this.state.word
     const page = this.state.page
@@ -54,6 +56,7 @@ class App extends Component{
 
   getDataToSearch = (wordToSearch) => {
     this.setState({word: wordToSearch, page: 1 },  ()=>{
+      // se llama al api lo que devuelve el componente
       this.consultAPI()
     });
   }
@@ -61,21 +64,22 @@ class App extends Component{
   render(){
     return (
       <div className="app container">
-        
-        <div className="jumbotron mt-5">
-          <p className="lead text-center">Buscador de imagenes</p>
-          <Seeker getDataToSearch={this.getDataToSearch}/>
-        </div>
+        <PixabayContext.Provider  >
 
-        <div className="row justify-content-center">
-          <Result
-            id='results'
-            image={this.state.image}
-            previousPage={this.previousPage}
-            nextPage={this.nextPage}
-            />
-        </div>
-        
+          <div className="jumbotron mt-5">
+            <p className="lead text-center text-uppercase font-weight-bolder">Buscador de imagenes</p>
+            <Seeker getDataToSearch={this.getDataToSearch}/>
+          </div>
+
+          <div className="row justify-content-center">
+            <Result
+              id='results'
+              image={this.state.image}
+              previousPage={this.previousPage}
+              nextPage={this.nextPage}
+              />
+          </div>
+        </PixabayContext.Provider>
       </div>
     );
   }
