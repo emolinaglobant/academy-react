@@ -4,7 +4,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import { Home, People, Planets, Movies, Vehicles} from "./views";
 import { Header, Footer, Loading } from "./components/static";
 import { useDispatch, useSelector } from "react-redux";
-import {addData} from "./features/dataSlice";
+import {fetchData} from "./features/dataSlice";
 
 function App() {
   const status = useSelector(state=> state.users.status);
@@ -12,36 +12,11 @@ function App() {
   const location = useLocation();
   const dispatch = useDispatch();
 
-  const getData = (type) => {
-    const apiLinks = {
-      people: "https://swapi.dev/api/people",
-      planets: "https://swapi.dev/api/planets",
-      movies: "https://swapi.dev/api/films",
-      vehicles: "https://swapi.dev/api/vehicles",
-    };
-    let totalData = [];
-    let nextLink = apiLinks[type];
-    fetchNow();
-    function fetchNow() {
-      fetch(nextLink)
-        .then((response) => response.json())
-        .then(function (responseJSON) {
-          totalData = [...totalData, responseJSON];
-          if (responseJSON.next) {
-            nextLink = responseJSON.next;
-            fetchNow();
-          } else {
-            dispatch(addData({data: totalData, type: type}));
-          }
-        });
-    }
-  }
   useEffect(() => {
-    getData("people");
-    getData("planets");
-    getData("movies");
-    getData("vehicles");
-    
+    dispatch(fetchData("people"));
+    dispatch(fetchData("movies"));
+    dispatch(fetchData("vehicles"));
+    dispatch(fetchData("planets"));
   }, []);
 
   return (
