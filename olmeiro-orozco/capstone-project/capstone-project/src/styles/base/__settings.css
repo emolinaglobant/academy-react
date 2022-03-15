@@ -1,0 +1,22 @@
+/* Colors */
+:root {
+  /* Colors CentralGame */
+  --Amber :  #FFD930;
+  --BayLeaf: #81C442;
+  --Blue : #3DB2FF; 
+  --BlueHaze:   #FFB830;
+  --darkgray: gray;
+  --error: red;
+  --Genoa:  #81C442;
+  --PinkSalmon: #FFEDDA;
+  --primary: greenyellow;
+  --secondary: green;
+  --Shark :  #202529;
+  --Valencia : #FF2442;
+  --Yellow: #2FA4FF;
+  
+  /* Button Google */
+  --button-active-blue: #1669f2;
+  --google-blue: #4285f4;
+  --white: #fff;
+}

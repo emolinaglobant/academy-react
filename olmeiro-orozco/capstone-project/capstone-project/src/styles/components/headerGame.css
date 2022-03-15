@@ -1,0 +1,32 @@
+.trivia__header {
+  align-items: center;
+  border: 1px solid olive;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.trivia__header-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.trivia__header-link {
+  background-color: var(--PinkSalmon);
+  border-radius: 5px;
+  border: 1px solid black;
+  color: black;
+  display: block;
+  font-size: 18px;
+  padding: 3px;
+  text-decoration: none;
+}
+
+.trivia__header-link:hover {
+  background-color: var(--Genoa);
+}
+
+.trivia__img {
+  height: 80px;
+  width: 150px;
+}

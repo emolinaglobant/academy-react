@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test component CentralGame should render component correctly 1`] = `
+<section
+  className="trivia__central animate__animated animate__backInUp"
+>
+  <CardQuestion />
+</section>
+`;

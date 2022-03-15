@@ -1,0 +1,16 @@
+.trivia__sidebar-right {
+  align-items: center;
+  background-color: var(--PinkSalmon);
+  border-radius: 3px;
+  width: 16.65vw;
+  text-align: center;
+}
+
+.trivia__sidebar-right > h2 {
+  margin-bottom: 40px;
+}
+
+.trivia__sidebar-right > section {
+  font-size: 16px;
+  margin-bottom: 50px;
+}

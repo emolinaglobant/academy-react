@@ -1,0 +1,158 @@
+.btn {
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 7px 10px 7px 10px;
+  width: 100%;
+}
+
+.btn__primary {
+  background-color: var(--google-blue);
+  border-radius: 2px;
+  color: white;
+}
+
+.btn__end {
+  background-color: var(--BlueHaze);
+  border-radius: 50px;
+  border: 3px solid var(--Valencia);
+  font-size: 14px;
+  height: 34px;
+  margin-right: 5px;
+  width: 100px;
+}
+
+.btn__end:hover {
+  background-color: var(--PinkSalmon);
+}
+
+.btn__primary:hover {
+  box-shadow: 0 0 6px var(--google-blue);
+}
+.btn__primary:focus {
+  outline: none;
+}
+
+.btn__block {
+  width: 100%;
+}
+
+.btn__primary:disabled {
+  background-color: var(--Blue);
+  border-radius: 2px;
+}
+
+.btn__header {
+  background-color: var(--Genoa);
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  height: 60px;
+  margin-right: 5px;
+  width: 20%;
+}
+
+.btn__header:hover {
+  background-color: var(--BlueRibbon);
+  border-radius: 2px;
+}
+
+.btn__warning{
+  background-color: var(--Amber);
+  border-radius: 2px;
+}
+.btn__success{
+  background-color: var(--Genoa);
+  border-radius: 2px;
+}
+.btn__danger{
+  background-color: var(--Valencia);
+  border-radius: 2px;
+}
+
+ .btn__outline-dark{
+   background-color: transparent;
+   border-radius: 3px;
+   border: 1px solid black;
+   color: black;
+}
+ 
+.btn__outline-dark:hover{
+  background-color: var(--Shark);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.btn__outline-dark:disabled {
+  background-color: var(--Shark);
+  color: var(--white);
+}
+
+.btn__option {
+  background-color: var(--BayLeaf);
+  border-radius: 5px;
+  width: 400px;
+  border: 1px solid black;
+}
+.btn__option:hover {
+  background-color: var(--PinkSalmon);
+  border-radius: 5px;
+  width: 400px;
+  color: black;
+}
+
+.btn__option:disabled {
+  background-color: var(--PickledBluewood);
+  border-radius: 5px;
+  width: 400px;
+}
+
+.btn__text {
+  color: var(--white);
+  float: right;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  margin: 11px 40px 0 0;
+}
+
+/* Button Google */
+
+.google__btn {
+    background-color: var(--google-blue);
+    border-radius: 2px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    height: 42px;
+    margin-top: 5px;
+    transition: box-shadow .3s ease;
+    width: 100%;
+}
+
+.google__btn:hover {
+  box-shadow: 0 0 6px var(--google-blue);
+}
+.google__btn:active {
+  background: var(--button-active-blue);
+}
+
+.google__icon-wrapper {
+  background-color: var(--white);
+  border-radius: 2px;
+  height: 40px;
+  margin-left: 1px;
+  margin-top: 1px;
+  position: absolute;
+  width: 40px;
+}
+
+.google__icon {
+  height: 18px;
+  margin-left: 11px;
+  margin-top: 11px;
+  position: absolute;
+  width: 18px;
+}

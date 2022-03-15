@@ -1,0 +1,210 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests component <HeaderGame /> should render correctly 1`] = `
+Array [
+  <header
+    className="trivia__header"
+  >
+    <img
+      alt="trivia game"
+      className="trivia__img animate__animated animate__flash"
+      src="/assets/trivia2.jpg"
+    />
+    <h1
+      className="animate__animated animate__bounce"
+    >
+      Trivia Game: 
+      testing
+    </h1>
+    <a
+      className="trivia__header-link"
+      href="/rules"
+      onClick={[Function]}
+    >
+      Rules
+    </a>
+    <button
+      className="btn btn__end animate__animated animate__rubberBand"
+      onClick={[Function]}
+    >
+      Logout
+    </button>
+  </header>,
+  <section
+    className="trivia__header-buttons"
+  >
+    Array [
+      <div
+        className="btn__header-warginbox"
+      >
+        <button
+          className="btn btn__warning btn__header-question"
+          type="button"
+        >
+          1
+        </button>
+        <button
+          className="btn btn__warning btn__header-question"
+          type="button"
+        >
+          2
+        </button>
+        <button
+          className="btn btn__warning btn__header-question"
+          type="button"
+        >
+          3
+        </button>
+        <button
+          className="btn btn__warning btn__header-question"
+          type="button"
+        >
+          4
+        </button>
+        <button
+          className="btn btn__warning btn__header-question"
+          type="button"
+        >
+          5
+        </button>
+      </div>,
+      <div
+        className="btn__header-warginbox"
+      >
+        <button
+          className="btn btn__warning btn__header-question"
+          type="button"
+        >
+          6
+        </button>
+        <button
+          className="btn btn__warning btn__header-question"
+          type="button"
+        >
+          7
+        </button>
+        <button
+          className="btn btn__warning btn__header-question"
+          type="button"
+        >
+          8
+        </button>
+        <button
+          className="btn btn__warning btn__header-question"
+          type="button"
+        >
+          9
+        </button>
+        <button
+          className="btn btn__warning btn__header-question"
+          type="button"
+        >
+          10
+        </button>
+      </div>,
+      <div
+        className="btn__header-warginbox"
+      >
+        <button
+          className="btn btn__success btn__header-question"
+          type="button"
+        >
+          11
+        </button>
+        <button
+          className="btn btn__success btn__header-question"
+          type="button"
+        >
+          12
+        </button>
+        <button
+          className="btn btn__success btn__header-question"
+          type="button"
+        >
+          13
+        </button>
+        <button
+          className="btn btn__success btn__header-question"
+          type="button"
+        >
+          14
+        </button>
+        <button
+          className="btn btn__success btn__header-question"
+          type="button"
+        >
+          15
+        </button>
+      </div>,
+      <div
+        className="btn__header-warginbox"
+      >
+        <button
+          className="btn btn__success btn__header-question"
+          type="button"
+        >
+          16
+        </button>
+        <button
+          className="btn btn__success btn__header-question"
+          type="button"
+        >
+          17
+        </button>
+        <button
+          className="btn btn__success btn__header-question"
+          type="button"
+        >
+          18
+        </button>
+        <button
+          className="btn btn__success btn__header-question"
+          type="button"
+        >
+          19
+        </button>
+        <button
+          className="btn btn__success btn__header-question"
+          type="button"
+        >
+          20
+        </button>
+      </div>,
+      <div
+        className="btn__header-warginbox"
+      >
+        <button
+          className="btn btn__danger btn__header-question"
+          type="button"
+        >
+          21
+        </button>
+        <button
+          className="btn btn__danger btn__header-question"
+          type="button"
+        >
+          22
+        </button>
+        <button
+          className="btn btn__danger btn__header-question"
+          type="button"
+        >
+          23
+        </button>
+        <button
+          className="btn btn__danger btn__header-question"
+          type="button"
+        >
+          24
+        </button>
+        <button
+          className="btn btn__danger btn__header-question"
+          type="button"
+        >
+          25
+        </button>
+      </div>,
+    ]
+  </section>,
+]
+`;

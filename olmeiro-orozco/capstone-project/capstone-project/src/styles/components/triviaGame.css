@@ -1,0 +1,11 @@
+.trivia__main-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.trivia__main-central {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
