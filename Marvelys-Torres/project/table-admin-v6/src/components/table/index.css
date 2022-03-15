@@ -1,0 +1,28 @@
+.table-section {
+  align-items: center;
+  background-color: #deecf181;
+  border-radius: 10%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 15rem;
+  min-width: 15rem;
+}
+
+.table-icon {
+  background-color: #4275ede2;
+  border-radius: 50%;
+  box-shadow: 3px 3px 3px #1c0a00;
+  font-size: 30px;
+  height: 50px;
+  margin-bottom: 10px;
+  width: 50px;
+}
+
+.font-table-section {
+  color: #1a1a40;
+  font-size: 30px;
+  font-weight: bolder;
+}
