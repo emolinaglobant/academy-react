@@ -1,0 +1,42 @@
+.register-form {
+    align-items: center;
+    background-image: url(../assets/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+#register-form {
+    height: 70%;
+    padding: 20px;
+}
+#register-form button[type="submit"] {
+    margin-top: 10px;
+}
+.input__Control {
+    width: 500px;
+}
+@media screen and (max-width: 500px) {
+    #register-form {
+        width: 300px;
+    }
+
+    #register-form {
+        width: 200px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    #register-form .social-btn span {
+        display: none;
+    }
+    #register-form .facebook-btn:after {
+        content: "Facebook";
+    }
+
+    #register-form .google-btn:after {
+        content: "Google+";
+    }
+}
