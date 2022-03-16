@@ -1,0 +1,88 @@
+.container-login {
+    align-items: center;
+    background: url('../assets/img/background.jpg');
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+.content-login {
+    background-color: rgba(235, 230, 230, .9);
+    border: 1px solid #bbb;
+    border-radius: 12px;
+    height: 60%;
+    width: 24%;
+}
+
+.icon-login {
+    text-align: center;
+}
+
+.form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    padding: 15px;
+    text-align: center;
+}
+
+.form button {
+    background-color: red;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+    padding: 10px 0;
+    width: 100%;
+}
+
+input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 50px;
+    outline: none;
+    padding-left: 15px;
+    width: 300px;
+}
+
+input:first-child {
+    margin-bottom: 10px;
+}
+
+.accountLink {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.accountLink a {
+    border: none;
+    padding: 0;
+}
+
+.resetPass {
+    border: none;
+    padding: 0;
+}
+
+.button {
+    width: 70%;
+}
+
+.button button {
+    background-color: #0D6889;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: white;
+    margin-top: 10px;
+    padding: 7px 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 400px) {
+    .content-login {
+        width: 85%;
+        height: 80%;
+    }
+
+}

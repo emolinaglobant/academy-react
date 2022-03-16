@@ -1,0 +1,104 @@
+.information-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+.simple-data {
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px    ;
+    width: 40%;
+    -webkit-backdrop-filter: blur( 4px );
+}
+
+h2 {
+    text-transform: capitalize;
+}
+
+.stats-pokemon {
+    border: 1px solid #ccc;
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    padding: 10px 0;
+    -webkit-backdrop-filter: blur( 4px );
+    width: 59%;
+}
+
+.basic-information {
+    background: rgba( 158, 199, 122, 0.5 );
+    backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 10px;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    display: flex;
+    height: 30%;
+    justify-content: space-evenly;
+    width: 100%;
+    -webkit-backdrop-filter: blur( 4px );
+}
+
+.sectionOne {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    padding: 10px;
+}
+
+.sectionTwo {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+.types-pokemon {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.types-pokemon section {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.pokemon-type {
+    border-radius: 5px;
+    color: white;
+    padding: 3px 5px;
+}
+
+.pokemon-type:first-child {
+    margin-right: 5px;
+}
+
+li {
+    list-style: none;
+}
+
+@media screen and (max-width: 912px) {
+    .stats-pokemon {
+        width: 58%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .simple-data {
+        width: 100%
+    }
+}

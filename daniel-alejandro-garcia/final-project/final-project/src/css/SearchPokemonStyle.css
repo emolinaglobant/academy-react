@@ -1,0 +1,33 @@
+.containerSearchPage {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.searchBar {
+    align-items: center;
+    display: flex;
+    height: 60%;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.searchBar input {
+    margin-top: 10px;
+    width: 80%;
+}
+
+figure img {
+    width: 300px;
+}
+
+.cardPokemonSearch {
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    text-align: center;
+}
