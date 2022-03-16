@@ -1,0 +1,12 @@
+input[type='text'] {
+  padding: 15px 10px;
+  width: 450px;
+}
+
+input[type='text']:focus {
+  outline: none;
+}
+
+.results {
+  position: absolute;
+}
