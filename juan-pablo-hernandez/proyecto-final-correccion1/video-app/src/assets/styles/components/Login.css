@@ -1,0 +1,107 @@
+.login {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: calc(100vh - 100px);
+	padding: 0px 30px;
+}
+
+.login__container {
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 40px;
+	border: 2px solid white;
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 60px 60px 40px;
+}
+
+.login__container--form {
+	display: flex;
+	flex-direction: column;
+}
+
+.login__container--form label {
+	font-size: 14px;
+}
+
+.login__container--remember-me {
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.login__container--remember-me a {
+	color: white;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.login__container--remember-me a:hover {
+	text-decoration: underline;
+}
+
+.login__container--social-media > div {
+	align-items: center;
+	display: flex;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.login__container--social-media > div > img {
+	margin-right: 10px;
+	width: 30px;
+}
+
+.login__container--register {
+	font-size: 14px;
+}
+
+.login__container--register a {
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.login__container--register a:hover {
+	text-decoration: underline;
+}
+
+.login__container--form > .input {
+	background-color: transparent;
+	border-bottom: 2px solid white;
+	border-left: 0px;
+	border-right: 0px;
+	border-top: 0px;
+	color: white;
+	font-family: "Muli", sans-serif;
+	font-size: 16px;
+	height: 50px;
+	margin-bottom: 20px;
+	min-width: 100%;
+	outline: none;
+	padding: 0px 20px;
+}
+
+::placeholder {
+	color: white;
+}
+
+.button {
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 25px;
+	border: none;
+	color: white;
+	cursor: pointer;
+	font-family: "Muli", sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	height: 50px;
+	letter-spacing: 1px;
+	margin: 10px 0px;
+}

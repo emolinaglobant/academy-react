@@ -1,0 +1,66 @@
+@import url(https://fonts.googleapis.com/css?family=Muli&display=swap);
+
+:root {
+	--main-color: #120f18;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+	height: 8px;
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #120f18;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgb(77, 77, 77);
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(41, 41, 41);
+}
+
+body {
+	background: var(--main-color);
+	font-family: "Muli", sans-serif;
+	margin: 0;
+}
+
+h1 {
+	color: white;
+	display: inline-block;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	text-align: center;
+	width: 100%;
+}
+
+.button {
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 25px;
+	border: none;
+	color: white;
+	cursor: pointer;
+	font-family: "Muli", sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	height: 50px;
+	letter-spacing: 1px;
+	margin: 10px 0;
+}
+
+@media only screen and (max-width: 600px) {
+	.main__description--title {
+		font-size: 30px;
+	}
+	.footer {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+}
