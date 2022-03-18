@@ -1,0 +1,60 @@
+.container-notfound {
+  .container-employ {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 80%;
+    .card-left {
+      align-items: center;
+      display: flex;
+      height: 100%;
+      form {
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        justify-content: space-around;
+        width: 45%;
+        input {
+          border-radius: 10px;
+          border: none;
+          height: 40px;
+          padding: 10px;
+
+          width: 100%;
+        }
+      }
+    }
+    section,
+    picture {
+      width: 50%;
+    }
+    picture {
+      img {
+        width: 50%;
+      }
+    }
+  }
+  p {
+    color: #7a7a7a;
+    text-decoration: none;
+    a {
+      text-decoration: none;
+      span {
+        color: #eb5e00;
+        transition: all 0.5s;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+  #join {
+    color: white !important;
+    transition: all 0.5s;
+  }
+  #join:hover {
+    color: #eb5e00 !important;
+  }
+}

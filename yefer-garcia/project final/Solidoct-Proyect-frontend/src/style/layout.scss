@@ -1,0 +1,94 @@
+@import url(landing/_footer.scss);
+
+@import url(landing/_navbar.scss);
+
+@import url(landing/_main.scss);
+
+@import url(landing/_media.scss);
+
+@import url(landing/_politics.scss);
+
+@import url(landing/_questions.scss);
+
+@import url(landing/_services.scss);
+
+@import url(landing/_about.scss);
+
+@import url(landing/_contact.scss);
+
+@import url(landing/_solidoct-employ.scss);
+
+@import url(landing/_admin.scss);
+
+$letras: #eb5e00;
+
+.btn {
+  background-color: $letras;
+  color: white;
+  height: 75px;
+  transition: all 500ms !important;
+  width: 220px;
+}
+.btn:hover {
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 0;
+  color: black;
+}
+
+// ! Page Not Found
+
+.container-notfound {
+  align-items: center;
+  display: flex;
+  height: 1000px;
+  justify-content: center;
+  width: 100%;
+  .contend {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  h1 {
+    font-size: 50px;
+    font-weight: 800;
+    color: $letras;
+  }
+  p {
+    font-size: 20px;
+    color: white;
+  }
+}
+
+// ! Page form Admin
+
+.admin {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  article {
+    height: 200px;
+    h1 {
+      color: $letras;
+      font-size: 50px;
+      font-weight: 800;
+    }
+    form {
+      // align-items: center;
+      height: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      input {
+        border: none;
+        border-radius: 10px;
+        height: 40px;
+        padding: 10px;
+      }
+    }
+  }
+}

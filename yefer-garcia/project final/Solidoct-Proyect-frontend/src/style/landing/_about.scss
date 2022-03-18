@@ -1,0 +1,106 @@
+.copyrigth-section {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+
+  .box {
+    img {
+      border-radius: 20px;
+    }
+    width: 30%;
+  }
+}
+.about {
+  align-items: center;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.699),
+      rgba(67, 67, 67, 0.5)
+    ),
+    url("../../../public/imagenes-solidoct/junta-de-trabajo.jpg");
+
+  color: white;
+  display: flex;
+  height: 800px;
+  justify-content: center;
+  position: relative;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    justify-content: space-around;
+  }
+  .container-text {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    .card-text {
+      margin: 0;
+    }
+  }
+  .contend-about {
+    width: 50%;
+  }
+  h2 {
+    font-size: 50px;
+    font-weight: 800;
+    color: #eb5e00;
+  }
+
+  strong {
+    font-size: 25px;
+  }
+}
+.about-container {
+  margin-top: 100px;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  .about-description-container {
+    background-color: white;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 90px;
+
+    width: 90%;
+    .contend-about {
+      border: white 2px solid;
+      align-items: center;
+      display: flex;
+
+      .card-contents {
+        width: 50%;
+        img {
+          width: 100%;
+        }
+      }
+      .card-right {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 50px;
+        img {
+          width: 150px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+  section {
+    margin: 50px 0;
+  }
+  .geo {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 0;
+    width: 100%;
+  }
+}

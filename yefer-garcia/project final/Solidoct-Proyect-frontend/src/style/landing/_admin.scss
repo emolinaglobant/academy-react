@@ -1,0 +1,68 @@
+.Control-panel {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  // height: 120vh;
+  justify-content: center;
+  width: 90%;
+  .sec-employs {
+    background-color: white;
+    width: 50%;
+  }
+  .icon-table {
+    cursor: pointer;
+    color: rgb(255, 0, 0);
+    font-size: 23px;
+  }
+
+  .icon-table:hover {
+    color: rgb(196, 0, 0);
+  }
+  .sec-services {
+    background-color: white;
+    margin: 100px;
+    width: 50%;
+  }
+  h1 {
+    color: #eb5e00;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 50px;
+  }
+  h1:first-child {
+    margin-top: 100px;
+  }
+  p {
+    color: white;
+    font-size: 25px;
+    i {
+      color: rgba(0, 138, 0, 0.788);
+      cursor: pointer;
+      margin-left: 10px;
+      transition: all 0.5s;
+    }
+    i:hover {
+      color: rgb(0, 223, 0);
+    }
+  }
+  .logout {
+    border: none;
+    height: 40px;
+    margin: 50px 0;
+    transition: all 0.5s;
+    width: 200px;
+  }
+  .logout:hover {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+  }
+  #elipsis-text {
+    color: black;
+    font-size: 15px;
+    text-overflow: ellipsis !important;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 200px;
+  }
+}
