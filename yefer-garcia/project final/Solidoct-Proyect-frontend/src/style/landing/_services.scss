@@ -1,0 +1,151 @@
+.container-services {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 100px 0;
+  width: 100%;
+  h1 {
+    margin: 30px 0;
+  }
+}
+.sidebar-services {
+  align-items: center;
+  background-color: rgb(0, 119, 255);
+  display: flex;
+  justify-content: center;
+  height: 70px;
+  width: 95%;
+
+  .buton-container {
+    color: #fff;
+    line-height: 4;
+    margin: 1.5em;
+    padding: 0 1em;
+    position: relative;
+  }
+  .buton-container:before {
+    background: #fff;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    position: absolute;
+    transition: all 0.3s;
+    width: 0;
+  }
+
+  .buton-container:hover:before {
+    width: 100%;
+  }
+  .buton-container:before {
+    left: 50%;
+  }
+
+  .buton-container:hover:before {
+    left: 0;
+  }
+}
+.container-services-btn {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  .btn-services {
+    border: none;
+    background-color: transparent;
+    transition: all 0.5s;
+  }
+  .btn-services:hover {
+    color: white;
+  }
+}
+.container-card-services {
+  display: flex;
+  flex-wrap: wrap;
+  height: 90%;
+  justify-content: space-around;
+  margin-top: 50px;
+  width: 90%;
+
+  .card-service {
+    border: grey 1px solid;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: space-around;
+    margin: 20px;
+    width: 20%;
+    .img-service {
+      height: 75%;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .contend-service {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      height: 25%;
+      justify-content: space-around;
+      margin-bottom: 20px;
+      padding-top: 20px;
+      text-align: center;
+      hr {
+        background-color: white;
+        height: 3px;
+        width: 80%;
+      }
+      h3 {
+        font-size: 20px;
+      }
+      button {
+        background-color: transparent;
+        border: 1px white solid;
+        color: white;
+        height: 50px;
+        width: 170px;
+      }
+    }
+  }
+}
+.activate-full {
+  color: white;
+  ::before {
+    background: #fff;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s;
+    width: 100%;
+  }
+  button {
+    color: white;
+  }
+}
+.modal-content {
+  color: black;
+}
+.modal-footer {
+  button {
+    border: 2px black solid !important;
+    border-radius: 5px;
+    color: black !important;
+    transition: all 0.5s;
+  }
+  button:hover {
+    background-color: black !important;
+    color: white !important;
+  }
+}
+.modal-title {
+  text-align: left;
+  .badge {
+    margin-left: 10px;
+  }
+}

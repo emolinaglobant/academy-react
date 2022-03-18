@@ -1,0 +1,130 @@
+$facebook: rgb(0, 100, 231);
+$instagram: rgb(112, 6, 250);
+$whatsapp: rgb(0, 177, 0);
+$linkelind: rgb(0, 66, 141);
+$twiter: rgb(0, 183, 255);
+
+footer {
+  bottom: 0;
+  background-color: #000000;
+  font-family: "Montserrat", sans-serif;
+  padding: 50px 0px;
+  position: relative;
+  width: 100%;
+  .acces-admin {
+    color: #7a7a7a;
+    float: right;
+    font-size: 30px;
+    margin-right: 50px;
+    transition: all 0.5s;
+  }
+  .acces-admin:hover {
+    color: #eb5e00;
+  }
+}
+
+.container__footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.box__footer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  .logo {
+    img {
+      width: 180px;
+    }
+  }
+  h2 {
+    color: #ffffff;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  a {
+    color: #7a7a7a;
+    font-weight: 600;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: all 0.5s !important;
+    .fab {
+      font-size: 20px;
+    }
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  .icon {
+    margin-right: 10px;
+  }
+  .selec1:hover {
+    color: $facebook !important;
+  }
+  .selec2:hover {
+    color: $twiter !important;
+  }
+  .selec3:hover {
+    color: $linkelind !important;
+  }
+  .selec4:hover {
+    color: $instagram !important;
+  }
+  .selec5:hover {
+    color: $whatsapp !important;
+  }
+  span {
+    color: black;
+    font-weight: 900;
+  }
+  .icon-contact {
+    margin-right: 10px;
+  }
+  .intermeder {
+    margin: 20px 0;
+  }
+}
+.box__footer:last-child {
+  section,
+  span {
+    color: white;
+  }
+}
+
+.box__copyright {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0px 40px;
+  text-align: center;
+  p {
+    color: #7a7a7a;
+    margin-top: 20px;
+  }
+
+  hr {
+    border: none;
+    background-color: #000000;
+    height: 1px;
+  }
+  a {
+    text-decoration: none;
+    transition: all 0.5s;
+  }
+  a:hover {
+    color: white;
+  }
+}
+
+.up-icon {
+  font-size: 30px;
+  margin-left: 50px;
+}

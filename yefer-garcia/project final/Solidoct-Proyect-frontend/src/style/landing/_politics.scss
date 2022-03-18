@@ -1,0 +1,88 @@
+.politics {
+  align-items: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 150vh;
+  justify-content: center;
+  margin-top: 200px;
+  text-align: center;
+  width: 100%;
+  h3 {
+    font-size: 18px;
+    font-weight: 900;
+  }
+}
+.private-politics {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  justify-content: space-around;
+  width: 50%;
+}
+.terms {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  justify-content: space-around;
+  width: 50%;
+}
+.icon-politics {
+  font-size: 40px;
+}
+.red {
+  ul {
+    display: flex;
+    gap: 50px;
+    position: relative;
+    li {
+      align-items: center;
+      cursor: pointer;
+      display: flex;
+      height: 80px;
+      justify-content: center;
+      list-style: none;
+      position: relative;
+      transition: all 0.5s;
+      width: 80px;
+      a {
+        font-size: 2em;
+        position: relative;
+        text-decoration: none;
+        transition: 0.5s;
+        z-index: 10;
+      }
+    }
+    li {
+      color: #fff;
+      line-height: 4;
+      margin: 1.5em;
+      padding: 0 2em;
+      position: relative;
+    }
+
+    li:before {
+      background: #fff;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 3px;
+      position: absolute;
+      transition: all 0.3s;
+      width: 0;
+    }
+
+    li:hover:before {
+      width: 100%;
+    }
+    li:before {
+      left: 50%;
+    }
+
+    li:hover:before {
+      left: 0;
+    }
+  }
+}

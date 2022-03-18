@@ -1,0 +1,158 @@
+@media screen and (max-width: 1440px) {
+  .welcome {
+    .welcome-contend {
+      padding-bottom: 100px;
+    }
+  }
+
+  .section-designer {
+    .card {
+      height: 70%;
+      .card-left {
+        height: 100%;
+        img {
+          height: 100%;
+          width: 50%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .welcome {
+    .welcome-contend {
+      height: 700px;
+      section {
+        margin: 30px 0;
+      }
+    }
+  }
+  .article-1 {
+    .left {
+      h1 {
+        font-size: 30px;
+      }
+    }
+    .right {
+      margin-left: 40px;
+    }
+  }
+  .section-card {
+    .left {
+      .contend {
+        width: 90%;
+      }
+    }
+    section,
+    picture {
+      margin-top: 50px;
+    }
+  }
+  .article-2 {
+    .card-right {
+      img {
+        margin-left: 55px;
+      }
+    }
+  }
+  .about {
+    .container-text {
+      width: 70%;
+    }
+  }
+  .end {
+    svg {
+      position: relative;
+      top: 150px;
+    }
+  }
+  .section-designer {
+    .card {
+      // width: 70%;
+    }
+  }
+  .contact {
+    .card-contact {
+      width: 50%;
+      .col:last-child {
+        width: 70%;
+        div {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .mapouter {
+    width: 100%;
+  }
+  .gmap_canvas {
+    width: 100%;
+  }
+  .contact-img {
+    p {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    nav {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  #contact {
+    height: 110vh;
+  }
+  .card-contact {
+    flex-direction: column;
+    .col:first-child {
+      form {
+        // padding-top: 30px;
+        input,
+        textarea {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  .mapouter {
+    left: -36px;
+
+    position: absolute;
+    width: 400px !important;
+  }
+  .gmap_canvas {
+    left: -36px;
+    position: absolute;
+    width: 400px !important;
+  }
+}
+@media screen and (max-width: 375px) {
+  .mapouter {
+    left: -32px;
+
+    position: absolute;
+    width: 350px !important;
+  }
+  .gmap_canvas {
+    left: -32px;
+    position: absolute;
+    width: 350px !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .mapouter {
+    height: 300px !important;
+    left: -30px;
+    position: absolute;
+    width: 300px !important;
+  }
+  .gmap_canvas {
+    height: 300px !important;
+    left: -30px;
+    position: absolute;
+    width: 300px !important;
+  }
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "model": "employees.documenttype",
+    "fields": {
+      "long_name": "LIBRETA ELECTORAL O DNI",
+      "short_name": "L.E. / DNI",
+      "character_length": 8,
+      "type_character": "number"
+    }
+  },
+  {
+    "model": "employees.documenttype",
+    "fields": {
+      "long_name": "CARNET DE EXTRANJERIA",
+      "short_name": "CARNET EXT.",
+      "character_length": 12,
+      "type_character": "alphanumeric"
+    }
+  },
+  {
+    "model": "employees.documenttype",
+    "fields": {
+      "long_name": "REG. UNICO DE CONTRIBUYENTES",
+      "short_name": "RUC",
+      "character_length": 11,
+      "type_character": "number"
+    }
+  },
+  {
+    "model": "employees.documenttype",
+    "fields": {
+      "long_name": "PASAPORTE",
+      "short_name": "PASAPORTE",
+      "character_length": 12,
+      "type_character": "number"
+    }
+  },
+  {
+    "model": "employees.documenttype",
+    "fields": {
+      "long_name": "PART. DE NACIMIENTO-IDENTIDAD",
+      "short_name": "P. NAC.",
+      "character_length": 15,
+      "type_character": "alphanumeric"
+    }
+  },
+  {
+    "model": "employees.documenttype",
+    "fields": {
+      "long_name": "OTROS",
+      "short_name": "OTROS",
+      "character_length": 15,
+      "type_character": "alphanumeric"
+    }
+  }
+]
