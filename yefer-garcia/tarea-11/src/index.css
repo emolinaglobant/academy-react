@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,500;1,400&display=swap");
+
+body {
+  box-sizing: border-box;
+  background: linear-gradient(
+      to right,
+      rgba(38, 208, 205, 0.794),
+      rgba(26, 41, 128, 0.781)
+    ),
+    url("/public/landing.jpg");
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
