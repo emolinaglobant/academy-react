@@ -1,25 +1,17 @@
-import React, { useEffect } from 'react';
-import { useParams, useNavigate, Navigate } from 'react-router-dom';
-import NotFound from '../containers/NotFound'
-import { connect } from 'react-redux';
-import { getVideoSource } from '../actions';
+import React from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import '../assets/styles/components/Player.css';
 
-const Player = props => {
+const Player = () => {
 
-  const { id } = useParams();
-  const hasPlaying = Object.keys(props.playing).length > 0;
-
+  const location = useLocation()
+  const link = location.state.video_files[0].link;
   const navigate = useNavigate();
 
-  useEffect(() => {
-    props.getVideoSource(id);
-  }, []);
-
-  return hasPlaying ? (
+  return (
     <div className="Player">
       <video controls autoPlay>
-        <source src={props.playing.source} type="video/mp4" />
+        <source src={link} type="video/mp4" />
       </video>
       <div className="Player-back">
         <button type="button" onClick={() => navigate(-1)}>
@@ -27,17 +19,7 @@ const Player = props => {
         </button>
       </div>
     </div>
-  ) : <NotFound />;
+  );
 };
 
-const mapStateToProps = state => {
-  return {
-    playing: state.playing,
-  }
-}
-
-const mapDispatchToProps = {
-  getVideoSource,
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Player);
+export default (Player);

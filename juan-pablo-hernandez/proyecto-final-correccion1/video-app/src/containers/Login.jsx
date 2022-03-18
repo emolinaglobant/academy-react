@@ -66,7 +66,6 @@ const Login = props => {
 								<input type='checkbox' id='cbox1' value='first_checkbox' />
 								Recuérdame
 							</label>
-							<a href='/'>Olvidé mi contraseña</a>
 						</div>
 					</form>
 					<section className='login__container--social-media'>

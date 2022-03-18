@@ -8,12 +8,12 @@ import playIcon from '../assets/static/play-icon.png';
 import plusIcon from '../assets/static/plus-icon.png';
 import removeIcon from '../assets/static/remove-icon.png';
 
-const CarouselItem = (props) => {
+const CarouselItem = ( props ) => {
 
-  const { id, cover, title, year, contentRating, duration, isList } = props;
+  const { id, user, image, duration, isList, video_files } = props;
   const handleSetFavorite = () => {
     props.setFavorite({
-      id, cover, title, year, contentRating, duration 
+      id, user, image, duration, video_files
     })
   }
   const handleDeleteFavorite = (itemId) => {
@@ -22,10 +22,10 @@ const CarouselItem = (props) => {
 
   return (
     <div className="carousel-item" data-testid={id}>
-      <img className="carousel-item__img" src={cover} alt={title}  />
+      <img className="carousel-item__img" src={image}  />
       <div className="carousel-item__details">
         <div>
-        <Link to={`/player/${id}`}>
+        <Link to={`/player/${id}`} state={{ video_files }} >
           <img 
             className="carousel-item__details--img"
             src={playIcon}
@@ -48,9 +48,9 @@ const CarouselItem = (props) => {
           }
           
         </div>
-        <p className="carousel-item__details--title">{title}</p>
+        <p className="carousel-item__details--title">Autor: {user.name} </p>
         <p className="carousel-item__details--subtitle">
-          {`${year} ${contentRating} ${duration}`}
+          {`Duration: ${duration}s`}
         </p>
       </div>
     </div>
@@ -58,10 +58,10 @@ const CarouselItem = (props) => {
 }
 
 CarouselItem.propTypes = {
-  cover: PropTypes.string,
-  title: PropTypes.string,
-  year: PropTypes.number,
-  contentRating: PropTypes.string,
+  id: PropTypes.number,
+  user: PropTypes.object,
+  image: PropTypes.string,
+  video_files: PropTypes.array,
   duration: PropTypes.number,
 }
 
