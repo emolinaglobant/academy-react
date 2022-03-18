@@ -1,0 +1,5 @@
+.footer{
+    grid-area: footer;
+    text-align: center;
+    letter-spacing: 2px;
+}

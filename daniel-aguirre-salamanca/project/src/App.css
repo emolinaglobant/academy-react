@@ -1,0 +1,284 @@
+/*TAGS*/
+body {
+  background-color: greenyellow;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+i {
+  background-image: linear-gradient(to bottom, #743ad5, #d53a9d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.6s ease-in-out;
+}
+
+img {
+  opacity: 0.5;
+}
+
+label {
+  position: relative;
+}
+label i {
+  bottom: 6px;
+  position: absolute;
+  right: 15px;
+}
+main {
+  background-color: black;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='281' height='281' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%231A1A1A' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23363636'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+  display: grid;
+  grid-template-areas: "header" "content" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 60px auto 50px;
+  min-height: 100vh;
+  width: 100%;
+}
+
+
+table {
+  border-collapse: collapse;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+table td,
+table th {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+table tr:nth-child(even) {
+  background-color: #2e2e2e;
+}
+
+table tr:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+table th {
+  background-color: #04aa6d;
+  color: white;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  text-align: left;
+}
+/* CLASSNAMES */
+.content {
+  grid-area: content;
+}
+
+.big-wrapper {
+  display: flex;
+}
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 5vw;
+}
+.button:hover {
+  background-color: rgba(253, 253, 253, 0.1);
+}
+.home {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.home__info {
+  width: 40%;
+}
+.home__info h1 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.home__info a {
+  background: linear-gradient(45deg, #743ad5, #d53a9d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  position: relative;
+  text-decoration: none;
+}
+
+.home__info a:after {
+  border-bottom: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #743ad5, #d53a9d);
+  content: "";
+  display: inline-block;
+  height: 1em;
+  left: 0;
+  margin-top: 10px;
+  margin-top: 5px;
+  position: absolute;
+  width: 100%;
+}
+.home__login {
+  background-color: rgb(15, 15, 15);
+  border-radius: 1rem;
+  box-shadow: 0 0 20px 5px purple;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 65%;
+  width: 40%;
+}
+
+.home__login form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+}
+
+.home__options {
+  display: flex;
+}
+.home__options .option {
+  background-color: black;
+  border: none;
+  color: grey;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  padding: 1rem;
+  width: 50%;
+}
+.home__options .option:first-child {
+  border-radius: 1rem 0 0 0;
+}
+.home__options .option:last-child {
+  border-radius: 0 1rem 0 0;
+}
+
+.home__options .active {
+  background-color: rgb(15, 15, 15);
+  color: white;
+}
+.home__login input {
+  border-radius: 1rem;
+  border: none;
+  box-sizing: border-box;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  padding: 0.3rem 1rem;
+  width: 100%;
+}
+.home__login input:focus {
+  outline: none;
+}
+
+.home__login button {
+  align-self: center;
+}
+
+.home__welcome {
+  color: yellow;
+  font-size: 3rem;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.home__welcome button {
+  border-radius: 1rem;
+  border: 1px solid purple;
+  color: purple;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  transition: transform 0.1s linear;
+}
+.home__welcome button:hover {
+  transform: scale(1.1);
+}
+
+.home__welcome img {
+  margin-top: 1.5rem;
+}
+.items {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  height: 500px;
+  justify-content: center;
+  list-style: none;
+  margin: auto 5vw;
+  overflow-y: auto;
+  padding: 0;
+  width: 80vw;
+}
+
+
+.item {
+  align-items: center;
+  background-color: black;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px 1px #743ad5, 0 0 10px 1px #d53a9d;
+  box-sizing: border-box;
+  color: rgba(231, 231, 231, 0.95);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  height: 175px;
+  justify-content: space-around;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.5s ease;
+  width: 150px;
+}
+
+.item:hover {
+  transform: scale(1.1);
+}
+
+.login__button {
+  background-color: yellow;
+  border-radius: 1rem;
+  border: none;
+  cursor: pointer;
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+  padding: 0.5rem 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.login__button:hover {
+  transform: scale(1.1);
+}
+
+.status-message {
+  background-color: rgb(112, 59, 59);
+  border-radius: 0.5rem;
+  color: rgb(48, 11, 11);
+  padding: 0.5rem;
+}
+
+.status-message--success {
+  background-color: rgb(68, 173, 68);
+  color: rgb(12, 51, 12);
+}
+
+.wrapper {
+  margin: auto;
+  overflow-x: hidden;
+  width: 90vw;
+}
+
+.wrapper__items {
+  display: flex;
+  height: 550px;
+  transition: margin 0.6s;
+  width: fit-content;
+}
