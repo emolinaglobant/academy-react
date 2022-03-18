@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render correctly with no props 1`] = `
+<Fragment>
+  <title>
+    learn react
+  </title>
+  <NavBar
+    totalProducts={0}
+    user={null}
+  />
+  <br />
+  <main
+    className="container-fluid filter-products-main-box"
+  >
+    <section
+      className="filter-box"
+      id="filter"
+    >
+      <h6>
+        Filter by category
+      </h6>
+      <span
+        className="deactive"
+        id="GraphicsCards"
+        key="0"
+        onClick={[Function]}
+      >
+        Graphics Cards
+      </span>
+      <span
+        className="deactive"
+        id="Keyboards"
+        key="1"
+        onClick={[Function]}
+      >
+        Keyboards
+      </span>
+      <span
+        className="deactive"
+        id="ComputerCases"
+        key="2"
+        onClick={[Function]}
+      >
+        Computer Cases
+      </span>
+      <span
+        className="deactive"
+        id="Monitors"
+        key="3"
+        onClick={[Function]}
+      >
+        Monitors
+      </span>
+      <span
+        className="deactive"
+        id="Motherboards"
+        key="4"
+        onClick={[Function]}
+      >
+        Motherboards
+      </span>
+      <span
+        className="deactive"
+        id="Laptops"
+        key="5"
+        onClick={[Function]}
+      >
+        Laptops
+      </span>
+      <span
+        className="deactive"
+        id="StorageUnits"
+        key="6"
+        onClick={[Function]}
+      >
+        Storage units
+      </span>
+      <span
+        className="deactive"
+        id="RamMemory"
+        key="7"
+        onClick={[Function]}
+      >
+        RAM Memory
+      </span>
+      <span
+        className="deactive"
+        id="FontPower"
+        key="8"
+        onClick={[Function]}
+      >
+        Font power
+      </span>
+    </section>
+    <section
+      className="my-products please-wait"
+    >
+      Please wait...
+    </section>
+  </main>
+  <FooterPage />
+</Fragment>
+`;

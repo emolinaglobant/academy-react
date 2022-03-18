@@ -1,0 +1,90 @@
+.navlink {
+  color: rgb(255, 255, 255);
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+  width: 200px;
+}
+
+@media (max-width: 450px) {
+  .navbar .rightside {
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 0px;
+    margin-top: 20px;
+  }
+}
+
+.rightside {
+  color: white;
+}
+.btn-danger {
+  background-color: #7656ff;
+  border-color: #ffffff;
+  color: #fff;
+}
+
+.container_login {
+  border: 1px solid #000;
+  padding: 15px;
+  padding-top: 10px;
+  width: 100%;
+}
+
+.form-group_login {
+  background-color: #fff;
+  margin-top: 90px;
+}
+
+h1 {
+  text-align: center;
+}
+.signup_button {
+  background-color: #7656ff;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+  width: 100px;
+}
+
+.button_logout {
+  border-radius: 5px;
+  margin-left: 35px;
+  cursor: pointer;
+}
+
+#button_signup {
+  background-color: #7656ff;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 5px;
+  width: 100%;
+}
+.text-center,
+a {
+  color: #7656ff;
+}
+
+.btn {
+  margin-left: 30px;
+}
+
+@media(max-width: 450px){
+  .navbar{
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media(max-width: 450px){
+  .navbar section{
+    margin: 10px 0px;    
+  }
+}
+
