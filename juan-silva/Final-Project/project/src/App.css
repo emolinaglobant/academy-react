@@ -1,0 +1,11 @@
+.main{
+  align-items: center;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(227,232,238,1) 63%);
+}
+.container{
+  margin-bottom: 100px;
+}

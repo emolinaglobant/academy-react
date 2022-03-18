@@ -1,0 +1,19 @@
+.header-profile{
+    font-family: 'Consolas';
+}
+.header-profile h1{
+    font-family: 'Consolas';
+}
+.profile{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.loginform{
+    display: flex;
+    flex-direction: column;
+}
+.loginform input{
+    margin: 5px;
+}

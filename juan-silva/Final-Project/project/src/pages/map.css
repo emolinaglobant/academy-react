@@ -1,0 +1,14 @@
+figure{
+    margin: 0;
+    perspective: 900px;
+}
+.map-pic{
+    height: 50vw;
+    border-radius: 10px;
+    filter: drop-shadow(5px 5px 5px rgb(78, 74, 74));
+    transform:rotateX(20deg) scale(0.7);
+    transition: 0.8s all ease;
+}
+.map-pic:hover{
+    transform: rotateX(0deg) scale(1);
+}

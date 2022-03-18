@@ -1,0 +1,25 @@
+.about{
+    align-items: flex-start;
+    background: radial-gradient(circle, rgba(84,77,77,1) 0%, rgba(34,34,36,1) 58%);
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    width: 97%;
+}
+.about h2{
+    font-size: 3.5vw;
+    color: white;
+    border: none;
+    margin-top: 0;
+}
+.about h3{
+    color: rgb(214, 84, 84);
+}
+.about ul{
+    color: whitesmoke;
+    list-style-type: none;
+    padding: 0;
+}
+.about h6{
+    color: rgb(164, 168, 168);
+}
