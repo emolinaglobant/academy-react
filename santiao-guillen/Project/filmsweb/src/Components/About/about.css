@@ -1,0 +1,190 @@
+
+h2{
+    color: #A4161A;
+    font-size: 3.8rem;
+    padding: 60px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+p{
+    color: rgb(0, 0, 0);
+    font-size:1.4rem;
+    padding: 30px;
+}
+
+h3{
+    color: #A4161A;
+    font-size: 3rem;
+    padding:0px 0 50px 0;
+    text-align: center;
+}
+
+h3::first-letter{
+    text-transform: capitalize;   
+ }
+
+.about{
+    margin: 50px;
+}
+
+.box-about{
+    background:#fff;
+    padding:60px;
+}
+
+.btn-ranking {
+    text-align: center;
+}
+
+
+.btn-ranking a{
+    background:#BA181B;
+    color: #fff;
+    font-size: 1.2rem;
+    padding:20px;
+    text-decoration: none;
+}
+
+.btn-ranking a:hover{
+    background-color: black;
+}
+
+/* image container and information list */
+
+.container-info{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin:40px;
+}
+
+.information{
+    padding: 80px;
+    width: 40%;
+}
+
+.information ul li{
+    color: #FFFF;
+    font-size: 1.4rem;
+    line-height : 50px;
+}
+
+.information ul li::first-letter{
+   text-transform: capitalize;   
+}
+
+.information ul {
+    list-style-image: url("../../images/claqueta.svg");
+}
+
+/* image content */
+
+.img-box{
+    padding:70px;
+    width: 30%;
+}
+
+.img-box img{
+    height: 450px;
+    transform: rotate(-13deg);
+    width: 450px;
+}
+
+
+@media screen and (max-width: 768px){
+    
+    h2{
+        font-size: 1.8rem;
+        padding: 24px;
+        text-transform: capitalize;
+    }
+    
+    p{
+        font-size:1rem;
+        padding: 16px;   
+    }
+
+    h3{
+        font-size: 1.8rem;
+    }
+    
+    h3::first-letter{
+        text-transform: capitalize;   
+     }
+    
+    .box-about{
+        background:#fff;
+        padding:26px;
+    }
+
+    .btn-ranking a{
+        font-size: 0.700rem;
+        padding:14px;
+    }
+    
+    .btn-ranking a:hover{
+        background-color: black;
+    }
+    
+    /* image container and information list */
+    
+    .container-info{
+        margin:0px;
+    }
+    
+    .information{
+        padding:10px;
+        width: 100%;
+    }
+    
+    .information ul li{
+        color: #FFFF;
+        font-size: 1rem;
+        line-height : 50px;
+    }
+    
+    /* image content */
+
+    .img-box{
+        padding:15px;
+    }
+    
+    .img-box img{
+        height: 260px;
+        position: relative;
+        right: 70px;
+        top: 0px;
+        transform: rotate(-13deg);
+        width: 230px;
+    }
+}
+
+
+@media screen and (max-width: 1200px){
+    
+    .information{
+        padding:10px;
+        width: 60%;
+    }
+    
+    .information ul li{
+        color: #FFFF;
+        font-size: 1rem;
+        line-height : 50px;
+    }
+    
+    .img-box{
+        padding:6px;
+    }
+    
+    .img-box img{
+        height: 260px;
+        position: relative;
+        right: 70px;
+        top: 40px;
+        transform: rotate(-13deg);
+        width: 230px;
+    }
+}

@@ -1,0 +1,217 @@
+.container-search {
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.377);
+  color: #fff;
+  height: 100vh;
+  object-fit: contain;
+  width: 100%;
+}
+
+img {
+  height: 100vh;
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  z-index: -1;
+}
+
+h1 {
+  font-size: 8rem;
+  letter-spacing: 2px;
+  padding-top: 130px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+h1 span {
+  color: #f50004;
+}
+
+.icon-search {
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding: 20px;
+}
+
+.box-input {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+
+.box-input input {
+  border-radius: 6px;
+  border: 0;
+  font-size: 1.2rem;
+  height: 7vh;
+  margin: 10px;
+  outline: none;
+  text-align: center;
+  text-transform: capitalize;
+  width: 30%;
+}
+
+.btn-search {
+  background: #BA181B;
+  border: none;
+  border: 0.125rem solid #BA181B;
+  border-radius: 0.60rem;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-search:hover {
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.icon-up-open{
+  animation: slidein 2.2s normal infinite;
+  display: flex;
+  font-size:3rem;
+  justify-content: center;
+  padding:60px;
+  transform: rotate(180deg);
+  text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.1em;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: 0%;
+  }
+
+  to {
+    margin-top:8%;
+  }
+}
+
+/* container searchs */
+
+.hide-listSearch {
+  display: none;
+}
+
+.listSearch label {
+  color: rgb(255, 255, 255);
+  font-size:2rem;
+  padding: 40px 0 0 80px;
+}
+
+.listSearch label::first-letter{
+  text-transform: capitalize;
+}
+
+.listSearch span{
+  color: rgb(255, 0, 0);
+}
+
+.listSearch {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1800px;
+}
+
+.card-search {
+  cursor: pointer;
+  height: 340px;
+  margin: 20px;
+  padding: 8px;
+  width: 240px;
+  transition: 1.5s;
+}
+
+.card-search img {
+  box-shadow: 8px 8px 0px #f60000c4;
+  height: 350px;
+  width: 230px;
+  z-index: 1;
+}
+
+/* .fire{
+  background:#46ba18;
+} */
+
+@media screen and (max-width: 800px) {
+  .listSearch label {
+    color: #fff;
+    font-size:1.2rem;
+    padding: 60px 0 0 55px;
+  }
+
+  .listSearch span{
+    color: rgb(255, 8, 0);
+  }
+  .container-search {
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.363);
+    color: #fff;
+    height: 100vh;
+    object-fit: contain;
+    width: 100%;
+  }
+
+  img {
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+
+  .box-input {
+    padding-top: 80px;
+  }
+
+  .container-search h1 {
+    font-size: 3.6rem;
+    padding-top: 240px;
+    text-align: center;
+  }
+
+  .box-input input {
+    font-size: 1.1rem;
+    text-align: center;
+    width: 85%;
+  }
+
+  .card-search {
+    cursor: pointer;
+    height: 340px;
+    margin: 15px;
+    transition: 1.5s;
+    width: 200px;
+  }
+
+  .card-search img {
+    height: 335px;
+    width: 255px;
+    z-index: 1;
+  }
+
+  .icon-up-open{
+    animation: slidein 2.2s normal infinite;
+    display: flex;
+    font-size:45px;
+    justify-content: center;
+    padding:60px;
+    transform: rotate(180deg);
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.1em;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-top: 0%;
+    }
+  
+    to {
+      margin-top:22%;
+    }
+  }
+}
