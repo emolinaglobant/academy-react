@@ -2,7 +2,8 @@
 const initialState = {
     allMovies: [], 
     search: [], 
-    ranking: []
+    ranking: [], 
+    count: 1,
 }
 
 export const movieReducer = (state = initialState, action) => {
@@ -16,7 +17,6 @@ export const movieReducer = (state = initialState, action) => {
         }
 
         case '@films/search':
-
         return state, {
             ...state,
             search: action.payload
@@ -26,6 +26,23 @@ export const movieReducer = (state = initialState, action) => {
         return state, {
             ...state,
             ranking: action.payload
+        } 
+
+        case '@films/next':
+            let numberPageNext = state.count + 1;
+
+        return state, {
+            ...state,
+            count: numberPageNext
+        } 
+
+        case '@films/previous':
+            let numberPagePrev = state.count - 1;
+            if (numberPagePrev === 0) numberPageNext = null;
+
+        return state, {
+            ...state,
+            count: numberPagePrev
         } 
         
         default:
@@ -51,5 +68,19 @@ export const ranking = (ranking) => {
     return {
         type: '@films/getRanking',
         payload: ranking
+    }
+}
+
+export const nextPage = (count) => {
+    return {
+        type: '@films/next',
+        payload: count
+    }
+}
+
+export const previousPage = (count) => {
+    return {
+        type: '@films/previous',
+        payload: count
     }
 }
