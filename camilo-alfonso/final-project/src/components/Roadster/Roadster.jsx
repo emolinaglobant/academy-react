@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
-import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
-import { setRoadster } from "../../redux/actions/RoadsterAction";
-import { SPACE_API } from "../../apis/apiLink";
+import { fetchRoadster } from "../../redux/actions/RoadsterAction";
 import { SiTesla } from "react-icons/si";
 import elonCar2 from "../../assets/images/elon2.png";
 
@@ -39,18 +37,9 @@ const Roadster = () => {
     flickr_images,
   } = roadster;
 
-  const fetchRoadster = async () => {
-    const response = await axios
-      .get(SPACE_API + "/v4/roadster")
-      .catch((err) => {
-        console.log("Err", err);
-      });
-    dispatch(setRoadster(response.data));
-  };
-
   useEffect(() => {
-    fetchRoadster();
-  });
+    dispatch(fetchRoadster());
+  }, []);
 
   return (
     <>

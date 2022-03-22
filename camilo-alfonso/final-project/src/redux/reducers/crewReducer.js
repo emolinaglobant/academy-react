@@ -9,6 +9,9 @@ export const crewReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case ActionTypes.SET_ASTRONAUTS:
       return { ...state, astronauts: payload, loading: false };
+    case ActionTypes.FETCH_ASTRONAUTS:
+      return { ...state, astronauts: payload, loading: false };
+
     default:
       return state;
   }

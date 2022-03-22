@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
-import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
-import { selectRocket, removeRocket } from "../../redux/actions/rocketActions";
+import { fetchRocket, removeRocket } from "../../redux/actions/rocketActions";
 import { MdOutlineAttachMoney, MdFormatListNumberedRtl } from "react-icons/md";
 import { GiRocketFlight, GiHammerNails } from "react-icons/gi";
 import { FaExternalLinkAlt } from "react-icons/fa";
@@ -32,7 +31,6 @@ import {
   Th,
   Td,
 } from "@chakra-ui/react";
-import { SPACE_API } from "../../apis/apiLink";
 
 const RocketCard = () => {
   const rocket = useSelector((state) => state.rocket);
@@ -57,21 +55,12 @@ const RocketCard = () => {
     wikipedia,
   } = rocket;
 
-  const fetchRocket = async () => {
-    const response = await axios
-      .get(SPACE_API + `/v4/rockets/${id}`)
-      .catch((err) => {
-        console.log("Err", err);
-      });
-    dispatch(selectRocket(response.data));
-  };
-
   useEffect(() => {
-    if (id && id !== "") fetchRocket();
+    if (id && id !== "") dispatch(fetchRocket(id));
     return () => {
       dispatch(removeRocket());
     };
-  }, [id]);
+  }, []);
 
   return (
     <Stack>

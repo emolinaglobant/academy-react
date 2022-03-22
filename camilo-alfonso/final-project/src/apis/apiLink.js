@@ -1,1 +1,5 @@
-export const SPACE_API = "https://api.spacexdata.com";
+import axios from "axios";
+
+export default axios.create({
+  baseURL: "https://api.spacexdata.com/v4/",
+});

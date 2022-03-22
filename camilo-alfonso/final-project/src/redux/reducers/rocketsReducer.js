@@ -9,6 +9,8 @@ export const rocketReducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case ActionTypes.SET_ROCKETS:
       return { ...state, rockets: payload, loading: false };
+    case ActionTypes.FETCH_ROCKETS:
+      return { ...state, rockets: payload, loading: false };
     default:
       return state;
   }

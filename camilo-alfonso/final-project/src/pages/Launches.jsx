@@ -1,25 +1,14 @@
 import React, { useEffect } from "react";
-import axios from "axios";
 import { useDispatch } from "react-redux";
-import { setLaunches } from "../redux/actions/launchActions";
-import { SPACE_API } from "../apis/apiLink";
+import { fetchLaunches } from "../redux/actions/launchActions";
 import { Box, VStack, Heading } from "@chakra-ui/react";
 import LaunchesList from "../components/Launches/LaunchesList";
 
 const Launches = () => {
   const dispatch = useDispatch();
 
-  const fetchLaunches = async () => {
-    const response = await axios
-      .get(SPACE_API + "/v4/launches")
-      .catch((err) => {
-        console.log("Err", err);
-      });
-    dispatch(setLaunches(response.data));
-  };
-
   useEffect(() => {
-    fetchLaunches();
+    dispatch(fetchLaunches());
   });
 
   return (
